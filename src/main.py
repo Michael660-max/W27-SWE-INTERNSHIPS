@@ -12,11 +12,13 @@ if str(ROOT) not in sys.path:
 
 from src.agent_ingest import collect_agent_findings  # noqa: E402
 from src.config import AGENT_FINDINGS_DIR  # noqa: E402
-from src.db import connect, ensure_db  # noqa: E402
+from src.db import all_jobs, connect, ensure_db  # noqa: E402
 from src.dedupe import upsert_candidates  # noqa: E402
 from src.export_csv import export_csv  # noqa: E402
+from src.export_listings import export_listings  # noqa: E402
 from src.models import CandidateJob  # noqa: E402
 from src.notify import notify_new_jobs  # noqa: E402
+from src.score import sort_jobs  # noqa: E402
 from src.sources.company_ats import collect_company_ats  # noqa: E402
 from src.sources.github_lists import collect_github_lists  # noqa: E402
 from src.sources.simplify import collect_simplify  # noqa: E402
@@ -111,8 +113,31 @@ def run_pipeline(
             logger.info("No new roles — skipping Discord")
 
     csv_path = export_csv()
+    listings_path = export_listings()
     logger.info("Exported CSV %s", csv_path)
+    logger.info("Exported listings %s", listings_path)
     return len(result.inserted)
+
+
+def run_notify_test(n: int, dry_run: bool = False) -> int:
+    """Send Discord notification for top N jobs already in the DB (verification helper)."""
+    ensure_db()
+    with connect() as conn:
+        jobs = sort_jobs(all_jobs(conn))[: max(0, n)]
+        if not jobs:
+            logger.warning("No jobs in database to notify")
+            return 0
+        logger.info("Notify-test: sending %d jobs (dry_run=%s)", len(jobs), dry_run)
+        path = notify_new_jobs(
+            conn,
+            jobs,
+            dry_run=dry_run,
+            prefix="**W27 notify-test** (not necessarily new inserts)",
+            style="table",
+        )
+        if path:
+            logger.info("Wrote notification %s", path)
+    return len(jobs)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -128,12 +153,36 @@ def main(argv: list[str] | None = None) -> int:
         help="Only ingest agent findings JSON from directory",
     )
     parser.add_argument("--export-csv-only", action="store_true")
+    parser.add_argument(
+        "--export-listings-only",
+        action="store_true",
+        help="Rebuild LISTINGS.md from SQLite only",
+    )
+    parser.add_argument(
+        "--notify-test",
+        type=int,
+        nargs="?",
+        const=3,
+        metavar="N",
+        help="Send Discord alert for top N DB jobs (default 3); for webhook verification",
+    )
     args = parser.parse_args(argv)
 
     if args.export_csv_only:
         ensure_db()
         path = export_csv()
         print(path)
+        return 0
+
+    if args.export_listings_only:
+        ensure_db()
+        path = export_listings()
+        print(path)
+        return 0
+
+    if args.notify_test is not None:
+        sent = run_notify_test(args.notify_test, dry_run=args.dry_run)
+        print(f"Notify-test sent {sent} roles")
         return 0
 
     inserted = run_pipeline(

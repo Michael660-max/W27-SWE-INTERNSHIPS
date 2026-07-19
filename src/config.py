@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 DB_PATH = DATA_DIR / "jobs.sqlite"
 CSV_PATH = DATA_DIR / "jobs.csv"
+LISTINGS_PATH = ROOT / "LISTINGS.md"
 GITHUB_SOURCES_PATH = DATA_DIR / "github_sources.yml"
 COMPANIES_PATH = DATA_DIR / "companies.yml"
 AGENT_FINDINGS_DIR = DATA_DIR / "agent_findings"

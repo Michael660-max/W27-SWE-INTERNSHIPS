@@ -18,4 +18,4 @@ else
   python src/main.py --dry-run
 fi
 
-echo "Scout complete. DB: data/jobs.sqlite CSV: data/jobs.csv"
+echo "Scout complete. DB: data/jobs.sqlite CSV: data/jobs.csv LISTINGS.md"
