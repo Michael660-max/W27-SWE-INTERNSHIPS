@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>W27 Internship Tracker</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a222c;
+      --border: #2c3845;
+      --text: #e7eef5;
+      --muted: #8fa3b5;
+      --accent: #3d9cfd;
+      --fresh: #3dd68c;
+      --late: #f0b429;
+      --unk: #9aa8b5;
+      --danger: #f07178;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a2a3a 0%, var(--bg) 55%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      padding: 1.25rem 1.5rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(15, 20, 25, 0.85);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    h1 {
+      margin: 0 0 0.25rem;
+      font-size: 1.35rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+    .sub { color: var(--muted); font-size: 0.9rem; }
+    .controls {
+      display: grid;
+      grid-template-columns: 2fr repeat(5, 1fr);
+      gap: 0.6rem;
+      margin-top: 0.9rem;
+    }
+    @media (max-width: 960px) {
+      .controls { grid-template-columns: 1fr 1fr; }
+    }
+    input, select {
+      width: 100%;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.55rem 0.7rem;
+      font: inherit;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(61, 156, 253, 0.45);
+      border-color: var(--accent);
+    }
+    main { padding: 1rem 1.5rem 2rem; }
+    .meta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 0.75rem;
+    }
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: auto;
+      background: var(--panel);
+      max-height: calc(100vh - 220px);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      min-width: 1100px;
+    }
+    th, td {
+      padding: 0.55rem 0.7rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      position: sticky;
+      top: 0;
+      background: #212b36;
+      color: var(--muted);
+      font-weight: 600;
+      z-index: 1;
+    }
+    tr:hover td { background: rgba(61, 156, 253, 0.06); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      border: 1px solid transparent;
+      white-space:nowrap;
+    }
+    .badge.fresh { color: #0d2b1c; background: var(--fresh); }
+    .badge.late { color: #2a1e00; background: var(--late); }
+    .badge.unk { color: #1c2430; background: var(--unk); }
+    .flags { color: var(--danger); font-size: 0.75rem; margin-top: 0.2rem; }
+    .company { font-weight: 600; }
+    .muted { color: var(--muted); }
+    select.status-select {
+      min-width: 120px;
+      padding: 0.3rem 0.4rem;
+      font-size: 0.8rem;
+    }
+    .empty { padding: 2rem; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>W27 Internship Tracker</h1>
+    <div class="sub">Live view of <code>data/jobs.sqlite</code> — refresh anytime after a scout run</div>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search company, title, location…" />
+      <select id="freshness">
+        <option value="">All freshness</option>
+        <option>Fresh</option>
+        <option>Late discovery</option>
+        <option>Posting date unavailable</option>
+      </select>
+      <select id="country">
+        <option value="">All countries</option>
+        <option value="Canada">Canada</option>
+        <option value="US">United States</option>
+      </select>
+      <select id="remote">
+        <option value="">Onsite / Remote / Hybrid</option>
+        <option>Remote</option>
+        <option>Hybrid</option>
+        <option>Onsite</option>
+      </select>
+      <select id="status">
+        <option value="">All status</option>
+        <option>Open</option>
+        <option>Unverified</option>
+        <option>Closed</option>
+      </select>
+      <select id="applied">
+        <option value="">All applied</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <div class="meta">
+      <span id="count">Loading…</span>
+      <span id="updated"></span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Freshness</th>
+            <th>Posted</th>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Location</th>
+            <th>Term</th>
+            <th>Score</th>
+            <th>Apply</th>
+            <th>Applied</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div id="empty" class="empty" hidden>No jobs match these filters.</div>
+    </div>
+  </main>
+  <script>
+    const els = {
+      q: document.getElementById("q"),
+      freshness: document.getElementById("freshness"),
+      country: document.getElementById("country"),
+      remote: document.getElementById("remote"),
+      status: document.getElementById("status"),
+      applied: document.getElementById("applied"),
+      rows: document.getElementById("rows"),
+      count: document.getElementById("count"),
+      updated: document.getElementById("updated"),
+      empty: document.getElementById("empty"),
+    };
+    let appliedStatuses = [];
+    let debounceTimer;
+
+    function badgeClass(label) {
+      if (label === "Fresh") return "fresh";
+      if (label === "Late discovery") return "late";
+      return "unk";
+    }
+
+    function fmtDate(iso) {
+      if (!iso) return "—";
+      return iso.includes("T") ? iso.split("T")[0] : iso;
+    }
+
+    function flags(job) {
+      const bits = [];
+      if (job.requires_us_citizenship) bits.push("US citizen");
+      if (job.requires_us_work_auth) bits.push("US work auth");
+      if (job.requires_export_control) bits.push("export control");
+      if (job.agent_only) bits.push("agent-only");
+      return bits.length ? `<div class="flags">${bits.join(" · ")}</div>` : "";
+    }
+
+    async function loadMeta() {
+      const res = await fetch("/api/meta");
+      const data = await res.json();
+      appliedStatuses = data.applied_statuses || [];
+      els.applied.innerHTML = '<option value="">All applied</option>' +
+        appliedStatuses.map(s => `<option>${s}</option>`).join("");
+    }
+
+    async function loadJobs() {
+      const params = new URLSearchParams();
+      if (els.q.value.trim()) params.set("q", els.q.value.trim());
+      if (els.freshness.value) params.set("freshness", els.freshness.value);
+      if (els.country.value) params.set("country", els.country.value);
+      if (els.remote.value) params.set("remote", els.remote.value);
+      if (els.status.value) params.set("status", els.status.value);
+      if (els.applied.value) params.set("applied_status", els.applied.value);
+
+      const res = await fetch("/api/jobs?" + params.toString());
+      const data = await res.json();
+      els.count.textContent = `${data.count} roles`;
+      els.updated.textContent = `Updated ${new Date().toLocaleTimeString()}`;
+      els.rows.innerHTML = "";
+      els.empty.hidden = data.count > 0;
+
+      for (const job of data.jobs) {
+        const tr = document.createElement("tr");
+        const url = job.apply_url || job.official_url || "";
+        const source = (job.source_names || "").split(";")[0] || "—";
+        const options = appliedStatuses.map(s =>
+          `<option value="${s}" ${s === job.applied_status ? "selected" : ""}>${s}</option>`
+        ).join("");
+        tr.innerHTML = `
+          <td><span class="badge ${badgeClass(job.freshness_label)}">${job.freshness_label || "—"}</span></td>
+          <td class="muted">${fmtDate(job.posting_date)}</td>
+          <td class="company">${escapeHtml(job.company || "")}<div class="muted">${escapeHtml(source)}</div></td>
+          <td>
+            ${escapeHtml(job.exact_role_title || "")}
+            ${flags(job)}
+          </td>
+          <td>${escapeHtml(job.location || "—")}<div class="muted">${escapeHtml(job.remote_or_hybrid || "")}</div></td>
+          <td>${escapeHtml(job.term || "—")}</td>
+          <td>${job.priority_score ?? 0}</td>
+          <td>${url ? `<a href="${escapeAttr(url)}" target="_blank" rel="noopener">Apply</a>` : "—"}</td>
+          <td><select class="status-select" data-id="${job.id}">${options}</select></td>
+        `;
+        els.rows.appendChild(tr);
+      }
+
+      els.rows.querySelectorAll("select.status-select").forEach(sel => {
+        sel.addEventListener("change", async (e) => {
+          const id = e.target.dataset.id;
+          const applied_status = e.target.value;
+          e.target.disabled = true;
+          try {
+            const r = await fetch(`/api/jobs/${id}`, {
+              method: "PATCH",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ applied_status }),
+            });
+            if (!r.ok) {
+              const err = await r.json().catch(() => ({}));
+              alert(err.detail || "Failed to update");
+            }
+          } finally {
+            e.target.disabled = false;
+          }
+        });
+      });
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+    function escapeAttr(s) {
+      return escapeHtml(s).replaceAll("'", "&#39;");
+    }
+
+    function scheduleLoad() {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(loadJobs, 150);
+    }
+
+    [els.q, els.freshness, els.country, els.remote, els.status, els.applied].forEach(el => {
+      el.addEventListener("input", scheduleLoad);
+      el.addEventListener("change", scheduleLoad);
+    });
+
+    loadMeta().then(loadJobs);
+  </script>
+</body>
+</html>

@@ -13,6 +13,7 @@ from ..normalize import (
     parse_relative_age,
     strip_html,
 )
+from ..urls import apply_url_score, best_apply_url
 
 LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 HTML_LINK_RE = re.compile(r'href=["\']([^"\']+)["\']', re.I)
@@ -38,7 +39,6 @@ def pick_apply_url(cell: str, base: str = "") -> str:
 
     cell = html.unescape(cell or "")
     links = extract_links(cell)
-    # Also pull raw hrefs from HTML even without markdown
     for url in HTML_LINK_RE.findall(cell):
         url = html.unescape(url.strip())
         if not any(u == url for _, u in links):
@@ -46,41 +46,19 @@ def pick_apply_url(cell: str, base: str = "") -> str:
     if not links:
         return ""
 
-    def rank(url: str) -> int:
-        low = url.lower()
-        if any(
-            x in low
-            for x in (
-                "boards.greenhouse",
-                "job-boards.greenhouse",
-                "lever.co",
-                "ashbyhq",
-                "myworkdayjobs",
-                "ats.rippling",
-                "smartrecruiters",
-                "icims.com",
-                "jobs.ashby",
-            )
-        ):
-            return 0
-        if "simplify.jobs/p/" in low:
-            return 1
-        if "/job/" in low or "/jobs/" in low or "gh_jid=" in low:
-            return 2
-        if "simplify.jobs/c/" in low:
-            return 8
-        if "github.com/" in low:
-            return 9
-        # Bare company homepage
-        if low.count("/") <= 3 and "careers" not in low and "job" not in low:
-            return 10
-        return 5
-
-    links_sorted = sorted(links, key=lambda pair: rank(pair[1]))
-    url = html.unescape(links_sorted[0][1])
-    if base and url.startswith("/"):
-        return urljoin(base, url)
-    return url
+    resolved = []
+    for _, url in links:
+        url = html.unescape(url)
+        if base and url.startswith("/"):
+            url = urljoin(base, url)
+        resolved.append(url)
+    # Prefer real apply/ATS URLs; never return a bare homepage if better exists
+    best = best_apply_url(*resolved)
+    if best:
+        return best
+    # Fallback: lowest score even if weak (caller may clear later)
+    resolved.sort(key=apply_url_score)
+    return resolved[0] if resolved and apply_url_score(resolved[0]) < 9 else ""
 
 
 def parse_html_tables(markdown: str, source_name: str, source_page_url: str = "") -> list[CandidateJob]:

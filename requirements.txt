@@ -4,3 +4,6 @@ lxml>=5.0.0
 PyYAML>=6.0.0
 python-dateutil>=2.9.0
 rapidfuzz>=3.9.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.0.0

@@ -67,10 +67,10 @@ Find Winter 2027 / Spring 2027 / January–April 2027 / January–May 2027 softw
    python src/main.py --ingest-findings data/agent_findings
    ```
    (Or a full `python src/main.py` which also re-scrapes lists.)
-7. Confirm `data/jobs.sqlite` and `data/jobs.csv` updated. New roles appear under `data/notifications/`.
+7. Confirm `data/jobs.sqlite`, `data/jobs.csv`, and `LISTINGS.md` updated. New roles appear under `data/notifications/`.
 8. Commit and push only tracker outputs and findings (never secrets):
    ```bash
-   git add data/jobs.sqlite data/jobs.csv data/agent_findings data/notifications
+   git add data/jobs.sqlite data/jobs.csv LISTINGS.md data/agent_findings data/notifications
    git status
    git commit -m "chore(data): update internship DB from scheduled scout"
    git push origin HEAD
@@ -86,8 +86,15 @@ Find Winter 2027 / Spring 2027 / January–April 2027 / January–May 2027 softw
 
 ## Notification rules
 
-Only newly inserted roles. Sort by freshness, then posting date (newest first), then priority score. Include citizenship / work-auth / export-control lines only when explicit.
+Only newly inserted roles. Discord sends a short summary linking to `LISTINGS.md` (full Source + Apply table). Sort by freshness, then posting date, then priority.
 
 ## Environment
 
-- `DISCORD_WEBHOOK_URL` — Discord incoming webhook for alerts
+- `DISCORD_WEBHOOK_URL` — Discord incoming webhook for alerts (set as a **Cloud Agent / Automation secret**, never commit to git)
+- Local UI (not needed on cron): `bash scripts/ui.sh` → http://127.0.0.1:8787
+- Discord smoke test (local): `python src/main.py --notify-test 3`
+- Full board: commit `LISTINGS.md` (Company | Role | Location | Term | Posted | Source | Apply)
+
+### Cloud Agent secret setup
+1. In Cursor Automations / Cloud Agents settings, add secret `DISCORD_WEBHOOK_URL` with your webhook URL.
+2. Do not put the webhook in the repo or in the automation prompt text.

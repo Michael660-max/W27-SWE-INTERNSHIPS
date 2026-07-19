@@ -339,7 +339,23 @@ def enrich_candidate(candidate: CandidateJob) -> CandidateJob:
     candidate.company = clean_company(candidate.company)
     candidate.exact_role_title = clean_title(candidate.exact_role_title)
     candidate.location = strip_html(candidate.location)
-    candidate.official_url = (candidate.official_url or candidate.source_url or "").strip()
+    from .urls import apply_url_score, best_apply_url
+
+    candidate.official_url = (candidate.official_url or "").strip()
+    candidate.source_url = (candidate.source_url or "").strip()
+    apply = best_apply_url(candidate.official_url, candidate.source_url)
+    if apply:
+        candidate.official_url = apply
+    elif candidate.official_url and apply_url_score(candidate.official_url) >= 9:
+        # Don't treat marketing homepage as the apply link
+        if not candidate.notes:
+            candidate.notes = "No reliable apply URL (homepage only)"
+        elif "No reliable apply URL" not in candidate.notes:
+            candidate.notes = f"{candidate.notes}; No reliable apply URL (homepage only)"
+        candidate.official_url = ""
+    elif not candidate.official_url and candidate.source_url:
+        if apply_url_score(candidate.source_url) < 9:
+            candidate.official_url = candidate.source_url
     candidate.canonical_url = canonicalize_url(candidate.official_url or candidate.source_url)
     if not candidate.requisition_id:
         candidate.requisition_id = extract_requisition_id(
