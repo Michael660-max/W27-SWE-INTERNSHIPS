@@ -1,0 +1,19 @@
+# High-priority companies checked every Layer 1 ATS pass (must also exist in companies.yml).
+# Used for coverage warnings when zero intern hits and for Discord "apply now" tier.
+companies:
+  - Databricks
+  - Ramp
+  - Stripe
+  - Roblox
+  - Coinbase
+  - Jane Street
+  - Rippling
+  - OpenAI
+  - Anthropic
+  - Cloudflare
+  - Notion
+  - Figma
+  - Palantir
+  - Wealthsimple
+  - DoorDash
+  - Shopify  # add board to companies.yml when available

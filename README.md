@@ -58,9 +58,21 @@ Twice on weekdays (12:30 & 18:00 Toronto), each Automation runs **both** layers:
 
 ## Freshness (“pick up from last run”)
 
-Each pipeline run (live or dry-run) writes a row to the `runs` table with `finished_at`. The next run’s Fresh vs Late window starts at **last `finished_at` − 2h**. If no prior run exists, code falls back to the midday/evening schedule slots (America/Toronto).
+Each pipeline run writes a `runs` row. The next Fresh vs Late window uses **last live `finished_at` − 2h** only — **dry-runs do not advance the window** (safe for testing). If no live run exists, code falls back to midday/evening schedule slots (America/Toronto).
 
-`--dry-run` skips Discord only; it still scrapes, upserts, exports, and advances the window.
+`--dry-run` skips Discord; still scrapes/upserts/exports and records a `dry_run` row.
+
+## Reliability upgrades
+
+| Feature | Where |
+|---------|--------|
+| Source coverage logs | `data/coverage/*.json` + `source_coverage` table (ok/error/timeout/zero) |
+| Quarantine | `quarantine` table — term unclear, bad HTTP, likely duplicate, filter rejects |
+| Company watchlist | `data/watchlist.yml` (flagged in ATS coverage + apply-now tier) |
+| Official URL priority | ATS/job URL wins over Simplify/LinkedIn on merge |
+| Close only after 2 fails | `verify_fail_count` → `Closed` after 2 failed checks |
+| Duplicate confidence | `exact` / `likely` / `possible` — fuzzy never auto-dropped |
+| Alert tiers | Discord summary: apply now · good lead · late discovery · needs verification |
 
 ## Listings board
 

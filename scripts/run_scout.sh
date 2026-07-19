@@ -13,15 +13,21 @@ fi
 
 python -m pip install -q -r requirements.txt
 
-DRY_FLAG=()
+run_main() {
+  if [[ -z "${DISCORD_WEBHOOK_URL:-}" ]]; then
+    python src/main.py --dry-run "$@"
+  else
+    python src/main.py "$@"
+  fi
+}
+
 if [[ -z "${DISCORD_WEBHOOK_URL:-}" ]]; then
   echo "DISCORD_WEBHOOK_URL unset — using --dry-run (skip Discord; still record runs)"
-  DRY_FLAG=(--dry-run)
 fi
 
 # 1) Layer 1: GitHub lists + Simplify + company ATS + any pending findings
 echo "=== Layer 1: scrape + upsert ==="
-python src/main.py "${DRY_FLAG[@]}"
+run_main
 
 # 2) Layer 2 helper: search pack only (no GitHub re-scrape)
 echo "=== Layer 2: search pack ==="
@@ -32,6 +38,6 @@ python scripts/agent_discover.py
 
 # 3) Ingest any new agent findings + refresh LISTINGS (no Layer 1 re-scrape)
 echo "=== Ingest findings ==="
-python src/main.py --ingest-findings "${DRY_FLAG[@]}"
+run_main --ingest-findings
 
 echo "Scout complete. DB: data/jobs.sqlite CSV: data/jobs.csv LISTINGS.md"

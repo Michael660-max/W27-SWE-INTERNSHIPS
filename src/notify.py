@@ -139,71 +139,71 @@ def build_simplify_style_table(jobs: list[JobRecord], title: str) -> str:
     return out
 
 
+_TIER_ORDER = (
+    ("apply_now", "Apply now"),
+    ("good_lead", "Good lead"),
+    ("late_discovery", "Late discovery"),
+    ("needs_manual_verification", "Needs manual verification"),
+)
+
+
+def _tier_of(job: JobRecord) -> str:
+    t = (getattr(job, "alert_tier", None) or "").strip()
+    if t:
+        return t
+    if (job.freshness_label or "") == "Late discovery":
+        return "late_discovery"
+    if (job.status or "") == "Unverified":
+        return "needs_manual_verification"
+    if (job.freshness_label or "") == "Fresh":
+        return "good_lead"
+    return "good_lead"
+
+
 def build_discord_short(jobs: list[JobRecord], prefix: str = "") -> str:
-    """Short Discord summary: count + board link (details stay in LISTINGS.md)."""
+    """Summary Discord: counts by alert tier + LISTINGS link."""
     jobs = sort_jobs(jobs)
     n = len(jobs)
-    fresh_n = sum(1 for j in jobs if (j.freshness_label or "") == "Fresh")
     lines = []
     if prefix:
         lines.append(prefix.rstrip())
     noun = "role" if n == 1 else "roles"
     lines.append(f"**W27 scout:** {n} new {noun} this run.")
-    if fresh_n and fresh_n != n:
-        lines.append(f"_{fresh_n} fresh · {n - fresh_n} late discovery_")
-    elif fresh_n:
-        lines.append(f"_{fresh_n} marked fresh_")
+    for key, label in _TIER_ORDER:
+        count = sum(1 for j in jobs if _tier_of(j) == key)
+        if count:
+            lines.append(f"• {label}: {count}")
     lines.append(f"Full board: {LISTINGS_URL}")
     return "\n".join(lines)
 
 
 def build_notification_markdown(jobs: list[JobRecord]) -> str:
     jobs = sort_jobs(jobs)
-    fresh = [j for j in jobs if j.freshness_label == "Fresh"]
-    late = [j for j in jobs if j.freshness_label == "Late discovery"]
-    unavailable = [j for j in jobs if j.freshness_label == "Posting date unavailable"]
-
     lines = [
         f"# New internship roles — {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
         "",
+        "_`first_found_at` is the reliable system timestamp; `Posted` is employer/list age (helpful, not always trustworthy)._",
+        "",
     ]
-    if fresh:
-        lines.append("## Fresh roles")
+    any_section = False
+    for key, label in _TIER_ORDER:
+        group = [j for j in jobs if _tier_of(j) == key]
+        if not group:
+            continue
+        any_section = True
+        lines.append(f"## {label}")
         lines.append("")
-        lines.append("| Company | Role | Location | Term | Posted | Link |")
-        lines.append("|---|---|---|---|---|---|")
-        for j in fresh:
+        lines.append("| Company | Role | Location | Term | Posted | First seen | Link |")
+        lines.append("|---|---|---|---|---|---|---|")
+        for j in group:
             url = job_apply_url(j) or j.official_url or j.source_url or ""
+            first = (j.first_found_at or "")[:10]
             lines.append(
                 f"| {j.company} | {j.exact_role_title} | {j.location} | {j.term} | "
-                f"{_posting_short(j)} | {url} |"
+                f"{_posting_short(j)} | {first} | {url} |"
             )
         lines.append("")
-    if late:
-        lines.append("## Late discovery")
-        lines.append("")
-        lines.append("| Company | Role | Location | Term | Posted | Link |")
-        lines.append("|---|---|---|---|---|---|")
-        for j in late:
-            url = job_apply_url(j) or j.official_url or j.source_url or ""
-            lines.append(
-                f"| {j.company} | {j.exact_role_title} | {j.location} | {j.term} | "
-                f"{_posting_short(j)} | {url} |"
-            )
-        lines.append("")
-    if unavailable:
-        lines.append("## Posting date unavailable")
-        lines.append("")
-        lines.append("| Company | Role | Location | Term | Posted | Link |")
-        lines.append("|---|---|---|---|---|---|")
-        for j in unavailable:
-            url = job_apply_url(j) or j.official_url or j.source_url or ""
-            lines.append(
-                f"| {j.company} | {j.exact_role_title} | {j.location} | {j.term} | "
-                f"{_posting_short(j)} | {url} |"
-            )
-        lines.append("")
-    if not jobs:
+    if not any_section:
         lines.append("_No new roles._")
     return "\n".join(lines).rstrip() + "\n"
 

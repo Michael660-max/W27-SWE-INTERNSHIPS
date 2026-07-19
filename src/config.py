@@ -10,9 +10,11 @@ CSV_PATH = DATA_DIR / "jobs.csv"
 LISTINGS_PATH = ROOT / "LISTINGS.md"
 GITHUB_SOURCES_PATH = DATA_DIR / "github_sources.yml"
 COMPANIES_PATH = DATA_DIR / "companies.yml"
+WATCHLIST_PATH = DATA_DIR / "watchlist.yml"
 AGENT_FINDINGS_DIR = DATA_DIR / "agent_findings"
 NOTIFICATIONS_DIR = DATA_DIR / "notifications"
 RAW_SNAPSHOTS_DIR = DATA_DIR / "raw_snapshots"
+COVERAGE_DIR = DATA_DIR / "coverage"
 
 TIMEZONE = "America/Toronto"
 USER_AGENT = (

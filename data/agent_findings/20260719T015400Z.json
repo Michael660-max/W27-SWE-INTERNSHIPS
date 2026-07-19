@@ -1,0 +1,43 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-19T01:54:00.206390+00:00",
+  "discovery": "layer2_test indeed+official_ats_resolve",
+  "jobs": [
+    {
+      "company": "Netic",
+      "exact_role_title": "Forward Deployed Engineer (FDE) - Intern - 2026-2027",
+      "location": "San Francisco",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-15",
+      "official_url": "https://jobs.ashbyhq.com/netic/ffd6af1a-cebb-41f5-ac1d-e695adfd067c",
+      "notes": "indeed_search\u2192ashby_resolve"
+    },
+    {
+      "company": "Netic",
+      "exact_role_title": "Full-Stack Software Engineer (Product) - Intern - 2026-2027",
+      "location": "San Francisco",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-16",
+      "official_url": "https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef",
+      "notes": "indeed_search\u2192ashby_resolve"
+    },
+    {
+      "company": "Netic",
+      "exact_role_title": "Software Engineer (Agent Platform) - Intern - 2026-2027",
+      "location": "San Francisco",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-16",
+      "official_url": "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7",
+      "notes": "indeed_search\u2192ashby_resolve"
+    },
+    {
+      "company": "Skydio",
+      "exact_role_title": "Software Engineer Intern Fall 2026/Winter 2027",
+      "location": "San Mateo, California, United States",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-05",
+      "official_url": "https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee",
+      "notes": "layer2_browser_ats_resolve"
+    }
+  ]
+}

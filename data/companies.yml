@@ -200,6 +200,9 @@ companies:
     board_url: https://boards-api.greenhouse.io/v1/boards/nuro/jobs
 
   # Canada / security / other high-signal
+  - name: Shopify
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/shopify/jobs
   - name: 1Password
     ats: ashby
     board_url: https://api.ashbyhq.com/posting-api/job-board/1password

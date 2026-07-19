@@ -39,7 +39,7 @@ Follow docs/DISCOVERY_WORKFLOW.md and data/discovery_queries.yml / the latest da
    (omit --dry-run when DISCORD_WEBHOOK_URL is set so new valid inserts alert Discord).
 
 ## Notifications (automatic)
-Discord alerts only when newly inserted Open roles with a real apply URL exist. Message is a short summary only (e.g. "18 new roles this run") plus a link to LISTINGS.md — no per-job dump in Discord. Freshness window continues from the last finished run (live or dry-run).
+Discord alerts only when newly inserted Open roles with a real apply URL exist. Message is a short summary with tier counts (apply now / good lead / late discovery / needs verification) plus LISTINGS.md. Freshness window continues from the last **live** finished run only — dry-runs must not advance it.
 
 ## Finish
 - Confirm data/jobs.sqlite, data/jobs.csv, LISTINGS.md updated.

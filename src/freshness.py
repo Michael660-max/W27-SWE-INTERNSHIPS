@@ -102,7 +102,13 @@ def label_freshness(
     posting_date: datetime | None,
     now: datetime | None = None,
     window_start: datetime | None = None,
+    first_found_at: datetime | None = None,
 ) -> str:
+    """
+    Fresh vs Late uses employer posting_date when known (helpful, not always trustworthy).
+    first_found_at is the reliable system clock — used when posting_date is missing:
+    if we first saw it inside the window, treat as Late discovery (new to us, unknown age).
+    """
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         now = now.replace(tzinfo=timezone.utc)
@@ -110,6 +116,12 @@ def label_freshness(
         window_start = window_start_for_run(None, now)
 
     if posting_date is None:
+        if first_found_at is not None:
+            ff = first_found_at
+            if ff.tzinfo is None:
+                ff = ff.replace(tzinfo=timezone.utc)
+            if ff >= window_start:
+                return "Late discovery"
         return "Posting date unavailable"
 
     pd = posting_date

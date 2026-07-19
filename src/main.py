@@ -12,12 +12,14 @@ if str(ROOT) not in sys.path:
 
 from src.agent_ingest import collect_agent_findings  # noqa: E402
 from src.config import AGENT_FINDINGS_DIR  # noqa: E402
+from src.coverage import CoverageSummary, persist_coverage, run_collector  # noqa: E402
 from src.db import (  # noqa: E402
     all_jobs,
     connect,
     ensure_db,
     finish_run,
     get_job_by_id,
+    quarantine_candidate,
     start_run,
 )
 from src.dedupe import upsert_candidates  # noqa: E402
@@ -50,32 +52,55 @@ def _prepare_candidate(cand: CandidateJob) -> CandidateJob:
     return prefer_official_url(cand)
 
 
-def collect_layer1(skip_ats: bool = False) -> list[CandidateJob]:
+def collect_layer1(
+    skip_ats: bool = False,
+    summary: CoverageSummary | None = None,
+) -> list[CandidateJob]:
     """GitHub lists + Simplify + company ATS (once per scout)."""
+    summary = summary or CoverageSummary()
     candidates: list[CandidateJob] = []
-    try:
-        candidates.extend(collect_simplify())
-    except Exception as exc:
-        logger.exception("Simplify failed: %s", exc)
-    try:
-        candidates.extend(collect_github_lists())
-    except Exception as exc:
-        logger.exception("GitHub lists failed: %s", exc)
+    candidates.extend(run_collector("Simplify Off-Season", collect_simplify, summary))
+    candidates.extend(run_collector("GitHub lists", collect_github_lists, summary))
     if not skip_ats:
-        try:
-            candidates.extend(collect_company_ats())
-        except Exception as exc:
-            logger.exception("Company ATS failed: %s", exc)
+        candidates.extend(run_collector("Company ATS", collect_company_ats, summary))
+    else:
+        from src.coverage import SourceReport
+
+        summary.add(SourceReport(name="Company ATS", status="skipped", detail="--skip-ats"))
     return candidates
 
 
-def collect_all(skip_ats: bool = False) -> list[CandidateJob]:
-    candidates = collect_layer1(skip_ats=skip_ats)
-    try:
-        candidates.extend(collect_agent_findings())
-    except Exception as exc:
-        logger.exception("Agent findings failed: %s", exc)
+def collect_all(
+    skip_ats: bool = False,
+    summary: CoverageSummary | None = None,
+) -> list[CandidateJob]:
+    summary = summary or CoverageSummary()
+    candidates = collect_layer1(skip_ats=skip_ats, summary=summary)
+    candidates.extend(run_collector("Agent findings", collect_agent_findings, summary))
     return candidates
+
+
+def _flush_quarantine(conn, rejected: list) -> int:
+    n = 0
+    for item in rejected:
+        if isinstance(item, tuple) and len(item) == 2:
+            cand, reason = item
+        else:
+            continue
+        quarantine_candidate(
+            conn,
+            company=getattr(cand, "company", "") or "",
+            exact_role_title=getattr(cand, "exact_role_title", "") or "",
+            location=getattr(cand, "location", "") or "",
+            term=getattr(cand, "term", "") or "",
+            official_url=getattr(cand, "official_url", "") or getattr(cand, "source_url", "") or "",
+            source_name=getattr(cand, "source_name", "") or "",
+            reason=str(reason),
+            detail="collector filter reject",
+            raw_snapshot=getattr(cand, "raw_text_snapshot", "") or "",
+        )
+        n += 1
+    return n
 
 
 def run_pipeline(
@@ -87,32 +112,43 @@ def run_pipeline(
     ensure_db()
     mode = "dry_run" if dry_run else "live"
     notes = "ingest-findings" if ingest_only else "layer1+findings"
+    summary = CoverageSummary()
 
     if ingest_only:
-        candidates = collect_agent_findings(ingest_only)
+        candidates = run_collector(
+            "Agent findings",
+            lambda: collect_agent_findings(ingest_only),
+            summary,
+        )
     else:
-        candidates = collect_all(skip_ats=skip_ats)
+        candidates = collect_all(skip_ats=skip_ats, summary=summary)
 
     logger.info("Collected %d raw candidates", len(candidates))
     candidates = [_prepare_candidate(c) for c in candidates]
 
     with connect() as conn:
+        # Freshness window from last *live* finished run only (dry-run does not advance).
         window_start = window_start_for_run(conn)
         window_iso = window_start.replace(microsecond=0).isoformat()
         run_id = start_run(conn, mode=mode, window_start=window_iso, notes=notes)
         logger.info(
-            "Run %s mode=%s window_start=%s (from last finished run or schedule fallback)",
+            "Run %s mode=%s window_start=%s (live runs only advance the window)",
             run_id,
             mode,
             window_iso,
         )
 
+        qn = _flush_quarantine(conn, summary.rejected)
+        if qn:
+            logger.info("Quarantined %d filtered candidates", qn)
+
         result = upsert_candidates(conn, candidates, window_start=window_start)
         logger.info(
-            "Upsert: %d inserted, %d updated, %d fuzzy warnings",
+            "Upsert: %d inserted, %d updated, %d fuzzy warnings, %d fuzzy quarantines",
             len(result.inserted),
             len(result.updated),
             len(result.fuzzy_warnings),
+            result.quarantined,
         )
         for warn in result.fuzzy_warnings[:20]:
             logger.warning(warn)
@@ -126,9 +162,16 @@ def run_pipeline(
                 from src.db import update_job
 
                 for job in unverified_rest:
-                    update_job(conn, job.id, {"status": "Unverified"})
+                    update_job(
+                        conn,
+                        job.id,
+                        {
+                            "status": "Unverified",
+                            "verify_fail_count": max(1, int(getattr(job, "verify_fail_count", 0) or 0)),
+                            "alert_tier": "needs_manual_verification",
+                        },
+                    )
 
-        # Reload inserts after verify so Discord sees final status + apply URL.
         inserted_fresh = []
         for job in result.inserted:
             latest = get_job_by_id(conn, job.id)
@@ -145,6 +188,7 @@ def run_pipeline(
         else:
             logger.info("No new roles — skipping Discord")
 
+        persist_coverage(conn, run_id, summary)
         finish_run(
             conn,
             run_id,
@@ -186,7 +230,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="Skip Discord only; still scrape, upsert, export, and record a runs row",
+        help="Skip Discord; still scrape/upsert/export/record dry_run row — does NOT advance freshness window",
     )
     parser.add_argument("--skip-ats", action="store_true", help="Skip company ATS boards")
     parser.add_argument("--skip-verify", action="store_true", help="Skip HTTP verification")

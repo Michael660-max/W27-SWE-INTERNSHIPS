@@ -76,6 +76,10 @@ class JobRecord:
     raw_text_snapshot: str
     application_deadline: Optional[str] = None
     agent_only: int = 0
+    verify_fail_count: int = 0
+    duplicate_of_id: Optional[int] = None
+    duplicate_confidence: str = ""
+    alert_tier: str = ""
 
 
 @dataclass
@@ -83,3 +87,4 @@ class UpsertResult:
     inserted: list[JobRecord] = field(default_factory=list)
     updated: list[JobRecord] = field(default_factory=list)
     fuzzy_warnings: list[str] = field(default_factory=list)
+    quarantined: int = 0

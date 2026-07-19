@@ -93,17 +93,60 @@ CREATE TABLE IF NOT EXISTS runs (
     notes TEXT DEFAULT ''
 );
 
+CREATE TABLE IF NOT EXISTS quarantine (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    seen_at TEXT NOT NULL,
+    company TEXT DEFAULT '',
+    exact_role_title TEXT DEFAULT '',
+    location TEXT DEFAULT '',
+    term TEXT DEFAULT '',
+    official_url TEXT DEFAULT '',
+    source_name TEXT DEFAULT '',
+    reason TEXT NOT NULL,
+    detail TEXT DEFAULT '',
+    raw_snapshot TEXT DEFAULT '',
+    status TEXT DEFAULT 'open'
+);
+
+CREATE TABLE IF NOT EXISTS source_coverage (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    run_id INTEGER,
+    source_name TEXT NOT NULL,
+    status TEXT NOT NULL,
+    fetched INTEGER DEFAULT 0,
+    kept INTEGER DEFAULT 0,
+    error TEXT DEFAULT '',
+    detail TEXT DEFAULT '',
+    recorded_at TEXT NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_jobs_company ON jobs(company);
 CREATE INDEX IF NOT EXISTS idx_jobs_requisition ON jobs(requisition_id);
 CREATE INDEX IF NOT EXISTS idx_jobs_canonical ON jobs(canonical_url);
 CREATE INDEX IF NOT EXISTS idx_jobs_posting_date ON jobs(posting_date);
 CREATE INDEX IF NOT EXISTS idx_sources_job ON sources(job_id);
 CREATE INDEX IF NOT EXISTS idx_runs_finished ON runs(finished_at);
+CREATE INDEX IF NOT EXISTS idx_quarantine_reason ON quarantine(reason);
+CREATE INDEX IF NOT EXISTS idx_coverage_run ON source_coverage(run_id);
 """
+
+_JOB_MIGRATIONS = (
+    ("verify_fail_count", "INTEGER DEFAULT 0"),
+    ("duplicate_of_id", "INTEGER"),
+    ("duplicate_confidence", "TEXT DEFAULT ''"),
+    ("alert_tier", "TEXT DEFAULT ''"),
+)
 
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def _migrate_jobs(conn: sqlite3.Connection) -> None:
+    cols = {row[1] for row in conn.execute("PRAGMA table_info(jobs)")}
+    for name, decl in _JOB_MIGRATIONS:
+        if name not in cols:
+            conn.execute(f"ALTER TABLE jobs ADD COLUMN {name} {decl}")
 
 
 def ensure_db(path: Path | None = None) -> Path:
@@ -111,6 +154,7 @@ def ensure_db(path: Path | None = None) -> Path:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     with sqlite3.connect(db_path) as conn:
         conn.executescript(SCHEMA)
+        _migrate_jobs(conn)
         conn.commit()
     return db_path
 
@@ -131,7 +175,15 @@ def connect(path: Path | None = None) -> Iterator[sqlite3.Connection]:
 
 
 def row_to_job(row: sqlite3.Row) -> JobRecord:
-    return JobRecord(**dict(row))
+    data = dict(row)
+    # Defaults for migrated columns on older rows
+    data.setdefault("verify_fail_count", 0)
+    data.setdefault("duplicate_of_id", None)
+    data.setdefault("duplicate_confidence", "")
+    data.setdefault("alert_tier", "")
+    data.setdefault("agent_only", 0)
+    data.setdefault("application_deadline", None)
+    return JobRecord(**{k: data[k] for k in JobRecord.__dataclass_fields__ if k in data})
 
 
 def get_job_by_id(conn: sqlite3.Connection, job_id: int) -> Optional[JobRecord]:
@@ -274,16 +326,71 @@ def merge_source_names(existing: str, new_name: str) -> str:
     return "; ".join(names)
 
 
-def last_finished_run_at(conn: sqlite3.Connection) -> Optional[str]:
-    row = conn.execute(
-        """
-        SELECT finished_at FROM runs
-        WHERE finished_at IS NOT NULL AND finished_at != ''
-        ORDER BY finished_at DESC
-        LIMIT 1
-        """
-    ).fetchone()
+def last_finished_run_at(
+    conn: sqlite3.Connection,
+    *,
+    live_only: bool = True,
+) -> Optional[str]:
+    """
+    Last finished_at used for freshness windows.
+    Default live_only=True so dry-runs do not advance the scout window.
+    """
+    if live_only:
+        row = conn.execute(
+            """
+            SELECT finished_at FROM runs
+            WHERE finished_at IS NOT NULL AND finished_at != ''
+              AND mode = 'live'
+            ORDER BY finished_at DESC
+            LIMIT 1
+            """
+        ).fetchone()
+    else:
+        row = conn.execute(
+            """
+            SELECT finished_at FROM runs
+            WHERE finished_at IS NOT NULL AND finished_at != ''
+            ORDER BY finished_at DESC
+            LIMIT 1
+            """
+        ).fetchone()
     return row["finished_at"] if row else None
+
+
+def quarantine_candidate(
+    conn: sqlite3.Connection,
+    *,
+    company: str = "",
+    exact_role_title: str = "",
+    location: str = "",
+    term: str = "",
+    official_url: str = "",
+    source_name: str = "",
+    reason: str,
+    detail: str = "",
+    raw_snapshot: str = "",
+) -> int:
+    cur = conn.execute(
+        """
+        INSERT INTO quarantine
+            (seen_at, company, exact_role_title, location, term, official_url,
+             source_name, reason, detail, raw_snapshot, status)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'open')
+        """,
+        (
+            utc_now_iso(),
+            company,
+            exact_role_title,
+            location,
+            term,
+            official_url,
+            source_name,
+            reason,
+            detail,
+            (raw_snapshot or "")[:8000],
+        ),
+    )
+    return int(cur.lastrowid)
 
 
 def start_run(

@@ -12,13 +12,15 @@ from .db import (
     find_by_requisition,
     insert_job,
     merge_source_names,
+    quarantine_candidate,
     touch_seen_url,
     update_job,
-    utc_now_iso,
 )
 from .freshness import label_freshness, window_start_for_run
 from .models import CandidateJob, JobRecord, UpsertResult
 from .score import compute_priority_score
+from .urls import apply_url_score
+from .watchlist import is_watchlist_company
 
 
 def upsert_candidates(
@@ -41,14 +43,30 @@ def upsert_candidates(
     for cand in candidates:
         match = _find_match(conn, cand)
         if match is None:
-            fuzzy = _fuzzy_warning(cand, existing_all)
-            if fuzzy:
-                result.fuzzy_warnings.append(fuzzy)
+            conf, fuzzy_id, fuzzy_msg = _fuzzy_confidence(cand, existing_all)
+            if fuzzy_msg:
+                result.fuzzy_warnings.append(fuzzy_msg)
+            if conf == "likely_duplicate" and fuzzy_id:
+                # Do not auto-drop — insert but flag + quarantine for review
+                quarantine_candidate(
+                    conn,
+                    company=cand.company,
+                    exact_role_title=cand.exact_role_title,
+                    location=cand.location,
+                    term=cand.term,
+                    official_url=cand.official_url or cand.source_url,
+                    source_name=cand.source_name,
+                    reason="likely_duplicate",
+                    detail=fuzzy_msg or "",
+                    raw_snapshot=cand.raw_text_snapshot,
+                )
+                result.quarantined += 1
 
             posting_iso = cand.posting_date.replace(microsecond=0).isoformat() if cand.posting_date else None
-            freshness = label_freshness(cand.posting_date, now, window_start)
+            freshness = label_freshness(cand.posting_date, now, window_start, first_found_at=now)
             source_names = cand.source_name or ""
             agent_only = 1 if (cand.source_name or "").startswith("Cursor Agent") else 0
+            tier = _alert_tier(cand, freshness)
 
             fields = {
                 "company": cand.company,
@@ -83,6 +101,10 @@ def upsert_candidates(
                 "raw_text_snapshot": cand.raw_text_snapshot[:20000],
                 "application_deadline": cand.application_deadline,
                 "agent_only": agent_only,
+                "verify_fail_count": 0,
+                "duplicate_of_id": fuzzy_id if conf in {"likely_duplicate", "possible_duplicate"} else None,
+                "duplicate_confidence": conf,
+                "alert_tier": tier,
             }
             job = insert_job(conn, fields)
             score = compute_priority_score(job, now)
@@ -106,14 +128,14 @@ def upsert_candidates(
                 "last_seen_at": now_iso,
                 "source_seen_at": now_iso,
                 "source_names": merge_source_names(match.source_names, cand.source_name),
+                "duplicate_confidence": "exact_duplicate",
             }
-            # Prefer better official URL / posting date
-            if cand.official_url and (
-                not match.official_url or "simplify.jobs" in (match.official_url or "")
-            ):
-                if "simplify.jobs" not in cand.official_url or not match.official_url:
-                    updates["official_url"] = cand.official_url
-                    updates["canonical_url"] = cand.canonical_url or match.canonical_url
+            # Official ATS URL always wins over aggregator / worse scores
+            preferred = _prefer_url(match.official_url, cand.official_url, cand.source_url)
+            if preferred and preferred != (match.official_url or ""):
+                updates["official_url"] = preferred
+                if cand.canonical_url:
+                    updates["canonical_url"] = cand.canonical_url
             if cand.posting_date and not match.posting_date:
                 updates["posting_date"] = cand.posting_date.replace(microsecond=0).isoformat()
                 updates["posting_date_precision"] = cand.posting_date_precision
@@ -126,6 +148,15 @@ def upsert_candidates(
             if match.agent_only and cand.source_name and not cand.source_name.startswith("Cursor Agent"):
                 updates["agent_only"] = 0
 
+            # Refresh alert tier from latest freshness if we have posting date
+            pd = None
+            if cand.posting_date:
+                pd = cand.posting_date
+            freshness = label_freshness(pd, now, window_start, first_found_at=now)
+            if cand.posting_date or not match.freshness_label:
+                updates["freshness_label"] = match.freshness_label or freshness
+            updates["alert_tier"] = _alert_tier(cand, updates.get("freshness_label") or match.freshness_label)
+
             job = update_job(conn, match.id, updates)
             score = compute_priority_score(job, now)
             job = update_job(conn, job.id, {"priority_score": score})
@@ -134,6 +165,31 @@ def upsert_candidates(
             result.updated.append(job)
 
     return result
+
+
+def _prefer_url(*urls: str) -> str:
+    scored = [(apply_url_score(u), u) for u in urls if u]
+    if not scored:
+        return ""
+    scored.sort(key=lambda x: x[0])
+    return scored[0][1]
+
+
+def _alert_tier(cand: CandidateJob, freshness: str) -> str:
+    watch = is_watchlist_company(cand.company) or "watchlist" in (cand.notes or "")
+    title = (cand.exact_role_title or "").lower()
+    unclear = not (cand.term or "").strip() or "unclear" in (cand.eligibility_notes or "").lower()
+    if unclear:
+        return "needs_manual_verification"
+    if freshness == "Late discovery":
+        return "late_discovery"
+    if watch and freshness == "Fresh":
+        return "apply_now"
+    if freshness == "Fresh" or watch:
+        return "good_lead"
+    if any(k in title for k in ("software engineer", "software developer", "swe")):
+        return "good_lead"
+    return "good_lead"
 
 
 def _find_match(conn: sqlite3.Connection, cand: CandidateJob) -> JobRecord | None:
@@ -145,7 +201,6 @@ def _find_match(conn: sqlite3.Connection, cand: CandidateJob) -> JobRecord | Non
         hit = find_by_canonical_url(conn, cand.canonical_url)
         if hit:
             return hit
-    # Fingerprint uses exact title (not broad normalized type) to avoid over-merging
     return find_by_fingerprint(
         conn,
         cand.company,
@@ -155,7 +210,14 @@ def _find_match(conn: sqlite3.Connection, cand: CandidateJob) -> JobRecord | Non
     )
 
 
-def _fuzzy_warning(cand: CandidateJob, existing: list[dict]) -> str | None:
+def _fuzzy_confidence(
+    cand: CandidateJob, existing: list[dict]
+) -> tuple[str, int | None, str | None]:
+    """
+    Returns (confidence, other_id, message).
+    exact is handled by _find_match; here we only score fuzzy neighbors.
+    Never auto-drops — caller inserts with flags.
+    """
     target = f"{cand.company} {cand.exact_role_title} {cand.location} {cand.term}".lower()
     best_score = 0
     best = None
@@ -165,10 +227,17 @@ def _fuzzy_warning(cand: CandidateJob, existing: list[dict]) -> str | None:
         if score > best_score:
             best_score = score
             best = row
-    if best and best_score >= 92:
-        return (
-            f"Likely duplicate (fuzzy {best_score}): "
-            f"'{cand.company} — {cand.exact_role_title}' ~ "
-            f"id={best['id']} '{best['company']} — {best['exact_role_title']}'"
-        )
-    return None
+    if not best:
+        return "", None, None
+    if best_score >= 96:
+        conf = "likely_duplicate"
+    elif best_score >= 90:
+        conf = "possible_duplicate"
+    else:
+        return "", None, None
+    msg = (
+        f"{conf.replace('_', ' ').title()} (fuzzy {best_score}): "
+        f"'{cand.company} — {cand.exact_role_title}' ~ "
+        f"id={best['id']} '{best['company']} — {best['exact_role_title']}'"
+    )
+    return conf, int(best["id"]), msg
