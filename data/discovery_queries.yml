@@ -1,5 +1,4 @@
-# Layer 2 discovery targets — search / browse only.
-# LinkedIn, Indeed, Handshake, and Google are discovery channels.
+# Layer 2 discovery — search / browse only.
 # Persist only official apply URLs (Greenhouse, Lever, Ashby, Workday, Rippling, etc.).
 
 term_focus: Winter 2027
@@ -7,39 +6,62 @@ regions:
   - Canada
   - United States
 
-queries:
-  - Winter 2027 software engineer intern
-  - Winter 2027 software engineering co-op
-  - Spring 2027 software engineer intern
-  - January 2027 software engineer intern
-  - January 2027 software co-op Canada
-  - Winter 2027 backend engineer intern
-  - Winter 2027 frontend engineer intern
-  - Winter 2027 full stack intern
-  - Winter 2027 platform engineer intern
-  - Winter 2027 infrastructure engineer intern
-  - Winter 2027 machine learning engineer intern
-  - Winter 2027 data engineer intern
-  - off-cycle 2027 software engineer intern
-  - 'Winter 2027 OR Spring 2027 software intern Greenhouse OR Ashby OR Lever'
+# Minimum portals the Automation must touch every run (see DISCOVERY_WORKFLOW.md).
+# LinkedIn is NOT required for Cloud Agents — login/captcha almost always blocks.
+portal_checklist:
+  required:
+    - indeed          # primary portal (usually no login)
+    - google_ats      # or duckduckgo_ats if Google captchas
+  optional:
+    - duckduckgo_ats  # use when Google captchas
+    - google          # general web
+    - linkedin_jobs   # skip on Cloud Automations unless already logged in
+    - handshake       # school SSO — usually skip
+
+# Exact keyword searches (quoted phrases).
+exact_queries:
+  - '"Winter 2027" "Software Engineer Intern"'
+  - '"Spring 2027" "Software Engineering Intern"'
+  - '"January 2027" "Software Intern"'
+  - '"software co-op" "Spring 2027"'
+  - '"Winter 2027" "Software Engineering Co-op"'
+  - '"Winter 2027" "Software Engineer Intern" Canada'
+  - '"Spring 2027" "Software Engineer Intern" Canada'
+  - '"Winter 2027" "Backend" Intern'
+  - '"Winter 2027" "Full Stack" Intern'
+  - '"Winter 2027" "Platform" Intern'
+  - '"Winter 2027" "Machine Learning" Intern'
+  - '"Winter 2027" "Data Engineer" Intern'
+
+# ATS-specific Google/DuckDuckGo queries (official boards as discovery).
+ats_queries:
+  - 'site:jobs.ashbyhq.com "Winter 2027" Software'
+  - 'site:jobs.ashbyhq.com "Spring 2027" Software Intern'
+  - 'site:boards.greenhouse.io "Winter 2027" "Software Intern"'
+  - 'site:boards.greenhouse.io "Spring 2027" "Software Intern"'
+  - 'site:job-boards.greenhouse.io "Winter 2027" Intern'
+  - 'site:jobs.lever.co "Winter 2027" Software'
+  - 'site:jobs.lever.co "Spring 2027" "Software Intern"'
+  - 'site:myworkdayjobs.com "Spring 2027" Software'
+  - 'site:myworkdayjobs.com "Winter 2027" Intern'
+  - 'site:ats.rippling.com "Winter 2027" "Software Engineer Intern"'
+  - 'site:ats.rippling.com "Spring 2027" Intern Software'
 
 # URL templates — `{q}` is urllib-quoted query text
 search_url_templates:
   linkedin_jobs: "https://www.linkedin.com/jobs/search/?keywords={q}&f_TPR=r604800"
-  indeed: "https://www.indeed.com/jobs?q={q}&fromage=7"
+  indeed: "https://www.indeed.com/jobs?q={q}&fromage=14"
   handshake: "https://app.joinhandshake.com/stu/postings?query={q}"
   google: "https://www.google.com/search?q={q}"
-  google_ats: "https://www.google.com/search?q={q}+(site%3Aboards.greenhouse.io+OR+site%3Ajobs.ashbyhq.com+OR+site%3Ajobs.lever.co)"
 
-# Optional boards not already covered by data/companies.yml Layer 1.
-# Used only with: python scripts/agent_discover.py --scan-extra-ats
+# Used for ats_queries (and as Google captcha fallback)
+ats_search_templates:
+  google_ats: "https://www.google.com/search?q={q}"
+  duckduckgo_ats: "https://html.duckduckgo.com/html/?q={q}"
+
+# Optional boards not already in data/companies.yml Layer 1.
+# python scripts/agent_discover.py --scan-extra-ats
 extra_ats:
-  - name: Snowflake
-    ats: greenhouse
-    token: snowflake
-  - name: Shopify
-    ats: greenhouse
-    token: shopify
   - name: HubSpot
     ats: greenhouse
     token: hubspot

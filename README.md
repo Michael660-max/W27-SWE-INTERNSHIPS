@@ -24,8 +24,8 @@ Every midday and evening scout runs **both** layers, then commits updates:
 1. **Layer 1 — scrape**  
    Simplify off-season list, GitHub internship lists, and company ATS boards (`data/companies.yml` + watchlist). Dedupes into SQLite, verifies apply links, refreshes [LISTINGS.md](LISTINGS.md).
 
-2. **Layer 2 — discover**  
-   Browser search (LinkedIn / Indeed / Handshake / Google + ATS sites) for Winter/Spring 2027 SWE intern/co-op roles. Resolves **official** apply URLs only (Greenhouse, Lever, Ashby, Workday, Rippling, etc.) and merges them into the DB. Does **not** re-scrape the GitHub lists.
+2. **Layer 2 — discover (hardened)**  
+   Must browse **Indeed + ATS `site:` search** (DuckDuckGo if Google captchas). LinkedIn is skipped on Cloud Automations (login always blocks). Store **official** apply URLs only.
 
 3. **Notify**  
    Discord only for **newly inserted** Open roles with a real apply URL. Short summary with tiers (apply now / good lead / late discovery / needs verification) + link to LISTINGS. No alert when nothing new.

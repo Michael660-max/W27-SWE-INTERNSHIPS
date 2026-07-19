@@ -27,9 +27,9 @@ Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Pe
 4. **Layer 2 browser discovery** (required every weekday run):
    - Follow [DISCOVERY_WORKFLOW.md](DISCOVERY_WORKFLOW.md).
    - Open latest `data/agent_findings/_search_pack_*.md`.
-   - Browse LinkedIn / Indeed / Handshake / Google as discovery only.
+   - Browse **Indeed + ATS site search** (DuckDuckGo if Google captchas). **Skip LinkedIn on Cloud Automations.**
    - Resolve official apply URLs only; never store aggregator URLs as `official_url`.
-   - Write `data/agent_findings/YYYYMMDDTHHMMSSZ.json`.
+   - Write `data/agent_findings/YYYYMMDDTHHMMSSZ.json` with `portals_attempted`.
 5. Ingest after writing findings (if not already covered):
    ```bash
    python src/main.py --ingest-findings
