@@ -1,58 +1,57 @@
 # Cursor Automation prompt — W27 twice-daily scout
 
-Create **two** identical Automations (same instructions; different cron). Each run must execute **both Layer 1 and Layer 2**.
+Two Automations; each runs **Layer 1 + Layer 2**. Discord only on **evening**, after discovery.
 
 ## Triggers (America/Toronto)
 
-| Name | Local time | Cron while EDT | Cron while EST |
-|------|------------|----------------|----------------|
-| W27 Midday Scout | Weekdays 12:30 | `30 16 * * 1-5` | `30 17 * * 1-5` |
-| W27 Evening Scout | Weekdays 18:00 | `0 22 * * 1-5` | `0 23 * * 1-5` |
+| Name | Local time | Cron (EDT) | Cron (EST) | Discord |
+|------|------------|------------|------------|---------|
+| W27 Midday Scout | Weekdays 12:30 | `30 16 * * 1-5` | `30 17 * * 1-5` | No |
+| W27 Evening Scout | Weekdays 18:00 | `0 22 * * 1-5` | `0 23 * * 1-5` | Daily digest + @you |
 
-Secret: `DISCORD_WEBHOOK_URL` (never put in the prompt).
+**Secrets:** `DISCORD_WEBHOOK_URL`, `DISCORD_USER_ID` (numeric Discord user id). Never put secrets in the prompt.
 
-## Instructions (paste into both Automations)
+Optional env: `SCOUT_SLOT=midday` or `evening` (logging only).
+
+## Midday instructions
 
 ```
-You are the W27 Winter/Spring 2027 SWE internship scout for this repo.
+You are the W27 Winter/Spring 2027 SWE internship scout for Michael660-max/W27-SWE-INTERNSHIPS on main.
 
-Schedule context: this Automation runs twice on weekdays (12:30 and 18:00 America/Toronto). Every run must complete BOTH layers — do not skip Layer 2.
+MIDDAY (12:30 America/Toronto). Both layers. Do NOT send Discord.
 
-## Layer 1 + orchestration
 1. Checkout main and pull latest.
 2. pip install -r requirements.txt
-3. Run: bash scripts/run_scout.sh
-   - This scrapes GitHub lists + Simplify + companies.yml ATS once (Layer 1).
-   - Emits a Layer 2 search pack via scripts/agent_discover.py.
-   - Ingests any existing agent_findings JSON.
-   - Uses --dry-run automatically if DISCORD_WEBHOOK_URL is unset (still records runs).
-4. Do NOT re-fetch Simplify / GitHub internship READMEs as a separate discovery scrape.
-
-## Layer 2 — browser discovery (required every run)
-Follow docs/DISCOVERY_WORKFLOW.md and data/discovery_queries.yml / the latest data/agent_findings/_search_pack_*.md:
-1. Browse LinkedIn Jobs, Indeed, Handshake, and Google using the search-pack URLs (discovery only).
-2. For each Winter/Spring 2027 SWE intern/co-op candidate (Canada/US), open the official apply page (Greenhouse, Lever, Ashby, Workday, Rippling, or company ATS).
-3. Never store LinkedIn/Indeed/Handshake URLs as official_url.
-4. Write data/agent_findings/YYYYMMDDTHHMMSSZ.json with company, title, location, term, posting_date if known, official_url (apply link), eligibility flags, and notes including the discovery channel (e.g. linkedin_search).
-5. Skip roles without a reliable apply URL.
-6. Ingest: python src/main.py --ingest-findings
-   (omit --dry-run when DISCORD_WEBHOOK_URL is set so new valid inserts alert Discord).
-
-## Notifications (automatic)
-Discord alerts only when newly inserted Open roles with a real apply URL exist. Message is a short summary with tier counts (apply now / good lead / late discovery / needs verification) plus LISTINGS.md. Freshness window continues from the last **live** finished run only — dry-runs must not advance it.
-
-## Finish
-- Confirm data/jobs.sqlite, data/jobs.csv, LISTINGS.md updated.
-- Commit and push tracker outputs only (never secrets):
-  git add data/jobs.sqlite data/jobs.csv LISTINGS.md data/agent_findings data/notifications
-  git commit -m "chore(data): update internship DB from scheduled scout"
-  git push origin HEAD
-- Zero new roles is success. Do not invent jobs.
+3. bash scripts/run_scout.sh
+4. Layer 2 browse: open latest data/agent_findings/_search_pack_*.md; search Winter/Spring 2027 SWE intern/co-op (Canada/US); official apply URLs only; write data/agent_findings/YYYYMMDDTHHMMSSZ.json; python src/main.py --ingest-findings
+5. Do not re-scrape GitHub/Simplify as discovery.
+6. Commit/push data/jobs.sqlite data/jobs.csv LISTINGS.md data/agent_findings data/coverage
+7. Zero new roles is OK. Do not invent jobs.
 ```
+
+## Evening instructions
+
+```
+You are the W27 Winter/Spring 2027 SWE internship scout for Michael660-max/W27-SWE-INTERNSHIPS on main.
+
+EVENING (18:00 America/Toronto). Both layers, then ONE Discord digest that @mentions the user.
+
+1. Checkout main and pull latest.
+2. pip install -r requirements.txt
+3. bash scripts/run_scout.sh
+4. Layer 2 browse: open latest _search_pack_*.md; Winter/Spring 2027 SWE intern/co-op; official apply URLs only; write findings JSON; python src/main.py --ingest-findings
+5. Daily digest (required): python src/main.py --daily-digest
+   Aggregates new Open+apply roles since last digest (midday + evening), posts summary to Discord, tags DISCORD_USER_ID.
+6. Do not re-scrape GitHub/Simplify as discovery.
+7. Commit/push data/jobs.sqlite data/jobs.csv LISTINGS.md data/agent_findings data/coverage
+8. Zero new roles is OK — digest still pings with 0. Do not invent jobs.
+```
+
+## Discord behavior
+
+- Midday: never Discord.
+- Evening: `python src/main.py --daily-digest` once after ingest — tier summary + LISTINGS + `@` you.
 
 ## Tools / permissions
 
-- Shell / terminal (pip, python, git)
-- Browser (Layer 2 LinkedIn / job boards / official ATS)
-- Network (scrapers + Discord webhook)
-- Git write on this repo
+- Shell, browser, network, git write on this repo

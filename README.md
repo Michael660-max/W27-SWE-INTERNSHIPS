@@ -4,46 +4,52 @@ Automated weekday scout for Winter/Spring 2027 software internships and co-ops (
 
 **Board:** [LISTINGS.md](LISTINGS.md) (Winter 2027 Source + Apply table)  
 **Database:** `data/jobs.sqlite` (full history)  
-**Alerts:** Discord summary when new valid roles are inserted
+**Alerts:** One Discord digest at the **evening** cron (not per-run)
 
 ## Cron jobs (America/Toronto)
 
-| Automation | When | Cron (EDT) | Cron (EST) |
-|------------|------|------------|------------|
-| **W27 Midday Scout** | Weekdays **12:30** | `30 16 * * 1-5` | `30 17 * * 1-5` |
-| **W27 Evening Scout** | Weekdays **18:00** | `0 22 * * 1-5` | `0 23 * * 1-5` |
+| Automation | When | Cron (EDT) | Cron (EST) | Discord |
+|------------|------|------------|------------|---------|
+| **W27 Midday Scout** | Weekdays **12:30** | `30 16 * * 1-5` | `30 17 * * 1-5` | No — scrapes/discovers only |
+| **W27 Evening Scout** | Weekdays **18:00** | `0 22 * * 1-5` | `0 23 * * 1-5` | **Yes** — daily digest + @you |
 
 After daylight saving ends, use the EST column (+1 hour UTC).
 
-Both jobs run on `main` in this repo. Secret required: `DISCORD_WEBHOOK_URL`.
+**Secrets (Cloud Agent):**
+
+| Secret | Purpose |
+|--------|---------|
+| `DISCORD_WEBHOOK_URL` | Incoming webhook |
+| `DISCORD_USER_ID` | Your numeric Discord user id (Developer Mode → Copy User ID) so the evening digest `@` mentions you |
+
+Evening automation must set env `SCOUT_SLOT=evening`. Midday can omit it (defaults to midday).
 
 ## What each run does
 
-Every midday and evening scout runs **both** layers, then commits updates:
+Both crons run **Layer 1 + Layer 2**, then commit:
 
 1. **Layer 1 — scrape**  
-   Simplify off-season list, GitHub internship lists, and company ATS boards (`data/companies.yml` + watchlist). Dedupes into SQLite, verifies apply links, refreshes [LISTINGS.md](LISTINGS.md).
+   Simplify, GitHub lists, company ATS (`companies.yml` + watchlist) → SQLite → [LISTINGS.md](LISTINGS.md).
 
 2. **Layer 2 — discover**  
-   Browser search (LinkedIn / Indeed / Handshake / Google + ATS sites) for Winter/Spring 2027 SWE intern/co-op roles. Resolves **official** apply URLs only (Greenhouse, Lever, Ashby, Workday, Rippling, etc.) and merges them into the DB. Does **not** re-scrape the GitHub lists.
+   Browser search for Winter/Spring 2027 SWE intern/co-op; store official apply URLs only.
 
-3. **Notify**  
-   Discord only for **newly inserted** Open roles with a real apply URL. Short summary with tiers (apply now / good lead / late discovery / needs verification) + link to LISTINGS. No alert when nothing new.
+3. **Discord (evening only)**  
+   After Layer 2, evening runs `python src/main.py --daily-digest`: aggregates new Open roles with apply links since the last digest (midday + evening), posts a short tier summary, **@mentions you** (`DISCORD_USER_ID`), and links LISTINGS. Midday never pings Discord.
 
 4. **Continue from last live run**  
-   Fresh vs Late labeling uses the last successful **live** scout finish time (dry-runs don’t move the window).
+   Fresh vs Late uses the last live scout finish time.
 
 5. **Commit**  
-   Pushes updated `data/`, `LISTINGS.md`, findings, and coverage logs back to the repo.
+   Pushes `data/`, LISTINGS, findings, coverage logs.
 
 ## Where to look
 
 | Output | Purpose |
 |--------|---------|
-| [LISTINGS.md](LISTINGS.md) | Human-readable Winter 2027 board |
-| Discord | “N new roles this run” + tier counts |
+| [LISTINGS.md](LISTINGS.md) | Winter 2027 board |
+| Discord (18:00) | Daily digest + @mention |
 | `data/jobs.sqlite` | Source of truth |
-| `data/coverage/` | Which scrapers failed / returned zero |
-| `data/quarantine` (in SQLite) | Unclear / failed / likely-duplicate candidates |
+| `data/coverage/` | Scraper health |
 
-Automation prompt and schedule details: [docs/AUTOMATION_PROMPT.md](docs/AUTOMATION_PROMPT.md).
+Automation prompt: [docs/AUTOMATION_PROMPT.md](docs/AUTOMATION_PROMPT.md).

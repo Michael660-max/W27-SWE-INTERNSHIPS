@@ -120,6 +120,14 @@ CREATE TABLE IF NOT EXISTS source_coverage (
     recorded_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS digests (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sent_at TEXT NOT NULL,
+    job_count INTEGER DEFAULT 0,
+    mode TEXT DEFAULT 'live',
+    notes TEXT DEFAULT ''
+);
+
 CREATE INDEX IF NOT EXISTS idx_jobs_company ON jobs(company);
 CREATE INDEX IF NOT EXISTS idx_jobs_requisition ON jobs(requisition_id);
 CREATE INDEX IF NOT EXISTS idx_jobs_canonical ON jobs(canonical_url);
@@ -355,6 +363,35 @@ def last_finished_run_at(
             """
         ).fetchone()
     return row["finished_at"] if row else None
+
+
+def last_digest_at(conn: sqlite3.Connection) -> Optional[str]:
+    row = conn.execute(
+        """
+        SELECT sent_at FROM digests
+        WHERE sent_at IS NOT NULL AND sent_at != ''
+        ORDER BY sent_at DESC
+        LIMIT 1
+        """
+    ).fetchone()
+    return row["sent_at"] if row else None
+
+
+def record_digest(
+    conn: sqlite3.Connection,
+    *,
+    job_count: int,
+    mode: str = "live",
+    notes: str = "",
+) -> int:
+    cur = conn.execute(
+        """
+        INSERT INTO digests (sent_at, job_count, mode, notes)
+        VALUES (?, ?, ?, ?)
+        """,
+        (utc_now_iso(), job_count, mode, notes),
+    )
+    return int(cur.lastrowid)
 
 
 def quarantine_candidate(

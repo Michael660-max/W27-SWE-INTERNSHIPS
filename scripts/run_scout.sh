@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Full weekday scout: Layer 1 once → Layer 2 search pack → ingest findings.
-# Cursor Automations should browse the search pack / DISCOVERY_WORKFLOW after step 2
-# and write data/agent_findings/<ts>.json before step 3 (or between steps).
+# Discord is never sent here. Evening Automation must call:
+#   python src/main.py --daily-digest
+# AFTER browser discovery + ingest (aggregates midday+evening, @mentions you).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
@@ -13,21 +14,12 @@ fi
 
 python -m pip install -q -r requirements.txt
 
-run_main() {
-  if [[ -z "${DISCORD_WEBHOOK_URL:-}" ]]; then
-    python src/main.py --dry-run "$@"
-  else
-    python src/main.py "$@"
-  fi
-}
-
-if [[ -z "${DISCORD_WEBHOOK_URL:-}" ]]; then
-  echo "DISCORD_WEBHOOK_URL unset — using --dry-run (skip Discord; still record runs)"
-fi
+SLOT="${SCOUT_SLOT:-midday}"
+echo "Scout slot: ${SLOT} (Discord only via evening --daily-digest after Layer 2)"
 
 # 1) Layer 1: GitHub lists + Simplify + company ATS + any pending findings
 echo "=== Layer 1: scrape + upsert ==="
-run_main
+python src/main.py
 
 # 2) Layer 2 helper: search pack only (no GitHub re-scrape)
 echo "=== Layer 2: search pack ==="
@@ -38,6 +30,9 @@ python scripts/agent_discover.py
 
 # 3) Ingest any new agent findings + refresh LISTINGS (no Layer 1 re-scrape)
 echo "=== Ingest findings ==="
-run_main --ingest-findings
+python src/main.py --ingest-findings
 
 echo "Scout complete. DB: data/jobs.sqlite CSV: data/jobs.csv LISTINGS.md"
+if [[ "${SLOT}" == "evening" ]]; then
+  echo "Next (Automation): finish Layer 2 browse → ingest → python src/main.py --daily-digest"
+fi

@@ -18,7 +18,6 @@ from src.db import (  # noqa: E402
     connect,
     ensure_db,
     finish_run,
-    get_job_by_id,
     quarantine_candidate,
     start_run,
 )
@@ -27,7 +26,7 @@ from src.export_csv import export_csv  # noqa: E402
 from src.export_listings import export_listings  # noqa: E402
 from src.freshness import window_start_for_run  # noqa: E402
 from src.models import CandidateJob  # noqa: E402
-from src.notify import notify_new_jobs  # noqa: E402
+from src.notify import notify_new_jobs, send_daily_digest  # noqa: E402
 from src.score import sort_jobs  # noqa: E402
 from src.sources.company_ats import collect_company_ats  # noqa: E402
 from src.sources.github_lists import collect_github_lists  # noqa: E402
@@ -172,21 +171,14 @@ def run_pipeline(
                         },
                     )
 
-        inserted_fresh = []
-        for job in result.inserted:
-            latest = get_job_by_id(conn, job.id)
-            if latest:
-                inserted_fresh.append(latest)
-        notify_path = notify_new_jobs(conn, inserted_fresh, dry_run=dry_run)
-        if notify_path:
-            logger.info("Wrote notification %s", notify_path)
-        elif result.inserted:
+        # Discord is NOT sent here — evening scout runs --daily-digest instead.
+        if result.inserted:
             logger.info(
-                "Inserted %d role(s) but none notifiable (need Open + apply URL) — skipping Discord",
+                "Inserted %d role(s); Discord deferred to evening daily digest",
                 len(result.inserted),
             )
         else:
-            logger.info("No new roles — skipping Discord")
+            logger.info("No new roles this pipeline step")
 
         persist_coverage(conn, run_id, summary)
         finish_run(
@@ -219,6 +211,8 @@ def run_notify_test(n: int, dry_run: bool = False) -> int:
             prefix="**W27 notify-test** (not necessarily new inserts)",
             style="table",
             only_valid=False,
+            send=True,
+            mention=False,
         )
         if path:
             logger.info("Wrote notification %s", path)
@@ -230,7 +224,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="Skip Discord; still scrape/upsert/export/record dry_run row — does NOT advance freshness window",
+        help="Record dry_run row and do NOT advance freshness window; digests won't POST",
     )
     parser.add_argument("--skip-ats", action="store_true", help="Skip company ATS boards")
     parser.add_argument("--skip-verify", action="store_true", help="Skip HTTP verification")
@@ -246,6 +240,11 @@ def main(argv: list[str] | None = None) -> int:
         "--export-listings-only",
         action="store_true",
         help="Rebuild LISTINGS.md from SQLite only",
+    )
+    parser.add_argument(
+        "--daily-digest",
+        action="store_true",
+        help="Evening only: Discord aggregate since last digest and @mention DISCORD_USER_ID",
     )
     parser.add_argument(
         "--notify-test",
@@ -267,6 +266,14 @@ def main(argv: list[str] | None = None) -> int:
         ensure_db()
         path = export_listings()
         print(path)
+        return 0
+
+    if args.daily_digest:
+        ensure_db()
+        with connect() as conn:
+            path = send_daily_digest(conn, dry_run=args.dry_run)
+            logger.info("Daily digest %s", path or "(sent/empty)")
+        print("Daily digest complete")
         return 0
 
     if args.notify_test is not None:
