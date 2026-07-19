@@ -1,6 +1,31 @@
 # Manual company ATS / career board URLs for deterministic scraping.
-# Prefer Greenhouse JSON API tokens, Lever JSON, and Ashby posting API.
+# Prefer Greenhouse JSON API, Lever JSON, and Ashby posting API.
+# Only include boards verified to return HTTP 200 with open jobs.
 companies:
+  # AI / frontier labs
+  - name: OpenAI
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/openai
+  - name: Anthropic
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+  - name: Google DeepMind
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/deepmind/jobs
+  - name: Scale AI
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/scaleai/jobs
+  - name: Perplexity
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/perplexity
+  - name: Cohere
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/cohere
+  - name: Cursor
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/cursor
+
+  # Infra / cloud / data
   - name: Stripe
     ats: greenhouse
     board_url: https://boards-api.greenhouse.io/v1/boards/stripe/jobs
@@ -10,39 +35,174 @@ companies:
   - name: Datadog
     ats: greenhouse
     board_url: https://boards-api.greenhouse.io/v1/boards/datadog/jobs
-  - name: Figma
-    ats: greenhouse
-    board_url: https://boards-api.greenhouse.io/v1/boards/figma/jobs
-  - name: Coinbase
-    ats: greenhouse
-    board_url: https://boards-api.greenhouse.io/v1/boards/coinbase/jobs
-  - name: Dropbox
-    ats: greenhouse
-    board_url: https://boards-api.greenhouse.io/v1/boards/dropbox/jobs
-  - name: Airbnb
-    ats: greenhouse
-    board_url: https://boards-api.greenhouse.io/v1/boards/airbnb/jobs
-  - name: Roblox
-    ats: greenhouse
-    board_url: https://boards-api.greenhouse.io/v1/boards/roblox/jobs
   - name: Databricks
     ats: greenhouse
     board_url: https://boards-api.greenhouse.io/v1/boards/databricks/jobs
-  - name: Affirm
+  - name: MongoDB
     ats: greenhouse
-    board_url: https://boards-api.greenhouse.io/v1/boards/affirm/jobs
+    board_url: https://boards-api.greenhouse.io/v1/boards/mongodb/jobs
+  - name: Elastic
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/elastic/jobs
+  - name: Okta
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/okta/jobs
+  - name: Twilio
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/twilio/jobs
+  - name: Vercel
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/vercel/jobs
+  - name: Supabase
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/supabase
+  - name: Sentry
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/sentry
+  - name: Box
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/boxinc/jobs
+  - name: Dropbox
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/dropbox/jobs
+
+  # Consumer / product / social
+  - name: Airbnb
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/airbnb/jobs
+  - name: LinkedIn
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/linkedin/jobs
+  - name: Pinterest
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/pinterest/jobs
+  - name: Reddit
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/reddit/jobs
+  - name: Discord
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/discord/jobs
   - name: Twitch
     ats: greenhouse
     board_url: https://boards-api.greenhouse.io/v1/boards/twitch/jobs
-  - name: Jane Street
-    ats: greenhouse
-    board_url: https://boards-api.greenhouse.io/v1/boards/janestreet/jobs
-  - name: Palantir
+  - name: Spotify
     ats: lever
-    board_url: https://api.lever.co/v0/postings/palantir?mode=json
-  - name: Ramp
-    ats: ashby
-    board_url: https://api.ashbyhq.com/posting-api/job-board/ramp
+    board_url: https://api.lever.co/v0/postings/spotify?mode=json
+  - name: Roblox
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/roblox/jobs
+  - name: Epic Games
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/epicgames/jobs
+  - name: Duolingo
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/duolingo/jobs
+  - name: Coursera
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/coursera/jobs
+  - name: Khan Academy
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/khanacademy/jobs
+  - name: Lyft
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/lyft/jobs
+  - name: DoorDash
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/doordashusa/jobs
+  - name: Instacart
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/instacart/jobs
+
+  # Productivity / design / collaboration
+  - name: Figma
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/figma/jobs
   - name: Notion
     ats: ashby
     board_url: https://api.ashbyhq.com/posting-api/job-board/notion
+  - name: Asana
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/asana/jobs
+  - name: Airtable
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/airtable/jobs
+  - name: Linear
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/linear
+
+  # Fintech
+  - name: Coinbase
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/coinbase/jobs
+  - name: Robinhood
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/robinhood/jobs
+  - name: Affirm
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/affirm/jobs
+  - name: Brex
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/brex/jobs
+  - name: Ramp
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/ramp
+  - name: Plaid
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/plaid
+  - name: Chime
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/chime/jobs
+  - name: Block
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/block/jobs
+  - name: Wealthsimple
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/wealthsimple
+
+  # Quant / trading
+  - name: Jane Street
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/janestreet/jobs
+  - name: Jump Trading
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/jumptrading/jobs
+  - name: Optiver
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/optiverus/jobs
+  - name: IMC
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/imc/jobs
+  - name: DRW
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/drweng/jobs
+  - name: Akuna Capital
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/akunacapital/jobs
+
+  # Defense / autonomy / space
+  - name: Palantir
+    ats: lever
+    board_url: https://api.lever.co/v0/postings/palantir?mode=json
+  - name: Anduril
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/andurilindustries/jobs
+  - name: SpaceX
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/spacex/jobs
+  - name: Waymo
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/waymo/jobs
+  - name: Aurora
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/aurorainnovation/jobs
+  - name: Nuro
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/nuro/jobs
+
+  # Canada / security / other high-signal
+  - name: 1Password
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/1password
+  - name: Hootsuite
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/hootsuite/jobs
