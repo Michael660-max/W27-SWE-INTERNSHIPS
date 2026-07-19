@@ -2,7 +2,7 @@
 
 Automated weekday scout for Winter/Spring 2027 software internships and co-ops (Canada + US). You don’t need to run anything locally — **Cursor Automations** handle it.
 
-**Board:** [LISTINGS.md](LISTINGS.md) (Winter 2027 Source + Apply table)  
+**Board:** [LISTINGS.md](LISTINGS.md) (Winter/Spring 2027 Source + Apply table)  
 **Database:** `data/jobs.sqlite` (full history)  
 **Alerts:** Discord summary when new valid roles are inserted
 
@@ -40,7 +40,7 @@ Every midday and evening scout runs **both** layers, then commits updates:
 
 | Output | Purpose |
 |--------|---------|
-| [LISTINGS.md](LISTINGS.md) | Human-readable Winter 2027 board |
+| [LISTINGS.md](LISTINGS.md) | Human-readable Winter/Spring 2027 board |
 | Discord | “N new roles this run” + tier counts |
 | `data/jobs.sqlite` | Source of truth |
 | `data/coverage/` | Which scrapers failed / returned zero |

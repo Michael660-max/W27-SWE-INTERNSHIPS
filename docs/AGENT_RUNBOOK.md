@@ -47,7 +47,7 @@ Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Pe
 | Skip | Updates, Unverified, Closed, homepage-only links |
 | Format | Short summary only (e.g. “18 new roles this run”) + LISTINGS link |
 | Rank | LISTINGS / CSV: freshness → posting time → fit → location → company → eligibility |
-| Board | Winter 2027 [LISTINGS.md](../LISTINGS.md) holds the full Source + Apply table |
+| Board | Winter/Spring 2027 [LISTINGS.md](../LISTINGS.md) holds the full Source + Apply table |
 
 ## Priority scoring
 

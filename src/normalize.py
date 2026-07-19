@@ -25,12 +25,20 @@ WORK_AUTH_RE = re.compile(
 )
 EXPORT_RE = re.compile(r"(export control|itar|ear\b|security clearance)", re.I)
 SUMMER_ONLY_RE = re.compile(r"\bsummer\s*2027\b", re.I)
+# Loose season match: Winter/Spring/Jan/off-cycle 2027, W/Sp, '27, academic 2026-2027.
 WINTER_SPRING_RE = re.compile(
-    r"\b(winter|spring|jan(?:uary)?(?:\s*[-–/]\s*(?:apr(?:il)?|may))?|off[- ]?cycle)\b.*\b2027\b"
-    r"|\b2027\b.*\b(winter|spring)\b",
+    r"\b(winter|spring|jan(?:uary)?(?:\s*[-–/]\s*(?:apr(?:il)?|may))?|off[- ]?cycle)\b"
+    r"\s*[-/]?\s*(?:'?\s*)?27\b"
+    r"|\b(winter|spring|jan(?:uary)?(?:\s*[-–/]\s*(?:apr(?:il)?|may))?|off[- ]?cycle)\b.*\b2027\b"
+    r"|\b2027\b.*\b(winter|spring)\b"
+    r"|\bw\s*/\s*sp(?:ring)?\s*2027\b"
+    r"|\bw\s*/\s*s\s*2027\b"
+    r"|\b2026\s*[-–/]\s*2027\b",
     re.I,
 )
 FALL_ONLY_RE = re.compile(r"\bfall\s*2026\b", re.I)
+# Any 2027 season tag that isn't clearly summer-only (for board / soft keep).
+ANY_2027_RE = re.compile(r"\b2027\b", re.I)
 REMOTE_RE = re.compile(r"\bremote\b", re.I)
 HYBRID_RE = re.compile(r"\bhybrid\b", re.I)
 CANADA_RE = re.compile(
@@ -180,24 +188,55 @@ def extract_term(text: str) -> str:
 
 
 def matches_target_term(text: str) -> bool:
-    t = text.lower()
+    t = (text or "").lower()
     if any(term in t for term in TARGET_TERMS):
         return True
     return bool(WINTER_SPRING_RE.search(t))
 
 
 def is_summer_only(text: str) -> bool:
-    t = text.lower()
+    t = (text or "").lower()
     if not SUMMER_ONLY_RE.search(t):
         return False
     return not matches_target_term(t)
 
 
 def is_fall_2026_only(text: str) -> bool:
-    t = text.lower()
+    t = (text or "").lower()
     if not FALL_ONLY_RE.search(t):
         return False
     return not matches_target_term(t)
+
+
+def job_season_blob(job) -> str:
+    """Build text used for season matching (works with CandidateJob or JobRecord)."""
+    raw = getattr(job, "raw_text_snapshot", None) or ""
+    return " ".join(
+        [
+            getattr(job, "term", None) or "",
+            getattr(job, "exact_role_title", None) or "",
+            getattr(job, "notes", None) or "",
+            getattr(job, "location", None) or "",
+            raw[:2000],
+        ]
+    )
+
+
+def matches_listings_season(job) -> bool:
+    """
+    Loose board filter — keep anything Winter/Spring/Jan/off-cycle 2027-ish.
+    Prefer including Spring-only and Fall+Spring over hiding them.
+    Exclude summer-only and fall-2026-only.
+    """
+    blob = job_season_blob(job)
+    if is_summer_only(blob):
+        return False
+    if is_fall_2026_only(blob):
+        return False
+    if matches_target_term(blob):
+        return True
+    # Soft include: any 2027 mention that survived ingest (e.g. odd term spellings).
+    return bool(ANY_2027_RE.search(blob))
 
 
 def is_software_role(title: str, text: str = "") -> bool:
