@@ -1,0 +1,48 @@
+# Manual company ATS / career board URLs for deterministic scraping.
+# Prefer Greenhouse JSON API tokens, Lever JSON, and Ashby posting API.
+companies:
+  - name: Stripe
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/stripe/jobs
+  - name: Cloudflare
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/cloudflare/jobs
+  - name: Datadog
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/datadog/jobs
+  - name: Figma
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/figma/jobs
+  - name: Coinbase
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/coinbase/jobs
+  - name: Dropbox
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/dropbox/jobs
+  - name: Airbnb
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/airbnb/jobs
+  - name: Roblox
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/roblox/jobs
+  - name: Databricks
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/databricks/jobs
+  - name: Affirm
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/affirm/jobs
+  - name: Twitch
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/twitch/jobs
+  - name: Jane Street
+    ats: greenhouse
+    board_url: https://boards-api.greenhouse.io/v1/boards/janestreet/jobs
+  - name: Palantir
+    ats: lever
+    board_url: https://api.lever.co/v0/postings/palantir?mode=json
+  - name: Ramp
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/ramp
+  - name: Notion
+    ats: ashby
+    board_url: https://api.ashbyhq.com/posting-api/job-board/notion

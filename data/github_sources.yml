@@ -1,0 +1,52 @@
+# GitHub internship list sources. Add repos without changing scraper code.
+sources:
+  - name: Simplify Off-Season
+    repo: SimplifyJobs/Summer2026-Internships
+    branch: dev
+    path: README-Off-Season.md
+    kind: simplify_table
+
+  - name: Vansh Summer2027
+    repo: vanshb03/Summer2027-Internships
+    branch: dev
+    path: README.md
+    kind: markdown_table
+
+  - name: SpeedyApply 2027 SWE
+    repo: speedyapply/2027-SWE-College-Jobs
+    branch: main
+    path: README.md
+    kind: markdown_table
+    exclude_new_grad: true
+
+  - name: SpeedyApply 2027 SWE Intl
+    repo: speedyapply/2027-SWE-College-Jobs
+    branch: main
+    path: INTERN_INTL.md
+    kind: markdown_table
+    exclude_new_grad: true
+
+  - name: SpeedyApply 2027 AI
+    repo: speedyapply/2027-AI-College-Jobs
+    branch: main
+    path: README.md
+    kind: markdown_table
+    exclude_new_grad: true
+
+  - name: sndsh404 Summer2027
+    repo: sndsh404/summer-2027-internships
+    branch: main
+    path: README.md
+    kind: markdown_table
+
+  - name: Dreamwork Tech Internships 2027
+    repo: dreamworkhq/Tech-Internships-2027
+    branch: main
+    path: README.md
+    kind: markdown_table
+
+  - name: Internship Tracker SWE
+    repo: SuryaHarikrishnan/internship-tracker
+    branch: master
+    path: listings/software-engineering.md
+    kind: markdown_table

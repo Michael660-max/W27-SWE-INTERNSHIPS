@@ -1,0 +1,20 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-18T23:00:00Z",
+  "jobs": [
+    {
+      "company": "Example Corp",
+      "exact_role_title": "Software Engineer Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-18",
+      "official_url": "https://boards.greenhouse.io/example/jobs/123456",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "",
+      "notes": "Schema example — replace with real findings; safe to delete"
+    }
+  ]
+}
