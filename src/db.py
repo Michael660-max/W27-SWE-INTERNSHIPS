@@ -82,11 +82,23 @@ CREATE TABLE IF NOT EXISTS application_status (
     FOREIGN KEY (job_id) REFERENCES jobs(id)
 );
 
+CREATE TABLE IF NOT EXISTS runs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    started_at TEXT NOT NULL,
+    finished_at TEXT,
+    mode TEXT NOT NULL,
+    inserted INTEGER DEFAULT 0,
+    updated INTEGER DEFAULT 0,
+    window_start TEXT,
+    notes TEXT DEFAULT ''
+);
+
 CREATE INDEX IF NOT EXISTS idx_jobs_company ON jobs(company);
 CREATE INDEX IF NOT EXISTS idx_jobs_requisition ON jobs(requisition_id);
 CREATE INDEX IF NOT EXISTS idx_jobs_canonical ON jobs(canonical_url);
 CREATE INDEX IF NOT EXISTS idx_jobs_posting_date ON jobs(posting_date);
 CREATE INDEX IF NOT EXISTS idx_sources_job ON sources(job_id);
+CREATE INDEX IF NOT EXISTS idx_runs_finished ON runs(finished_at);
 """
 
 
@@ -260,3 +272,60 @@ def merge_source_names(existing: str, new_name: str) -> str:
     if new_name and new_name not in names:
         names.append(new_name)
     return "; ".join(names)
+
+
+def last_finished_run_at(conn: sqlite3.Connection) -> Optional[str]:
+    row = conn.execute(
+        """
+        SELECT finished_at FROM runs
+        WHERE finished_at IS NOT NULL AND finished_at != ''
+        ORDER BY finished_at DESC
+        LIMIT 1
+        """
+    ).fetchone()
+    return row["finished_at"] if row else None
+
+
+def start_run(
+    conn: sqlite3.Connection,
+    *,
+    mode: str,
+    window_start: str | None = None,
+    notes: str = "",
+) -> int:
+    cur = conn.execute(
+        """
+        INSERT INTO runs (started_at, finished_at, mode, inserted, updated, window_start, notes)
+        VALUES (?, NULL, ?, 0, 0, ?, ?)
+        """,
+        (utc_now_iso(), mode, window_start, notes),
+    )
+    return int(cur.lastrowid)
+
+
+def finish_run(
+    conn: sqlite3.Connection,
+    run_id: int,
+    *,
+    inserted: int = 0,
+    updated: int = 0,
+    notes: str | None = None,
+) -> None:
+    if notes is None:
+        conn.execute(
+            """
+            UPDATE runs
+            SET finished_at = ?, inserted = ?, updated = ?
+            WHERE id = ?
+            """,
+            (utc_now_iso(), inserted, updated, run_id),
+        )
+    else:
+        conn.execute(
+            """
+            UPDATE runs
+            SET finished_at = ?, inserted = ?, updated = ?, notes = ?
+            WHERE id = ?
+            """,
+            (utc_now_iso(), inserted, updated, notes, run_id),
+        )

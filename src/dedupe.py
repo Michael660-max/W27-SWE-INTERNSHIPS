@@ -16,7 +16,7 @@ from .db import (
     update_job,
     utc_now_iso,
 )
-from .freshness import label_freshness, previous_run_cutoff, toronto_now
+from .freshness import label_freshness, window_start_for_run
 from .models import CandidateJob, JobRecord, UpsertResult
 from .score import compute_priority_score
 
@@ -25,11 +25,12 @@ def upsert_candidates(
     conn: sqlite3.Connection,
     candidates: list[CandidateJob],
     now: datetime | None = None,
+    window_start: datetime | None = None,
 ) -> UpsertResult:
     result = UpsertResult()
     now = now or datetime.now(timezone.utc)
     now_iso = now.replace(microsecond=0).isoformat()
-    window_start = previous_run_cutoff(toronto_now(now))
+    window_start = window_start or window_start_for_run(conn, now)
     existing_all = [
         dict(r)
         for r in conn.execute(

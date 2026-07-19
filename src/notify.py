@@ -10,12 +10,31 @@ from .config import DISCORD_WEBHOOK_URL, NOTIFICATIONS_DIR
 from .db import record_notification
 from .models import JobRecord
 from .score import sort_jobs
-from .urls import job_apply_url
+from .urls import is_apply_url, job_apply_url
 
 DISCORD_MAX = 1900
 LISTINGS_URL = (
     "https://github.com/Michael660-max/W27-SWE-INTERNSHIPS/blob/main/LISTINGS.md"
 )
+
+# Statuses that may be Discord-alerted (new inserts only; see filter_notifiable_jobs).
+NOTIFIABLE_STATUSES = frozenset({"Open"})
+
+
+def filter_notifiable_jobs(jobs: list[JobRecord]) -> list[JobRecord]:
+    """
+    Only newly inserted *valid* roles: Open status + real apply URL.
+    Unverified / Closed / homepage-only links are skipped for Discord + notify files.
+    """
+    out: list[JobRecord] = []
+    for job in jobs:
+        if (job.status or "") not in NOTIFIABLE_STATUSES:
+            continue
+        apply = job_apply_url(job)
+        if not apply or not is_apply_url(apply):
+            continue
+        out.append(job)
+    return sort_jobs(out)
 
 
 def _posting_short(job: JobRecord) -> str:
@@ -121,23 +140,20 @@ def build_simplify_style_table(jobs: list[JobRecord], title: str) -> str:
 
 
 def build_discord_short(jobs: list[JobRecord], prefix: str = "") -> str:
+    """Short Discord summary: count + board link (details stay in LISTINGS.md)."""
     jobs = sort_jobs(jobs)
+    n = len(jobs)
+    fresh_n = sum(1 for j in jobs if (j.freshness_label or "") == "Fresh")
     lines = []
     if prefix:
         lines.append(prefix.rstrip())
-    lines.append(f"**{len(jobs)} new internship role(s)** — see full table:")
-    lines.append(LISTINGS_URL)
-    lines.append("")
-    for i, job in enumerate(jobs[:15], 1):
-        apply = job_apply_url(job)
-        src = (job.source_names or "").split(";")[0].strip() or "?"
-        link = apply if apply else "no apply URL"
-        lines.append(
-            f"{i}. **{job.company}** — {job.exact_role_title} — {job.location or '?'} — "
-            f"{job.term or '?'} — _{src}_ — {link}"
-        )
-    if len(jobs) > 15:
-        lines.append(f"_…and {len(jobs) - 15} more in LISTINGS.md_")
+    noun = "role" if n == 1 else "roles"
+    lines.append(f"**W27 scout:** {n} new {noun} this run.")
+    if fresh_n and fresh_n != n:
+        lines.append(f"_{fresh_n} fresh · {n - fresh_n} late discovery_")
+    elif fresh_n:
+        lines.append(f"_{fresh_n} marked fresh_")
+    lines.append(f"Full board: {LISTINGS_URL}")
     return "\n".join(lines)
 
 
@@ -157,7 +173,7 @@ def build_notification_markdown(jobs: list[JobRecord]) -> str:
         lines.append("| Company | Role | Location | Term | Posted | Link |")
         lines.append("|---|---|---|---|---|---|")
         for j in fresh:
-            url = j.official_url or j.source_url or ""
+            url = job_apply_url(j) or j.official_url or j.source_url or ""
             lines.append(
                 f"| {j.company} | {j.exact_role_title} | {j.location} | {j.term} | "
                 f"{_posting_short(j)} | {url} |"
@@ -169,7 +185,7 @@ def build_notification_markdown(jobs: list[JobRecord]) -> str:
         lines.append("| Company | Role | Location | Term | Posted | Link |")
         lines.append("|---|---|---|---|---|---|")
         for j in late:
-            url = j.official_url or j.source_url or ""
+            url = job_apply_url(j) or j.official_url or j.source_url or ""
             lines.append(
                 f"| {j.company} | {j.exact_role_title} | {j.location} | {j.term} | "
                 f"{_posting_short(j)} | {url} |"
@@ -181,7 +197,7 @@ def build_notification_markdown(jobs: list[JobRecord]) -> str:
         lines.append("| Company | Role | Location | Term | Posted | Link |")
         lines.append("|---|---|---|---|---|---|")
         for j in unavailable:
-            url = j.official_url or j.source_url or ""
+            url = job_apply_url(j) or j.official_url or j.source_url or ""
             lines.append(
                 f"| {j.company} | {j.exact_role_title} | {j.location} | {j.term} | "
                 f"{_posting_short(j)} | {url} |"
@@ -289,7 +305,17 @@ def notify_new_jobs(
     dry_run: bool = False,
     prefix: str = "",
     style: str = "short",
+    *,
+    only_valid: bool = True,
 ) -> Path | None:
+    """
+    Alert only on newly inserted jobs passed in (caller supplies inserts).
+    By default filters to Open + apply URL before Discord / markdown file.
+    """
+    if only_valid:
+        jobs = filter_notifiable_jobs(jobs)
+    else:
+        jobs = sort_jobs(jobs)
     if not jobs:
         return None
     path = write_notification_file(jobs)

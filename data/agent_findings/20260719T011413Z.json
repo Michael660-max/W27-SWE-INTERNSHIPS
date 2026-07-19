@@ -1,0 +1,177 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-19T01:14:13.409917+00:00",
+  "discovery": "scripts/agent_discover.py",
+  "jobs": [
+    {
+      "company": "Western Digital",
+      "exact_role_title": "Software Engineering Co-op",
+      "location": "Rochester, MN",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.smartrecruiters.com/WesternDigital/744000138184309?utm_source=Simplify&ref=Simplify",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "\ud83d\udd25 Palantir",
+      "exact_role_title": "Forward Deployed Software Engineer Intern - Intel",
+      "location": "Washington, DC",
+      "term": "Winter 2027, Spring 2028",
+      "official_url": "https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89/apply?utm_source=Simplify&ref=Simplify",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "\ud83d\udd25 Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern",
+      "location": "Seattle, WA SF NYC",
+      "term": "Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a?utm_source=Simplify&ref=Simplify",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "NAV CANADA",
+      "exact_role_title": "Radar Systems Engineering Student Co-op",
+      "location": "Ottawa, ON, Canada",
+      "term": "Fall 2026, Winter 2027",
+      "official_url": "https://simplify.jobs/c/NAV-CANADA?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Hitachi",
+      "exact_role_title": "Software Analyst Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Fall 2026, Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/Hitachi?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Cerebras",
+      "exact_role_title": "Software Engineer Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027, Spring 2027, Fall 2026",
+      "official_url": "https://simplify.jobs/c/Cerebras-Systems?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Vanguard",
+      "exact_role_title": "Mobile Engineer Co-op",
+      "location": "Charlotte, NC",
+      "term": "Fall 2026, Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/Vanguard?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "The Boeing Company",
+      "exact_role_title": "Software Development Intern - AI and Analytics",
+      "location": "Richmond, BC, Canada",
+      "term": "Fall 2026, Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/Boeing?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Skydio",
+      "exact_role_title": "Software Engineer Intern",
+      "location": "San Mateo, CA",
+      "term": "Fall 2026, Winter 2027",
+      "official_url": "https://simplify.jobs/c/Skydio?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Ontario Teachers' Pension Plan",
+      "exact_role_title": "Portfolio Engineering Intern - Capital Markets - Cmia",
+      "location": "Toronto, ON, Canada",
+      "term": "Fall 2026, Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/Ontario-Teachers-Pension-Plan?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "\ud83d\udd25 Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern \ud83c\udf93",
+      "location": "SF",
+      "term": "Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781?utm_source=Simplify&ref=Simplify",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Comcast",
+      "exact_role_title": "Comcast Global Audit Data Solutions Data Architecture and Engineering Co-op",
+      "location": "Philadelphia, PA",
+      "term": "Fall 2026, Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/Comcast?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Booz Allen",
+      "exact_role_title": "University Data Engineering Intern",
+      "location": "Bedford, IN",
+      "term": "Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/Booz-Allen?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Lumentum",
+      "exact_role_title": "Embedded Software Engineer Co-op/Intern",
+      "location": "Ottawa, ON, Canada",
+      "term": "Fall 2026, Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/Lumentum?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Comcast",
+      "exact_role_title": "Network Engineer Co-op",
+      "location": "Brooklawn, NJ",
+      "term": "Fall 2026, Winter 2027",
+      "official_url": "https://simplify.jobs/c/Comcast?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "GE Appliances",
+      "exact_role_title": "Engineering Intern/Co-op",
+      "location": "Calhoun, GA",
+      "term": "Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/GE-Appliances?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    },
+    {
+      "company": "Varian",
+      "exact_role_title": "Nuclear Engineering Intern/Co-op",
+      "location": "Hoffman Estates, IL",
+      "term": "Fall 2026, Winter 2027, Spring 2027",
+      "official_url": "https://simplify.jobs/c/670da3c5-bce0-4621-b519-da7ce7d528e6?utm_source=GHList&utm_medium=company",
+      "posting_date": null,
+      "freshness_label": "Late discovery",
+      "notes": "agent_discover via Simplify Off-Season (agent browse)"
+    }
+  ]
+}
