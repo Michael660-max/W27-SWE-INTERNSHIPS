@@ -1,0 +1,54 @@
+# Layer 2 discovery targets — search / browse only.
+# LinkedIn, Indeed, Handshake, and Google are discovery channels.
+# Persist only official apply URLs (Greenhouse, Lever, Ashby, Workday, Rippling, etc.).
+
+term_focus: Winter 2027
+regions:
+  - Canada
+  - United States
+
+queries:
+  - Winter 2027 software engineer intern
+  - Winter 2027 software engineering co-op
+  - Spring 2027 software engineer intern
+  - January 2027 software engineer intern
+  - January 2027 software co-op Canada
+  - Winter 2027 backend engineer intern
+  - Winter 2027 frontend engineer intern
+  - Winter 2027 full stack intern
+  - Winter 2027 platform engineer intern
+  - Winter 2027 infrastructure engineer intern
+  - Winter 2027 machine learning engineer intern
+  - Winter 2027 data engineer intern
+  - off-cycle 2027 software engineer intern
+  - 'Winter 2027 OR Spring 2027 software intern Greenhouse OR Ashby OR Lever'
+
+# URL templates — `{q}` is urllib-quoted query text
+search_url_templates:
+  linkedin_jobs: "https://www.linkedin.com/jobs/search/?keywords={q}&f_TPR=r604800"
+  indeed: "https://www.indeed.com/jobs?q={q}&fromage=7"
+  handshake: "https://app.joinhandshake.com/stu/postings?query={q}"
+  google: "https://www.google.com/search?q={q}"
+  google_ats: "https://www.google.com/search?q={q}+(site%3Aboards.greenhouse.io+OR+site%3Ajobs.ashbyhq.com+OR+site%3Ajobs.lever.co)"
+
+# Optional boards not already covered by data/companies.yml Layer 1.
+# Used only with: python scripts/agent_discover.py --scan-extra-ats
+extra_ats:
+  - name: Snowflake
+    ats: greenhouse
+    token: snowflake
+  - name: Shopify
+    ats: greenhouse
+    token: shopify
+  - name: HubSpot
+    ats: greenhouse
+    token: hubspot
+  - name: Twitch Interactive
+    ats: greenhouse
+    token: twitchinteractive
+  - name: Retool
+    ats: ashby
+    token: retool
+  - name: Zapier
+    ats: ashby
+    token: zapier

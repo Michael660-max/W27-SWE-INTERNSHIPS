@@ -20,8 +20,63 @@ CORE_TYPES = {
     "Software Developer Intern",
 }
 
+FIT_TYPES = {
+    "Backend Engineer Intern",
+    "Full Stack Engineer Intern",
+    "Platform Engineer Intern",
+    "Infrastructure Engineer Intern",
+    "AI Engineering Intern",
+    "ML Engineering Intern",
+    "Data Engineering Intern",
+}
+
+
+def _location_rank(job: JobRecord) -> int:
+    """Lower is better for sort. Canada / Canada-remote first."""
+    country = (job.country or "").lower()
+    remote = (job.remote_or_hybrid or "").lower()
+    loc = (job.location or "").lower()
+    canada = "canada" in country or "canada" in loc
+    if canada and remote == "remote":
+        return 0
+    if canada:
+        return 1
+    if remote == "remote":
+        return 2
+    if "united states" in country or "usa" in country or ", us" in loc:
+        return 3
+    return 4
+
+
+def _company_rank(job: JobRecord) -> int:
+    """Lower is better. Known high-signal companies first."""
+    company_l = (job.company or "").lower()
+    if any(k in company_l for k in BIG_TECH_KEYWORDS):
+        return 0
+    return 1
+
+
+def _eligibility_rank(job: JobRecord) -> int:
+    """Lower is better. Fewer hard eligibility gates first."""
+    score = 0
+    if job.requires_us_citizenship:
+        score += 2
+    if job.requires_export_control:
+        score += 2
+    if job.requires_us_work_auth:
+        notes = (job.eligibility_notes or "").lower()
+        if "no sponsorship" in notes or "cannot sponsor" in notes:
+            score += 2
+        else:
+            score += 1
+    return score
+
 
 def compute_priority_score(job: JobRecord, now: datetime | None = None) -> int:
+    """
+    Numeric fit score used inside sort_jobs (higher = better).
+    Factors: freshness/age, role fit, location, company quality, eligibility.
+    """
     now = now or datetime.now(timezone.utc)
     score = 0
 
@@ -29,30 +84,25 @@ def compute_priority_score(job: JobRecord, now: datetime | None = None) -> int:
     remote = (job.remote_or_hybrid or "").lower()
     loc = (job.location or "").lower()
 
+    # Location
     if "canada" in country or "canada" in loc:
         score += 3
     if remote == "remote" and ("canada" in country or "canada" in loc or "remote in canada" in loc):
         score += 3
 
+    # Company quality
     company_l = (job.company or "").lower()
     if any(k in company_l for k in BIG_TECH_KEYWORDS):
         score += 2
 
+    # Role fit
     role = job.normalized_role_type or ""
     title_l = (job.exact_role_title or "").lower()
     if role in CORE_TYPES or any(
         k in title_l for k in ("software engineer", "software developer", "swe")
     ):
         score += 2
-    if role in {
-        "Backend Engineer Intern",
-        "Full Stack Engineer Intern",
-        "Platform Engineer Intern",
-        "Infrastructure Engineer Intern",
-        "AI Engineering Intern",
-        "ML Engineering Intern",
-        "Data Engineering Intern",
-    } or any(
+    if role in FIT_TYPES or any(
         k in title_l
         for k in (
             "backend",
@@ -66,7 +116,9 @@ def compute_priority_score(job: JobRecord, now: datetime | None = None) -> int:
     ):
         score += 2
 
-    # Posting-time boosts (dominant signal in scoring)
+    # Freshness / posting age
+    if (job.freshness_label or "") == "Fresh":
+        score += 2
     pd = _parse_dt(job.posting_date)
     if pd is None:
         score -= 2
@@ -79,12 +131,14 @@ def compute_priority_score(job: JobRecord, now: datetime | None = None) -> int:
         elif age_h <= 72:
             score += 2
 
+    # Eligibility (penalties)
     if job.requires_us_citizenship:
+        score -= 2
+    if job.requires_export_control:
         score -= 2
     if job.requires_us_work_auth and "unclear" in (job.eligibility_notes or "").lower():
         score -= 2
     if job.requires_us_work_auth and not job.requires_us_citizenship:
-        # Mild penalty for sponsorship-hostile roles when flagged
         if "no sponsorship" in (job.eligibility_notes or "").lower() or "cannot sponsor" in (
             job.eligibility_notes or ""
         ).lower():
@@ -110,12 +164,24 @@ def compute_priority_score(job: JobRecord, now: datetime | None = None) -> int:
 
 
 def sort_jobs(jobs: list[JobRecord]) -> list[JobRecord]:
+    """
+    Rank for Discord / LISTINGS / UI:
+    1. Freshness label
+    2. Posting datetime (newer first)
+    3. Priority / fit score
+    4. Location (Canada / Canada-remote first)
+    5. Company quality
+    6. Eligibility (fewer gates first)
+    """
+
     def key(j: JobRecord):
         return (
             FRESHNESS_RANK.get(j.freshness_label or "", 9),
             -posting_sort_key(j.posting_date),
             -int(j.priority_score or 0),
-            -(1 if any(k in (j.company or "").lower() for k in BIG_TECH_KEYWORDS) else 0),
+            _location_rank(j),
+            _company_rank(j),
+            _eligibility_rank(j),
             j.application_deadline or "9999",
             j.company or "",
         )

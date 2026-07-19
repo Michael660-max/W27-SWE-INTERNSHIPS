@@ -9,7 +9,8 @@ from urllib.parse import parse_qs, urlparse
 import yaml
 from bs4 import BeautifulSoup
 
-from ..config import COMPANIES_PATH
+from ..config import COMPANIES_PATH, WATCHLIST_PATH
+from ..coverage import CollectBundle, SourceReport
 from ..http_util import fetch_json, fetch_text, get_client
 from ..models import CandidateJob
 from ..normalize import enrich_candidate, should_keep_candidate
@@ -29,47 +30,111 @@ def load_companies(path: Path | None = None) -> list[dict[str, Any]]:
     return list(data.get("companies") or [])
 
 
-def collect_company_ats(path: Path | None = None) -> list[CandidateJob]:
+def load_watchlist(path: Path | None = None) -> list[str]:
+    path = path or WATCHLIST_PATH
+    if not path.exists():
+        return []
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    names = []
+    for item in data.get("companies") or []:
+        if isinstance(item, str):
+            names.append(item)
+        elif isinstance(item, dict) and item.get("name"):
+            names.append(str(item["name"]))
+    return names
+
+
+def collect_company_ats(path: Path | None = None) -> CollectBundle:
     companies = load_companies(path)
+    watch = {n.lower() for n in load_watchlist()}
+    # Ensure watchlist companies present in companies.yml are scraped first / flagged
     jobs: list[CandidateJob] = []
+    rejected: list[tuple[CandidateJob, str]] = []
+    reports: list[SourceReport] = []
+
     with get_client() as client:
         for company in companies:
             name = company["name"]
             ats = (company.get("ats") or "").lower()
             board_url = company["board_url"]
-            logger.info("Fetching ATS %s (%s)", name, ats)
+            is_watch = name.lower() in watch
+            label = f"Company ATS:{name}" + (" [watchlist]" if is_watch else "")
+            logger.info("Fetching ATS %s (%s)%s", name, ats, " WATCHLIST" if is_watch else "")
             try:
                 if ats == "greenhouse":
-                    jobs.extend(_greenhouse(name, board_url, client))
+                    found = _greenhouse(name, board_url, client)
                 elif ats == "lever":
-                    jobs.extend(_lever(name, board_url, client))
+                    found = _lever(name, board_url, client)
                 elif ats == "ashby":
-                    jobs.extend(_ashby(name, board_url, client))
+                    found = _ashby(name, board_url, client)
                 elif ats == "workday":
-                    logger.warning("Workday board skipped in MVP (needs Playwright): %s", name)
+                    reports.append(
+                        SourceReport(
+                            name=label,
+                            status="skipped",
+                            detail="Workday needs Playwright",
+                        )
+                    )
+                    continue
                 else:
-                    logger.warning("Unknown ATS %s for %s", ats, name)
+                    reports.append(
+                        SourceReport(name=label, status="error", error=f"unknown ats {ats}")
+                    )
+                    continue
             except Exception as exc:
+                err = str(exc).lower()
+                status = "timeout" if "timeout" in err or "timed out" in err else "error"
+                reports.append(SourceReport(name=label, status=status, error=str(exc)))
                 logger.warning("ATS fetch failed for %s: %s", name, exc)
-    kept: list[CandidateJob] = []
-    for job in jobs:
-        job = enrich_candidate(job)
-        ok, reason = should_keep_candidate(job)
-        # Company boards: keep software intern/co-op even without explicit Winter 2027 in title
-        if not ok and reason == "no_target_term":
-            if INTERN_RE.search(job.exact_role_title):
-                ok = True
-        if not ok:
-            continue
-        # Soft filter: prefer term hints when present on other jobs of board; keep all interns
-        kept.append(job)
-    logger.info("Company ATS kept %d", len(kept))
-    return kept
+                continue
+
+            kept_here = 0
+            for job in found:
+                job = enrich_candidate(job)
+                ok, reason = should_keep_candidate(job)
+                if not ok and reason == "no_target_term":
+                    if INTERN_RE.search(job.exact_role_title):
+                        ok, reason = True, "ok_term_unknown_soft"
+                if not ok:
+                    logger.debug(
+                        "EXCLUDE [%s] %s — %s",
+                        reason,
+                        job.company,
+                        (job.exact_role_title or "")[:80],
+                    )
+                    rejected.append((job, reason))
+                    continue
+                if is_watch:
+                    job.notes = (job.notes + "; watchlist").strip("; ")
+                logger.debug(
+                    "INCLUDE [%s] %s — %s",
+                    reason,
+                    job.company,
+                    (job.exact_role_title or "")[:80],
+                )
+                jobs.append(job)
+                kept_here += 1
+
+            status = "zero" if kept_here == 0 else "ok"
+            # Watchlist zero is especially important
+            if is_watch and status == "zero":
+                status = "zero"
+            reports.append(
+                SourceReport(
+                    name=label,
+                    status=status,
+                    fetched=len(found),
+                    kept=kept_here,
+                    detail="watchlist" if is_watch else "",
+                )
+            )
+
+    logger.info("Company ATS kept %d", len(jobs))
+    return CollectBundle(jobs=jobs, reports=reports, rejected=rejected)
 
 
 def _greenhouse(company: str, board_url: str, client) -> list[CandidateJob]:
     jobs: list[CandidateJob] = []
-    # Direct JSON API URL or derive from board token
     if "boards-api.greenhouse.io" in board_url:
         api = board_url
     else:
@@ -81,7 +146,6 @@ def _greenhouse(company: str, board_url: str, client) -> list[CandidateJob]:
     try:
         data = fetch_json(api, client=client)
     except Exception:
-        # Fallback: scrape embed HTML
         html = fetch_text(board_url, client=client)
         soup = BeautifulSoup(html, "lxml")
         for a in soup.select("a[href*='jobs'], a[href*='job']"):
@@ -152,7 +216,6 @@ def _lever(company: str, board_url: str, client) -> list[CandidateJob]:
         title = item.get("text") or ""
         if not INTERN_RE.search(title):
             continue
-        loc = ""
         cats = item.get("categories") or {}
         loc = cats.get("location") or ""
         url = item.get("hostedUrl") or item.get("applyUrl") or ""
