@@ -28,6 +28,8 @@ HTTP_RETRIES = 2
 FRESHNESS_BUFFER_HOURS = 2
 
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
+# Numeric Discord user id for evening digest @mention (Developer Mode → Copy User ID)
+DISCORD_USER_ID = os.environ.get("DISCORD_USER_ID", "").strip()
 
 TARGET_TERMS = (
     "winter 2027",

@@ -6,8 +6,8 @@ from pathlib import Path
 
 import httpx
 
-from .config import DISCORD_WEBHOOK_URL, NOTIFICATIONS_DIR
-from .db import record_notification
+from .config import DISCORD_USER_ID, DISCORD_WEBHOOK_URL, NOTIFICATIONS_DIR, TIMEZONE
+from .db import all_jobs, last_digest_at, record_digest, record_notification
 from .models import JobRecord
 from .score import sort_jobs
 from .urls import is_apply_url, job_apply_url
@@ -160,6 +160,14 @@ def _tier_of(job: JobRecord) -> str:
     return "good_lead"
 
 
+def mention_prefix() -> str:
+    """`<@USER_ID>` so the evening digest pings you (needs DISCORD_USER_ID)."""
+    uid = (DISCORD_USER_ID or "").strip()
+    if uid.isdigit():
+        return f"<@{uid}>"
+    return ""
+
+
 def build_discord_short(jobs: list[JobRecord], prefix: str = "") -> str:
     """Summary Discord: counts by alert tier + LISTINGS link."""
     jobs = sort_jobs(jobs)
@@ -168,11 +176,13 @@ def build_discord_short(jobs: list[JobRecord], prefix: str = "") -> str:
     if prefix:
         lines.append(prefix.rstrip())
     noun = "role" if n == 1 else "roles"
-    lines.append(f"**W27 scout:** {n} new {noun} this run.")
+    lines.append(f"**W27 daily digest:** {n} new {noun} since last evening summary.")
     for key, label in _TIER_ORDER:
         count = sum(1 for j in jobs if _tier_of(j) == key)
         if count:
             lines.append(f"• {label}: {count}")
+    if n == 0:
+        lines.append("_No new Open roles with apply links — scout still ran._")
     lines.append(f"Full board: {LISTINGS_URL}")
     return "\n".join(lines)
 
@@ -254,15 +264,19 @@ def send_discord(
     dry_run: bool = False,
     prefix: str = "",
     style: str = "short",
+    *,
+    allow_empty: bool = False,
+    mention: bool = False,
 ) -> bool:
     webhook_url = (webhook_url if webhook_url is not None else DISCORD_WEBHOOK_URL).strip()
-    if not jobs:
+    if not jobs and not allow_empty:
         return False
     if dry_run or not webhook_url:
         return False
 
-    jobs = sort_jobs(jobs)
+    jobs = sort_jobs(jobs) if jobs else []
     chunks: list[str] = []
+    mention_line = mention_prefix() if mention else ""
 
     if style == "table":
         sections = [
@@ -281,8 +295,8 @@ def send_discord(
             chunks.extend(_chunk_table_message(title, items, prefix=p))
             first = False
     else:
-        msg = build_discord_short(jobs, prefix=prefix)
-        # chunk if needed
+        head = "\n".join(x for x in [mention_line, prefix] if x)
+        msg = build_discord_short(jobs, prefix=head)
         if len(msg) <= 2000:
             chunks = [msg]
         else:
@@ -290,11 +304,19 @@ def send_discord(
 
     if not chunks and prefix:
         chunks = [prefix]
+    if not chunks and allow_empty:
+        head = "\n".join(x for x in [mention_line, prefix] if x)
+        chunks = [build_discord_short([], prefix=head)]
+
+    payload_extra: dict = {}
+    if mention and DISCORD_USER_ID.isdigit():
+        payload_extra["allowed_mentions"] = {"users": [DISCORD_USER_ID]}
 
     with httpx.Client(timeout=30.0) as client:
         for chunk in chunks:
             content = chunk if len(chunk) <= 2000 else chunk[:1990] + "\n…"
-            resp = client.post(webhook_url, json={"content": content})
+            body = {"content": content, **payload_extra}
+            resp = client.post(webhook_url, json=body)
             resp.raise_for_status()
     return True
 
@@ -307,25 +329,111 @@ def notify_new_jobs(
     style: str = "short",
     *,
     only_valid: bool = True,
+    send: bool = False,
+    mention: bool = False,
+    allow_empty: bool = False,
+    channel: str = "file_only",
 ) -> Path | None:
     """
-    Alert only on newly inserted jobs passed in (caller supplies inserts).
-    By default filters to Open + apply URL before Discord / markdown file.
+    Write notification markdown. Discord send is opt-in (evening digest only).
+    Pipeline inserts must not auto-post to Discord.
     """
     if only_valid:
         jobs = filter_notifiable_jobs(jobs)
     else:
         jobs = sort_jobs(jobs)
-    if not jobs:
+    if not jobs and not allow_empty:
         return None
-    path = write_notification_file(jobs)
-    sent = send_discord(jobs, dry_run=dry_run, prefix=prefix, style=style)
-    channel = "discord" if sent else ("dry_run" if dry_run else "file_only")
-    for job in jobs:
-        record_notification(
-            conn,
-            job.id,
-            channel,
-            {"markdown_path": str(path) if path else "", "title": job.exact_role_title},
+    path = write_notification_file(jobs) if jobs else None
+    sent = False
+    if send:
+        sent = send_discord(
+            jobs,
+            dry_run=dry_run,
+            prefix=prefix,
+            style=style,
+            allow_empty=allow_empty,
+            mention=mention,
         )
+    ch = "discord_digest" if sent and channel == "discord_digest" else (
+        "discord" if sent else ("dry_run" if dry_run else "file_only")
+    )
+    if jobs:
+        for job in jobs:
+            record_notification(
+                conn,
+                job.id,
+                ch,
+                {"markdown_path": str(path) if path else "", "title": job.exact_role_title},
+            )
+    elif sent:
+        # Digest with zero jobs — still record a marker row on job_id 0 via notifications
+        # using a dummy: store on notifications with job_id nullable? schema requires job_id.
+        # Use payload-only via job_id=-1 not allowed. Skip per-job; coverage is enough.
+        pass
+    return path
+
+
+def _parse_iso(value: str) -> datetime | None:
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt
+
+
+def digest_cutoff(conn) -> datetime:
+    """Jobs first_found_at since last evening digest, else start of today America/Toronto."""
+    from zoneinfo import ZoneInfo
+
+    last = last_digest_at(conn)
+    if last:
+        dt = _parse_iso(last)
+        if dt:
+            return dt
+
+    tz = ZoneInfo(TIMEZONE)
+    local = datetime.now(tz)
+    start = local.replace(hour=0, minute=0, second=0, microsecond=0)
+    return start.astimezone(timezone.utc)
+
+
+def jobs_for_daily_digest(conn) -> tuple[list[JobRecord], datetime]:
+    cutoff = digest_cutoff(conn)
+    cutoff_iso = cutoff.replace(microsecond=0).isoformat()
+    jobs = []
+    for job in all_jobs(conn):
+        ff = job.first_found_at or ""
+        if ff < cutoff_iso:
+            continue
+        jobs.append(job)
+    return filter_notifiable_jobs(jobs), cutoff
+
+
+def send_daily_digest(conn, dry_run: bool = False) -> Path | None:
+    """
+    Evening-only Discord: aggregate new Open+apply roles since last digest, @mention user.
+    """
+    jobs, cutoff = jobs_for_daily_digest(conn)
+    prefix = f"_Since {cutoff.astimezone(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}_"
+    path = notify_new_jobs(
+        conn,
+        jobs,
+        dry_run=dry_run,
+        prefix=prefix,
+        style="short",
+        only_valid=False,  # already filtered
+        send=not dry_run,
+        mention=True,
+        allow_empty=True,
+        channel="discord_digest",
+    )
+    record_digest(
+        conn,
+        job_count=len(jobs),
+        mode="dry_run" if dry_run else "live",
+        notes="evening_daily_digest",
+    )
     return path
