@@ -34,14 +34,24 @@ DISCORD_USER_ID = os.environ.get("DISCORD_USER_ID", "").strip()
 TARGET_TERMS = (
     "winter 2027",
     "spring 2027",
+    "winter/spring 2027",
+    "winter / spring 2027",
+    "w/sp 2027",
+    "w/s 2027",
     "january 2027",
     "jan 2027",
     "jan-apr 2027",
+    "jan/apr 2027",
     "january-april 2027",
     "january-may 2027",
     "jan-may 2027",
+    "jan/may 2027",
     "off-cycle 2027",
-    "winter/spring 2027",
+    "off cycle 2027",
+    "winter '27",
+    "spring '27",
+    "winter 27",
+    "spring 27",
 )
 
 SEARCH_TERMS = [

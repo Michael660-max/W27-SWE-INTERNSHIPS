@@ -1,8 +1,15 @@
-# Layer 2 — Cursor agent discovery workflow
+# Layer 2 — hardened portal discovery
 
-Layer 1 (`python src/main.py`) already scrapes Simplify, GitHub internship lists, and `data/companies.yml` ATS boards. **Do not re-fetch those READMEs or boards.**
+Layer 1 already scrapes Simplify, GitHub lists, and `companies.yml`. **Do not re-fetch those.**
 
-Your job is online discovery: find Winter/Spring 2027 SWE intern/co-op roles via search, then persist only **official apply URLs**.
+Layer 2 uses **Indeed + ATS web search** as the real portal path. Persist only **official apply URLs**.
+
+## LinkedIn on Cloud Automations
+
+**Skip it.** Login/captcha almost always blocks Cloud Agents. LinkedIn Premium does not help.  
+Do not spend the run on LinkedIn. Rely on Indeed + `site:` ATS search (Google or DuckDuckGo).
+
+LinkedIn is only useful if you later run a **local** agent while already logged in, or via **job-alert emails** (future).
 
 ## Before you start
 
@@ -10,34 +17,34 @@ Your job is online discovery: find Winter/Spring 2027 SWE intern/co-op roles via
 python scripts/agent_discover.py
 ```
 
-This writes `data/agent_findings/_search_pack_<ts>.md` from [`data/discovery_queries.yml`](../data/discovery_queries.yml) with ready-to-open LinkedIn / Indeed / Handshake / Google URLs.
+Search pack includes exact quoted queries, per-ATS `site:` queries, and a checklist.
 
-Optional (boards not already in Layer 1):
+## Mandatory every run
 
-```bash
-python scripts/agent_discover.py --scan-extra-ats
-```
+| Portal | Expectation |
+|--------|-------------|
+| **Indeed** | ≥3 exact-query links. Prefer “Apply on company site”. |
+| **Google ATS or DuckDuckGo ATS** | ≥3 `site:` ATS searches. DuckDuckGo if Google captchas. |
+| LinkedIn / Handshake | **Optional — skip on Cloud Automations.** |
+
+**Failure mode to avoid:** regenerating the search pack and stopping without browsing Indeed + ATS search.
 
 ## Steps
 
-1. Open the latest `_search_pack_*.md` and work through queries (Winter 2027 SWE intern/co-op, Canada/US, backend/frontend/platform/ML/data, etc.).
-2. Browse **LinkedIn Jobs, Indeed, Handshake, Google** as **discovery channels only**.
-3. For each promising listing, open the employer’s **official apply** page:
-   - Greenhouse, Lever, Ashby, Workday, Rippling, or the company’s careers ATS
-4. Skip roles with no reliable apply URL (do not invent links).
-5. Write `data/agent_findings/<YYYYMMDDTHHMMSSZ>.json` (schema below).
-6. Hand off:
-   ```bash
-   python src/main.py --ingest-findings [--dry-run]
-   ```
+1. Open latest `_search_pack_*.md`.
+2. Indeed → ATS site search (required).
+3. For each hit, open official apply (Greenhouse / Lever / Ashby / Workday / Rippling).
+4. Skip roles with no reliable apply URL.
+5. Write findings JSON with `portals_attempted` (e.g. `["indeed", "duckduckgo_ats"]`).
+6. `python src/main.py --ingest-findings`
+7. Evening: `python src/main.py --daily-digest`
 
-## LinkedIn / aggregator policy
+## Aggregator policy
 
 | Allowed | Forbidden |
 |---------|-----------|
-| Use LinkedIn/Indeed/Handshake to *find* roles | Store a LinkedIn/Indeed/Handshake URL as `official_url` |
-| Note channel in `notes` (e.g. `linkedin_search`) | Dump LinkedIn HTML into the DB |
-| Resolve redirect / “Apply on company site” to ATS | Treat aggregator pages as source of truth |
+| Use Indeed/Google to *find* roles | Store Indeed/LinkedIn/Handshake as `official_url` |
+| Note channel in `notes` (`indeed_search`, `google_ats`, …) | Dump portal HTML into the DB |
 
 ## Findings JSON schema
 
@@ -45,6 +52,9 @@ python scripts/agent_discover.py --scan-extra-ats
 {
   "source": "Cursor Agent Monitor",
   "generated_at": "2027-01-15T17:30:00Z",
+  "discovery": "layer2_hardened_portals",
+  "portals_attempted": ["indeed", "duckduckgo_ats"],
+  "portals_blocked": [],
   "jobs": [
     {
       "company": "Example",
@@ -53,20 +63,13 @@ python scripts/agent_discover.py --scan-extra-ats
       "term": "Winter 2027",
       "posting_date": "2027-01-14",
       "official_url": "https://boards.greenhouse.io/example/jobs/123",
-      "requires_us_citizenship": false,
-      "requires_us_work_auth": false,
-      "requires_export_control": false,
-      "eligibility_notes": "",
-      "notes": "linkedin_search"
+      "notes": "indeed_search"
     }
   ]
 }
 ```
 
-`official_url` must be the apply / ATS link. After ingest, Source shows as **Cursor Agent Monitor**.
-
 ## Include / exclude
 
-**Include:** SWE/Developer Intern or Co-op; backend/frontend/full-stack/mobile/platform/infra/DevOps/SRE/data/ML/AI; Winter or Spring 2027 / Jan–Apr or Jan–May 2027; Canada + US.
-
-**Exclude:** Full-time new grad; summer-only 2027 unless also Winter/Spring; closed/expired; non-software; no official apply URL.
+**Include:** SWE/Developer Intern or Co-op; Winter/Spring 2027; Canada + US.  
+**Exclude:** New grad FT; summer-only; closed; no official apply URL.

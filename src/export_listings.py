@@ -1,22 +1,13 @@
 from __future__ import annotations
 
-import re
 from datetime import datetime, timezone
 from pathlib import Path
 
 from .config import LISTINGS_PATH
 from .db import all_jobs, connect
+from .normalize import matches_listings_season
 from .score import sort_jobs
 from .urls import job_apply_url
-
-# Explicit Winter 2027 (and common January 2027 winter-term equivalents)
-WINTER_2027_RE = re.compile(
-    r"(winter\s*2027|"
-    r"jan(?:uary)?\s*2027|"
-    r"jan(?:uary)?\s*[-–/]\s*(?:apr(?:il)?|may)\s*2027|"
-    r"january\s*[-–]\s*(?:april|may)\s*2027)",
-    re.I,
-)
 
 
 def _md_cell(text: str) -> str:
@@ -31,30 +22,25 @@ def _posting(job) -> str:
 
 
 def is_winter_2027(job) -> bool:
-    blob = " ".join(
-        [
-            job.term or "",
-            job.exact_role_title or "",
-            job.notes or "",
-            # raw snapshot can be huge; first 2k is enough for term tags
-            (job.raw_text_snapshot or "")[:2000],
-        ]
-    )
-    return bool(WINTER_2027_RE.search(blob))
+    """Back-compat name; board uses the shared loose season matcher."""
+    return matches_listings_season(job)
 
 
 def export_listings(path: Path | None = None) -> Path:
     path = path or LISTINGS_PATH
     with connect() as conn:
-        jobs = sort_jobs([j for j in all_jobs(conn) if is_winter_2027(j)])
+        jobs = sort_jobs([j for j in all_jobs(conn) if matches_listings_season(j)])
 
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines = [
-        "# Winter 2027 Software Internships",
+        "# Winter / Spring 2027 Software Internships",
         "",
-        f"_Auto-generated from `data/jobs.sqlite` at {generated}. Filtered to **Winter 2027** (and January 2027 winter-term equivalents). Re-run `python src/main.py --export-listings-only` to refresh._",
+        f"_Auto-generated from `data/jobs.sqlite` at {generated}. "
+        "Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). "
+        "Excludes summer-only and fall-2026-only. "
+        "Re-run `python src/main.py --export-listings-only` to refresh._",
         "",
-        f"**{len(jobs)} roles** matching Winter 2027. Sorted by freshness → posting date → priority.",
+        f"**{len(jobs)} roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.",
         "",
         "| Company | Role | Location | Term | Posted | Source | Apply |",
         "|---|---|---|---|---|---|---|",

@@ -5,16 +5,16 @@ Copy-paste prompt: [AUTOMATION_PROMPT.md](AUTOMATION_PROMPT.md). Discovery steps
 
 ## Schedule (both layers every run)
 
-| Automation | America/Toronto | Cron (EDT / UTC) | Env | Discord |
-|------------|-----------------|------------------|-----|---------|
-| W27 Midday Scout | Weekdays **12:30** | `30 16 * * 1-5` | `SCOUT_SLOT=midday` | No |
-| W27 Evening Scout | Weekdays **18:00** | `0 22 * * 1-5` | `SCOUT_SLOT=evening` | Daily digest + @you |
+| Automation | America/Toronto | Cron (EDT / UTC) | Cron (EST / UTC) |
+|------------|-----------------|------------------|------------------|
+| W27 Midday Scout | Weekdays **12:30** | `30 16 * * 1-5` | `30 17 * * 1-5` |
+| W27 Evening Scout | Weekdays **18:00** | `0 22 * * 1-5` | `0 23 * * 1-5` |
 
-Each run executes **Layer 1** and **Layer 2**. Discord only on evening via `--daily-digest`. Secrets: `DISCORD_WEBHOOK_URL`, `DISCORD_USER_ID`.
+Each run executes **Layer 1** (lists + ATS) **and Layer 2** (browser discovery). Freshness uses last finished pipeline run (`runs.finished_at` − 2h); schedule slots are fallback only.
 
 ## Goal
 
-Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Persist in SQLite. Discord only as an **evening daily digest** (@mention). Commit tracker outputs. **Do not double-scrape GitHub lists.**
+Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Persist in SQLite. Discord only for newly inserted **valid** roles. Commit tracker outputs. **Do not double-scrape GitHub lists.**
 
 ## Steps (every run)
 
@@ -27,9 +27,9 @@ Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Pe
 4. **Layer 2 browser discovery** (required every weekday run):
    - Follow [DISCOVERY_WORKFLOW.md](DISCOVERY_WORKFLOW.md).
    - Open latest `data/agent_findings/_search_pack_*.md`.
-   - Browse LinkedIn / Indeed / Handshake / Google as discovery only.
+   - Browse **Indeed + ATS site search** (DuckDuckGo if Google captchas). **Skip LinkedIn on Cloud Automations.**
    - Resolve official apply URLs only; never store aggregator URLs as `official_url`.
-   - Write `data/agent_findings/YYYYMMDDTHHMMSSZ.json`.
+   - Write `data/agent_findings/YYYYMMDDTHHMMSSZ.json` with `portals_attempted`.
 5. Ingest after writing findings (if not already covered):
    ```bash
    python src/main.py --ingest-findings
@@ -42,12 +42,12 @@ Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Pe
 
 | Rule | Behavior |
 |------|----------|
-| When | **Evening cron only** (`SCOUT_SLOT=evening` → `--daily-digest`) |
-| Aggregate | New Open + apply-URL roles since last digest (midday + evening) |
-| Ping | `@` mention via `DISCORD_USER_ID` |
-| Midday | Never posts Discord |
-| Format | Short tier summary + LISTINGS link |
-| Board | Winter 2027 [LISTINGS.md](../LISTINGS.md) |
+| When | Only **newly inserted** roles in this run |
+| Valid | `status=Open` **and** a real apply URL (ATS/job page) |
+| Skip | Updates, Unverified, Closed, homepage-only links |
+| Format | Short summary only (e.g. “18 new roles this run”) + LISTINGS link |
+| Rank | LISTINGS / CSV: freshness → posting time → fit → location → company → eligibility |
+| Board | Winter/Spring 2027 [LISTINGS.md](../LISTINGS.md) holds the full Source + Apply table |
 
 ## Priority scoring
 
@@ -61,6 +61,6 @@ Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Pe
 
 ## Environment
 
-- `DISCORD_WEBHOOK_URL` — webhook secret  
-- `DISCORD_USER_ID` — your Discord user id for evening @mention  
-- Evening digest (after scout + Layer 2 ingest): `python src/main.py --daily-digest`
+- `DISCORD_WEBHOOK_URL` — Cloud Agent secret; never commit  
+- Local UI: `bash scripts/ui.sh`  
+- Smoke test: `python src/main.py --notify-test 3`
