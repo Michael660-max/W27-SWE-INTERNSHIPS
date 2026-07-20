@@ -1,19 +1,21 @@
 # Winter / Spring 2027 Software Internships
 
-_Auto-generated from `data/jobs.sqlite` at 2026-07-19 03:08 UTC. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only. Re-run `python src/main.py --export-listings-only` to refresh._
+_Auto-generated from `data/jobs.sqlite` at 2026-07-20 16:37 UTC. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only. Re-run `python src/main.py --export-listings-only` to refresh._
 
-**72 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**75 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|
 | Netic | Full-Stack Software Engineer - Product - Intern - 2026-2027 | San Francisco, CA | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
-| Old Mission Capital | Software Engineer - 2027 Internship Program - June Start | Chicago, IL | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
 | The Trade Desk | 2027 North America Software Engineering Internship | Denver, CO +2 | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
-| Chevron | 2026-2027 Information Technology - Software Engineer - Intern | Houston, TX | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
+| Old Mission Capital | Software Engineer - 2027 Internship Program - June Start | Chicago, IL | — | 2026-07-16 | SpeedyApply 2027 SWE | [Apply](https://www.oldmissioncapital.com/careers/?gh_jid=7796180003) |
+| Chevron | 2026-2027 Information Technology - Software Engineer - Intern | Houston, TX | — | 2026-07-16 | SpeedyApply 2027 SWE | [Apply](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) |
 | Western Digital | Software Engineering Co-op | Rochester, MN | Winter 2027 | 2026-07-16 | Simplify Off-Season | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309?utm_source=Simplify&ref=Simplify) |
 | [Cybernetic Labs](https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef/application?embed=true) | Full-Stack Software Engineer Intern - Product | SF | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | Internship Tracker SWE +2 | [Apply](https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef/application?embed=true) |
-| Five Rings | Summer Intern 2027 - Software Developer | New York City, NY | — | 2026-07-15 | SpeedyApply 2027 SWE | [Apply](https://fiverings.com/careers/) |
+| Five Rings | Summer Intern 2027 - Software Developer | New York City, NY | — | 2026-07-15 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/fiveringsllc/jobs/5349707008) |
 | [The Trade Desk](https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007) | Software Engineering Intern | Seattle, WA, Irvine, CA, NYC, Bellevue, WA, Denver, CO, Boulder, CO | Winter 2027, Spring 2027, Summer 2027, Fall 2027, Winter 2028, Spring 2028, Summer 2028 | 2026-07-15 | Internship Tracker SWE +1 | [Apply](https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007) |
+| Blue Origin | Software Developer Intern - Graduate (Spring 2027) | Greater Seattle Area, WA | Spring 2027 | 2026-07-15 | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027--Software-Developer-Internship---Graduate_R66409) |
+| Blue Origin | Avionics Software Internship - Graduate (Spring 2027) | Greater Seattle Area, WA | Spring 2027 | 2026-07-15 | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027-Avionics-Software-Internship---Graduate_R66209) |
 | Persona AI | Teleoperation Software Engineering Internship | Houston, TX Pensacola, FL | Fall 2026, Spring 2027 | 2026-07-13 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c/application?utm_source=Simplify&ref=Simplify) |
 | TikTok | Backend Software Engineer Intern - TikTok Foundation - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-10 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7660769587276892469) |
 | TikTok | Frontend Software Engineer Intern - TikTok Foundation - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-10 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7660767857640802565) |
@@ -40,7 +42,7 @@ _Auto-generated from `data/jobs.sqlite` at 2026-07-19 03:08 UTC. Loose filter: *
 | Anduril | 2027 Software Engineer Intern | Atlanta, GA +5 | — | 2026-06-11 | SpeedyApply 2027 SWE | — |
 | [Tesla](https://www.tesla.com/careers/search/job/260382) | Software Engineer Intern - Software Engineer - AI Hardware Infrastructure | Palo Alto, CA | Fall 2026, Summer 2026, Winter 2027, Spring 2027 | 2026-06-07 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/260382) |
 | [Rippling](https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a) | Full Stack Software Engineer Intern | Seattle, WA, SF, NYC | Winter 2027 | 2026-06-05 | Internship Tracker SWE +1 | [Apply](https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a) |
-| Halter | Firmware Internship 2026/2027 | Auckland, New Zealand | — | 2026-06-02 | SpeedyApply 2027 SWE Intl | [Apply](https://www.halterhq.com/careers) |
+| Halter | Firmware Internship 2026/2027 | Auckland, New Zealand | — | 2026-06-02 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/halter/99a7eac6-0d38-4d17-a22b-f050c9ba0eaa) |
 | Stoke Space | Software Intern - Software | Kent, WA | Spring 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Stoke-Space?utm_source=GHList&utm_medium=company) |
 | Varian | Software Developer Co-op | Canada | Fall 2026, Winter 2026, Spring 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/670da3c5-bce0-4621-b519-da7ce7d528e6?utm_source=GHList&utm_medium=company) |
 | Skydio | Software Engineer Intern | San Mateo, CA | Fall 2026, Winter 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Skydio?utm_source=GHList&utm_medium=company) |
@@ -59,6 +61,7 @@ _Auto-generated from `data/jobs.sqlite` at 2026-07-19 03:08 UTC. Loose filter: *
 | [GE Appliances](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) | Software Engineering Co-op Spring 2027 | Louisville, KY | Spring 2027 | 2026-01-23 | Internship Tracker SWE | [Apply](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) |
 | Plexus | Intern – Software Engineer - Spring 2027 | Raleigh, NC | Spring 2026 | 2026-01-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Plexus?utm_source=GHList&utm_medium=company) |
 | [Palantir](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) | Forward Deployed Software Engineer – Internship - US Government | Honolulu, HI | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2025-12-12 | Internship Tracker SWE | [Apply](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) |
+| NationGraph | Winter 2027 Software Engineering Intern | Toronto, ON, Canada | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68) |
 | Netic | Software Engineer Intern, Agent Platform / Full Stack (2026-2027) | San Francisco, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7) |
 | Western Digital | Software Engineering Co-op (Winter 2027) | Milpitas, CA | Winter 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309) |
 | ASM | Software Engineering Intern (Spring 2027) | — | Spring 2027 | 2026-04-23 | sndsh404 Summer2027 +2 | [Apply](https://www.asm.com/open-vacancies/software-engineering-intern-spring-2027-4830113101?gh_jid=4830113101) |

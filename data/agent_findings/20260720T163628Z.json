@@ -1,0 +1,84 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-20T16:36:28Z",
+  "discovery": "layer2_midday indeed+duckduckgo_ats",
+  "portals_attempted": ["indeed", "duckduckgo_ats"],
+  "portals_blocked": ["linkedin"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Full+Stack%22+Intern&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Machine+Learning%22+Intern&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Spring+2027%22+Intern+Software"
+  ],
+  "jobs": [
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": null,
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "Toronto on-site; open to Canadian applicants",
+      "notes": "duckduckgo_ats→ashby_resolve; CA$6K–CA$8K/month; stack: React/Next.js, Python, Go, PostgreSQL; URL improved from homepage to Ashby direct link"
+    },
+    {
+      "company": "Skydio",
+      "exact_role_title": "Software Engineer Intern Fall 2026/Winter 2027",
+      "location": "San Mateo, California, United States",
+      "term": "Winter 2027",
+      "posting_date": null,
+      "official_url": "https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "E-Verify; cloud platform and infrastructure team; $47–58/hr",
+      "notes": "duckduckgo_ats→ashby_resolve; Cloud Platform & Infrastructure team; $47/hr undergrad, $53/hr grad, $58/hr PhD; URL improved from skydio.com homepage to Ashby direct link"
+    },
+    {
+      "company": "Blue Origin",
+      "exact_role_title": "Software Developer Intern - Graduate (Spring 2027)",
+      "location": "Greater Seattle Area, WA",
+      "term": "Spring 2027",
+      "posting_date": "2026-07-15",
+      "official_url": "https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027--Software-Developer-Internship---Graduate_R66409",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": true,
+      "requires_us_work_auth": true,
+      "requires_export_control": true,
+      "eligibility_notes": "US citizenship likely required for export-controlled work",
+      "notes": "duckduckgo_ats→workday_resolve; Graduate-level internship; R66409; new listing not previously in DB"
+    },
+    {
+      "company": "Blue Origin",
+      "exact_role_title": "Avionics Software Internship - Graduate (Spring 2027)",
+      "location": "Greater Seattle Area, WA",
+      "term": "Spring 2027",
+      "posting_date": "2026-07-15",
+      "official_url": "https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027-Avionics-Software-Internship---Graduate_R66209",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": true,
+      "requires_us_work_auth": true,
+      "requires_export_control": true,
+      "eligibility_notes": "US citizenship likely required for export-controlled avionics work",
+      "notes": "duckduckgo_ats→workday_resolve; Graduate-level avionics software internship; R66209; new listing not previously in DB"
+    }
+  ]
+}
