@@ -1,0 +1,97 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-20T22:06:47Z",
+  "portals_attempted": [
+    "indeed (1 search completed, 2 searches 403-blocked — 0 SWE W27 results on Indeed)",
+    "duckduckgo (3 general keyword searches completed)",
+    "duckduckgo_ats (6 site: searches completed: ats.rippling.com, jobs.ashbyhq.com x2, boards.greenhouse.io, jobs.lever.co, myworkdayjobs.com x2)",
+    "linkedin_jobs: SKIPPED (Cloud Automation policy)",
+    "handshake: SKIPPED (Cloud Automation policy)"
+  ],
+  "jobs": [
+    {
+      "company": "Rippling",
+      "exact_role_title": "Software Engineer Intern - Backend Focused",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "term": "Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "posting_date": null,
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "",
+      "notes": "Layer 2 DuckDuckGo search 'Winter 2027 Software Engineer Intern'; verified live on ats.rippling.com"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "posting_date": null,
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "On-site Toronto; open to international students (consult school)",
+      "notes": "Layer 2 Ashby site search 'Winter 2027 Software'; CA$6K-CA$8K/month; verified live on jobs.ashbyhq.com"
+    },
+    {
+      "company": "ASM",
+      "exact_role_title": "Software Engineering Intern",
+      "location": "Phoenix, AZ",
+      "term": "Spring 2027",
+      "official_url": "https://boards.greenhouse.io/asm/jobs/4830113101",
+      "posting_date": null,
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "International students must consult school's international office",
+      "notes": "Layer 2 DuckDuckGo search 'Spring 2027 Software Engineering Intern'; Jan/Feb-Apr/May 2027; semiconductor industry; verified via asm.com with gh_jid=4830113101"
+    },
+    {
+      "company": "Blue Origin",
+      "exact_role_title": "Software Developer Intern",
+      "location": "Kent, WA",
+      "term": "Spring 2027",
+      "official_url": "https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027--Software-Developer-Internship---Graduate_R66409",
+      "posting_date": "2026-07-15",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "Graduate students only (M.Sc./Ph.D.)",
+      "notes": "Layer 2 DuckDuckGo myworkdayjobs.com site search 'Spring 2027 Software'; posted 2026-07-15"
+    },
+    {
+      "company": "Blue Origin",
+      "exact_role_title": "Avionics Software Intern",
+      "location": "Kent, WA",
+      "term": "Spring 2027",
+      "official_url": "https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027-Avionics-Software-Internship---Graduate_R66209",
+      "posting_date": null,
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "Graduate students only (M.Sc./Ph.D.)",
+      "notes": "Layer 2 DuckDuckGo myworkdayjobs.com site search 'Spring 2027 Software'"
+    },
+    {
+      "company": "GE Appliances",
+      "exact_role_title": "Software Engineering Co-op",
+      "location": "Louisville, KY",
+      "term": "Spring 2027",
+      "official_url": "https://haier.wd3.myworkdayjobs.com/en-US/GE_Appliances/job/Software-Engineering-Co-op-Spring-2027_REQ-24832",
+      "posting_date": null,
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "Housing/relocation assistance available for eligible students",
+      "notes": "Layer 2 DuckDuckGo myworkdayjobs.com site search 'Spring 2027 Software'; Jan 11-May 7, 2027"
+    }
+  ]
+}
