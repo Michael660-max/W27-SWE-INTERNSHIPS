@@ -1,0 +1,34 @@
+{
+  "source": "Cursor Agent Layer 2 Search",
+  "generated_at": "2026-07-21T22:15:00Z",
+  "portals_attempted": ["indeed", "duckduckgo_ats", "google_ats"],
+  "portals_blocked": ["indeed"],
+  "jobs": [
+    {
+      "company": "Rilla",
+      "exact_role_title": "Software Engineering Intern - 2027 Graduates",
+      "location": "New York City, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-21",
+      "official_url": "https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "Must be 2027 graduate. In-office NYC."
+    },
+    {
+      "company": "Rivian and Volkswagen Group Technologies",
+      "exact_role_title": "Software Integration Engineering Intern (Fall-Spring)",
+      "location": "Berlin, Germany",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-04",
+      "official_url": "https://jobs.ashbyhq.com/rivianvw.tech/986b68e0-9702-4828-9462-6adbe2984f1a",
+      "freshness_label": "Fresh",
+      "requires_us_citizenship": false,
+      "requires_us_work_auth": false,
+      "requires_export_control": false,
+      "eligibility_notes": "October 2026 - March 2027 commitment. Based in Berlin."
+    }
+  ]
+}
