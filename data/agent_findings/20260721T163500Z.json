@@ -1,0 +1,31 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-21T16:35:00Z",
+  "discovery": "layer2_midday indeed+duckduckgo_ats",
+  "portals_attempted": ["indeed", "duckduckgo_ats"],
+  "portals_blocked": ["linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22software+co-op%22+%22Spring+2027%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Backend%22+Intern&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+intern+engineer",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Spring+2027%22+Intern+Software"
+  ],
+  "indeed_result": "No results / 403 Forbidden on all Indeed queries — typical for Cloud Agent environment",
+  "notes": "Browsed 6 Indeed URLs (all returned no results or 403) and 11 DuckDuckGo ATS site-search queries. Ashby results: NationGraph Winter 2027 SWE Intern and Skydio Fall 2026/Winter 2027 SWE Intern confirmed live — both already in DB. Rippling ATS results: Software Engineer Intern - Backend Focused - Winter 2027 and Machine Learning Software Engineer Intern - Winter 2027 confirmed live — both already in DB. Workday results: only accounting/audit internships (not SWE). Lever results: only accounting firm results. No new SWE listings discovered beyond what Layer 1 already ingested.",
+  "jobs": []
+}
