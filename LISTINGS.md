@@ -1,16 +1,18 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-07-22 20:57 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-07-22 22:06 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-07-22 12:39 EDT (`ingest-findings`; +1 new / 13 updated; started 2026-07-22 12:39 EDT).
+**Last live scout:** 2026-07-22 18:06 EDT (`ingest-findings`; +2 new / 14 updated).
 **Last Discord digest:** 2026-07-18 22:12 EDT.
 
-**79 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**81 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|
 | Georgian Partners Growth | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Circleback | Software Engineering Intern (Summer 2027) | San Francisco, CA | Summer 2027 | 2026-07-22 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) |
+| Deepgram | Software Engineering Intern (Fall 2026/Summer 2027) | USA | Fall 2026 / Summer 2027 | 2026-07-22 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1) |
 | Netic | Full-Stack Software Engineer - Product - Intern - 2026-2027 | San Francisco, CA | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
 | The Trade Desk | 2027 North America Software Engineering Internship | Denver, CO +2 | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
 | Old Mission Capital | Software Engineer - 2027 Internship Program - June Start | Chicago, IL | — | 2026-07-16 | SpeedyApply 2027 SWE | [Apply](https://www.oldmissioncapital.com/careers/?gh_jid=7796180003) |

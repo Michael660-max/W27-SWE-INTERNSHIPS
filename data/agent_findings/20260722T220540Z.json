@@ -1,0 +1,45 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-22T22:05:40Z",
+  "discovery": "layer2_evening indeed+google_ats",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats"],
+  "portals_blocked": ["linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "indeed_results_summary": "Winter 2027 queries surface Rippling Backend/Full Stack/ML intern roles (already in DB). Spring 2027 query surface ASM International Software Engineering Intern in Phoenix AZ (already in DB). No new roles found via Indeed.",
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern"
+  ],
+  "ats_results_summary": "Ashby searches found Deepgram Fall 2026/Summer 2027 remote intern (new), Circleback Summer 2027 SF intern (new), Skydio Fall/Winter 2027 and Netic 2026-2027 (already in DB). Greenhouse searches returned mostly non-SWE results or known roles. Lever searches found HCVT accounting roles (not SWE) and Palantir FDSE with Poly clearance (niche). Rippling site search confirmed Backend/ML/Full Stack W27 roles still active (already in DB). Workday returned binary blob results.",
+  "jobs": [
+    {
+      "company": "Deepgram",
+      "exact_role_title": "Software Engineering Intern (Fall 2026/Summer 2027)",
+      "location": "USA",
+      "remote_or_hybrid": "Remote",
+      "term": "Fall 2026 / Summer 2027",
+      "posting_date": "2026-07-22",
+      "official_url": "https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1",
+      "notes": "google_ats site:jobs.ashbyhq.com Spring 2027 Software Intern. Remote US. $55-65/hr. Voice AI company (ASR/TTS/LLM). Fall 2026 or Summer 2027 cohorts."
+    },
+    {
+      "company": "Circleback",
+      "exact_role_title": "Software Engineering Intern (Summer 2027)",
+      "location": "San Francisco, CA",
+      "remote_or_hybrid": "OnSite",
+      "term": "Summer 2027",
+      "posting_date": "2026-07-22",
+      "official_url": "https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f",
+      "notes": "google_ats site:jobs.ashbyhq.com Spring/Summer 2027. SF on-site. $7K-10K/month. Full-stack: React web, Electron desktop, React Native mobile. AI meeting notes product."
+    }
+  ]
+}
