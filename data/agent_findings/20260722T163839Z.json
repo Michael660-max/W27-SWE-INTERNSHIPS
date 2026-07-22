@@ -1,0 +1,39 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-22T16:38:39Z",
+  "discovery": "layer2_midday indeed+duckduckgo_ats",
+  "portals_attempted": ["indeed", "duckduckgo_ats"],
+  "portals_blocked": ["linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "indeed_results_summary": "First query returned no results; remaining 4 queries returned HTTP 403 Forbidden. No new listings found via Indeed.",
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Spring+2027%22+Intern+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern"
+  ],
+  "ats_results_summary": "Ashby/Greenhouse/Lever Winter+Spring 2027 queries returned no SWE results. Rippling Winter 2027 shows Backend Focused + ML Engineer roles (already in DB). Workday Winter 2027 shows accounting firms (Crowe, Baker Tilly). Workday Spring 2027 shows Blue Origin Software Developer Intern (already in DB), GE Appliances Co-op (already in DB), and Blue Origin Avionics Software Graduate (new).",
+  "jobs": [
+    {
+      "company": "Blue Origin",
+      "exact_role_title": "Spring 2027 Avionics Software Internship - Graduate",
+      "location": "Greater Seattle Area",
+      "term": "Spring 2027",
+      "posting_date": "2026-07-15",
+      "official_url": "https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027-Avionics-Software-Internship---Graduate_R66209",
+      "notes": "duckduckgo_ats workday search: site:myworkdayjobs.com Spring 2027 Software. Graduate-level avionics software role. Design, development and testing of avionics hardware and software for rockets, ground systems, test stands, moon landers."
+    }
+  ]
+}

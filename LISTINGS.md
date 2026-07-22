@@ -1,25 +1,31 @@
 # Winter / Spring 2027 Software Internships
 
-_Auto-generated from `data/jobs.sqlite` at 2026-07-19 03:08 UTC. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only. Re-run `python src/main.py --export-listings-only` to refresh._
+_Auto-generated from `data/jobs.sqlite` at 2026-07-22 16:39 UTC. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only. Re-run `python src/main.py --export-listings-only` to refresh._
 
-**72 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**79 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|
+| Georgian Partners Growth | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| NationGraph | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Netic | Full-Stack Software Engineer - Product - Intern - 2026-2027 | San Francisco, CA | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
-| Old Mission Capital | Software Engineer - 2027 Internship Program - June Start | Chicago, IL | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
 | The Trade Desk | 2027 North America Software Engineering Internship | Denver, CO +2 | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
-| Chevron | 2026-2027 Information Technology - Software Engineer - Intern | Houston, TX | — | 2026-07-16 | SpeedyApply 2027 SWE | — |
+| Old Mission Capital | Software Engineer - 2027 Internship Program - June Start | Chicago, IL | — | 2026-07-16 | SpeedyApply 2027 SWE | [Apply](https://www.oldmissioncapital.com/careers/?gh_jid=7796180003) |
+| Chevron | 2026-2027 Information Technology - Software Engineer - Intern | Houston, TX | — | 2026-07-16 | SpeedyApply 2027 SWE | [Apply](https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) |
 | Western Digital | Software Engineering Co-op | Rochester, MN | Winter 2027 | 2026-07-16 | Simplify Off-Season | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309?utm_source=Simplify&ref=Simplify) |
+| [Chevron Corporation](https://chevron.wd5.myworkdayjobs.com/University/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) | Software Engineer Intern - Information Technology - Software Engineer | Houston, TX | Fall 2026 | 2026-07-16 | Internship Tracker SWE | [Apply](https://chevron.wd5.myworkdayjobs.com/University/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1) |
 | [Cybernetic Labs](https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef/application?embed=true) | Full-Stack Software Engineer Intern - Product | SF | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | Internship Tracker SWE +2 | [Apply](https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef/application?embed=true) |
-| Five Rings | Summer Intern 2027 - Software Developer | New York City, NY | — | 2026-07-15 | SpeedyApply 2027 SWE | [Apply](https://fiverings.com/careers/) |
+| Five Rings | Summer Intern 2027 - Software Developer | New York City, NY | — | 2026-07-15 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/fiveringsllc/jobs/5349707008) |
+| Blue Origin | Spring 2027 Avionics Software Internship - Graduate | Greater Seattle Area | Spring 2027 | 2026-07-15 | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Spring-2027-Avionics-Software-Internship---Graduate_R66209) |
 | [The Trade Desk](https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007) | Software Engineering Intern | Seattle, WA, Irvine, CA, NYC, Bellevue, WA, Denver, CO, Boulder, CO | Winter 2027, Spring 2027, Summer 2027, Fall 2027, Winter 2028, Spring 2028, Summer 2028 | 2026-07-15 | Internship Tracker SWE +1 | [Apply](https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007) |
 | Persona AI | Teleoperation Software Engineering Internship | Houston, TX Pensacola, FL | Fall 2026, Spring 2027 | 2026-07-13 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c/application?utm_source=Simplify&ref=Simplify) |
 | TikTok | Backend Software Engineer Intern - TikTok Foundation - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-10 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7660769587276892469) |
 | TikTok | Frontend Software Engineer Intern - TikTok Foundation - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-10 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7660767857640802565) |
 | TikTok | Software Engineer Intern - Multimedia Framework - C++ - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-10 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7660769585826154805) |
 | TikTok | Software Engineer Intern - Multimedia Arch-Live - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-08 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7659948535374776629) |
+| [Schweitzer Engineering Laboratories](https://selinc.wd1.myworkdayjobs.com/SEL/job/Texas---Round-Rock/Software-Engineer-Intern_2026-21720) | Software Engineering Intern | Round Rock, TX | Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-07 | Internship Tracker SWE | [Apply](https://selinc.wd1.myworkdayjobs.com/SEL/job/Texas---Round-Rock/Software-Engineer-Intern_2026-21720) |
 | TikTok | Software Engineer Intern - TikTok Live - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-06 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7659284975782611253) |
+| TikTok | Site Reliability Engineer Intern - Technical Infrastructure - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-03 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7658162714448054581) |
 | TikTok | Backend Software Engineer Intern - Platform Engineering - 2027 Start - BS/MS | Sydney, Australia | — | 2026-07-02 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7657823445841955125) |
 | Palantir | Forward Deployed Software Engineer Intern - Intel | Washington, DC | Winter 2027, Spring 2028 | 2026-07-02 | Simplify Off-Season +3 | [Apply](https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89/apply?utm_source=Simplify&ref=Simplify) |
 | Palantir | Forward Deployed Software Engineer - Internship - Commercial | Chicago, IL | Winter 2027, Spring 2027, Summer 2027, Fall 2027, Winter 2028, Spring 2028 | 2026-07-01 | SpeedyApply 2027 SWE +2 | [Apply](https://jobs.lever.co/palantir/d5486403-c050-4920-b2e0-91b69b61ebb2) |
@@ -40,7 +46,7 @@ _Auto-generated from `data/jobs.sqlite` at 2026-07-19 03:08 UTC. Loose filter: *
 | Anduril | 2027 Software Engineer Intern | Atlanta, GA +5 | — | 2026-06-11 | SpeedyApply 2027 SWE | — |
 | [Tesla](https://www.tesla.com/careers/search/job/260382) | Software Engineer Intern - Software Engineer - AI Hardware Infrastructure | Palo Alto, CA | Fall 2026, Summer 2026, Winter 2027, Spring 2027 | 2026-06-07 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/260382) |
 | [Rippling](https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a) | Full Stack Software Engineer Intern | Seattle, WA, SF, NYC | Winter 2027 | 2026-06-05 | Internship Tracker SWE +1 | [Apply](https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a) |
-| Halter | Firmware Internship 2026/2027 | Auckland, New Zealand | — | 2026-06-02 | SpeedyApply 2027 SWE Intl | [Apply](https://www.halterhq.com/careers) |
+| Halter | Firmware Internship 2026/2027 | Auckland, New Zealand | — | 2026-06-02 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/halter/99a7eac6-0d38-4d17-a22b-f050c9ba0eaa) |
 | Stoke Space | Software Intern - Software | Kent, WA | Spring 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Stoke-Space?utm_source=GHList&utm_medium=company) |
 | Varian | Software Developer Co-op | Canada | Fall 2026, Winter 2026, Spring 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/670da3c5-bce0-4621-b519-da7ce7d528e6?utm_source=GHList&utm_medium=company) |
 | Skydio | Software Engineer Intern | San Mateo, CA | Fall 2026, Winter 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Skydio?utm_source=GHList&utm_medium=company) |
@@ -49,6 +55,7 @@ _Auto-generated from `data/jobs.sqlite` at 2026-07-19 03:08 UTC. Loose filter: *
 | [Skydio](https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee/application) | Software Engineer Intern | San Mateo, CA | Fall 2026, Winter 2027 | 2026-05-06 | Internship Tracker SWE +3 | [Apply](https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee/application) |
 | ASM | Software Engineering Intern - Spring 2027 | Phoenix, AZ +1 | Spring 2027 | 2026-04-23 | SpeedyApply 2027 SWE | — |
 | Workato | Intern AI Engineering | SF | Winter 2026, Spring 2027 | 2026-04-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Workato?utm_source=GHList&utm_medium=company) |
+| TikTok | Site Reliability Engineer Intern - Video & Edge Global Engineering - 2027 Start - BS/MS | Sydney, Australia | — | 2026-04-08 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7626192517295556869) |
 | Ellipsis Labs | Software Engineer - 2027 Interns | New York City, NY | — | 2026-03-27 | SpeedyApply 2027 SWE | — |
 | NationGraph | Winter 2027 Software Engineering Intern | Toronto, Canada | Winter 2027 | 2026-03-22 | SpeedyApply 2027 SWE Intl | — |
 | GE Aerospace | Engines Engineering Intern/Co-op - Computer or Software Engineering | Saugus, MA Sharonville, OH | Spring 2027 | 2026-03-20 | Simplify Off-Season | [Apply](https://simplify.jobs/c/GE-Aerospace?utm_source=GHList&utm_medium=company) |
