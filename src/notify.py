@@ -6,7 +6,8 @@ from pathlib import Path
 
 import httpx
 
-from .config import DISCORD_USER_ID, DISCORD_WEBHOOK_URL, NOTIFICATIONS_DIR, TIMEZONE
+from .config import NOTIFICATIONS_DIR, TIMEZONE
+from . import config
 from .db import all_jobs, last_digest_at, record_digest, record_notification
 from .models import JobRecord
 from .score import sort_jobs
@@ -162,7 +163,7 @@ def _tier_of(job: JobRecord) -> str:
 
 def mention_prefix() -> str:
     """`<@USER_ID>` so the evening digest pings you (needs DISCORD_USER_ID)."""
-    uid = (DISCORD_USER_ID or "").strip()
+    uid = (config.DISCORD_USER_ID or "").strip()
     if uid.isdigit():
         return f"<@{uid}>"
     return ""
@@ -268,7 +269,7 @@ def send_discord(
     allow_empty: bool = False,
     mention: bool = False,
 ) -> bool:
-    webhook_url = (webhook_url if webhook_url is not None else DISCORD_WEBHOOK_URL).strip()
+    webhook_url = (webhook_url if webhook_url is not None else config.DISCORD_WEBHOOK_URL).strip()
     if not jobs and not allow_empty:
         return False
     if dry_run or not webhook_url:
@@ -309,8 +310,9 @@ def send_discord(
         chunks = [build_discord_short([], prefix=head)]
 
     payload_extra: dict = {}
-    if mention and DISCORD_USER_ID.isdigit():
-        payload_extra["allowed_mentions"] = {"users": [DISCORD_USER_ID]}
+    uid = (config.DISCORD_USER_ID or "").strip()
+    if mention and uid.isdigit():
+        payload_extra["allowed_mentions"] = {"users": [uid]}
 
     with httpx.Client(timeout=30.0) as client:
         for chunk in chunks:
@@ -415,9 +417,27 @@ def jobs_for_daily_digest(conn) -> tuple[list[JobRecord], datetime]:
 def send_daily_digest(conn, dry_run: bool = False) -> Path | None:
     """
     Evening-only Discord: aggregate new Open+apply roles since last digest, @mention user.
+    Returns the markdown path (if any). Raises RuntimeError if live digest cannot POST
+    because DISCORD_WEBHOOK_URL is unset (so Automations fail loudly).
     """
+    import logging
+
+    logger = logging.getLogger(__name__)
     jobs, cutoff = jobs_for_daily_digest(conn)
     prefix = f"_Since {cutoff.astimezone(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}_"
+    webhook = (config.DISCORD_WEBHOOK_URL or "").strip()
+
+    if dry_run:
+        mode = "dry_run"
+    elif not webhook:
+        mode = "missing_webhook"
+        logger.error(
+            "DISCORD_WEBHOOK_URL is unset — wrote digest file only; Discord was NOT sent. "
+            "Add the webhook as a Cloud Agent secret on the Evening Automation."
+        )
+    else:
+        mode = "live"
+
     path = notify_new_jobs(
         conn,
         jobs,
@@ -425,7 +445,7 @@ def send_daily_digest(conn, dry_run: bool = False) -> Path | None:
         prefix=prefix,
         style="short",
         only_valid=False,  # already filtered
-        send=not dry_run,
+        send=bool(webhook) and not dry_run,
         mention=True,
         allow_empty=True,
         channel="discord_digest",
@@ -433,7 +453,16 @@ def send_daily_digest(conn, dry_run: bool = False) -> Path | None:
     record_digest(
         conn,
         job_count=len(jobs),
-        mode="dry_run" if dry_run else "live",
+        mode=mode,
         notes="evening_daily_digest",
     )
+    if mode == "missing_webhook":
+        raise RuntimeError(
+            "Evening digest not posted: set DISCORD_WEBHOOK_URL (and DISCORD_USER_ID) "
+            "as Cloud Agent secrets, then re-run --daily-digest."
+        )
+    if webhook and not dry_run and not mention_prefix():
+        logger.warning(
+            "DISCORD_USER_ID unset or not numeric — digest posted without @mention"
+        )
     return path

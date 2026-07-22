@@ -34,20 +34,21 @@ Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Pe
    ```bash
    python src/main.py --ingest-findings
    ```
-6. Confirm `data/jobs.sqlite`, `data/jobs.csv`, and `LISTINGS.md` updated.
-7. Commit/push tracker outputs only (never secrets).
-8. Zero new roles is success.
+6. Confirm `data/jobs.sqlite`, `data/jobs.csv`, and `LISTINGS.md` updated (header must show **Last live scout**).
+7. **Commit and push directly to `main`** (never a `cursor/...` PR branch — that leaves the public board stale).
+8. Evening only: `python src/main.py --daily-digest` before the commit.
+9. Zero new roles is success if portals were browsed.
 
 ## Notifications
 
 | Rule | Behavior |
 |------|----------|
-| When | Only **newly inserted** roles in this run |
+| When | **Evening** via `--daily-digest` (aggregates since last digest; @mention) |
 | Valid | `status=Open` **and** a real apply URL (ATS/job page) |
-| Skip | Updates, Unverified, Closed, homepage-only links |
-| Format | Short summary only (e.g. “18 new roles this run”) + LISTINGS link |
+| Skip | Midday Discord; Unverified, Closed, homepage-only links |
+| Format | Short summary + LISTINGS link |
 | Rank | LISTINGS / CSV: freshness → posting time → fit → location → company → eligibility |
-| Board | Winter/Spring 2027 [LISTINGS.md](../LISTINGS.md) holds the full Source + Apply table |
+| Board | Winter/Spring 2027 [LISTINGS.md](../LISTINGS.md) — includes **Last live scout** / digest times |
 
 ## Priority scoring
 
@@ -61,6 +62,6 @@ Find Winter 2027 / Spring 2027 software internships and co-ops (Canada + US). Pe
 
 ## Environment
 
-- `DISCORD_WEBHOOK_URL` — Cloud Agent secret; never commit  
+- `DISCORD_WEBHOOK_URL`, `DISCORD_USER_ID` — Cloud Agent secrets; never commit  
 - Local UI: `bash scripts/ui.sh`  
 - Smoke test: `python src/main.py --notify-test 3`

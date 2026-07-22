@@ -343,26 +343,36 @@ def last_finished_run_at(
     Last finished_at used for freshness windows.
     Default live_only=True so dry-runs do not advance the scout window.
     """
+    row = last_finished_run(conn, live_only=live_only)
+    return row["finished_at"] if row else None
+
+
+def last_finished_run(
+    conn: sqlite3.Connection,
+    *,
+    live_only: bool = True,
+) -> Optional[sqlite3.Row]:
+    """Most recent finished scout run row (for LISTINGS header / status)."""
     if live_only:
-        row = conn.execute(
+        return conn.execute(
             """
-            SELECT finished_at FROM runs
+            SELECT id, started_at, finished_at, mode, inserted, updated, notes
+            FROM runs
             WHERE finished_at IS NOT NULL AND finished_at != ''
               AND mode = 'live'
             ORDER BY finished_at DESC
             LIMIT 1
             """
         ).fetchone()
-    else:
-        row = conn.execute(
-            """
-            SELECT finished_at FROM runs
-            WHERE finished_at IS NOT NULL AND finished_at != ''
-            ORDER BY finished_at DESC
-            LIMIT 1
-            """
-        ).fetchone()
-    return row["finished_at"] if row else None
+    return conn.execute(
+        """
+        SELECT id, started_at, finished_at, mode, inserted, updated, notes
+        FROM runs
+        WHERE finished_at IS NOT NULL AND finished_at != ''
+        ORDER BY finished_at DESC
+        LIMIT 1
+        """
+    ).fetchone()
 
 
 def last_digest_at(conn: sqlite3.Connection) -> Optional[str]:

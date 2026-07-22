@@ -2,7 +2,7 @@
 
 Automated weekday scout for Winter/Spring 2027 software internships and co-ops (Canada + US). You don’t need to run anything locally — **Cursor Automations** handle it.
 
-**Board:** [LISTINGS.md](LISTINGS.md) (Winter/Spring 2027 Source + Apply table)  
+**Board:** [LISTINGS.md](LISTINGS.md) (Winter/Spring 2027 table + **last scout / digest times**)  
 **Database:** `data/jobs.sqlite` (full history)  
 **Alerts:** Discord summary when new valid roles are inserted
 

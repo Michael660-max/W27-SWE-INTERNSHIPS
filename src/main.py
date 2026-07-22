@@ -271,11 +271,15 @@ def main(argv: list[str] | None = None) -> int:
     if args.daily_digest:
         ensure_db()
         with connect() as conn:
-            path = send_daily_digest(conn, dry_run=args.dry_run)
+            try:
+                path = send_daily_digest(conn, dry_run=args.dry_run)
+            except RuntimeError as exc:
+                logger.error("%s", exc)
+                print(f"Daily digest FAILED: {exc}")
+                return 1
             logger.info("Daily digest %s", path or "(sent/empty)")
         print("Daily digest complete")
         return 0
-
     if args.notify_test is not None:
         sent = run_notify_test(args.notify_test, dry_run=args.dry_run)
         print(f"Notify-test sent {sent} roles")
