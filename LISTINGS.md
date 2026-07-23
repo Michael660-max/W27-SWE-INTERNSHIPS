@@ -1,17 +1,17 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-07-23 16:36 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-07-23 22:07 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-07-23 12:36 EDT (`ingest-findings`; +1 new / 16 updated).
+**Last live scout:** 2026-07-23 18:07 EDT (`ingest-findings`; +3 new / 26 updated; started 2026-07-23 18:07 EDT).
 **Last Discord digest:** 2026-07-22 18:06 EDT.
 
-**84 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**88 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
-| NationGraph | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| NationGraph | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Circleback | Software Engineering Intern (Summer 2027) | San Francisco, CA | Summer 2027 | 2026-07-22 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) |
 | Deepgram | Software Engineering Intern (Fall 2026/Summer 2027) | USA | Fall 2026 / Summer 2027 | 2026-07-22 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1) |
 | Virtu Financial | 2027 Internship - Software Engineer | Dublin, Ireland | — | 2026-07-20 | SpeedyApply 2027 SWE Intl | [Apply](https://job-boards.greenhouse.io/virtu/jobs/8551566002) |
@@ -72,10 +72,14 @@ _Board exported `2026-07-23 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Midmark | Firmware Engineering Intern/Co-op | Vandalia, OH | Spring 2027 | 2026-02-18 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Midmark?utm_source=GHList&utm_medium=company) |
 | [GE Appliances](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) | Software Engineering Co-op Spring 2027 | Louisville, KY | Spring 2027 | 2026-01-23 | Internship Tracker SWE | [Apply](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) |
 | Plexus | Intern – Software Engineer - Spring 2027 | Raleigh, NC | Spring 2026 | 2026-01-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Plexus?utm_source=GHList&utm_medium=company) |
-| [Palantir](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) | Forward Deployed Software Engineer – Internship - US Government | Honolulu, HI | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2025-12-12 | Internship Tracker SWE | [Apply](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) |
+| [Palantir](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) | Forward Deployed Software Engineer – Internship - US Government | Honolulu, HI | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2025-12-12 | Internship Tracker SWE +1 | [Apply](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) |
 | Blue Origin | Spring 2027 Engineering Intern - Undergraduate | Greater Seattle Area (+ Van Horn TX, Huntsville AL, Denver CO, Space Coast FL, Los Angeles CA, Longmont CO) | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Greater-Seattle-Area/Spring-2027--Engineering-Intern---Undergraduate_R69064) |
+| Blue Origin | Spring 2027 Software Developer Internship - Graduate | Seattle, WA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin_External) |
+| ASM International | Software Engineering Intern (Spring 2027) | Phoenix, AZ | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://www.asm.com/us/en/about-asm/careers) |
+| Western Digital | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |
 | Netic | Software Engineer Intern, Agent Platform / Full Stack (2026-2027) | San Francisco, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7) |
 | Western Digital | Software Engineering Co-op (Winter 2027) | Milpitas, CA | Winter 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309) |
+| Cohere | Software Engineer Intern (Fall / Winter 2026) | Canada | Winter 2027 | 2026-05-03 | Company ATS:Cohere +2 | [Apply](https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254) |
 | ASM | Software Engineering Intern (Spring 2027) | — | Spring 2027 | 2026-04-23 | sndsh404 Summer2027 +2 | [Apply](https://www.asm.com/open-vacancies/software-engineering-intern-spring-2027-4830113101?gh_jid=4830113101) |
 | Salesforce | Software Engineer Intern (Futureforce) | San Francisco, CA | — | n/a | sndsh404 Summer2027 | [Apply](https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Software-Engineer_JR340771-1) |
 | IMC | 2027 - Software Engineering Intern - BITS Pilani | Mumbai, India | — | n/a | Company ATS:IMC | [Apply](https://job-boards.eu.greenhouse.io/imc/jobs/4917549101) |

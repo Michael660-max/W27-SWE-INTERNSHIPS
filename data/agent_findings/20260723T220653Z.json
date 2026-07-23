@@ -1,0 +1,106 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-23T22:06:53Z",
+  "discovery": "layer2_hardened_portals",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats"],
+  "portals_blocked": [],
+  "notes": "Evening run. Indeed searches: Winter 2027 SWE intern, Spring 2027 SWE Engineering intern, Winter software co-op. ATS site searches: site:jobs.ashbyhq.com Winter 2027 Software, site:boards.greenhouse.io Winter 2027 Software Intern, site:jobs.lever.co Winter 2027 Software. All roles found are already in DB. LinkedIn and Handshake skipped (Cloud Automation).",
+  "jobs": [
+    {
+      "company": "Rippling",
+      "exact_role_title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "notes": "indeed_search; ats_rippling"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "notes": "indeed_search; ats_rippling"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "notes": "indeed_search; ats_rippling"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "notes": "google_ats; site:jobs.ashbyhq.com"
+    },
+    {
+      "company": "Skydio",
+      "exact_role_title": "Software Engineer Intern Fall 2026/Winter 2027",
+      "location": "San Mateo, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee",
+      "notes": "google_ats; site:jobs.ashbyhq.com"
+    },
+    {
+      "company": "Netic",
+      "exact_role_title": "Software Engineer (Agent Platform) - Intern - 2026-2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7",
+      "notes": "google_ats; site:jobs.ashbyhq.com"
+    },
+    {
+      "company": "Netic",
+      "exact_role_title": "Full-Stack Software Engineer (Product) - Intern - 2026-2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef",
+      "notes": "google_ats; site:jobs.ashbyhq.com"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Fall / Winter 2026)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "notes": "google_ats; site:jobs.ashbyhq.com"
+    },
+    {
+      "company": "Western Digital",
+      "exact_role_title": "Software Engineering Co-Op - Winter 2027",
+      "location": "Rochester, MN",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027",
+      "notes": "indeed_search; smartrecruiters_ats"
+    },
+    {
+      "company": "Palantir",
+      "exact_role_title": "Forward Deployed Software Engineer, Internship - US Government",
+      "location": "Honolulu, HI",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e",
+      "notes": "google_ats; site:jobs.lever.co"
+    },
+    {
+      "company": "Blue Origin",
+      "exact_role_title": "Spring 2027 Software Developer Internship - Graduate",
+      "location": "Seattle, WA",
+      "term": "Spring 2027",
+      "official_url": "https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin_External",
+      "notes": "indeed_search"
+    },
+    {
+      "company": "ASM International",
+      "exact_role_title": "Software Engineering Intern (Spring 2027)",
+      "location": "Phoenix, AZ",
+      "term": "Spring 2027",
+      "official_url": "https://www.asm.com/us/en/about-asm/careers",
+      "notes": "indeed_search"
+    }
+  ]
+}
