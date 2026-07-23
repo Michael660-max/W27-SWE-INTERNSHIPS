@@ -1,0 +1,45 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-23T16:45:00Z",
+  "discovery": "layer2_midday indeed+duckduckgo_ats",
+  "portals_attempted": ["indeed", "duckduckgo_ats", "workday_direct"],
+  "portals_blocked": ["linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+%22Software+Engineering%22+intern"
+  ],
+  "notes": [
+    "Indeed: 5 queries opened; Western Digital Winter 2027 Co-op found but already in DB; other queries returned no results",
+    "DuckDuckGo ATS: 10 queries opened; NationGraph/Skydio Ashby already in DB; Rippling already in DB; GE Appliances/Blue Origin R66216 already in DB; accounting firms (Crowe/Baker Tilly/HCVT) filtered out as non-SWE",
+    "Workday direct: Blue Origin R69064 Spring 2027 Engineering Intern - Undergraduate found NEW (posted 2 days ago); disciplines include Software Development and Embedded Software",
+    "DuckDuckGo captcha block: encountered on site:ats.rippling.com Spring 2027 query"
+  ],
+  "jobs": [
+    {
+      "company": "Blue Origin",
+      "role": "Spring 2027 Engineering Intern - Undergraduate",
+      "term": "Spring 2027",
+      "location": "Greater Seattle Area (+ Van Horn TX, Huntsville AL, Denver CO, Space Coast FL, Los Angeles CA, Longmont CO)",
+      "country": "USA",
+      "official_url": "https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Greater-Seattle-Area/Spring-2027--Engineering-Intern---Undergraduate_R69064",
+      "requisition_id": "R69064",
+      "notes": "Multi-discipline internship; disciplines include Software Development, Aerospace Systems Engineering, Embedded Software, Mechanical Engineering, Manufacturing Engineering, Propulsion/Fluids, Test Engineering. Pay: $32/hr. Posted 2026-07-21. Applications accepted on ongoing basis.",
+      "source": "workday_direct"
+    }
+  ]
+}
