@@ -1,0 +1,50 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-24T16:38:00Z",
+  "discovery": "layer2_midday indeed+duckduckgo_ats+websearch_ats",
+  "portals_attempted": ["indeed", "duckduckgo_ats", "google_ats", "websearch", "ashby_api_direct", "workday_direct"],
+  "portals_blocked": ["indeed_403", "duckduckgo_ats_captcha", "google_ats_blocked", "bing_ats_challenge"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14 (403 blocked)",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14 (no results)",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14 (timeout)",
+    "https://www.indeed.com/jobs?q=%22software+co-op%22+%22Spring+2027%22&fromage=14 (timeout)"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software (captcha)",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22 (captcha)",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software (blocked)",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22 (blocked)",
+    "https://www.bing.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software+Intern (challenge blocked)",
+    "https://www.bing.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22 (challenge blocked)",
+    "WebSearch: \"Winter 2027\" \"Software Engineer Intern\" site:jobs.ashbyhq.com OR site:boards.greenhouse.io OR site:jobs.lever.co (results found)",
+    "WebSearch: \"Winter 2027\" OR \"Spring 2027\" software engineer intern 2026 site:jobs.ashbyhq.com (results found)",
+    "WebSearch: \"Winter 2027\" software intern site:lever.co OR site:greenhouse.io (results found)"
+  ],
+  "jobs": [
+    {
+      "company": "Rilla",
+      "title": "Software Engineering Intern - 2027 Graduates",
+      "location": "New York City, NY",
+      "country": "US",
+      "remote_or_hybrid": "On-site",
+      "term": "Winter/Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5",
+      "ats_platform": "ashby",
+      "source": "websearch -> ashby_api",
+      "notes": "Full-stack SWE intern for 2027 graduates. Stack: React, React Native, TypeScript, Python, Node.js, PostgreSQL. NYC in-office. Backed by Google Ventures, Bessemer. Sales coaching AI platform."
+    },
+    {
+      "company": "Netic",
+      "title": "Forward Deployed Engineer (FDE) - Intern - 2026-2027",
+      "location": "San Francisco, CA",
+      "country": "US",
+      "remote_or_hybrid": "On-site",
+      "term": "Winter/Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/netic/ffd6af1a-cebb-41f5-ac1d-e695adfd067c",
+      "ats_platform": "ashby",
+      "source": "websearch -> ashby_api",
+      "notes": "12-week FDE internship available to start between winter 2026 and summer 2027. AI startup. Customer-facing engineering role."
+    }
+  ]
+}
