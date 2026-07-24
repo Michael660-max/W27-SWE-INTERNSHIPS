@@ -1,0 +1,59 @@
+{
+  "source": "Cursor Agent L2 Evening",
+  "generated_at": "2026-07-24T22:09:00Z",
+  "discovery": "layer2_evening indeed+websearch_ats+google_ats",
+  "portals_attempted": ["indeed", "google_ats", "websearch", "ashby_api_direct", "rippling_ats_direct", "greenhouse_direct"],
+  "portals_blocked": ["duckduckgo_ats_captcha", "linkedin_skipped_cloud"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14 (via WebSearch - results found: Rippling x4 already in DB)",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14 (via WebSearch - results found: ASM International already in DB)",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14 (via WebSearch - Rippling already in DB)"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com \"Winter 2027\" Software (WebSearch - NationGraph in DB, Netic in DB)",
+    "site:boards.greenhouse.io \"Winter 2027\" \"Software Intern\" (WebSearch - no new roles)",
+    "site:jobs.ashbyhq.com \"Spring 2027\" Software Intern (WebSearch - Deepgram in DB, Netic in DB, found Ellipsis Labs in DB)",
+    "site:jobs.lever.co \"Winter 2027\" Software (WebSearch - Palantir in DB, Layup Parts in DB; Pyka 404 removed)",
+    "site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\" (WebSearch - Rippling in DB, found SpreeAI + FlexAI new)",
+    "site:jobs.ashbyhq.com \"Winter 2027\" software engineer intern (WebSearch - NationGraph in DB, Netic in DB, found FDE role new)"
+  ],
+  "jobs": [
+    {
+      "company": "Rendezvous Robotics",
+      "title": "Software Engineering Intern (Spring 2027)",
+      "location": "Golden, CO",
+      "country": "US",
+      "remote_or_hybrid": "On-site",
+      "term": "Spring 2027",
+      "start_date": "Spring 2027",
+      "official_url": "https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009",
+      "ats_platform": "greenhouse",
+      "source": "websearch -> greenhouse",
+      "notes": "12-15 week internship. Golden, CO on-site. Flight software for advanced spacecraft. C/C++ + Python. Small team doing autonomous spacecraft. Spring 2027 explicitly stated."
+    },
+    {
+      "company": "Netic",
+      "title": "Forward Deployed Engineer (FDE) - Intern - 2026-2027",
+      "location": "San Francisco, CA",
+      "country": "US",
+      "remote_or_hybrid": "On-site",
+      "term": "Winter/Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/netic/ffd6af1a-cebb-41f5-ac1d-e695adfd067c",
+      "ats_platform": "ashby",
+      "source": "websearch -> ashby",
+      "notes": "12-week FDE internship, start between winter 2026 and summer 2027. Customer-facing engineering role at AI startup. SF on-site. Previously found in midday run but not ingested."
+    },
+    {
+      "company": "SpreeAI",
+      "title": "Software Engineer Intern (AI Infrastructure / Training / Inference)",
+      "location": "San Francisco, CA",
+      "country": "US",
+      "remote_or_hybrid": "On-site",
+      "term": "Winter/Spring 2027",
+      "official_url": "https://ats.rippling.com/spreeai/jobs/d34aed29-7a11-4e37-b5bc-e9317f82f0b1",
+      "ats_platform": "rippling",
+      "source": "websearch -> rippling_ats",
+      "notes": "Fashion-tech AI startup (photorealistic try-on). AI Infrastructure intern - GPU orchestration, inference systems, distributed systems. SF on-site. Found via Rippling ATS Winter 2027 search."
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-07-24 16:36 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-07-24 22:07 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-07-24 12:36 EDT (`ingest-findings`; +1 new / 29 updated).
+**Last live scout:** 2026-07-24 18:07 EDT (`ingest-findings`; +2 new / 30 updated).
 **Last Discord digest:** 2026-07-23 18:07 EDT.
 
-**90 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**92 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|
@@ -74,7 +74,9 @@ _Board exported `2026-07-24 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [GE Appliances](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) | Software Engineering Co-op Spring 2027 | Louisville, KY | Spring 2027 | 2026-01-23 | Internship Tracker SWE | [Apply](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) |
 | Plexus | Intern – Software Engineer - Spring 2027 | Raleigh, NC | Spring 2026 | 2026-01-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Plexus?utm_source=GHList&utm_medium=company) |
 | [Palantir](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) | Forward Deployed Software Engineer – Internship - US Government | Honolulu, HI | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2025-12-12 | Internship Tracker SWE +1 | [Apply](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) |
+| SpreeAI | Software Engineer Intern (AI Infrastructure / Training / Inference) | San Francisco, CA | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://ats.rippling.com/spreeai/jobs/d34aed29-7a11-4e37-b5bc-e9317f82f0b1) |
 | Blue Origin | Spring 2027 Engineering Intern - Undergraduate | Greater Seattle Area (+ Van Horn TX, Huntsville AL, Denver CO, Space Coast FL, Los Angeles CA, Longmont CO) | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Greater-Seattle-Area/Spring-2027--Engineering-Intern---Undergraduate_R69064) |
+| Rendezvous Robotics | Software Engineering Intern (Spring 2027) | Golden, CO | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009) |
 | Rilla | Software Engineering Intern - 2027 Graduates | New York City, NY | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5) |
 | Western Digital | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |
 | Blue Origin | Spring 2027 Software Developer Internship - Graduate | Seattle, WA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin_External) |
