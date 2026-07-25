@@ -33,6 +33,7 @@ class CandidateJob:
     normalized_role_type: str = ""
     notes: str = ""
     application_deadline: Optional[str] = None
+    agent_competitive: Optional[bool] = None  # set by agent in findings JSON; None = unknown
 
     def to_dict(self) -> dict[str, Any]:
         d = asdict(self)
@@ -80,6 +81,7 @@ class JobRecord:
     duplicate_of_id: Optional[int] = None
     duplicate_confidence: str = ""
     alert_tier: str = ""
+    agent_competitive: Optional[int] = None  # NULL=unknown, 0=not competitive, 1=competitive
 
 
 @dataclass

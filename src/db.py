@@ -45,7 +45,8 @@ CREATE TABLE IF NOT EXISTS jobs (
     notes TEXT DEFAULT '',
     raw_text_snapshot TEXT DEFAULT '',
     application_deadline TEXT,
-    agent_only INTEGER DEFAULT 0
+    agent_only INTEGER DEFAULT 0,
+    agent_competitive INTEGER DEFAULT NULL
 );
 
 CREATE TABLE IF NOT EXISTS sources (
@@ -143,6 +144,7 @@ _JOB_MIGRATIONS = (
     ("duplicate_of_id", "INTEGER"),
     ("duplicate_confidence", "TEXT DEFAULT ''"),
     ("alert_tier", "TEXT DEFAULT ''"),
+    ("agent_competitive", "INTEGER DEFAULT NULL"),
 )
 
 
@@ -191,6 +193,7 @@ def row_to_job(row: sqlite3.Row) -> JobRecord:
     data.setdefault("alert_tier", "")
     data.setdefault("agent_only", 0)
     data.setdefault("application_deadline", None)
+    data.setdefault("agent_competitive", None)
     return JobRecord(**{k: data[k] for k in JobRecord.__dataclass_fields__ if k in data})
 
 

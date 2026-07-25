@@ -43,7 +43,7 @@
     .sub { color: var(--muted); font-size: 0.9rem; }
     .controls {
       display: grid;
-      grid-template-columns: 2fr repeat(5, 1fr);
+      grid-template-columns: 2fr repeat(6, 1fr);
       gap: 0.6rem;
       margin-top: 0.9rem;
     }
@@ -114,6 +114,15 @@
     .badge.fresh { color: #0d2b1c; background: var(--fresh); }
     .badge.late { color: #2a1e00; background: var(--late); }
     .badge.unk { color: #1c2430; background: var(--unk); }
+    .badge.competitive {
+      color: #241400;
+      background: #f6c85f;
+      border-color: #dcae43;
+      margin-top: 0.25rem;
+    }
+    tr.competitive-row td:first-child {
+      box-shadow: inset 3px 0 0 #f6c85f;
+    }
     .flags { color: var(--danger); font-size: 0.75rem; margin-top: 0.2rem; }
     .company { font-weight: 600; }
     .muted { color: var(--muted); }
@@ -141,6 +150,11 @@
         <option value="">All countries</option>
         <option value="Canada">Canada</option>
         <option value="US">United States</option>
+      </select>
+      <select id="competitive">
+        <option value="">All company tiers</option>
+        <option value="true">Competitive (RBC+)</option>
+        <option value="false">Other companies</option>
       </select>
       <select id="remote">
         <option value="">Onsite / Remote / Hybrid</option>
@@ -189,6 +203,7 @@
       q: document.getElementById("q"),
       freshness: document.getElementById("freshness"),
       country: document.getElementById("country"),
+      competitive: document.getElementById("competitive"),
       remote: document.getElementById("remote"),
       status: document.getElementById("status"),
       applied: document.getElementById("applied"),
@@ -233,6 +248,7 @@
       if (els.q.value.trim()) params.set("q", els.q.value.trim());
       if (els.freshness.value) params.set("freshness", els.freshness.value);
       if (els.country.value) params.set("country", els.country.value);
+      if (els.competitive.value) params.set("competitive", els.competitive.value);
       if (els.remote.value) params.set("remote", els.remote.value);
       if (els.status.value) params.set("status", els.status.value);
       if (els.applied.value) params.set("applied_status", els.applied.value);
@@ -246,6 +262,7 @@
 
       for (const job of data.jobs) {
         const tr = document.createElement("tr");
+        if (job.competitive_company) tr.classList.add("competitive-row");
         const url = job.apply_url || job.official_url || "";
         const source = (job.source_names || "").split(";")[0] || "—";
         const options = appliedStatuses.map(s =>
@@ -254,7 +271,11 @@
         tr.innerHTML = `
           <td><span class="badge ${badgeClass(job.freshness_label)}">${job.freshness_label || "—"}</span></td>
           <td class="muted">${fmtDate(job.posting_date)}</td>
-          <td class="company">${escapeHtml(job.company || "")}<div class="muted">${escapeHtml(source)}</div></td>
+          <td class="company">
+            ${escapeHtml(job.company || "")}
+            ${job.competitive_company ? '<div><span class="badge competitive">⭐ Competitive</span></div>' : ""}
+            <div class="muted">${escapeHtml(source)}</div>
+          </td>
           <td>
             ${escapeHtml(job.exact_role_title || "")}
             ${flags(job)}
@@ -306,7 +327,7 @@
       debounceTimer = setTimeout(loadJobs, 150);
     }
 
-    [els.q, els.freshness, els.country, els.remote, els.status, els.applied].forEach(el => {
+    [els.q, els.freshness, els.country, els.competitive, els.remote, els.status, els.applied].forEach(el => {
       el.addEventListener("input", scheduleLoad);
       el.addEventListener("change", scheduleLoad);
     });

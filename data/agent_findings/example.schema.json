@@ -10,6 +10,7 @@
       "posting_date": "2026-07-18",
       "official_url": "https://boards.greenhouse.io/example/jobs/123456",
       "freshness_label": "Fresh",
+      "competitive": true,
       "requires_us_citizenship": false,
       "requires_us_work_auth": false,
       "requires_export_control": false,

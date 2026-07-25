@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 from .config import LISTINGS_PATH, TIMEZONE
 from .db import all_jobs, connect, last_digest_at, last_finished_run
 from .normalize import matches_listings_season
-from .score import sort_jobs
+from .score import job_is_competitive, sort_jobs
 from .urls import job_apply_url
 
 
@@ -93,8 +93,8 @@ def export_listings(path: Path | None = None) -> Path:
         "",
         f"**{len(jobs)} roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.",
         "",
-        "| Company | Role | Location | Term | Posted | Source | Apply |",
-        "|---|---|---|---|---|---|---|",
+        "| Company | Competitive | Role | Location | Term | Posted | Source | Apply |",
+        "|---|---|---|---|---|---|---|---|",
     ]
 
     for job in jobs:
@@ -110,6 +110,7 @@ def export_listings(path: Path | None = None) -> Path:
             + " | ".join(
                 [
                     _md_cell(job.company),
+                    "⭐" if job_is_competitive(job) else "—",
                     _md_cell(job.exact_role_title),
                     _md_cell(job.location or "—"),
                     _md_cell(job.term or "—"),
@@ -125,6 +126,7 @@ def export_listings(path: Path | None = None) -> Path:
     lines.append("## Legend")
     lines.append("")
     lines.append("- **Last live scout / Discord digest** — from the `runs` / `digests` tables after Automations push to `main`.")
+    lines.append("- **Competitive** — `⭐` marks companies the scout agent rated as competitive (RBC-tier or better). Keyword list used as fallback for Layer-1 sources.")
     lines.append("- **Source** — where the tracker first/also saw the role (GitHub list, ATS, agent).")
     lines.append("- **Apply** — official/ATS application link when available; `—` means no reliable apply URL yet.")
     lines.append("- Browse interactively: `bash scripts/ui.sh` → http://127.0.0.1:8787")

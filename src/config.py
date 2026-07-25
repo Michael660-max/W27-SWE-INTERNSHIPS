@@ -151,6 +151,34 @@ BIG_TECH_KEYWORDS = {
     "wealthsimple",
 }
 
+# Companies where internship applications are typically at least as competitive
+# as RBC. Keep this explicit so the UI label is predictable and reviewable.
+COMPETITIVE_COMPANY_KEYWORDS = BIG_TECH_KEYWORDS | {
+    "rbc",
+    "royal bank",
+    "td bank",
+    "toronto-dominion",
+    "scotiabank",
+    "bank of montreal",
+    "bmo",
+    "cibc",
+    "capital one",
+    "intuit",
+    "canva",
+    "cockroach labs",
+    "confluent",
+    "deepgram",
+    "faire",
+    "hubspot",
+    "klue",
+    "mistral",
+    "rbc borealis",
+    "sap",
+    "splunk",
+    "the trade desk",
+    "thomson reuters",
+}
+
 INCLUDE_ROLE_KEYWORDS = [
     "software engineer",
     "software developer",

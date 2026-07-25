@@ -101,6 +101,9 @@ def upsert_candidates(
                 "raw_text_snapshot": cand.raw_text_snapshot[:20000],
                 "application_deadline": cand.application_deadline,
                 "agent_only": agent_only,
+                "agent_competitive": (
+                    int(cand.agent_competitive) if cand.agent_competitive is not None else None
+                ),
                 "verify_fail_count": 0,
                 "duplicate_of_id": fuzzy_id if conf in {"likely_duplicate", "possible_duplicate"} else None,
                 "duplicate_confidence": conf,
@@ -147,6 +150,9 @@ def upsert_candidates(
                 )
             if match.agent_only and cand.source_name and not cand.source_name.startswith("Cursor Agent"):
                 updates["agent_only"] = 0
+            # Let agent override competitive flag if it explicitly set one
+            if cand.agent_competitive is not None and match.agent_competitive is None:
+                updates["agent_competitive"] = int(cand.agent_competitive)
 
             # Refresh alert tier from latest freshness if we have posting date
             pd = None

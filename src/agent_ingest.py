@@ -109,6 +109,11 @@ def _item_to_candidate(item: dict[str, Any], path: Path) -> CandidateJob | None:
     notes = item.get("notes") or ""
     if freshness:
         notes = f"{notes}; freshness_hint={freshness}".strip("; ")
+    competitive_raw = item.get("competitive")
+    agent_competitive: bool | None = None
+    if competitive_raw is not None:
+        agent_competitive = bool(competitive_raw)
+
     return CandidateJob(
         company=company,
         exact_role_title=title,
@@ -125,4 +130,5 @@ def _item_to_candidate(item: dict[str, Any], path: Path) -> CandidateJob | None:
         requires_export_control=bool(item.get("requires_export_control")),
         raw_text_snapshot=json.dumps(item, ensure_ascii=False)[:15000],
         notes=f"from {path.name}" + (f"; {notes}" if notes else ""),
+        agent_competitive=agent_competitive,
     )

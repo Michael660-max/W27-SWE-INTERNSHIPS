@@ -33,6 +33,7 @@ MIDDAY (12:30 America/Toronto). Layer 1 + Layer 2. Do NOT send Discord.
    d. Do NOT spend time on LinkedIn or Handshake — Cloud Agents get login-walled. Skip them.
    e. Never store Indeed/LinkedIn URLs as official_url. Official apply links only.
    f. Write data/agent_findings/YYYYMMDDTHHMMSSZ.json with portals_attempted (e.g. indeed, duckduckgo_ats) and jobs[].
+      For each job, set "competitive": true if the company is well-known / selective (FAANG, top quant firms, major Canadian banks like RBC/TD/Scotiabank/BMO/CIBC, or name-brand tech companies). Set "competitive": false if you're unsure or the company is a small/unknown startup. Omit the field only if you genuinely have no idea.
    g. python src/main.py --ingest-findings
 5. Confirm LISTINGS.md header shows an updated “Last live scout” timestamp.
 6. Do not re-scrape GitHub/Simplify as discovery.
@@ -61,7 +62,7 @@ EVENING (18:00 America/Toronto). Layer 1 + Layer 2, then Discord digest @mention
    b. Indeed ≥3 exact-query searches → official ATS apply URLs.
    c. ATS site search ≥3 (DuckDuckGo if Google blocks).
    d. Skip LinkedIn/Handshake on Cloud — do not fight login.
-   e. Findings JSON with portals_attempted + official_url only; then python src/main.py --ingest-findings
+   e. Findings JSON with portals_attempted + official_url + "competitive": true/false per job; then python src/main.py --ingest-findings
 5. python src/main.py --daily-digest
    IMPORTANT: This must POST to Discord. If it errors about DISCORD_WEBHOOK_URL, stop and report — do not treat as success.
 6. Confirm LISTINGS.md header shows updated “Last live scout” (and digest time when recorded).

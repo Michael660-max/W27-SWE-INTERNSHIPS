@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+import re
 from datetime import datetime, timezone
 
-from .config import BIG_TECH_KEYWORDS
+from .config import BIG_TECH_KEYWORDS, COMPETITIVE_COMPANY_KEYWORDS
 from .freshness import FRESHNESS_RANK, posting_sort_key
 from .models import JobRecord
 
@@ -54,6 +55,35 @@ def _company_rank(job: JobRecord) -> int:
     if any(k in company_l for k in BIG_TECH_KEYWORDS):
         return 0
     return 1
+
+
+def is_competitive_company(company: str) -> bool:
+    """Keyword-list check — use job_is_competitive() when a full JobRecord is available."""
+    company_l = (company or "").lower().strip()
+    # Some GitHub rows retain a Markdown company link. Match its label, not URL text.
+    markdown_label = re.search(r"\[([^\]]+)\]\(", company_l)
+    if markdown_label:
+        company_l = markdown_label.group(1)
+    company_l = company_l.strip("*_ ")
+    return any(
+        re.search(
+            rf"(?<![a-z0-9]){re.escape(keyword.lower())}(?![a-z0-9])",
+            company_l,
+        )
+        for keyword in COMPETITIVE_COMPANY_KEYWORDS
+    )
+
+
+def job_is_competitive(job: "JobRecord") -> bool:
+    """True if the job is competitive.
+
+    Agent judgment (``agent_competitive``) takes priority when the agent explicitly
+    rated the company during discovery.  Falls back to the static keyword list so
+    that Layer-1 rows (GitHub / Simplify) are still classified without agent input.
+    """
+    if job.agent_competitive is not None:
+        return bool(job.agent_competitive)
+    return is_competitive_company(job.company)
 
 
 def _eligibility_rank(job: JobRecord) -> int:

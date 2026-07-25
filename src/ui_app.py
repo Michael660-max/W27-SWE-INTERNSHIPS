@@ -15,7 +15,7 @@ if str(ROOT) not in sys.path:
 
 from src.config import APPLIED_STATUSES, ROOT as PROJECT_ROOT  # noqa: E402
 from src.db import all_jobs, connect, ensure_db, get_job_by_id, update_job, utc_now_iso  # noqa: E402
-from src.score import sort_jobs  # noqa: E402
+from src.score import job_is_competitive, sort_jobs  # noqa: E402
 from src.urls import job_apply_url  # noqa: E402
 
 STATIC_DIR = Path(__file__).resolve().parent / "ui" / "static"
@@ -41,6 +41,7 @@ def _job_to_dict(job) -> dict:
         "posting_date_precision": job.posting_date_precision,
         "freshness_label": job.freshness_label,
         "priority_score": job.priority_score,
+        "competitive_company": job_is_competitive(job),
         "official_url": job_apply_url(job) or job.official_url or job.source_url,
         "apply_url": job_apply_url(job),
         "status": job.status,
@@ -86,6 +87,7 @@ def list_jobs(
     remote: Optional[str] = None,
     status: Optional[str] = None,
     applied_status: Optional[str] = None,
+    competitive: Optional[bool] = None,
 ) -> dict:
     ensure_db()
     with connect() as conn:
@@ -94,6 +96,8 @@ def list_jobs(
     q_norm = (q or "").strip().lower()
     filtered = []
     for job in jobs:
+        if competitive is not None and job_is_competitive(job) != competitive:
+            continue
         if freshness and (job.freshness_label or "") != freshness:
             continue
         if status and (job.status or "") != status:
