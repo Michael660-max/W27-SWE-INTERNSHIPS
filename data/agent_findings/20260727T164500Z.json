@@ -1,0 +1,60 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-27T16:45:00Z",
+  "discovery": "layer2_midday indeed+websearch_ats",
+  "portals_attempted": ["indeed", "websearch_ats", "ashby_direct", "rippling_ats"],
+  "portals_blocked": ["linkedin", "handshake"],
+  "portals_notes": {
+    "indeed": "3 URLs attempted (Winter 2027 SWE Intern, Spring 2027 SWE Intern, Winter 2027 SWE Co-op) — all returned 403/timeout from cloud agent IP; confirmed via WebSearch tool that Indeed shows Rippling and Western Digital Winter 2027 roles (already in DB)",
+    "google_ats": "Searched via WebSearch tool: Ashby, Greenhouse, Lever, Rippling site: queries",
+    "duckduckgo_ats": "Skipped — consistently captcha-blocked on cloud agents; used WebSearch tool instead"
+  },
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com \"Winter 2027\" Software intern",
+    "site:boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "site:jobs.lever.co \"Winter 2027\" OR \"Spring 2027\" software intern",
+    "site:myworkdayjobs.com \"Spring 2027\" software intern engineering",
+    "site:ats.rippling.com \"Winter 2027\" OR \"Spring 2027\" software engineer intern",
+    "site:job-boards.greenhouse.io \"Spring 2027\" \"software engineer intern\" OR \"software engineering intern\""
+  ],
+  "jobs": [
+    {
+      "company": "Etched",
+      "title": "Infrastructure Intern",
+      "term": "Winter/Spring 2027",
+      "location": "San Jose, CA",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://jobs.ashbyhq.com/etched/1b073af4-6764-45ca-a22d-40a4823f0877",
+      "ats_platform": "ashby",
+      "notes": "Software dept; infrastructure tooling for Etched ASIC and software products; Spring 2027 term available",
+      "competitive": false
+    },
+    {
+      "company": "Etched",
+      "title": "Supercomputing Intern",
+      "term": "Winter/Spring 2027",
+      "location": "San Jose, CA",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://jobs.ashbyhq.com/etched/b45e357c-07ea-4499-9911-1d3cc9b9ac71",
+      "ats_platform": "ashby",
+      "notes": "Software dept; ML system software for rack-scale supercomputing; Spring 2027 term available; published 2026-05-19",
+      "competitive": false
+    },
+    {
+      "company": "NeoSigma",
+      "title": "Member of Technical Staff - Intern",
+      "term": "Open / rolling",
+      "location": "San Francisco, CA",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://ats.rippling.com/neosigma/jobs/a2ee1d26-a551-45d2-9854-6dbf8ed2c866",
+      "ats_platform": "rippling",
+      "notes": "AI startup (backed by MIT/Amazon alumni); builds LLM-powered systems, agentic workflows, evaluation systems; MTS intern with path to full-time; Rippling ATS",
+      "competitive": false
+    }
+  ]
+}
