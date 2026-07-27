@@ -1,17 +1,17 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-07-27 16:36 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-07-27 22:04 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-07-27 12:36 EDT (`ingest-findings`; +1 new / 32 updated).
+**Last live scout:** 2026-07-27 18:04 EDT (`ingest-findings`; +0 new / 40 updated; started 2026-07-27 18:04 EDT).
 **Last Discord digest:** 2026-07-24 18:07 EDT.
 
-**94 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**95 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
-| NationGraph | — | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | [Tenstorrent](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) | — | Software Engineer Intern - Power Modeling & AI Tools | Santa Clara, CA | Winter 2027, Summer 2026, Fall 2026 | 2026-07-23 | Internship Tracker SWE | [Apply](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) |
 | Circleback | — | Software Engineering Intern (Summer 2027) | San Francisco, CA | Summer 2027 | 2026-07-22 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) |
 | Deepgram | ⭐ | Software Engineering Intern (Fall 2026/Summer 2027) | USA | Fall 2026 / Summer 2027 | 2026-07-22 | Cursor Agent Monitor +1 | [Apply](https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1) |
@@ -41,12 +41,12 @@ _Board exported `2026-07-27 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | GE Appliances | — | Software Engineering Co-op | Louisville, KY | Spring 2027 | 2026-07-01 | Simplify Off-Season +1 | [Apply](https://haier.wd3.myworkdayjobs.com/GE_Appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-26147) |
 | The Home Depot | — | Firmware Developer Intern | Toronto, ON, Canada | Fall 2027 | 2026-06-30 | Simplify Off-Season | [Apply](https://simplify.jobs/c/The-Home-Depot?utm_source=GHList&utm_medium=company) |
 | The Home Depot | — | Full Stack Software Developer Intern | Toronto, ON, Canada | Fall 2027 | 2026-06-30 | Simplify Off-Season | [Apply](https://simplify.jobs/c/The-Home-Depot?utm_source=GHList&utm_medium=company) |
-| [Palantir](https://jobs.lever.co/palantir/09846827-b931-4a9f-bd64-c3bb8860187b/apply) | ⭐ | Privacy and Civil Liberties Software Engineer Intern | NYC | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2026-06-29 | Internship Tracker SWE | [Apply](https://jobs.lever.co/palantir/09846827-b931-4a9f-bd64-c3bb8860187b/apply) |
+| [Palantir](https://jobs.lever.co/palantir/09846827-b931-4a9f-bd64-c3bb8860187b/apply) | ⭐ | Privacy and Civil Liberties Software Engineer Intern | NYC | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2026-06-29 | Internship Tracker SWE +1 | [Apply](https://jobs.lever.co/palantir/09846827-b931-4a9f-bd64-c3bb8860187b/apply) |
 | [Palantir](https://jobs.lever.co/palantir/4d29249a-d7e8-4c39-880d-3b35d7b2f6f6/apply) | ⭐ | Forward Deployed Software Engineer Intern - Commercial | NYC | Winter 2027, Spring 2028, Summer 2028 | 2026-06-29 | Internship Tracker SWE | [Apply](https://jobs.lever.co/palantir/4d29249a-d7e8-4c39-880d-3b35d7b2f6f6/apply) |
 | Blue Origin | — | Software Developer Intern - Undergraduate | Seattle, WA LA Denver, CO | Spring 2027 | 2026-06-18 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Blue-Origin?utm_source=GHList&utm_medium=company) |
 | Rippling | ⭐ | Machine Learning Software Engineer Intern | SF | Winter 2027 | 2026-06-18 | Simplify Off-Season +1 | [Apply](https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781?utm_source=Simplify&ref=Simplify) |
 | Clio | — | Software Developer Co-op | Toronto, ON, Canada Calgary, AB, Canada Vancouver, BC, Canada | Fall 2026, Winter 2026, Spring 2027 | 2026-06-18 | Simplify Off-Season +2 | [Apply](https://clio.wd3.myworkdayjobs.com/en-US/ClioCareerSite/job/Toronto/Software-Developer--Co-op_REQ-1577?utm_source=Simplify&ref=Simplify) |
-| ↳ | — | Software Engineer Intern - Backend Focused | Seattle, WA SF NYC | Winter 2027 | 2026-06-18 | Simplify Off-Season +3 | [Apply](https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484?utm_source=Simplify&ref=Simplify) |
+| ↳ | ⭐ | Software Engineer Intern - Backend Focused | Seattle, WA SF NYC | Winter 2027 | 2026-06-18 | Simplify Off-Season +3 | [Apply](https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484?utm_source=Simplify&ref=Simplify) |
 | Rippling | ⭐ | Full Stack Software Engineer Intern | Seattle, WA SF NYC | Winter 2027 | 2026-06-18 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Rippling?utm_source=GHList&utm_medium=company) |
 | Cerebras | — | Software Engineer Intern | Toronto, ON, Canada | Winter 2027, Spring 2027, Fall 2026 | 2026-06-18 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/c/Cerebras-Systems?utm_source=GHList&utm_medium=company) |
 | ↳ | — | Avionics Software Intern | 4 locations Seattle, WA LA Longmont, CO Denver, CO | Spring 2027 | 2026-06-18 | Simplify Off-Season | — |
@@ -56,6 +56,7 @@ _Board exported `2026-07-27 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [Tesla](https://www.tesla.com/careers/search/job/260382) | ⭐ | Software Engineer Intern - Software Engineer - AI Hardware Infrastructure | Palo Alto, CA | Fall 2026, Summer 2026, Winter 2027, Spring 2027 | 2026-06-07 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/260382) |
 | [Rippling](https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a) | ⭐ | Full Stack Software Engineer Intern | Seattle, WA, SF, NYC | Winter 2027 | 2026-06-05 | Internship Tracker SWE +1 | [Apply](https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a) |
 | Halter | — | Firmware Internship 2026/2027 | Auckland, New Zealand | — | 2026-06-02 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/halter/99a7eac6-0d38-4d17-a22b-f050c9ba0eaa) |
+| Etched | — | Chip Simulation Software Intern | San Jose, CA | Spring 2027 | 2026-05-20 | SpeedyApply 2027 SWE +1 | [Apply](https://jobs.ashbyhq.com/etched/27e5bd6b-9357-45f0-9e79-cfa2bf4eeba8) |
 | Stoke Space | — | Software Intern - Software | Kent, WA | Spring 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Stoke-Space?utm_source=GHList&utm_medium=company) |
 | Varian | — | Software Developer Co-op | Canada | Fall 2026, Winter 2026, Spring 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/670da3c5-bce0-4621-b519-da7ce7d528e6?utm_source=GHList&utm_medium=company) |
 | Skydio | — | Software Engineer Intern | San Mateo, CA | Fall 2026, Winter 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Skydio?utm_source=GHList&utm_medium=company) |
@@ -83,7 +84,7 @@ _Board exported `2026-07-27 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Western Digital | — | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |
 | Blue Origin | — | Spring 2027 Software Developer Internship - Graduate | Seattle, WA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin_External) |
 | ASM International | — | Software Engineering Intern (Spring 2027) | Phoenix, AZ | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://www.asm.com/us/en/about-asm/careers) |
-| Netic | — | Software Engineer Intern, Agent Platform / Full Stack (2026-2027) | San Francisco, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7) |
+| Netic | ⭐ | Software Engineer Intern, Agent Platform / Full Stack (2026-2027) | San Francisco, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7) |
 | Western Digital | — | Software Engineering Co-op (Winter 2027) | Milpitas, CA | Winter 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309) |
 | Cohere | ⭐ | Software Engineer Intern (Fall / Winter 2026) | Canada | Winter 2027 | 2026-05-03 | Company ATS:Cohere +2 | [Apply](https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254) |
 | ASM | — | Software Engineering Intern (Spring 2027) | — | Spring 2027 | 2026-04-23 | sndsh404 Summer2027 +2 | [Apply](https://www.asm.com/open-vacancies/software-engineering-intern-spring-2027-4830113101?gh_jid=4830113101) |

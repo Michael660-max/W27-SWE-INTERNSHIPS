@@ -1,0 +1,108 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-27T22:08:00Z",
+  "discovery": "layer2_evening indeed+websearch_ats",
+  "portals_attempted": ["indeed", "websearch_ats", "ashby_direct", "greenhouse_ats", "lever_ats", "rippling_ats", "workday_ats"],
+  "portals_blocked": ["linkedin", "handshake", "duckduckgo_ats"],
+  "portals_notes": {
+    "indeed": "3+ queries via WebSearch: 'Winter 2027 Software Engineer Intern', 'Spring 2027 software co-op', 'Winter 2027 Backend Intern' — found Rippling roles (already in DB), Compunetix (cleared only), GE Appliances (already in DB)",
+    "google_ats": "Used WebSearch for site: ATS queries — Ashby, Greenhouse, Lever, Workday, Rippling ATS",
+    "duckduckgo_ats": "Skipped — consistently captcha-blocked on cloud agents; used WebSearch tool instead",
+    "linkedin_jobs": "Skipped per Cloud Agent policy",
+    "handshake": "Skipped per Cloud Agent policy"
+  },
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Backend%22+Intern&fromage=14",
+    "https://www.indeed.com/jobs?q=%22software+co-op%22+%22Spring+2027%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com \"Winter 2027\" Software",
+    "site:jobs.ashbyhq.com \"Spring 2027\" Software Intern -rippling -netic -nationgraph -etched",
+    "site:boards.greenhouse.io \"Spring 2027\" \"Software Engineering Intern\"",
+    "site:job-boards.greenhouse.io \"Winter 2027\" software intern",
+    "site:jobs.lever.co \"Winter 2027\" Software",
+    "site:myworkdayjobs.com \"Winter 2027\" intern software",
+    "site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\""
+  ],
+  "jobs": [
+    {
+      "company": "Rippling",
+      "title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "term": "Winter 2027",
+      "location": "San Francisco, CA",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "ats_platform": "rippling",
+      "notes": "13-week Jan-April 2027; Python required; verified live",
+      "competitive": true
+    },
+    {
+      "company": "Rippling",
+      "title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "term": "Winter 2027",
+      "location": "San Francisco, CA",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "ats_platform": "rippling",
+      "notes": "13-week Jan-April 2027; MSc/PhD required; PyTorch/PySpark; verified live",
+      "competitive": true
+    },
+    {
+      "company": "Etched",
+      "title": "Chip Simulation Software Intern",
+      "term": "Spring 2027",
+      "location": "San Jose, CA",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://jobs.ashbyhq.com/etched/27e5bd6b-9357-45f0-9e79-cfa2bf4eeba8",
+      "ats_platform": "ashby",
+      "notes": "12-week; Fall 26 / Spring 27 / Summer 27; C/C++ or Rust; verified live",
+      "competitive": false
+    },
+    {
+      "company": "NationGraph",
+      "title": "Winter 2027 Software Engineering Intern",
+      "term": "Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "ats_platform": "ashby",
+      "notes": "CA$6K-8K/month; deadline Oct 31 2026; React/Next.js + Python/Go; verified live",
+      "competitive": true
+    },
+    {
+      "company": "Palantir",
+      "title": "Forward Deployed Software Engineer, Internship - Intel",
+      "term": "Winter/Spring 2027",
+      "location": "Washington, D.C.",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89",
+      "ats_platform": "lever",
+      "notes": "Active Full Scope Poly clearance required; graduating Winter 2027 or Spring 2028; FDSE intern; verified live",
+      "competitive": true
+    },
+    {
+      "company": "Palantir",
+      "title": "Privacy and Civil Liberties Software Engineer, Internship",
+      "term": "Spring 2027",
+      "location": "New York, NY",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://jobs.lever.co/palantir/09846827-b931-4a9f-bd64-c3bb8860187b",
+      "ats_platform": "lever",
+      "notes": "Graduating in 2027; final internship before graduating; PCL engineer; verified live",
+      "competitive": true
+    },
+    {
+      "company": "Netic",
+      "title": "Software Engineer (Agent Platform) - Intern - 2026-2027",
+      "term": "Winter/Spring 2027",
+      "location": "San Francisco, CA",
+      "remote_or_hybrid": "On-site",
+      "official_url": "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7",
+      "ats_platform": "ashby",
+      "notes": "12-week; available winter 2026 through summer 2027; Agent Platform team; Python/TypeScript; verified live",
+      "competitive": true
+    }
+  ]
+}
