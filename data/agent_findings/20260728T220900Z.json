@@ -1,0 +1,69 @@
+{
+  "source": "Cursor Agent Evening Scout",
+  "generated_at": "2026-07-28T22:09:00Z",
+  "discovery": "layer2_evening indeed+google_ats",
+  "portals_attempted": ["indeed_websearch", "google_ats_websearch", "ashby_ats", "lever_ats", "workday_ats", "rippling_ats"],
+  "portals_blocked": ["linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "\"Winter 2027\" \"Software Engineer Intern\"",
+    "\"Spring 2027\" \"Software Engineering Intern\"",
+    "\"Winter 2027\" \"Software Intern\" myworkdayjobs OR rippling",
+    "\"Winter 2027\" \"Software Intern\" site:boards.greenhouse.io",
+    "\"Spring 2027\" software intern site:jobs.lever.co"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com \"Winter 2027\" Software",
+    "site:jobs.ashbyhq.com \"Spring 2027\" Software Intern",
+    "site:boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "site:jobs.lever.co \"Spring 2027\" \"Software Intern\"",
+    "site:myworkdayjobs.com \"Winter 2027\" co-op software",
+    "site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\""
+  ],
+  "notes": "Indeed blocked on cloud (used WebSearch instead). Rippling x3 (Full Stack, Backend, ML) already in DB. NationGraph already in DB. Netic already in DB. Hermeus HIL/HMI/M&S already in DB (added this morning). Found 4 new roles not yet in DB: Etched Inference Intern, Hermeus Flight Software Intern, BCI Data Analytics Co-op Winter 2027, IFM Inference Optimization Intern. ATS portals covered: Ashby, Greenhouse, Lever, Workday, Rippling.",
+  "jobs": [
+    {
+      "company": "Etched",
+      "title": "Inference Intern",
+      "term": "Fall 2026 / Spring 2027 / Summer 2027",
+      "location": "San Jose, CA",
+      "country": "US",
+      "official_url": "https://jobs.ashbyhq.com/etched/6f23713f-5409-45b7-aae8-adb8710cdbc3",
+      "ats": "ashby",
+      "notes": "Inference Architecture intern; hiring for Fall 26, Spring 27, Summer 27; on-site San Jose; 12-week paid internship with housing support; working on next-gen AI accelerator architectures",
+      "competitive": true
+    },
+    {
+      "company": "Hermeus",
+      "title": "Flight Software Engineering Intern - Fall 2026",
+      "term": "Fall 2026 / Spring 2027",
+      "location": "Atlanta, GA",
+      "country": "US",
+      "official_url": "https://jobs.lever.co/hermeus/51378fa0-0327-45fd-9420-b6e7d8b56440",
+      "ats": "lever",
+      "notes": "Flight software intern at hypersonic aircraft startup; accepts Fall 2026, Spring 2027, Summer 2027, Fall 2027; on-site Atlanta",
+      "competitive": false
+    },
+    {
+      "company": "BCI (British Columbia Investment Management Corporation)",
+      "title": "Data Analytics Engineer Co-op/Internship - Fall 2026 and/or Winter 2027",
+      "term": "Fall 2026 / Winter 2027",
+      "location": "Victoria, BC",
+      "country": "CA",
+      "official_url": "https://bci.wd10.myworkdayjobs.com/bci_careers/job/victoria-bc/data---analytics-engineer-co-op--internship--fall-2026-and-or-winter-2027-_jr101481",
+      "ats": "workday",
+      "notes": "Data analytics engineer co-op at BC's public sector investment manager; covers Fall 2026 and/or Winter 2027 terms; Victoria BC on-site",
+      "competitive": false
+    },
+    {
+      "company": "Institute of Foundation Models",
+      "title": "Inference Optimization Intern - Performance Modeling",
+      "term": "Fall 2026 / Winter 2027",
+      "location": "Sunnyvale, CA",
+      "country": "US",
+      "official_url": "https://jobs.lever.co/ifm-us/1a09231e-44f2-4c82-a7a1-793bd159d68d",
+      "ats": "lever",
+      "notes": "Performance modeling intern for foundation model inference on NVIDIA GPUs; Lever listing labeled 'Fall / Winter'; requires CUDA/GPU optimization background",
+      "competitive": true
+    }
+  ]
+}
