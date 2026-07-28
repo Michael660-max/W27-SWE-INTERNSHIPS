@@ -1,17 +1,18 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-07-27 22:04 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-07-28 16:37 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-07-27 18:04 EDT (`ingest-findings`; +0 new / 40 updated; started 2026-07-27 18:04 EDT).
-**Last Discord digest:** 2026-07-24 18:07 EDT.
+**Last live scout:** 2026-07-28 12:37 EDT (`ingest-findings`; +3 new / 40 updated; started 2026-07-28 12:37 EDT).
+**Last Discord digest:** 2026-07-27 18:04 EDT.
 
-**95 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**99 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Northrop Grumman | — | 2027 Returning Intern Software Engineer | Melbourne, FL | — | 2026-07-27 | SpeedyApply 2027 SWE | [Apply](https://ngc.wd1.myworkdayjobs.com/en-US/northrop_grumman_external_site/job/United-States-Florida-Melbourne/XMLNAME-2027-Returning-Intern-Software-Engineer_R10242378) |
 | [Tenstorrent](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) | — | Software Engineer Intern - Power Modeling & AI Tools | Santa Clara, CA | Winter 2027, Summer 2026, Fall 2026 | 2026-07-23 | Internship Tracker SWE | [Apply](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) |
 | Circleback | — | Software Engineering Intern (Summer 2027) | San Francisco, CA | Summer 2027 | 2026-07-22 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) |
 | Deepgram | ⭐ | Software Engineering Intern (Fall 2026/Summer 2027) | USA | Fall 2026 / Summer 2027 | 2026-07-22 | Cursor Agent Monitor +1 | [Apply](https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1) |
@@ -79,6 +80,9 @@ _Board exported `2026-07-27 22:04 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Etched | — | Infrastructure Intern | San Jose, CA | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/etched/1b073af4-6764-45ca-a22d-40a4823f0877) |
 | SpreeAI | — | Software Engineer Intern (AI Infrastructure / Training / Inference) | San Francisco, CA | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://ats.rippling.com/spreeai/jobs/d34aed29-7a11-4e37-b5bc-e9317f82f0b1) |
 | Blue Origin | — | Spring 2027 Engineering Intern - Undergraduate | Greater Seattle Area (+ Van Horn TX, Huntsville AL, Denver CO, Space Coast FL, Los Angeles CA, Longmont CO) | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Greater-Seattle-Area/Spring-2027--Engineering-Intern---Undergraduate_R69064) |
+| Hermeus | — | Software Engineering Intern (HIL) - Fall 2026 | Atlanta, GA | Fall 2026 / Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.lever.co/hermeus/10d69ef6-a754-42ab-833c-76adf01367bf) |
+| Hermeus | — | Software Engineering Intern (HMI) - Fall 2026 | Atlanta, GA | Fall 2026 / Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.lever.co/hermeus/a3a1f0ea-6a4f-42e5-81c8-3b34dac22a67) |
+| Hermeus | — | Software Engineering Intern (Modeling & Simulation) - Fall 2026 | Los Angeles, CA | Fall 2026 / Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.lever.co/hermeus/49f7cf3f-bf66-44ca-bf97-ee0f7180a68d) |
 | Rendezvous Robotics | — | Software Engineering Intern (Spring 2027) | Golden, CO | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009) |
 | Rilla | — | Software Engineering Intern - 2027 Graduates | New York City, NY | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5) |
 | Western Digital | — | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |

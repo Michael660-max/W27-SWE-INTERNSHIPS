@@ -1,0 +1,57 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-28T16:37:20Z",
+  "discovery": "layer2_midday indeed+google_ats",
+  "portals_attempted": ["indeed", "google_ats"],
+  "portals_blocked": ["indeed_403", "linkedin"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com \"Winter 2027\" Software intern",
+    "site:boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "site:jobs.lever.co \"Winter 2027\" Software intern",
+    "site:myworkdayjobs.com \"Spring 2027\" Software intern",
+    "site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "site:job-boards.greenhouse.io \"Winter 2027\" intern software engineer",
+    "site:ats.rippling.com \"Winter 2027\" software engineer intern new"
+  ],
+  "notes": "Indeed returned 403/timeout for all 3 queries (cloud agent IP blocked). WebSearch used for ATS queries. Rippling/Ashby/Greenhouse/Lever all checked. Hermeus has 3 new SWE intern roles (Fall 2026 label but accept Spring 2027). Brevian on Rippling found but no explicit term. Known companies (Rippling x3, Etched x3, NationGraph, Netic, SpreeAI, Cohere, Ramp, Palantir) all already in DB.",
+  "jobs": [
+    {
+      "company": "Hermeus",
+      "title": "Software Engineering Intern (HIL) - Fall 2026",
+      "term": "Fall 2026 / Spring 2027",
+      "location": "Atlanta, GA",
+      "country": "US",
+      "official_url": "https://jobs.lever.co/hermeus/10d69ef6-a754-42ab-833c-76adf01367bf",
+      "ats": "lever",
+      "notes": "Hardware-in-the-Loop (HIL) software intern; accepts Fall 2026, Spring 2027, Summer 2027, Fall 2027 applicants; on-site Atlanta",
+      "competitive": false
+    },
+    {
+      "company": "Hermeus",
+      "title": "Software Engineering Intern (HMI) - Fall 2026",
+      "term": "Fall 2026 / Spring 2027",
+      "location": "Atlanta, GA",
+      "country": "US",
+      "official_url": "https://jobs.lever.co/hermeus/a3a1f0ea-6a4f-42e5-81c8-3b34dac22a67",
+      "ats": "lever",
+      "notes": "Human-Machine Interface (HMI) software intern; accepts multiple semesters including Spring 2027; on-site Atlanta",
+      "competitive": false
+    },
+    {
+      "company": "Hermeus",
+      "title": "Software Engineering Intern (Modeling & Simulation) - Fall 2026",
+      "term": "Fall 2026 / Spring 2027",
+      "location": "Los Angeles, CA",
+      "country": "US",
+      "official_url": "https://jobs.lever.co/hermeus/49f7cf3f-bf66-44ca-bf97-ee0f7180a68d",
+      "ats": "lever",
+      "notes": "Modeling & Simulation software intern; accepts multiple semesters including Spring 2027; on-site LA",
+      "competitive": false
+    }
+  ]
+}
