@@ -1,0 +1,61 @@
+{
+  "source": "Cursor Agent Evening Scout",
+  "generated_at": "2026-07-29T22:05:15Z",
+  "discovery": "layer2_evening indeed+websearch_ats",
+  "portals_attempted": ["indeed", "websearch_ats", "ashby_direct", "greenhouse_direct", "lever_direct", "rippling_ats", "workday_direct"],
+  "portals_blocked": ["linkedin", "handshake", "indeed (403/timeout on cloud)", "duckduckgo (captcha on cloud)"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com Winter 2027 Software intern",
+    "site:boards.greenhouse.io Winter 2027 Software Intern",
+    "site:boards.greenhouse.io Spring 2027 Software Intern",
+    "site:jobs.lever.co Winter 2027 Software intern",
+    "site:myworkdayjobs.com Winter 2027 intern software",
+    "site:ats.rippling.com Winter 2027 Backend Software Engineer Intern",
+    "site:jobs.ashbyhq.com Spring 2027 Software Intern",
+    "site:jobs.ashbyhq.com Fall 2026 Software Engineering Intern"
+  ],
+  "notes": "Indeed 403 on Cloud VM IP, used WebSearch as substitute. LinkedIn/Handshake skipped as instructed. Found 3 new roles not in DB: Rivian/VW Applications SWE Intern Fall 2026, Fab2 Embedded SWE Intern Fall 2026, Meshy Infrastructure Intern. All known recurring roles (Rippling W2027, NationGraph, Netic, Etched, Hermeus, Palantir, Cohere, etc.) confirmed still active. Most roles already in DB. Ramp Android intern already in DB (id=477). Meshy Fullstack already in DB (id=918), Infrastructure Intern is new.",
+  "jobs": [
+    {
+      "company": "Rivian and Volkswagen Group Technologies",
+      "title": "Software Engineering Intern - Applications (Fall 2026)",
+      "location": "Palo Alto, CA or Irvine, CA",
+      "remote_or_hybrid": "On-site",
+      "term": "Fall 2026",
+      "start_date": "2026-09-21",
+      "end_date": "2026-12-18",
+      "official_url": "https://jobs.ashbyhq.com/rivianvw.tech/3f314ca7-978e-4ad6-b527-0487a9a9598c",
+      "ats_platform": "ashby",
+      "description": "Software Engineering Intern on the Infotainment team building in-vehicle digital experiences (Navigation app). Android-based applications using Kotlin/Java, Android Jetpack, NDK/JNI. Full-time Sep 21 - Dec 18. US university enrollment required.",
+      "competitive": false
+    },
+    {
+      "company": "Fab2",
+      "title": "Embedded Software Engineering Intern - Fall",
+      "location": "Austin, TX / San Francisco, CA",
+      "remote_or_hybrid": "On-site",
+      "term": "Fall 2026",
+      "start_date": "2026-09-01",
+      "official_url": "https://jobs.ashbyhq.com/fab2/de448098-ffc6-4b99-b341-d6a5874f390f",
+      "ats_platform": "ashby",
+      "description": "Embedded Software Engineering Intern at Fab2 (semiconductor fabrication equipment startup, solid funding). Build real-time Linux applications and microcontroller firmware in Rust for semiconductor fab equipment. 4-8 month internship. Pay ~$114K-$132K annualized. Portfolio (GitHub) required.",
+      "competitive": false
+    },
+    {
+      "company": "Meshy",
+      "title": "Infrastructure Intern",
+      "location": "Bay Area, CA",
+      "remote_or_hybrid": "On-site",
+      "term": "open",
+      "official_url": "https://jobs.ashbyhq.com/meshy/c2f596a3-378c-4a57-b2cd-0bccd88866d7",
+      "ats_platform": "ashby",
+      "description": "Infrastructure Intern at Meshy (AI 3D generation platform). Platform engineering, cloud infrastructure, security, AI systems. Kubernetes, Terraform, AWS/GCP/Azure, Python/Go. Hands-on production infrastructure work for GPU-based AI workloads.",
+      "competitive": false
+    }
+  ]
+}
