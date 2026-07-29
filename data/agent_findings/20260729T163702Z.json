@@ -1,0 +1,45 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-29T16:37:02Z",
+  "discovery": "layer2_midday indeed+websearch_ats",
+  "portals_attempted": ["indeed", "websearch_ats", "ashby_direct", "greenhouse_direct", "lever_direct", "rippling_ats", "workday_direct"],
+  "portals_blocked": ["linkedin", "indeed (timeout/403)"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com Winter 2027 Software intern",
+    "site:boards.greenhouse.io Winter 2027 Software Intern",
+    "site:jobs.lever.co Winter 2027 Software intern",
+    "site:ats.rippling.com Winter 2027 Software Engineer Intern",
+    "site:ats.rippling.com/spreeai SpreeAI intern 2026 2027",
+    "Blue Origin Workday API spring 2027 software"
+  ],
+  "notes": "Indeed timed out/403 on all 3 queries (consistent with cloud agent IP blocks). Used WebSearch tool as substitute for google_ats and duckduckgo_ats. Most found roles already in DB. Blue Origin Workday still shows only R69064 for Spring 2027. SpreeAI added 2 new intern listings (ML Engineer and Mobile SWE). All Rippling/Ashby/Lever known roles confirmed still active.",
+  "jobs": [
+    {
+      "company": "SpreeAI",
+      "title": "Machine Learning Engineer Intern (Computer Vision/Multimodal/Generative AI)",
+      "location": "San Francisco, CA",
+      "remote_or_hybrid": "Hybrid",
+      "term": "open",
+      "official_url": "https://ats.rippling.com/spreeai/jobs/aa087086-dd4b-42be-a499-051546655e97",
+      "ats_platform": "rippling",
+      "description": "ML Engineer intern at SpreeAI working on frontier problems in vision and generative AI including photorealistic virtual try-on, video-based modeling, Smart Sizing, and multimodal representation learning. Diffusion models, transformers, PyTorch. Hybrid SF.",
+      "competitive": false
+    },
+    {
+      "company": "SpreeAI",
+      "title": "Mobile Software Engineer Intern — Flagship Apps (iOS / Android / Web)",
+      "location": "San Francisco, CA",
+      "remote_or_hybrid": "Hybrid",
+      "term": "open",
+      "official_url": "https://ats.rippling.com/spreeai/jobs/c52472cb-2671-45d7-b666-17196dc3df25",
+      "ats_platform": "rippling",
+      "description": "Mobile SWE intern at SpreeAI building client-side experiences integrating multimodal AI. Camera-based capture, garment scanning, interactive AI-driven try-on. Swift/Kotlin/Web. Hybrid SF.",
+      "competitive": false
+    }
+  ]
+}
