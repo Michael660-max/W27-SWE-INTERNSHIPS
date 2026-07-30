@@ -1,0 +1,65 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-07-30T16:36:25Z",
+  "discovery": "layer2_midday indeed+websearch_ats",
+  "portals_attempted": ["indeed", "websearch_ats"],
+  "portals_blocked": ["linkedin", "handshake", "duckduckgo_ats"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com \"Winter 2027\" Software intern",
+    "site:boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "site:jobs.lever.co \"Winter 2027\" Software",
+    "site:job-boards.greenhouse.io \"Winter 2027\" Software intern",
+    "site:myworkdayjobs.com \"Winter 2027\" Software intern",
+    "site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "site:jobs.ashbyhq.com \"Spring 2027\" Software Intern",
+    "site:myworkdayjobs.com \"Spring 2027\" Software intern engineer",
+    "site:jobs.lever.co \"Spring 2027\" \"Software Intern\"",
+    "site:jobs.ashbyhq.com software intern 2027",
+    "site:boards.greenhouse.io \"Spring 2027\" \"Software Engineer Intern\"",
+    "api:ashbyhq.com/posting-api/job-board/skydio",
+    "api:ashbyhq.com/posting-api/job-board/nationgraph",
+    "api:ashbyhq.com/posting-api/job-board/ctgt",
+    "api:boards-api.greenhouse.io/v1/boards/tenstorrentuniversity/jobs",
+    "api:lever.co/v0/postings/hermeus",
+    "api:blueorigin.wd5.myworkdayjobs.com spring 2027"
+  ],
+  "notes": [
+    "Indeed: all 3 queries returned 403/timeout (consistent pattern on cloud agents)",
+    "WebSearch ATS searches used as primary fallback - returned real results",
+    "Ashby API: ctgt board returned new Software Engineering Intern (Summer 2027)",
+    "Rippling ATS: found Brevian Software Engineering Intern (new company, not in DB)",
+    "Blue Origin Workday: only R69064 (already in DB) returned for spring 2027 search",
+    "Hermeus Lever: all 3 SW interns already in DB (HIL, HMI, Modeling & Simulation)",
+    "Tenstorrent GH: new roles all in Serbia/Poland - out of NA scope",
+    "NationGraph Ashby: only Fall 2026 + Winter 2027 roles (both known)",
+    "Skydio Ashby: only hardware/EE interns (not SWE) in new postings"
+  ],
+  "jobs": [
+    {
+      "company": "Brevian",
+      "role": "Software Engineering Intern",
+      "location": "Sunnyvale, CA",
+      "term": "N/A",
+      "official_url": "https://ats.rippling.com/brevian-careers/jobs/0c7d22e5-4522-47e6-8f98-69a64c9ab484",
+      "ats_platform": "rippling",
+      "notes": "AI platform startup (enterprise AI agents). Backend focus with AWS, Kafka, data pipelines. No specific term mentioned. competitive: false (small/unknown AI startup).",
+      "competitive": false
+    },
+    {
+      "company": "CTGT",
+      "role": "Software Engineering Intern (Summer 2027)",
+      "location": "San Francisco, CA",
+      "term": "Summer 2027",
+      "official_url": "https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155",
+      "ats_platform": "ashby",
+      "pay": "$8K-$12K/month",
+      "notes": "AI policy engine startup. 10-12 weeks May/June-Aug/Sept 2027. On-site SF. Full-stack Python+JS. competitive: false (small startup).",
+      "competitive": false
+    }
+  ]
+}
