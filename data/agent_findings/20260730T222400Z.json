@@ -1,0 +1,66 @@
+{
+  "source": "Cursor Agent Evening Scout",
+  "generated_at": "2026-07-30T22:24:00Z",
+  "discovery": "layer2_evening indeed+ats_websearch",
+  "portals_attempted": ["indeed", "websearch_ats_ashby", "websearch_ats_greenhouse", "websearch_ats_workday", "websearch_ats_rippling", "websearch_ats_lever"],
+  "portals_blocked": ["linkedin", "handshake", "duckduckgo_ats"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "site:jobs.ashbyhq.com \"Winter 2027\" Software intern",
+    "site:jobs.ashbyhq.com \"Spring 2027\" Software Intern",
+    "site:boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "site:boards.greenhouse.io \"Spring 2027\" \"Software Engineer Intern\"",
+    "site:myworkdayjobs.com \"Winter 2027\" Software Intern",
+    "site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "site:jobs.lever.co \"Winter 2027\" Software intern",
+    "\"Winter 2027\" \"Software Engineer Intern\" -rippling -site:linkedin.com",
+    "site:jobs.ashbyhq.com etched \"Spring 2027\" OR \"Winter 2027\" supercomputing OR inference intern"
+  ],
+  "notes": [
+    "Indeed: WebSearch used as fallback (direct Indeed blocked on Cloud). Winter 2027 queries returned Rippling (already in DB), Spring 2027 queries returned ASM/Blue Origin (already in DB).",
+    "Ashby: found Etched Inference Intern (Spring 2027) - confirmed NOT in DB",
+    "Ashby: found Etched Supercomputing Intern (Spring 2027) - confirmed NOT in DB",
+    "Ashby: Netic, NationGraph, Etched Chip Sim all already in DB",
+    "Greenhouse: Winter 2027 queries returned no matching new SWE intern roles",
+    "Workday: BCI Data Analytics Co-op (Fall 2026/Winter 2027) - data/analytics, not SWE",
+    "Rippling ATS: all Winter 2027 Rippling roles already in DB",
+    "Lever: Kepler FPGA Digital Design Intern (Jan 2027) found but is HW not SWE",
+    "UKG/Doble: Software Engineering AI CoOp (Winter 2027) found - NOT in DB"
+  ],
+  "jobs": [
+    {
+      "company": "Etched",
+      "role": "Inference Intern",
+      "location": "San Jose, CA",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/etched/6f23713f-5409-45b7-aae8-adb8710cdbc3",
+      "ats_platform": "ashby",
+      "notes": "Inference Architecture intern at Etched (AI chip company). Fall '26, Spring '27, Summer '27 terms. 12-week paid on-site. Focus on inference systems, ML runtime, multi-node inference. Requires Python, C++, distributed systems knowledge. Well-funded startup (hundreds of millions raised). Note: was quarantined in previous run (2026-07-28) due to fuzzy match concerns; re-submitting to confirm it's genuinely new.",
+      "competitive": true
+    },
+    {
+      "company": "Etched",
+      "role": "Supercomputing Intern",
+      "location": "San Jose, CA",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/etched/b45e357c-07ea-4499-9911-1d3cc9b9ac71",
+      "ats_platform": "ashby",
+      "notes": "ML system software for rack-scale systems. Summer '26, Fall '26, Spring '27, Summer '27 terms. 12-week paid on-site. Covers network performance, telemetry, deployment/provisioning of software frameworks, data center scale ML. Requires C/C++ or Rust, Python, low-level SW, HW-SW co-design. Not previously in DB.",
+      "competitive": true
+    },
+    {
+      "company": "Doble Engineering",
+      "role": "Software Engineering AI Co-Op",
+      "location": "Marlborough, MA",
+      "term": "Winter 2027",
+      "official_url": "https://recruiting.ultipro.com/DWE1000DWE/JobBoard/9742ed1a-cd11-accb-c6c9-57313c00933e/OpportunityDetail?opportunityId=a1d8537f-483a-4bf1-9db1-8f355799a47b",
+      "ats_platform": "ukg",
+      "notes": "6-month full-time on-site CoOp. LLM/AI focus: ingest PDFs into GPT/LLM, categorize topics, vectorize databases, create AI agent prototypes. Skills: Python, Java, JavaScript, vector databases, cloud services. Electric power utility industry. Apply by Oct 3. Master's preferred. No sponsorship. Pays hourly (amount not specified).",
+      "competitive": false
+    }
+  ]
+}
