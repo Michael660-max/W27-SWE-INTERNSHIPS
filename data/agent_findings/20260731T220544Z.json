@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "generated_at": "2026-07-31T22:05:44Z",
+    "layer": 2,
+    "portals_attempted": ["indeed", "google_ats", "ashby_ats", "greenhouse_ats", "lever_ats", "rippling_ats"],
+    "portals_blocked": ["linkedin_jobs", "handshake"],
+    "portals_skipped_reason": "linkedin_jobs and handshake skipped on Cloud Automations (login blocks); duckduckgo_ats replaced by WebSearch"
+  },
+  "jobs": [
+    {
+      "title": "Software Engineer, Intern (Summer 2027)",
+      "company": "Aquatic Capital Management",
+      "term": "Summer 2027",
+      "location": "Chicago, IL",
+      "official_url": "https://job-boards.greenhouse.io/aquaticcapitalmanagement/jobs/8489233002",
+      "portal": "greenhouse",
+      "competitive": true,
+      "notes": "Quantitative investment firm; high-performance distributed systems for trading infrastructure; Python/C++; graduation Fall 2027 - Summer 2028"
+    },
+    {
+      "title": "Software Engineering Intern - Systems Engineering - Vancouver BC (Fall/Spring Co-Op)",
+      "company": "Rivian and Volkswagen Group Technologies",
+      "term": "Fall 2026/Spring 2027",
+      "location": "Vancouver, BC, Canada",
+      "official_url": "https://jobs.ashbyhq.com/rivianvw.tech/28e87a5e-7aba-4f91-af44-74f739356a27",
+      "portal": "ashby",
+      "competitive": true,
+      "notes": "Rivian/VW joint venture; Systems Engineering Co-Op in Vancouver; Fall or Spring term"
+    },
+    {
+      "title": "Software Engineering Intern, Data & Machine Learning",
+      "company": "Moon",
+      "term": "Year-round",
+      "location": "Glendale, CA",
+      "official_url": "https://ats.rippling.com/moon/jobs/5f0b98b7-561a-41d2-9104-76bdf06df094",
+      "portal": "rippling",
+      "competitive": false,
+      "notes": "Year-round data/ML engineering internship; $25-35/hr; on-site Glendale CA; home services industry"
+    }
+  ]
+}
