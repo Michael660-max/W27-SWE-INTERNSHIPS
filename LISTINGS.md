@@ -1,15 +1,18 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-07-31 22:06 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-03 16:38 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-07-31 18:06 EDT (`ingest-findings`; +1 new / 50 updated).
-**Last Discord digest:** 2026-07-30 18:06 EDT.
+**Last live scout:** 2026-08-03 12:38 EDT (`ingest-findings`; +0 new / 51 updated).
+**Last Discord digest:** 2026-07-31 18:06 EDT.
 
-**120 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**123 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
-| Heliux | — | Software Engineer Intern | SF | Spring 2027 | 2026-07-31 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/heliux/c71c0650-b6f7-491f-b291-6b280f58ee9c/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Microsoft | ⭐ | Software Engineer Intern | Vancouver, BC, Canada | Winter 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://apply.careers.microsoft.com/careers/job/1970393556951951?utm_source=Simplify&ref=Simplify) |
+| ByteDance | — | Network Security Software Engineer Intern - Security Engineering | San Jose, CA | Fall 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7667876489597257989/detail?utm_source=Simplify&ref=Simplify) |
+| Airwallex | — | Software Engineer - Intern 2027 | Singapore, Singapore | — | 2026-08-01 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/airwallex/6cdb0f39-234a-4234-b1f1-cb48a1fa2795) |
+| Heliux | — | Software Engineer Intern | SF | Spring 2027 | 2026-07-31 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/heliux/c71c0650-b6f7-491f-b291-6b280f58ee9c/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
@@ -67,12 +70,14 @@ _Board exported `2026-07-31 22:06 UTC`. Loose filter: **Winter / Spring / Jan / 
 | ASM International | — | Software Engineering Intern | Phoenix, AZ | Spring 2027 | 2026-05-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/ASM-International?utm_source=GHList&utm_medium=company) |
 | Skydio | — | Software Engineer Intern Fall 2026/Winter 2027 | San Mateo, CA | Winter 2027 | 2026-05-06 | SpeedyApply 2027 SWE +1 | — |
 | [Skydio](https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee/application) | — | Software Engineer Intern | San Mateo, CA | Fall 2026, Winter 2027 | 2026-05-06 | Internship Tracker SWE +3 | [Apply](https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee/application) |
+| Workato | — | Intern AI Engineering | SF | Spring 2027 | 2026-05-05 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Workato?utm_source=GHList&utm_medium=company) |
 | Bot Auto | — | Intern Software Engineer - Autonomous Driving Platform | Houston, TX | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-05-01 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Bot-Auto?utm_source=GHList&utm_medium=company) |
 | Tencent | — | Software Engineer Intern - Backend Development | London, UK | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2026-05-01 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Tencent?utm_source=GHList&utm_medium=company) |
 | Fortive | — | Software Engineering Intern - AI Enablement | Kansas City, MO | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027, Fall 2027, Winter 2028, Spring 2028, Summer 2028, Fall 2028 | 2026-05-01 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Fortive?utm_source=GHList&utm_medium=company) |
 | ASM | — | Software Engineering Intern - Spring 2027 | Phoenix, AZ +1 | Spring 2027 | 2026-04-23 | SpeedyApply 2027 SWE | — |
 | Workato | — | Intern AI Engineering | SF | Winter 2026, Spring 2027 | 2026-04-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Workato?utm_source=GHList&utm_medium=company) |
 | TikTok | — | Site Reliability Engineer Intern - Video & Edge Global Engineering - 2027 Start - BS/MS | Sydney, Australia | — | 2026-04-08 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7626192517295556869) |
+| Kroll | — | Intern Technology - Data Engineering | Toronto, ON, Canada | Winter 2027, Spring 2027 | 2026-04-05 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Kroll?utm_source=GHList&utm_medium=company) |
 | The Trade Desk | ⭐ | Software Engineer Intern | 5 locations Irvine, CA NYC Bellevue, WA Denver, CO Boulder, CO | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-04-01 | Simplify Off-Season | [Apply](https://simplify.jobs/c/281371f9-4ed3-4440-876f-4bbeaa0d50e0?utm_source=GHList&utm_medium=company) |
 | Veeva Systems | — | Intern Software Engineer | Boston, MA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027 | 2026-04-01 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Veeva-Systems?utm_source=GHList&utm_medium=company) |
 | Schweitzer Engineering Laboratories | — | Software Engineering Intern | Moscow, ID | Summer 2026, Fall 2026, Winter 2027, Spring 2027 | 2026-04-01 | Simplify Off-Season | [Apply](https://simplify.jobs/c/SEL?utm_source=GHList&utm_medium=company) |
@@ -81,6 +86,8 @@ _Board exported `2026-07-31 22:06 UTC`. Loose filter: **Winter / Spring / Jan / 
 | GE Aerospace | — | Engines Engineering Intern/Co-op - Computer or Software Engineering | Saugus, MA Sharonville, OH | Spring 2027 | 2026-03-20 | Simplify Off-Season | [Apply](https://simplify.jobs/c/GE-Aerospace?utm_source=GHList&utm_medium=company) |
 | Booz Allen | — | University Data Engineering Intern | Bedford, IN | Winter 2027, Spring 2027 | 2026-03-20 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/c/Booz-Allen?utm_source=GHList&utm_medium=company) |
 | GE Aerospace | — | Engines Engineering Co-op - Computer or Software Engineering | Sharonville, OH Saugus, MA | Spring 2027 | 2026-03-20 | Simplify Off-Season | [Apply](https://simplify.jobs/c/GE-Aerospace?utm_source=GHList&utm_medium=company) |
+| Booz Allen | — | Data Engineer Intern | Atlanta, GA | Winter 2027, Spring 2027 | 2026-03-06 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/c/Booz-Allen?utm_source=GHList&utm_medium=company) |
+| Marmon Holdings | — | Data Engineering Intern/Co-op | Milwaukee, WI | Winter 2027, Spring 2027 | 2026-03-06 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Marmon-Holdings?utm_source=GHList&utm_medium=company) |
 | Confluent | ⭐ | Software Engineer Intern | Remote in UK | Winter 2026, Spring 2027, Summer 2027 | 2026-03-02 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Confluent?utm_source=GHList&utm_medium=company) |
 | Mercor | — | Software Engineer Intern | SF | Winter 2025, Spring 2025, Summer 2025, Fall 2025, Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2026-03-02 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Mercor?utm_source=GHList&utm_medium=company) |
 | S&P Global | — | Ratings-Software Engineer Intern | London, UK | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-03-02 | Simplify Off-Season | [Apply](https://simplify.jobs/c/SP-Global?utm_source=GHList&utm_medium=company) |
@@ -102,11 +109,7 @@ _Board exported `2026-07-31 22:06 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Rendezvous Robotics | — | Software Engineering Intern (Spring 2027) | Golden, CO | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009) |
 | Rilla | — | Software Engineering Intern - 2027 Graduates | New York City, NY | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5) |
 | Doble Engineering | — | Software Engineering AI Co-Op | Marlborough, MA | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://recruiting.ultipro.com/DWE1000DWE/JobBoard/9742ed1a-cd11-accb-c6c9-57313c00933e/OpportunityDetail?opportunityId=a1d8537f-483a-4bf1-9db1-8f355799a47b) |
-| Kroll | — | Intern Technology - Data Engineering | Toronto, ON, Canada | Winter 2027, Spring 2027 | n/a | Simplify Off-Season | [Apply](https://simplify.jobs/c/Kroll?utm_source=GHList&utm_medium=company) |
 | Western Digital | — | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |
-| Workato | — | Intern AI Engineering | SF | Spring 2027 | n/a | Simplify Off-Season | [Apply](https://simplify.jobs/c/Workato?utm_source=GHList&utm_medium=company) |
-| Booz Allen | — | Data Engineer Intern | Atlanta, GA | Winter 2027, Spring 2027 | n/a | Simplify Off-Season +1 | [Apply](https://simplify.jobs/c/Booz-Allen?utm_source=GHList&utm_medium=company) |
-| Marmon Holdings | — | Data Engineering Intern/Co-op | Milwaukee, WI | Winter 2027, Spring 2027 | n/a | Simplify Off-Season | [Apply](https://simplify.jobs/c/Marmon-Holdings?utm_source=GHList&utm_medium=company) |
 | Blue Origin | — | Spring 2027 Software Developer Internship - Graduate | Seattle, WA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin_External) |
 | ASM International | — | Software Engineering Intern (Spring 2027) | Phoenix, AZ | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://www.asm.com/us/en/about-asm/careers) |
 | Netic | ⭐ | Software Engineer Intern, Agent Platform / Full Stack (2026-2027) | San Francisco, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7) |
