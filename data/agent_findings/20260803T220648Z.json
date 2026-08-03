@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "run_at": "2026-08-03T22:20:00Z",
+    "portals_attempted": ["indeed_via_websearch", "google_ats_ashby", "google_ats_greenhouse", "google_ats_lever", "google_ats_workday", "google_ats_rippling"],
+    "portals_blocked": ["duckduckgo_ats (CAPTCHA on Cloud)", "linkedin (skip on Cloud)", "handshake (skip on Cloud)"],
+    "searches_run": 9,
+    "note": "Layer 2 evening scout 2026-08-03. Indeed searched via WebSearch tool (direct indeed.com blocked on Cloud). ATS site: queries used via WebSearch. All standard ATS covered: Ashby, Greenhouse, Lever, Workday, Rippling."
+  },
+  "findings": [
+    {
+      "company": "Compunetix",
+      "title": "Software Engineer Co-op",
+      "term": "Spring 2027",
+      "location": "Monroeville, PA",
+      "official_url": "https://jobs.jobvite.com/compunetix/job/oMdpAfwI",
+      "notes": "3 co-op rotations starting January 2027. C++ or Java. US Citizens only. Pursuing BS in CS or CE.",
+      "competitive": false,
+      "requires_us_citizenship": true,
+      "portals_attempted": ["indeed_via_websearch", "google_ats_greenhouse"]
+    }
+  ]
+}

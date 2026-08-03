@@ -1,11 +1,11 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-03 16:38 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-03 22:08 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-03 12:38 EDT (`ingest-findings`; +0 new / 51 updated).
+**Last live scout:** 2026-08-03 18:08 EDT (`ingest-findings`; +1 new / 51 updated).
 **Last Discord digest:** 2026-07-31 18:06 EDT.
 
-**123 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**125 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
@@ -109,7 +109,9 @@ _Board exported `2026-08-03 16:38 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Rendezvous Robotics | — | Software Engineering Intern (Spring 2027) | Golden, CO | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009) |
 | Rilla | — | Software Engineering Intern - 2027 Graduates | New York City, NY | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5) |
 | Doble Engineering | — | Software Engineering AI Co-Op | Marlborough, MA | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://recruiting.ultipro.com/DWE1000DWE/JobBoard/9742ed1a-cd11-accb-c6c9-57313c00933e/OpportunityDetail?opportunityId=a1d8537f-483a-4bf1-9db1-8f355799a47b) |
+| SpaceX | ⭐ | Spring 2027 Software Engineering Internship/Co-op | Flexible - Any SpaceX Site | Spring 2027 | n/a | Company ATS:SpaceX | [Apply](https://job-boards.greenhouse.io/spacex/jobs/8621756002?gh_jid=8621756002) |
 | Western Digital | — | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |
+| Compunetix | — | Software Engineer Co-op | Monroeville, PA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.jobvite.com/compunetix/job/oMdpAfwI) |
 | Blue Origin | — | Spring 2027 Software Developer Internship - Graduate | Seattle, WA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin_External) |
 | ASM International | — | Software Engineering Intern (Spring 2027) | Phoenix, AZ | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://www.asm.com/us/en/about-asm/careers) |
 | Netic | ⭐ | Software Engineer Intern, Agent Platform / Full Stack (2026-2027) | San Francisco, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7) |
