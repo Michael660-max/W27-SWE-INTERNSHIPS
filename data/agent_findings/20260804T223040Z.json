@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-08-04T22:30:40Z",
+  "search_pack": "_search_pack_20260804T222551Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats_skipped_captcha"],
+  "portals_blocked": ["linkedin_jobs", "handshake"],
+  "searches_run": [
+    "indeed: Winter 2027 Software Engineer Intern",
+    "indeed: Spring 2027 Software Engineering Intern",
+    "indeed: software co-op Spring 2027",
+    "ats: site:jobs.ashbyhq.com Winter 2027 Software",
+    "ats: site:boards.greenhouse.io Winter 2027 Software Intern",
+    "ats: site:myworkdayjobs.com Winter 2027 Intern Software Engineer",
+    "ats: site:ats.rippling.com Winter 2027 Software Engineer Intern",
+    "ats: site:jobs.lever.co Spring 2027 Software Intern",
+    "ats: site:jobs.ashbyhq.com Spring 2027 Software Intern"
+  ],
+  "findings": [
+    {
+      "company": "Melius",
+      "title": "Software Engineering Intern [Fall/Winter 2026]",
+      "location": "New York City, NY",
+      "country": "US",
+      "term": "Fall 2026 / Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/melius/6a944911-dbbf-44c7-ba52-7866f7b433cf",
+      "ats_platform": "ashby",
+      "pay": "$11,000/month + $2,500 housing stipend + $70/day meals",
+      "notes": "Onsite NYC. Stack: Next.js, NestJS, Postgres, Temporal. LLM/agent orchestration. Requires real shipped project. $8,500 salary + $2,500 housing + meals.",
+      "competitive": true
+    },
+    {
+      "company": "Saronic Technologies",
+      "title": "Software Engineer Intern (Fall 2026)",
+      "location": "Austin, TX",
+      "country": "US",
+      "term": "Fall 2026",
+      "official_url": "https://jobs.ashbyhq.com/saronic/1c74957f-0895-415b-9324-08b0994747d7",
+      "ats_platform": "ashby",
+      "notes": "Autonomous surface vessels defense tech. Fall 2026 intern. Austin TX onsite.",
+      "competitive": true
+    }
+  ],
+  "skipped_no_ats_url": [
+    {
+      "company": "BMW Group",
+      "title": "Software Engineer Co-Op Spring 2027 (AI/Data)",
+      "location": "Greenville, SC",
+      "term": "Spring 2027",
+      "reason": "Official URL on bmwgroup.jobs proprietary ATS - not Greenhouse/Lever/Ashby/Workday/Rippling",
+      "url_found": "https://www.bmwgroup.jobs/us/en/opportunities/student/undergraduate-student.html"
+    }
+  ]
+}

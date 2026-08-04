@@ -1,14 +1,15 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-03 22:08 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-04 22:31 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-03 18:08 EDT (`ingest-findings`; +1 new / 51 updated).
-**Last Discord digest:** 2026-07-31 18:06 EDT.
+**Last live scout:** 2026-08-04 18:31 EDT (`ingest-findings`; +1 new / 52 updated; started 2026-08-04 18:30 EDT).
+**Last Discord digest:** 2026-08-03 18:08 EDT.
 
-**125 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**127 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Tesla | ⭐ | Data Engineer Intern - Cell Engineering | Palo Alto, CA | Winter 2027, Spring 2027 | 2026-08-04 | Simplify Off-Season | [Apply](https://simplify.jobs/p/4afc774c-1a8c-44d6-b0c6-ebae36dfd0b9?utm_source=GHList) |
 | Microsoft | ⭐ | Software Engineer Intern | Vancouver, BC, Canada | Winter 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://apply.careers.microsoft.com/careers/job/1970393556951951?utm_source=Simplify&ref=Simplify) |
 | ByteDance | — | Network Security Software Engineer Intern - Security Engineering | San Jose, CA | Fall 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7667876489597257989/detail?utm_source=Simplify&ref=Simplify) |
 | Airwallex | — | Software Engineer - Intern 2027 | Singapore, Singapore | — | 2026-08-01 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/airwallex/6cdb0f39-234a-4234-b1f1-cb48a1fa2795) |
@@ -16,6 +17,7 @@ _Board exported `2026-08-03 22:08 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| SpaceX | ⭐ | Spring 2027 Software Engineering Internship/Co-op | Flexible - Any SpaceX Site | Spring 2027 | 2026-08-04 | Company ATS:SpaceX +2 | [Apply](https://job-boards.greenhouse.io/spacex/jobs/8621756002?gh_jid=8621756002) |
 | Northrop Grumman | — | 2027 Returning Intern Software Engineer | Melbourne, FL | — | 2026-07-27 | SpeedyApply 2027 SWE | [Apply](https://ngc.wd1.myworkdayjobs.com/en-US/northrop_grumman_external_site/job/United-States-Florida-Melbourne/XMLNAME-2027-Returning-Intern-Software-Engineer_R10242378) |
 | [Tenstorrent](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) | — | Software Engineer Intern - Power Modeling & AI Tools | Santa Clara, CA | Winter 2027, Summer 2026, Fall 2026 | 2026-07-23 | Internship Tracker SWE +1 | [Apply](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5186916007) |
 | Circleback | — | Software Engineering Intern (Summer 2027) | San Francisco, CA | Summer 2027 | 2026-07-22 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f) |
@@ -109,7 +111,7 @@ _Board exported `2026-08-03 22:08 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Rendezvous Robotics | — | Software Engineering Intern (Spring 2027) | Golden, CO | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009) |
 | Rilla | — | Software Engineering Intern - 2027 Graduates | New York City, NY | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5) |
 | Doble Engineering | — | Software Engineering AI Co-Op | Marlborough, MA | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://recruiting.ultipro.com/DWE1000DWE/JobBoard/9742ed1a-cd11-accb-c6c9-57313c00933e/OpportunityDetail?opportunityId=a1d8537f-483a-4bf1-9db1-8f355799a47b) |
-| SpaceX | ⭐ | Spring 2027 Software Engineering Internship/Co-op | Flexible - Any SpaceX Site | Spring 2027 | n/a | Company ATS:SpaceX | [Apply](https://job-boards.greenhouse.io/spacex/jobs/8621756002?gh_jid=8621756002) |
+| Melius | ⭐ | Software Engineering Intern [Fall/Winter 2026] | New York City, NY | Fall 2026 / Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/melius/6a944911-dbbf-44c7-ba52-7866f7b433cf) |
 | Western Digital | — | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |
 | Compunetix | — | Software Engineer Co-op | Monroeville, PA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.jobvite.com/compunetix/job/oMdpAfwI) |
 | Blue Origin | — | Spring 2027 Software Developer Internship - Graduate | Seattle, WA | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin_External) |
