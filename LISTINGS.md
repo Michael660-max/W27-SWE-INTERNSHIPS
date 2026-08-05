@@ -1,11 +1,11 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-05 17:27 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-05 22:06 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-05 13:27 EDT (`ingest-findings`; +0 new / 53 updated).
+**Last live scout:** 2026-08-05 18:06 EDT (`ingest-findings`; +1 new / 57 updated).
 **Last Discord digest:** 2026-08-04 18:31 EDT.
 
-**169 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**170 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
@@ -19,6 +19,7 @@ _Board exported `2026-08-05 17:27 UTC`. Loose filter: **Winter / Spring / Jan / 
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | SpaceX | ⭐ | Spring 2027 Software Engineering Internship/Co-op | Flexible - Any SpaceX Site | Spring 2027 | 2026-08-04 | Company ATS:SpaceX +3 | [Apply](https://job-boards.greenhouse.io/spacex/jobs/8621756002?gh_jid=8621756002) |
 | TikTok | — | AI Infrastructure Engineer Intern - Algorithm Infrastructure - 2027 Start - PhD | San Jose, CA | — | 2026-08-04 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7670120579999385861) |
+| ShopBack | — | Software Engineer Intern - Backend - H1 2027 | Singapore, Singapore | — | 2026-08-03 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.lever.co/shopback-2/1804a30e-2d2e-4631-9e85-614c91806ddf) |
 | TikTok | — | General Hire Machine Learning Engineer Intern - Performance Monetization - 2027 Summer | San Jose, CA | — | 2026-08-03 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7669693163422845237) |
 | TikTok | — | General Hire Machine Learning Engineer Intern - Performance Monetization - 2027 Start - PhD | San Jose, CA | — | 2026-08-03 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7669693205558561077) |
 | TikTok | — | Machine Learning Engineer Intern - Search Ads - 2027 Summer | San Jose, CA | — | 2026-08-03 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7669698648817305909) |
@@ -27,7 +28,6 @@ _Board exported `2026-08-05 17:27 UTC`. Loose filter: **Winter / Spring / Jan / 
 | TikTok | — | Machine Learning Engineer Intern - Lead Ads - 2027 Summer | San Jose, CA | — | 2026-08-03 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7669707492914727221) |
 | TikTok | — | Machine Learning Engineer Intern - Commerce Ads - 2027 Summer | San Jose, CA | — | 2026-08-03 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7669711968043092229) |
 | TikTok | — | Machine Learning Engineer Intern - App Ads and Gaming - 2027 Summer | San Jose, CA | — | 2026-08-03 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7669709472078170373) |
-| ShopBack | — | Software Engineer Intern - Backend - H1 2027 | Singapore, Singapore | — | 2026-08-03 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.lever.co/shopback-2/1804a30e-2d2e-4631-9e85-614c91806ddf) |
 | TikTok | — | Software Engineer Intern - Ads Infrastructure - 2027 Summer | San Jose, CA | — | 2026-07-31 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7668581636242016565) |
 | TikTok | — | Software Engineer Intern - ML Infra - 2027 Start - PhD | San Jose, CA | — | 2026-07-31 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7668696895234197813) |
 | TikTok | — | Machine Learning Engineer Intern - TikTok-Data-Search-Local Service - 2027 Summer | San Jose, CA | — | 2026-07-31 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7668379675467761925) |
@@ -35,7 +35,7 @@ _Board exported `2026-08-05 17:27 UTC`. Loose filter: **Winter / Spring / Jan / 
 | TikTok | — | Machine Learning Engineer Intern - TikTok-Data-Search-Recommendation-Global E-Commerce - 2027 Summer | Seattle, WA | — | 2026-07-31 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7668383643375257909) |
 | TikTok | — | Machine Learning Engineer Intern - TikTok-Data-Search-Local Service - 2027 Start - PhD | San Jose, CA | — | 2026-07-31 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7668381860191734021) |
 | TikTok | — | Backend Engineer Intern - TikTok Shop - Europe - 2027 Start | Singapore | — | 2026-07-31 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7668567025010690357) |
-| TikTok | — | Software Engineer Intern - Data Arch - E-commerce - 2027 Summer | Seattle, WA | — | 2026-07-31 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7668582146236631349) |
+| TikTok | — | Software Engineer Intern - Data Arch - E-commerce - 2027 Summer | Seattle, WA | — | 2026-07-31 | SpeedyApply 2027 SWE +1 | [Apply](https://lifeattiktok.com/search/7668582146236631349) |
 | TikTok | — | Site Reliability Engineer Intern - Global SRE- GMPT - 2027 Start | Singapore | — | 2026-07-31 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7668635915812342069) |
 | TikTok | — | Research Engineer Intern - Agentic Systems & AI Infrastructure - TikTok-Generalized Arch - 2027 Start - PhD | San Jose, CA | — | 2026-07-29 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7667935568626043141) |
 | TikTok | — | AI Engineer Intern - TikTok-Client Arch- 2027 Summer | San Jose, CA | — | 2026-07-29 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7667935738190465285) |
@@ -146,6 +146,7 @@ _Board exported `2026-08-05 17:27 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Etched | — | Infrastructure Intern | San Jose, CA | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/etched/1b073af4-6764-45ca-a22d-40a4823f0877) |
 | SpreeAI | — | Software Engineer Intern (AI Infrastructure / Training / Inference) | San Francisco, CA | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://ats.rippling.com/spreeai/jobs/d34aed29-7a11-4e37-b5bc-e9317f82f0b1) |
 | Blue Origin | — | Spring 2027 Engineering Intern - Undergraduate | Greater Seattle Area (+ Van Horn TX, Huntsville AL, Denver CO, Space Coast FL, Los Angeles CA, Longmont CO) | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://blueorigin.wd5.myworkdayjobs.com/en-US/BlueOrigin/job/Greater-Seattle-Area/Spring-2027--Engineering-Intern---Undergraduate_R69064) |
+| Droyd | ⭐ | Software Engineering Intern | San Francisco, CA | 2026-2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/droyd/8d46ed05-1b38-4c68-938e-f10b4c7d4694) |
 | Hermeus | — | Software Engineering Intern (HIL) - Fall 2026 | Atlanta, GA | Fall 2026 / Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.lever.co/hermeus/10d69ef6-a754-42ab-833c-76adf01367bf) |
 | Hermeus | — | Software Engineering Intern (HMI) - Fall 2026 | Atlanta, GA | Fall 2026 / Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.lever.co/hermeus/a3a1f0ea-6a4f-42e5-81c8-3b34dac22a67) |
 | Hermeus | — | Software Engineering Intern (Modeling & Simulation) - Fall 2026 | Los Angeles, CA | Fall 2026 / Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.lever.co/hermeus/49f7cf3f-bf66-44ca-bf97-ee0f7180a68d) |

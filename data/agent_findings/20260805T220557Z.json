@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "generated_at": "2026-08-05T22:05:57Z",
+    "agent": "cloud-automation-evening",
+    "search_pack": "_search_pack_20260805T220403Z.md",
+    "portals_attempted": ["indeed_websearch", "google_ats_websearch", "ashby_ats", "greenhouse_ats", "lever_ats", "rippling_ats"],
+    "portals_blocked": ["linkedin", "handshake"]
+  },
+  "findings": [
+    {
+      "company": "Droyd",
+      "title": "Software Engineering Intern",
+      "official_url": "https://jobs.ashbyhq.com/droyd/8d46ed05-1b38-4c68-938e-f10b4c7d4694",
+      "location": "San Francisco, CA",
+      "term": "2026-2027",
+      "notes": "Robotics company building autonomous robotic systems. Backend and systems software stack role; Python, C++, or Rust. On-site SF. No specific Winter/Spring 2027 term stated but appears to be an ongoing intern hire.",
+      "competitive": true,
+      "source": "ashby_ats"
+    },
+    {
+      "company": "Palantir",
+      "title": "Forward Deployed Software Engineer, Internship - Intel",
+      "official_url": "https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89",
+      "location": "Washington, D.C.",
+      "term": "Winter 2027 / Spring 2028",
+      "notes": "Palantir FDSE intern role for Intel division. Requires active Full Scope Polygraph clearance. Must be graduating Winter 2027 or Spring 2028. $10K/month. Washington DC on-site.",
+      "competitive": true,
+      "source": "lever_ats"
+    },
+    {
+      "company": "Fluency",
+      "title": "Engineering Intern",
+      "official_url": "https://jobs.ashbyhq.com/fluency/2aced4e2-485b-4525-802c-763e62c91e88",
+      "location": "San Francisco, CA",
+      "term": "Fall 2026",
+      "notes": "13-week internship Sep 8 - Dec 11, 2026. Three tracks: Product Engineering, AI Engineering, AI Platform Engineering. Deadline August 14, 2026. Python/TypeScript. On-site SF.",
+      "competitive": true,
+      "source": "ashby_ats"
+    },
+    {
+      "company": "Rippling",
+      "title": "Full Stack Software Engineer Intern - Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "term": "Winter 2027",
+      "notes": "13-week program mid-January through April. Full stack (Python backend + JS/CSS frontend). Already likely in DB.",
+      "competitive": true,
+      "source": "rippling_ats"
+    },
+    {
+      "company": "Rippling",
+      "title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "term": "Winter 2027",
+      "notes": "13-week backend intern (Python). Already likely in DB.",
+      "competitive": true,
+      "source": "rippling_ats"
+    },
+    {
+      "company": "Rippling",
+      "title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "location": "San Francisco, CA / New York, NY",
+      "term": "Winter 2027",
+      "notes": "13-week ML intern. MSc/PhD required. Python, PySpark, PyTorch. Already likely in DB.",
+      "competitive": true,
+      "source": "rippling_ats"
+    }
+  ]
+}
