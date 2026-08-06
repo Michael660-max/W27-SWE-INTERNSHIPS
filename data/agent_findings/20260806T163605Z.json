@@ -1,0 +1,42 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-06T16:36:05Z",
+  "discovery": "layer2_midday indeed+websearch_ats",
+  "portals_attempted": ["indeed", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22software+co-op%22+%22Spring+2027%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern+2027",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern+software",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software+intern",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Spring+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software+intern",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern+software+engineer",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://www.google.com/search?q=%22Winter+2027%22+%22software+engineer%22+co-op+intern+site%3Agreenhouse.io+OR+site%3Alever.co+OR+site%3Aashbyhq.com",
+    "https://www.google.com/search?q=%22software+engineering+intern%22+%22winter+2027%22+OR+%22spring+2027%22+new+opening+2026"
+  ],
+  "notes": [
+    "Indeed: Cloudflare 403 block on all 5 queries - cloud agent IP consistently blocked",
+    "WebSearch ATS: Used WebSearch tool for all ATS site: queries - results returned",
+    "Ashby: NationGraph (in DB), Netic (all 3 roles in DB), Cohere (in DB), Etched (all in DB), Skydio (expired 404)",
+    "Greenhouse: Jane Street Winter Co-Op (in DB id=526), Anduril SW intern (in DB id=205), Rendezvous Robotics (in DB id=895), Stoke Space (in DB id=206)",
+    "Lever: Hermeus all 4 roles (in DB), HCVT audit/tax (not SWE), ShopBack (Singapore, out of scope)",
+    "Workday: Blue Origin R69064 (in DB), Capital One Summer 2027 (summer-only, out of scope)",
+    "Rippling: All 3 Rippling roles (in DB), SpreeAI (in DB), Brevian (in DB)",
+    "Direct API checks: Skydio Ashby = 0 jobs (expired), Borealis AI = 0 jobs, Wealthsimple Lever = 0 intern roles",
+    "Shield AI Lever: Only EE co-op (not SWE), no SW intern",
+    "All previously known open listings confirmed still in DB",
+    "0 new roles found that are not already in database"
+  ],
+  "jobs": []
+}

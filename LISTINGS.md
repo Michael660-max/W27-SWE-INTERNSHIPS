@@ -1,14 +1,17 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-05 22:06 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-06 16:36 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-05 18:06 EDT (`ingest-findings`; +1 new / 57 updated).
-**Last Discord digest:** 2026-08-04 18:31 EDT.
+**Last live scout:** 2026-08-06 12:36 EDT (`ingest-findings`; +0 new / 58 updated).
+**Last Discord digest:** 2026-08-05 18:06 EDT.
 
-**170 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**180 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Terminal | — | Software Engineer Intern - Data Platform | Toronto, ON, Canada | Fall 2026, Winter 2027 | 2026-08-06 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/terminal/d7e128ed-617c-4b9b-9e42-0e909fb25729/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Terminal | — | Software Engineer Intern - Backend | Toronto, ON, Canada | Fall 2026, Winter 2027 | 2026-08-06 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/terminal/6855293e-a817-4b70-835c-cd57e3bfcfde/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| ByteDance | — | Software Engineer Intern - Global Payment - Compliance | San Jose, CA | Fall 2027 | 2026-08-06 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7669774721406208261/detail?utm_source=Simplify&ref=Simplify) |
 | Tesla | ⭐ | Data Engineer Intern - Cell Engineering | Palo Alto, CA | Winter 2027, Spring 2027 | 2026-08-04 | Simplify Off-Season | [Apply](https://simplify.jobs/p/4afc774c-1a8c-44d6-b0c6-ebae36dfd0b9?utm_source=GHList) |
 | Microsoft | ⭐ | Software Engineer Intern | Vancouver, BC, Canada | Winter 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://apply.careers.microsoft.com/careers/job/1970393556951951?utm_source=Simplify&ref=Simplify) |
 | ByteDance | — | Network Security Software Engineer Intern - Security Engineering | San Jose, CA | Fall 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7667876489597257989/detail?utm_source=Simplify&ref=Simplify) |
@@ -17,6 +20,11 @@ _Board exported `2026-08-05 22:06 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| TikTok | — | Backend Software Engineer Intern - Creation Platform - 2027 Summer | San Jose, CA | — | 2026-08-05 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7670289874020993285) |
+| TikTok | — | Software Engineer Intern - Foundation Platform - 2027 Summer | San Jose, CA | — | 2026-08-05 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7670281449668905269) |
+| TikTok | — | Machine Learning Engineer Intern - E-Commerce Recommendation/Search Alliance - 2027 Start - PhD | Seattle, WA | — | 2026-08-05 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7670247810111768837) |
+| TikTok | — | Software Engineer Intern - Media Engine - 2027 Summer | San Jose, CA | — | 2026-08-05 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7670295535077427509) |
+| Northrop Grumman | — | 2027 Intern Software Engineer | Melbourne, FL | — | 2026-08-05 | SpeedyApply 2027 SWE | [Apply](https://ngc.wd1.myworkdayjobs.com/en-US/northrop_grumman_external_site/job/United-States-Florida-Melbourne/XMLNAME-2027-Intern-Software-Engineer_R10243573) |
 | SpaceX | ⭐ | Spring 2027 Software Engineering Internship/Co-op | Flexible - Any SpaceX Site | Spring 2027 | 2026-08-04 | Company ATS:SpaceX +3 | [Apply](https://job-boards.greenhouse.io/spacex/jobs/8621756002?gh_jid=8621756002) |
 | TikTok | — | AI Infrastructure Engineer Intern - Algorithm Infrastructure - 2027 Start - PhD | San Jose, CA | — | 2026-08-04 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7670120579999385861) |
 | ShopBack | — | Software Engineer Intern - Backend - H1 2027 | Singapore, Singapore | — | 2026-08-03 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.lever.co/shopback-2/1804a30e-2d2e-4631-9e85-614c91806ddf) |
@@ -37,6 +45,8 @@ _Board exported `2026-08-05 22:06 UTC`. Loose filter: **Winter / Spring / Jan / 
 | TikTok | — | Backend Engineer Intern - TikTok Shop - Europe - 2027 Start | Singapore | — | 2026-07-31 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7668567025010690357) |
 | TikTok | — | Software Engineer Intern - Data Arch - E-commerce - 2027 Summer | Seattle, WA | — | 2026-07-31 | SpeedyApply 2027 SWE +1 | [Apply](https://lifeattiktok.com/search/7668582146236631349) |
 | TikTok | — | Site Reliability Engineer Intern - Global SRE- GMPT - 2027 Start | Singapore | — | 2026-07-31 | SpeedyApply 2027 SWE Intl | [Apply](https://lifeattiktok.com/search/7668635915812342069) |
+| TikTok | — | Data Engineering Project Intern - Ads Targeting - 2027 Start | San Jose, CA | — | 2026-07-31 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7668533140146817333) |
+| TikTok | — | Machine Learning Engineer Intern - Data-Global E-Commerce-Search - 2027 Summer | Seattle, WA | — | 2026-07-31 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7668396597746862341) |
 | TikTok | — | Research Engineer Intern - Agentic Systems & AI Infrastructure - TikTok-Generalized Arch - 2027 Start - PhD | San Jose, CA | — | 2026-07-29 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7667935568626043141) |
 | TikTok | — | AI Engineer Intern - TikTok-Client Arch- 2027 Summer | San Jose, CA | — | 2026-07-29 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7667935738190465285) |
 | TikTok | — | Research Engineer Intern - Agentic Systems & AI Infrastructure - TikTok-Generalized Arch - 2027 Summer | Seattle, WA | — | 2026-07-29 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7667934792727906565) |
