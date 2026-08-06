@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "run_ts": "2026-08-06T22:15:00Z",
+    "layer": 2,
+    "portals_attempted": ["indeed", "google_ats", "ashby_api", "greenhouse_api", "lever_api", "rippling_ats"],
+    "portals_blocked": ["linkedin", "handshake"],
+    "notes": "Evening L2 run. ≥3 Indeed searches + ≥3 ATS site searches via WebSearch. No new W27/S27 SWE intern roles found beyond existing DB. NationGraph W27, Netic 2026-2027, Etched S27, Rippling W27, Palantir FDSE Intel all already in DB. Recent new postings (TikTok 1-2d, Microsoft 1-2d) all Summer 2027 and already captured by L1 run."
+  },
+  "findings": []
+}
