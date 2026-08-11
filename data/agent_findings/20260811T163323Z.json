@@ -1,0 +1,24 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-11T16:33:23Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260811T163213Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats", "ashby_api", "workday_api"],
+  "portals_blocked": ["indeed", "google_ats", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22"
+  ],
+  "meta": {
+    "run_ts": "2026-08-11T16:33:23Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs all returned HTTP 403 (Cloudflare). Google ATS: JS/robot-check redirect. DuckDuckGo ATS: loaded with NationGraph W27 result. WebSearch + Ashby/Workday direct APIs confirmed NationGraph W27, Terminal Data Platform, Netic 2026-2027, Rippling W27, Palantir FDSE Intel, Etched S27 interns — all already in DB (many inserted by today's L1 run +111). Sanas Rippling (Bangalore) and Forterra 2026 not W27-target. No new W27/S27 SWE intern roles to ingest."
+  },
+  "jobs": []
+}
