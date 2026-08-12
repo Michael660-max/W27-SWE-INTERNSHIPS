@@ -1,0 +1,27 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-12T16:34:00Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260812T163102Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats", "ashby_api", "workday_api"],
+  "portals_blocked": ["indeed", "google_ats", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern"
+  ],
+  "meta": {
+    "run_ts": "2026-08-12T16:34:00Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs all returned HTTP 403 (Cloudflare). Google ATS: HTTP 200 but no parseable results (JS/robot-check). DuckDuckGo ATS: loaded — NationGraph W27 Ashby, Rippling W27 ML intern, Figma/cssmerge Greenhouse W27, HCVT Lever (audit, not SWE). Ashby API confirmed NationGraph W27 Toronto; Rivian VW board has Software Integration Engineering Intern (Fall-Spring) but Berlin-only (out of CA/US scope). WebSearch + Workday API (Salesforce) returned no new W27 SWE intern hits. All in-scope US/CA roles (NationGraph, Figma, Atoms/cssmerge, Rippling, Netic, Etched, Rivian VW co-ops) already in DB from L1 (+17 today) or prior agent findings. No new W27/S27 SWE intern roles to ingest."
+  },
+  "jobs": []
+}
