@@ -1,11 +1,11 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-12 16:32 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-12 22:08 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-12 12:32 EDT (`ingest-findings`; +0 new / 58 updated).
+**Last live scout:** 2026-08-12 18:08 EDT (`ingest-findings`; +0 new / 62 updated).
 **Last Discord digest:** 2026-08-06 18:06 EDT.
 
-**228 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**229 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
@@ -18,7 +18,7 @@ _Board exported `2026-08-12 16:32 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Medpace | — | Data Engineer Intern - Spring 2027 | Cincinnati, OH | Spring 2027 | 2026-08-11 | Simplify Off-Season | [Apply](https://careers.medpace.com/jobs/12921?icims=1&utm_source=Simplify&ref=Simplify) |
 | Autodesk | — | Software Developer Intern | Montreal, QC, Canada | Winter 2027 | 2026-08-11 | Simplify Off-Season | [Apply](https://autodesk.wd1.myworkdayjobs.com/uni/job/Montreal-QC-CAN/Intern-Software-Developer--Stagiaire-en-Dveloppement-Logiciel_26WD100398-1?utm_source=Simplify&ref=Simplify) |
 | Autodesk | — | Software Developer Intern - Interactive Graphics, Media & Entertainment | Montreal, QC, Canada | Winter 2027 | 2026-08-11 | Simplify Off-Season +1 | [Apply](https://autodesk.wd1.myworkdayjobs.com/Ext/job/Montreal-QC-CAN/Intern-Software-Developer--Stagiaire-en-Dveloppement-Logiciel_26WD100398-2?utm_source=Simplify&ref=Simplify) |
-| Figma | ⭐ | Software Engineer Intern - Winter 2027 | SF NYC | Winter 2027 | 2026-08-11 | Simplify Off-Season +3 | [Apply](https://job-boards.greenhouse.io/figma/jobs/6131089004?utm_source=Simplify&ref=Simplify) |
+| Figma | ⭐ | Software Engineer Intern - Winter 2027 | SF NYC | Winter 2027 | 2026-08-11 | Simplify Off-Season +4 | [Apply](https://job-boards.greenhouse.io/figma/jobs/6131089004?utm_source=Simplify&ref=Simplify) |
 | Tesla | ⭐ | Software Engineer Intern - Engineering Automation - Vehicle Engineering | Palo Alto, CA | Winter 2027, Spring 2027 | 2026-08-11 | Simplify Off-Season | [Apply](https://simplify.jobs/p/155f6df6-7cca-471e-8fb1-e8318faa6845?utm_source=GHList) |
 | Rockwell Automation | — | Spring 2027 Co-op - Embedded Software Engineer - January 2027 - August 2027 | Mayfield Heights, OH | Spring 2027, January 2027 | 2026-08-10 | SpeedyApply 2027 SWE | [Apply](https://rockwellautomation.wd1.myworkdayjobs.com/en-US/external_rockwell_automation/job/Mayfield-Heights-Ohio-United-States/Spring-2027-Co-op--Embedded-Software-Engineer--January-2027---August-2027-_R26-3473-1) |
 | TikTok | — | Software Engineer Intern - Global E-commerce-Search | Seattle, WA | Fall 2027 | 2026-08-10 | Simplify Off-Season | [Apply](https://simplify.jobs/p/2851e500-7a2b-4e96-a2fa-681730e8d48e?utm_source=GHList) |
@@ -31,7 +31,7 @@ _Board exported `2026-08-12 16:32 UTC`. Loose filter: **Winter / Spring / Jan / 
 | TikTok | — | Data Engineer Intern - Monetization Data - 2027 Summer | San Jose, CA | — | 2026-08-07 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7671232204182276405) |
 | TikTok | — | Frontend Engineer Intern - Ads Interface - 2027 Summer | San Jose, CA | — | 2026-08-07 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7671211313289398581) |
 | Microsoft | ⭐ | Software Engineer Intern - Gears of War | Vancouver, BC, Canada | Winter 2027 | 2026-08-07 | Simplify Off-Season +2 | [Apply](https://apply.careers.microsoft.com/careers/job/1970393556956276?utm_source=Simplify&ref=Simplify) |
-| Atoms | — | Software Engineer Intern - Winter 2027 | 5 locations Seattle, WA SF LA NYC Mountain View, CA | Winter 2027 | 2026-08-07 | Simplify Off-Season +1 | [Apply](https://job-boards.greenhouse.io/cssmerge/jobs/8687915002?utm_source=Simplify&ref=Simplify) |
+| Atoms | — | Software Engineer Intern - Winter 2027 | 5 locations Seattle, WA SF LA NYC Mountain View, CA | Winter 2027 | 2026-08-07 | Simplify Off-Season +2 | [Apply](https://job-boards.greenhouse.io/cssmerge/jobs/8687915002?utm_source=Simplify&ref=Simplify) |
 | Terminal | — | Software Engineer Intern - Data Platform | Toronto, ON, Canada | Fall 2026, Winter 2027 | 2026-08-06 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/terminal/d7e128ed-617c-4b9b-9e42-0e909fb25729/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Terminal | — | Software Engineer Intern - Backend | Toronto, ON, Canada | Fall 2026, Winter 2027 | 2026-08-06 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/terminal/6855293e-a817-4b70-835c-cd57e3bfcfde/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | ByteDance | — | Software Engineer Intern - Global Payment - Compliance | San Jose, CA | Fall 2027 | 2026-08-06 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7669774721406208261/detail?utm_source=Simplify&ref=Simplify) |
@@ -43,6 +43,7 @@ _Board exported `2026-08-12 16:32 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| [RTX](https://globalhr.wd5.myworkdayjobs.com/fr-CA/Private_Posting_No_TMP/job/US-AL-HUNTSVILLE-382--420-Jan-Davis-Dr--DAVIS-382/Summer-2027--Software-Intern-OnSite_01865160) | — | Software Engineer Intern | Huntsville, AL | Summer 2027 | 2026-08-12 | Internship Tracker SWE | [Apply](https://globalhr.wd5.myworkdayjobs.com/fr-CA/Private_Posting_No_TMP/job/US-AL-HUNTSVILLE-382--420-Jan-Davis-Dr--DAVIS-382/Summer-2027--Software-Intern-OnSite_01865160) |
 | Quantbot Technologies | — | Software Engineer Summer Internship - 2027 - New York | New York City, NY | — | 2026-08-08 | SpeedyApply 2027 SWE | [Apply](https://www.quantbot.com/careers/?gh_jid=4299458009) |
 | TikTok | — | Fullstack Software Engineer Intern - Global E-Commerce - 2027 Summer | San Jose, CA | — | 2026-08-06 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7670738362521520437) |
 | TikTok | — | Fullstack Software Engineer Intern - Global E-Commerce - 2027 Summer | Seattle, WA | — | 2026-08-06 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7670700387322300677) |
