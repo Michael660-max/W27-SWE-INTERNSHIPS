@@ -1,0 +1,108 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-13T16:45:30Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260813T164401Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "google_ats", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern"
+  ],
+  "meta": {
+    "run_ts": "2026-08-13T16:45:30Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). Google ATS: 3 site: URLs fetched (HTTP 200) but HTML parsing yielded no extractable ATS links; treated as blocked for automation. DuckDuckGo ATS: Ashby NationGraph, Rippling ML intern, Workday Crowe tax intern (non-SWE). WebSearch + Ashby/Greenhouse APIs used to confirm official URLs. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 20 roles including Front Software Engineering Intern Spring/Summer 2027 (Ashby), Specter Aerospace Spring 2027 co-ops, Tesla Spring 2027 firmware intern, DRW data engineering intern. Borderline: Cohere Machine Learning Intern/Co-op Winter 2027 (Ashby 36d1f52f) — real posting but pipeline not_software. No new ingestible W27/S27 SWE intern roles beyond L1."
+  },
+  "jobs": [
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-11",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "duckduckgo_ats ashby; already in DB"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-27",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "competitive": false,
+      "notes": "websearch_ats rippling; already in DB"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-27",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "competitive": false,
+      "notes": "websearch_ats rippling; already in DB"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-27",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": false,
+      "notes": "duckduckgo_ats rippling; already in DB"
+    },
+    {
+      "company": "Figma",
+      "exact_role_title": "Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA / New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-11",
+      "official_url": "https://job-boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "websearch_ats + greenhouse API; already in DB"
+    },
+    {
+      "company": "Palantir",
+      "exact_role_title": "Forward Deployed Software Engineer, Internship - Intel",
+      "location": "Washington, D.C.",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-01",
+      "official_url": "https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89",
+      "competitive": true,
+      "notes": "websearch_ats lever; already in DB (id=3)"
+    },
+    {
+      "company": "Front",
+      "exact_role_title": "Software Engineering Intern - Spring/Summer 2027",
+      "location": "San Francisco, CA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-13",
+      "official_url": "https://jobs.ashbyhq.com/frontcareers/1026a32c-f8cc-4eee-992b-bacdf771d9fc",
+      "competitive": false,
+      "notes": "ashby confirmed open; inserted by L1 today (id=1305)"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Machine Learning Intern/Co-op (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-13",
+      "official_url": "https://jobs.ashbyhq.com/cohere/36d1f52f-8270-4652-adf5-5303a0ff341b",
+      "competitive": true,
+      "notes": "ashby API; NEW URL not in DB — pipeline not_software (ML title)"
+    }
+  ]
+}
