@@ -1,14 +1,17 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-13 22:18 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-14 16:43 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-13 18:18 EDT (`ingest-findings`; +0 new / 76 updated).
-**Last Discord digest:** 2026-08-12 18:08 EDT.
+**Last live scout:** 2026-08-14 12:43 EDT (`ingest-findings`; +0 new / 85 updated).
+**Last Discord digest:** 2026-08-13 18:18 EDT.
 
-**240 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**246 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Airwallex | — | Software Engineer Intern - Jan to Jun 2027 | Singapore, Singapore | — | 2026-08-14 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/airwallex/39651124-122a-4033-91a2-af2687b83441) |
+| MSA Safety | — | Software Engineer Co-op - Product Development | Cranberry Township, PA | Spring 2027 | 2026-08-14 | Simplify Off-Season | [Apply](https://careers.msasafety.com/jobs/9992?icims=1&utm_source=Simplify&ref=Simplify) |
+| Composio | — | Fullstack Engineer Intern - Product Team | SF | Fall 2026, Winter 2027 | 2026-08-14 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/composio/eea3c0be-8589-4e3d-a684-de29a9eada0d/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Tesla | ⭐ | Firmware Engineer Intern - New Programs Engineering | Fremont, CA | Spring 2027 | 2026-08-13 | Simplify Off-Season | [Apply](https://simplify.jobs/p/f76334f0-b144-4ec8-9a36-f7bab853e4e7?utm_source=GHList) |
 | Specter Aerospace | — | Embedded Software Co-op | Boston, MA | Spring 2027 | 2026-08-13 | Simplify Off-Season | [Apply](https://simplify.jobs/p/0904ea85-ce34-417f-8493-06a6299f4673?utm_source=GHList) |
 | Specter Aerospace | — | Front-End Software Developer Co-op | Boston, MA Peabody, MA | Spring 2027 | 2026-08-13 | Simplify Off-Season | [Apply](https://simplify.jobs/p/5cbd2b0f-806d-42d0-91fe-637455fe40c0?utm_source=GHList) |
@@ -206,8 +209,11 @@ _Board exported `2026-08-13 22:18 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Rendezvous Robotics | — | Software Engineering Intern (Spring 2027) | Golden, CO | Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009) |
 | Rilla | — | Software Engineering Intern - 2027 Graduates | New York City, NY | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/rilla/123a6a38-c7f9-4378-b00d-c6ae54688bd5) |
 | Doble Engineering | — | Software Engineering AI Co-Op | Marlborough, MA | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://recruiting.ultipro.com/DWE1000DWE/JobBoard/9742ed1a-cd11-accb-c6c9-57313c00933e/OpportunityDetail?opportunityId=a1d8537f-483a-4bf1-9db1-8f355799a47b) |
+| **[Figma](https://www.dreamworkhq.com/c/figma.com?utm_source=github&utm_campaign=gh-tech-internships)** | ⭐ | [Software Engineer Intern (Winter 2027)](https://www.dreamworkhq.com/job/66629b2f-c135-4f06-90c3-e24c69a3ba29?utm_source=github&utm_campaign=gh-tech-internships) | San Francisco, CA • New York, NY | Winter 2027 | n/a | Dreamwork Tech Internships 2027 | [Apply](https://www.dreamworkhq.com/job/66629b2f-c135-4f06-90c3-e24c69a3ba29?utm_source=github&utm_campaign=gh-tech-internships) |
 | **[Tesla](https://www.dreamworkhq.com/c/tesla.com?utm_source=github&utm_campaign=gh-tech-internships)** | ⭐ | [Internship, Data Engineer, Cell Engineering (Winter/Spring 2027)](https://www.dreamworkhq.com/job/7831d5ca-9ed8-4ad6-9097-d6eda49758b0?utm_source=github&utm_campaign=gh-tech-internships) | Palo Alto, California | Spring 2027 | n/a | Dreamwork Tech Internships 2027 | [Apply](https://www.dreamworkhq.com/job/7831d5ca-9ed8-4ad6-9097-d6eda49758b0?utm_source=github&utm_campaign=gh-tech-internships) |
+| **[Northrop Grumman](https://www.dreamworkhq.com/c/northropgrumman.com?utm_source=github&utm_campaign=gh-tech-internships)** | — | [2027 Intern Software Engineer](https://www.dreamworkhq.com/job/e9f96876-236f-4e1f-b558-42be75ba5858?utm_source=github&utm_campaign=gh-tech-internships) | United States-Florida-Melbourne | — | n/a | Dreamwork Tech Internships 2027 | [Apply](https://www.dreamworkhq.com/job/e9f96876-236f-4e1f-b558-42be75ba5858?utm_source=github&utm_campaign=gh-tech-internships) |
 | Melius | ⭐ | Software Engineering Intern [Fall/Winter 2026] | New York City, NY | Fall 2026 / Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/melius/6a944911-dbbf-44c7-ba52-7866f7b433cf) |
+| **[Globalhr](https://www.dreamworkhq.com/c/globalhr.app?utm_source=github&utm_campaign=gh-tech-internships)** | — | [Software Engineering Intern (2027)](https://www.dreamworkhq.com/job/2f312c16-60c0-4849-92d1-36d8b7ac50e6?utm_source=github&utm_campaign=gh-tech-internships) | US-MN-BURNSVILLE-WEST ~ 14300 Judicial Rd ~… (Hybrid) | — | n/a | Dreamwork Tech Internships 2027 | [Apply](https://www.dreamworkhq.com/job/2f312c16-60c0-4849-92d1-36d8b7ac50e6?utm_source=github&utm_campaign=gh-tech-internships) |
 | IMC | — | HK - 2027 - Software Engineer Intern | Hong Kong, Hong Kong | — | n/a | Company ATS:IMC | [Apply](https://job-boards.eu.greenhouse.io/imc/jobs/4941206101) |
 | Western Digital | — | Software Engineering Co-Op - Winter 2027 | Rochester, MN | Winter 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309-software-engineering-co-op-winter-2027) |
 | **[SpaceX](https://www.dreamworkhq.com/c/spacex.com?utm_source=github&utm_campaign=gh-tech-internships)** | ⭐ | [Spring 2027 Software Engineering Internship/Co-op](https://www.dreamworkhq.com/job/d99c7102-a5b9-4e13-a8dd-2c493aa8ddf2?utm_source=github&utm_campaign=gh-tech-internships) | Flexible - Any SpaceX Site (Hybrid) | Spring 2027 | n/a | Dreamwork Tech Internships 2027 | [Apply](https://www.dreamworkhq.com/job/d99c7102-a5b9-4e13-a8dd-2c493aa8ddf2?utm_source=github&utm_campaign=gh-tech-internships) |
