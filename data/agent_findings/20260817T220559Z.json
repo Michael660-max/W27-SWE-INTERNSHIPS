@@ -1,0 +1,146 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-17T22:05:59Z",
+  "discovery": "layer2_evening indeed+ats",
+  "search_pack": "_search_pack_20260817T220536Z.md",
+  "portals_attempted": ["indeed", "google_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://www.google.com/search?q=site%3Ajob-boards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern"
+  ],
+  "meta": {
+    "run_ts": "2026-08-17T22:05:59Z",
+    "layer": 2,
+    "notes": "Evening L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). Google ATS: not browsed directly; WebSearch used for site: Ashby/Rippling/Greenhouse/Workday queries. LinkedIn/Handshake skipped per Cloud policy. L1 this evening inserted 9 roles (Datadog W27 id=1332, Abridge id=1334, Hypercubic id=1335, Generac id=1336, Valeo id=1337, GE Aerospace Spring/Fall 2027 id=1338/1339, Bosch id=1340). All other ATS-confirmed W27/S27 SWE roles already in DB."
+  },
+  "jobs": [
+    {
+      "company": "Datadog",
+      "title": "Software Engineer Intern - Observability and Security Platform",
+      "location": "Boston, MA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-17",
+      "official_url": "https://careers.datadoghq.com/detail/8052095?gh_jid=8052095",
+      "competitive": true,
+      "notes": "indeed_websearch; inserted L1 evening run id=1332"
+    },
+    {
+      "company": "Abridge",
+      "title": "Software Engineer - Intern",
+      "location": "San Francisco, CA",
+      "term": "",
+      "posting_date": "2026-08-15",
+      "official_url": "https://jobs.ashbyhq.com/abridge/3f07a457-dc14-4238-bf4e-5c33b5c1f883",
+      "competitive": false,
+      "notes": "websearch_ats ashby; inserted L1 evening run id=1334"
+    },
+    {
+      "company": "Hypercubic",
+      "title": "Software Engineering Internship",
+      "location": "San Francisco, CA",
+      "term": "",
+      "posting_date": "2026-08-15",
+      "official_url": "https://jobs.ashbyhq.com/hypercubic/ab7a23f9-7280-4443-b442-2813dc39d490",
+      "competitive": false,
+      "notes": "websearch_ats ashby; inserted L1 evening run id=1335"
+    },
+    {
+      "company": "GE Aerospace",
+      "title": "Engines Engineering Co-op - Computer or Software Engineering - US - Spring 2027",
+      "location": "Evendale, OH",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-17",
+      "official_url": "https://geaerospace.wd5.myworkdayjobs.com/en-US/ge_externalsite/job/Evendale/Engines-Engineering-Co-op---Computer-or-Software-Engineering---US---Spring-2027_R5029619",
+      "competitive": false,
+      "notes": "websearch_ats workday; inserted L1 evening run id=1338"
+    },
+    {
+      "company": "Notion",
+      "title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "websearch_ats ashby; already in DB id=1331"
+    },
+    {
+      "company": "NationGraph",
+      "title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "websearch_ats ashby; already in DB"
+    },
+    {
+      "company": "Rippling",
+      "title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "location": "San Francisco, CA / New York, NY / Seattle, WA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-27",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "competitive": false,
+      "notes": "websearch_ats rippling; already in DB"
+    },
+    {
+      "company": "Figma",
+      "title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA / New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-11",
+      "official_url": "https://job-boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; already in DB"
+    },
+    {
+      "company": "Atoms",
+      "title": "Software Engineer Intern - Winter 2027",
+      "location": "Seattle, WA / San Francisco, CA / Los Angeles, CA / NYC / Mountain View, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-07",
+      "official_url": "https://job-boards.greenhouse.io/cssmerge/jobs/8687915002",
+      "competitive": false,
+      "notes": "websearch_ats greenhouse; already in DB"
+    },
+    {
+      "company": "SpaceX",
+      "title": "Spring 2027 Software Engineering Internship/Co-op",
+      "location": "Multiple US locations",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-01",
+      "official_url": "https://job-boards.greenhouse.io/spacex/jobs/8621756002",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; already in DB"
+    },
+    {
+      "company": "The Nuclear Company",
+      "title": "Spring 2027 Software Engineering Intern",
+      "location": "Washington, DC",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-13",
+      "official_url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383171008",
+      "competitive": false,
+      "notes": "websearch_ats greenhouse; already in DB"
+    },
+    {
+      "company": "Rendezvous Robotics",
+      "title": "Software Engineering Intern (Spring 2027)",
+      "location": "Golden, CO",
+      "term": "Spring 2027",
+      "posting_date": "2026-07-24",
+      "official_url": "https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009",
+      "competitive": false,
+      "notes": "websearch_ats greenhouse; already in DB"
+    }
+  ]
+}
