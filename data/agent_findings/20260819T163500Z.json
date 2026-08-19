@@ -1,0 +1,107 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-19T16:35:00Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260819T163207Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software"
+  ],
+  "meta": {
+    "run_ts": "2026-08-19T16:35:00Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). Google ATS: HTTP 200 but no extractable ATS links in HTML. DuckDuckGo ATS: Ashby query returned 202/empty; Rippling, Workday, and Greenhouse queries returned ATS links. WebSearch + Ashby/Greenhouse APIs used to confirm roles. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 101 roles (NVIDIA 2027, Capital One W27 Toronto, RBC W27, Microsoft, Google, Stripe, Optiver, Zipline, etc.). Layer 2 confirms key ATS postings already captured; no additional new official URLs beyond L1."
+  },
+  "jobs": [
+    {
+      "company": "Figma",
+      "title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://job-boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "duckduckgo_ats greenhouse; Greenhouse API confirmed; already in DB id=1167"
+    },
+    {
+      "company": "Atoms",
+      "title": "Software Engineer Intern - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; Los Angeles, CA; New York, NY; Mountain View, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-07",
+      "official_url": "https://job-boards.greenhouse.io/cssmerge/jobs/8687915002",
+      "competitive": false,
+      "notes": "duckduckgo_ats greenhouse cssmerge board; already in DB id=1171"
+    },
+    {
+      "company": "Notion",
+      "title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "websearch_ats ashby + Ashby API; already in DB id=1331"
+    },
+    {
+      "company": "NationGraph",
+      "title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "websearch_ats ashby + Ashby API; already in DB id=768"
+    },
+    {
+      "company": "Capital One",
+      "title": "Intern - Full Stack Software Engineer - Team Integrated Sprout - Winter 2027",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-19",
+      "official_url": "https://capitalone.wd12.myworkdayjobs.com/en-US/Capital_One/job/Toronto-ON/Intern--Full-Stack-Software-Engineer---Team-Integrated-Sprout---Winter-2027_R249010",
+      "competitive": true,
+      "notes": "duckduckgo_ats workday; inserted L1 midday id=1371"
+    },
+    {
+      "company": "NVIDIA",
+      "title": "NVIDIA 2027 Internships: Software Engineering",
+      "location": "Santa Clara, CA",
+      "term": "2027",
+      "posting_date": "2026-08-19",
+      "official_url": "https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Software-Engineering_JR2023495",
+      "competitive": true,
+      "notes": "L1 midday insert; Workday ATS confirmed"
+    },
+    {
+      "company": "Royal Bank of Canada",
+      "title": "2027 Winter Student Opportunities Technology & Operations - Software Developer (4 Months)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-19",
+      "official_url": "https://rbc.wd3.myworkdayjobs.com/rbcglobal1/job/TORONTO-Ontario-Canada/XMLNAME-2027-Winter-Student-Opportunities-Technology---Operations---Software-Developer--4-Months_R-0000184555",
+      "competitive": true,
+      "notes": "L1 midday insert Workday; major Canadian bank"
+    },
+    {
+      "company": "Skydio",
+      "title": "Software Engineer Intern Fall 2026/Winter 2027",
+      "location": "San Mateo, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/skydio/f6320e9b-4eed-408d-8d37-d509fb0406ee",
+      "competitive": false,
+      "notes": "websearch_ats ashby; already in DB id=271"
+    }
+  ]
+}
