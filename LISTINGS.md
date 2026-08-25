@@ -1,11 +1,11 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-25 16:34 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-25 22:02 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-25 12:34 EDT (`ingest-findings`; +0 new / 205 updated).
+**Last live scout:** 2026-08-25 18:02 EDT (`ingest-findings`; +0 new / 215 updated).
 **Last Discord digest:** 2026-08-24 18:07 EDT.
 
-**383 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**386 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
@@ -97,6 +97,9 @@ _Board exported `2026-08-25 16:34 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| [The Voleon Group](https://jobs.ashbyhq.com/voleon/57f1b666-2f4b-4bad-aac0-fa42a1c8fdf6/application?embed=true) | ⭐ | Software Engineer Intern | Berkeley, CA, NYC | Summer 2027, Fall 2027, Winter 2027 | 2026-08-25 | Internship Tracker SWE +1 | [Apply](https://jobs.ashbyhq.com/voleon/57f1b666-2f4b-4bad-aac0-fa42a1c8fdf6/application?embed=true) |
+| [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5213881007) | ⭐ | Security Software Engineer Intern | San Mateo, CA | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5213881007) |
+| [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5219131007) | ⭐ | Mobile Software Engineer Intern | San Mateo, CA | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5219131007) |
 | Walt Disney | — | Glendale System Software Engineering Internship - Spring 2027 | Glendale, CA | Spring 2027 | 2026-08-24 | SpeedyApply 2027 SWE | [Apply](https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Glendale-CA-USA/Glendale-System-Software-Engineering-Internship--Spring-2027_10158137) |
 | Royal Bank of Canada | ⭐ | AI Engineer Co-op - 4 Months | Toronto, ON, Canada | Winter 2027 | 2026-08-24 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Royal-Bank-Of-Canada?utm_source=GHList&utm_medium=company) |
 | NVIDIA | ⭐ | CUDA Full Stack & AI Test Dev Intern - 2027 | Shanghai, China | — | 2026-08-21 | SpeedyApply 2027 SWE Intl | [Apply](https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/China-Shanghai/CUDA-Full-Stack---AI-Test-Dev-Intern---2027_JR2023666-1) |
