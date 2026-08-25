@@ -1,20 +1,23 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-24 22:07 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-25 16:34 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-24 18:07 EDT (`ingest-findings`; +0 new / 193 updated).
-**Last Discord digest:** 2026-08-21 18:06 EDT.
+**Last live scout:** 2026-08-25 12:34 EDT (`ingest-findings`; +0 new / 205 updated).
+**Last Discord digest:** 2026-08-24 18:07 EDT.
 
-**378 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**383 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Advanced Space | — | 2027 Software Engineering Summer Internship | Westminster, CO | — | 2026-08-25 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/advancedspace/jobs/4324855009) |
+| Advanced Space | — | 2027 DevOps Summer Internship | Westminster, CO | — | 2026-08-25 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/advancedspace/jobs/4333179009) |
+| Mackenzie Investments | — | Data Engineering Intern | Toronto, ON, Canada | Winter 2027 | 2026-08-25 | Simplify Off-Season +1 | [Apply](https://careersen-mackenzieinvestments.icims.com/jobs/5983/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify) |
 | Royal Bank of Canada | ⭐ | Data Engineer Intern - Chief Data Office | Toronto, ON, Canada | Winter 2027 | 2026-08-24 | Simplify Off-Season +1 | [Apply](https://rbc.wd3.myworkdayjobs.com/ExternalPrivatePostingStudents/job/TORONTO-Ontario-Canada/XMLNAME-2027-Winter---CDO--Data-Engineer-Intern--4-Months-_R-0000184902?utm_source=Simplify&ref=Simplify) |
 | NVIDIA | ⭐ | Software Engineering Intern - Test Development - 2027 | Shanghai, China | — | 2026-08-24 | SpeedyApply 2027 SWE Intl | [Apply](https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/China-Shanghai/Software-Engineering-Intern--Test-Development---2027_JR2023649-1) |
 | The Walt Disney Company | ⭐ | Systems Software Engineer Intern | Glendale, CA | Winter 2027 | 2026-08-24 | Simplify Off-Season +1 | [Apply](https://disney.wd5.myworkdayjobs.com/disneycareer/job/Glendale-CA-USA/Glendale-System-Software-Engineering-Internship--Spring-2027_10158137?utm_source=Simplify&ref=Simplify) |
-| Audax Group | — | Data Engineer Co-op | Boston, MA | Winter 2027 | 2026-08-24 | Simplify Off-Season | [Apply](https://job-boards.greenhouse.io/audaxgroup/jobs/4722779005?utm_source=Simplify&ref=Simplify) |
-| Audax Group | — | AI Engineer Co-op | Boston, MA | Winter 2027, Spring 2027 | 2026-08-24 | Simplify Off-Season | [Apply](https://job-boards.greenhouse.io/audaxgroup/jobs/4722801005?utm_source=Simplify&ref=Simplify) |
-| Audax Group | — | Data Engineer Co-op | NYC | Winter 2027 | 2026-08-24 | Simplify Off-Season | [Apply](https://job-boards.greenhouse.io/audaxgroup/jobs/4722770005?utm_source=Simplify&ref=Simplify) |
+| Audax Group | — | Data Engineer Co-op | Boston, MA | Winter 2027 | 2026-08-24 | Simplify Off-Season +1 | [Apply](https://job-boards.greenhouse.io/audaxgroup/jobs/4722779005?utm_source=Simplify&ref=Simplify) |
+| Audax Group | — | AI Engineer Co-op | Boston, MA | Winter 2027, Spring 2027 | 2026-08-24 | Simplify Off-Season +1 | [Apply](https://job-boards.greenhouse.io/audaxgroup/jobs/4722801005?utm_source=Simplify&ref=Simplify) |
+| Audax Group | — | Data Engineer Co-op | NYC | Winter 2027 | 2026-08-24 | Simplify Off-Season +1 | [Apply](https://job-boards.greenhouse.io/audaxgroup/jobs/4722770005?utm_source=Simplify&ref=Simplify) |
 | Gulfstream | ⭐ | Software Engineer Intern - Innovation, Engineering and Flight | Savannah, GA | Spring 2027 | 2026-08-24 | Simplify Off-Season +2 | [Apply](https://careers.gulfstream.com/job/Savannah-Spring-2027-IEF-Software-Engineer-Collegiate-Associate-Intern-GA-31401/1421676700/?ats=successfactors&utm_source=Simplify&ref=Simplify) |
 | TELUS Digital | — | Software Engineering Intern - Brazil - Year Round 2027 | Porto Alegre, Brazil +1 | — | 2026-08-22 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/telus-digital/98495440-1a32-4c7e-8183-f38beebfd1d0) |
 | NVIDIA | ⭐ | Test Development Software Engineering Intern - 2027 | Shanghai, China | — | 2026-08-21 | SpeedyApply 2027 SWE Intl | [Apply](https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/China-Shanghai/Test-Development-Software-Engineering-Intern---2027_JR2023632) |
@@ -75,7 +78,7 @@ _Board exported `2026-08-24 22:07 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [Atoms](https://job-boards.greenhouse.io/cssmerge/jobs/8693034002) | — | Machine Learning PhD Software Engineer Intern | Seattle, WA, LA, NYC, Mountain View, CA | Winter 2027, Summer 2027 | 2026-08-10 | Internship Tracker SWE | [Apply](https://job-boards.greenhouse.io/cssmerge/jobs/8693034002) |
 | [Tesla](https://www.tesla.com/careers/search/job/279763) | ⭐ | Software Engineer Intern - Engineering Automation - Vehicle Engineering | Palo Alto, CA | Winter 2027, Spring 2027 | 2026-08-10 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/279763) |
 | Varda | — | Site Reliability Internship - Spring 2027 | El Segundo, CA | Spring 2027 | 2026-08-08 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/7824814003) |
-| Varda Space | — | Flight Software Intern - Spring 2027 | El Segundo, CA | Spring 2027 | 2026-08-08 | Simplify Off-Season +1 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/7824815003?utm_source=Simplify&ref=Simplify) |
+| Varda Space | — | Flight Software Intern - Spring 2027 | El Segundo, CA | Spring 2027 | 2026-08-08 | Simplify Off-Season +2 | [Apply](https://job-boards.greenhouse.io/vardaspace/jobs/7824815003?utm_source=Simplify&ref=Simplify) |
 | The Nuclear Company | — | AI/ML Engineer Intern - Platform Integration & AI/Data | Washington, DC | Spring 2027 | 2026-08-08 | Simplify Off-Season | [Apply](https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383212008?utm_source=Simplify&ref=Simplify) |
 | The Nuclear Company | — | Software Engineering Intern | Washington, DC | Spring 2027 | 2026-08-08 | Simplify Off-Season +2 | [Apply](https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383171008?utm_source=Simplify&ref=Simplify) |
 | TikTok | — | Data Engineer Intern - Monetization Data - 2027 Summer | San Jose, CA | — | 2026-08-07 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7671232204182276405) |
@@ -94,6 +97,8 @@ _Board exported `2026-08-24 22:07 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Walt Disney | — | Glendale System Software Engineering Internship - Spring 2027 | Glendale, CA | Spring 2027 | 2026-08-24 | SpeedyApply 2027 SWE | [Apply](https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Glendale-CA-USA/Glendale-System-Software-Engineering-Internship--Spring-2027_10158137) |
+| Royal Bank of Canada | ⭐ | AI Engineer Co-op - 4 Months | Toronto, ON, Canada | Winter 2027 | 2026-08-24 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Royal-Bank-Of-Canada?utm_source=GHList&utm_medium=company) |
 | NVIDIA | ⭐ | CUDA Full Stack & AI Test Dev Intern - 2027 | Shanghai, China | — | 2026-08-21 | SpeedyApply 2027 SWE Intl | [Apply](https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/China-Shanghai/CUDA-Full-Stack---AI-Test-Dev-Intern---2027_JR2023666-1) |
 | TikTok | — | Data Engineer Intern - E-commerce - 2027 Summer | San Jose, CA | — | 2026-08-21 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7676250516494436661) |
 | TikTok | — | Software Engineer Intern - TikTok AI Search & Visual Search Infra Team - 2027 Summer | San Jose, CA | — | 2026-08-21 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7676276048527214901) |
@@ -288,7 +293,7 @@ _Board exported `2026-08-24 22:07 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Midmark | — | Firmware Engineering Intern/Co-op | Vandalia, OH | Spring 2027 | 2026-02-18 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Midmark?utm_source=GHList&utm_medium=company) |
 | Nuro | — | Software Engineer Intern - Pose - Vehicle State Estimation | Mountain View, CA | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2026-01-31 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Nuro?utm_source=GHList&utm_medium=company) |
 | Perpay | — | Software Engineering Intern | Philadelphia, PA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-01-31 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Perpay?utm_source=GHList&utm_medium=company) |
-| [GE Appliances](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) | — | Software Engineering Co-op Spring 2027 | Louisville, KY | Spring 2027 | 2026-01-23 | Internship Tracker SWE | [Apply](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) |
+| [GE Appliances](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) | — | Software Engineering Co-op Spring 2027 | Louisville, KY | Spring 2027 | 2026-01-23 | Internship Tracker SWE +1 | [Apply](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832) |
 | Plexus | — | Intern – Software Engineer - Spring 2027 | Raleigh, NC | Spring 2026 | 2026-01-19 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Plexus?utm_source=GHList&utm_medium=company) |
 | [Palantir](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) | ⭐ | Forward Deployed Software Engineer – Internship - US Government | Honolulu, HI | Winter 2027, Spring 2027, Summer 2027, Fall 2027 | 2025-12-12 | Internship Tracker SWE +1 | [Apply](https://jobs.lever.co/palantir/315f695d-04d1-4a9a-848e-cb2bec7a997e/apply) |
 | Etched | — | Infrastructure Intern | San Jose, CA | Winter/Spring 2027 | n/a | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/etched/1b073af4-6764-45ca-a22d-40a4823f0877) |
