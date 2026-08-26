@@ -1,0 +1,194 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-26T22:05:00Z",
+  "discovery": "layer2_evening indeed+ats",
+  "search_pack": "_search_pack_20260826T220352Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://www.google.com/search?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:site:job-boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "websearch:site:job-boards.greenhouse.io \"Spring 2027\" \"Software Engineering Intern\"",
+    "websearch:\"January 2027\" \"Software Intern\" greenhouse ashby apply",
+    "websearch:site:myworkdayjobs.com \"Winter 2027\" Software Engineer Intern"
+  ],
+  "meta": {
+    "run_ts": "2026-08-26T22:05:00Z",
+    "layer": 2,
+    "notes": "Evening L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare); WebSearch used for role discovery. DuckDuckGo ATS: HTTP 200 but no extractable ATS links in HTML. Google ATS: WebSearch used. LinkedIn/Handshake skipped per Cloud policy. L1 this evening inserted 8 roles (6 Tesla S27, 1 Netflix W27, 1 BMO W27 Workday). Layer 2 verified W27/S27 ATS postings via WebSearch; Kodiak Motion Planning found but fails not_software filter."
+  },
+  "jobs": [
+    {
+      "company": "Tesla",
+      "title": "Software Engineer Intern - Maps & Navigation Validation",
+      "location": "Palo Alto, CA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://simplify.jobs/p/a96f8f9b-926d-483b-ba4f-ab46b0e78ac2?utm_source=GHList",
+      "competitive": true,
+      "notes": "L1 id=1620; new this evening"
+    },
+    {
+      "company": "Tesla",
+      "title": "Fullstack Software Engineer Intern - Fleetnet",
+      "location": "Palo Alto, CA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://simplify.jobs/p/0ebaa63f-d5e3-410a-82b7-0234eb9a8e1a?utm_source=GHList",
+      "competitive": true,
+      "notes": "L1 id=1621; new this evening"
+    },
+    {
+      "company": "Tesla",
+      "title": "Android Engineer Intern - Mobile Software",
+      "location": "Palo Alto, CA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://simplify.jobs/p/0b09ad76-6210-4b87-94c9-b662b170d268?utm_source=GHList",
+      "competitive": true,
+      "notes": "L1 id=1622; new this evening"
+    },
+    {
+      "company": "Tesla",
+      "title": "Fullstack C++ Engineer Intern - Vehicle User Interface",
+      "location": "Palo Alto, CA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://simplify.jobs/p/de753ad7-a941-4751-85c8-ff3d1b697b54?utm_source=GHList",
+      "competitive": true,
+      "notes": "L1 id=1623; new this evening"
+    },
+    {
+      "company": "Netflix",
+      "title": "Machine Learning/AI Infrastructure Engineering Intern - AI Platform",
+      "location": "Los Gatos, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://explore.jobs.netflix.net/careers/job/790317917022",
+      "competitive": true,
+      "notes": "L1 id=1624; new this evening"
+    },
+    {
+      "company": "Tesla",
+      "title": "Embedded Software Engineer Intern - Firmware Platforms",
+      "location": "Palo Alto, CA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://simplify.jobs/p/cb4c69f2-62ef-46ff-b70a-352ab1e61af2?utm_source=GHList",
+      "competitive": true,
+      "notes": "L1 id=1625; new this evening"
+    },
+    {
+      "company": "Tesla",
+      "title": "Software Engineer Intern - Maps & Navigation - Robotaxi",
+      "location": "Palo Alto, CA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://simplify.jobs/p/6f67b1f9-a488-41fb-81ab-1c90fbd557d4?utm_source=GHList",
+      "competitive": true,
+      "notes": "L1 id=1626; new this evening"
+    },
+    {
+      "company": "Bank of Montreal",
+      "title": "Full Stack Engineer Intern - Data Cognition Team",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://bmo.wd3.myworkdayjobs.com/Privileged/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto_R260021769",
+      "competitive": false,
+      "notes": "L1 id=1627 workday; new this evening — Canada"
+    },
+    {
+      "company": "Notion",
+      "title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "websearch_ats ashby; already in DB id=1331"
+    },
+    {
+      "company": "Rippling",
+      "title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "competitive": true,
+      "notes": "websearch_ats rippling; already in DB id=6"
+    },
+    {
+      "company": "Figma",
+      "title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://job-boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; already in DB id=1167"
+    },
+    {
+      "company": "Datadog",
+      "title": "Software Engineering Intern (Winter)",
+      "location": "Boston, MA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-17",
+      "official_url": "https://job-boards.greenhouse.io/datadog/jobs/8052095",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; already in DB id=1332"
+    },
+    {
+      "company": "Databricks",
+      "title": "Software Engineering Intern (2027 Start) - Winter",
+      "location": "Bellevue, WA; Mountain View, CA; San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://www.databricks.com/company/careers/university-recruiting/software-engineering-intern-2027-start---winter-8732364002",
+      "competitive": true,
+      "notes": "websearch_ats; already in DB id=1506"
+    },
+    {
+      "company": "Zip",
+      "title": "Software Engineer Intern - Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e/application",
+      "competitive": false,
+      "notes": "websearch_ats ashby; L1 id=1607 — Canada"
+    },
+    {
+      "company": "NationGraph",
+      "title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-07",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "websearch_ats ashby; already in DB id=768 — Canada"
+    },
+    {
+      "company": "Kodiak",
+      "title": "Winter 2027 Intern, Motion Planning",
+      "location": "Mountain View, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://job-boards.greenhouse.io/kodiak/jobs/4377721009",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; fails pipeline not_software filter (robotics title)"
+    }
+  ]
+}

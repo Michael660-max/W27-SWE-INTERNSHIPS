@@ -1,20 +1,27 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-26 16:33 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-26 22:05 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-26 12:33 EDT (`ingest-findings`; +0 new / 225 updated).
+**Last live scout:** 2026-08-26 18:05 EDT (`ingest-findings`; +0 new / 240 updated).
 **Last Discord digest:** 2026-08-25 18:02 EDT.
 
-**395 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**403 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Tesla | ⭐ | Embedded Software Engineer Intern - Firmware Platforms | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/cb4c69f2-62ef-46ff-b70a-352ab1e61af2?utm_source=GHList) |
+| Tesla | ⭐ | Software Engineer Intern - Maps & Navigation - Robotaxi | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/6f67b1f9-a488-41fb-81ab-1c90fbd557d4?utm_source=GHList) |
+| Netflix | ⭐ | Machine Learning/AI Infrastructure Engineering Intern - AI Platform | Los Gatos, CA | Winter 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://explore.jobs.netflix.net/careers/job/790317917022?utm_source=Simplify&ref=Simplify) |
+| Tesla | ⭐ | Fullstack Software Engineer Intern - Fleetnet - Fullstack Software Engineering | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/0ebaa63f-d5e3-410a-82b7-0234eb9a8e1a?utm_source=GHList) |
+| Tesla | ⭐ | Fullstack C++ Engineer Intern - Vehicle User Interface | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/de753ad7-a941-4751-85c8-ff3d1b697b54?utm_source=GHList) |
+| Tesla | ⭐ | Software Engineer Intern - Maps & Navigation Validation | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/a96f8f9b-926d-483b-ba4f-ab46b0e78ac2?utm_source=GHList) |
+| Tesla | ⭐ | Android Engineer Intern - Mobile Software | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/0b09ad76-6210-4b87-94c9-b662b170d268?utm_source=GHList) |
 | Verkada | ⭐ | Backend Software Engineering Intern 2027 | San Mateo, CA | Winter 2027 | 2026-08-26 | SpeedyApply 2027 SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5210813007) |
 | Verkada | ⭐ | Embedded Software Engineering Intern 2027 | San Mateo, CA | Winter 2027 | 2026-08-26 | SpeedyApply 2027 SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5211595007) |
 | Verkada | ⭐ | Frontend Software Engineering Intern 2027 | San Mateo, CA | Winter 2027 | 2026-08-26 | SpeedyApply 2027 SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5210942007) |
 | Zipline | — | Embedded Software Engineer Intern - Spring 2027 | South San Francisco, CA | Spring 2027 | 2026-08-26 | SpeedyApply 2027 SWE | [Apply](https://www.zipline.com/open-roles?gh_jid=7974897003) |
 | Zipline | — | Embedded Software Engineer Intern - Spring 2027 | South SF | Spring 2027 | 2026-08-26 | Simplify Off-Season | [Apply](https://simplify.jobs/p/a687b7a4-e59f-46fc-81d2-72d37d677ffb?utm_source=GHList) |
-| Bank of Montreal | ⭐ | Full Stack Engineer Intern Co-op - Data Cognition Team | Toronto, ON, Canada | Winter 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://bmo.wd3.myworkdayjobs.com/External/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto--Co-Op--Internship-_R260021769?utm_source=Simplify&ref=Simplify) |
+| Bank of Montreal | ⭐ | Full Stack Engineer Intern Co-op - Data Cognition Team | Toronto, ON, Canada | Winter 2027 | 2026-08-26 | Simplify Off-Season +2 | [Apply](https://bmo.wd3.myworkdayjobs.com/External/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto--Co-Op--Internship-_R260021769?utm_source=Simplify&ref=Simplify) |
 | Zip | — | Software Engineer Intern - Winter 2027 | Toronto, ON, Canada | Winter 2027 | 2026-08-26 | Simplify Off-Season +3 | [Apply](https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Advanced Space | — | 2027 Software Engineering Summer Internship | Westminster, CO | — | 2026-08-25 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/advancedspace/jobs/4324855009) |
 | Advanced Space | — | 2027 DevOps Summer Internship | Westminster, CO | — | 2026-08-25 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/advancedspace/jobs/4333179009) |
@@ -162,6 +169,7 @@ _Board exported `2026-08-26 16:33 UTC`. Loose filter: **Winter / Spring / Jan / 
 | TikTok | — | Software Engineer Intern - Recommendation Architecture - Feeds Infrastructure - 2027 Summer | Seattle, WA | — | 2026-08-12 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7672926068681951493) |
 | TikTok | — | Software Engineer Intern - Recommendation Architecture - Feeds Infrastructure - 2027 Fall | San Jose, CA | Fall 2027 | 2026-08-12 | SpeedyApply 2027 SWE +1 | [Apply](https://lifeattiktok.com/search/7672934842451577141) |
 | [RTX](https://globalhr.wd5.myworkdayjobs.com/fr-CA/Private_Posting_No_TMP/job/US-AL-HUNTSVILLE-382--420-Jan-Davis-Dr--DAVIS-382/Summer-2027--Software-Intern-OnSite_01865160) | — | Software Engineer Intern | Huntsville, AL | Summer 2027 | 2026-08-12 | Internship Tracker SWE | [Apply](https://globalhr.wd5.myworkdayjobs.com/fr-CA/Private_Posting_No_TMP/job/US-AL-HUNTSVILLE-382--420-Jan-Davis-Dr--DAVIS-382/Summer-2027--Software-Intern-OnSite_01865160) |
+| [Bank of Montreal](https://bmo.wd3.myworkdayjobs.com/Privileged/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto_R260021769) | — | Full Stack Engineer Intern - Data Cognition Team | Toronto, ON, Canada | N/A | 2026-08-11 | Internship Tracker SWE +1 | [Apply](https://bmo.wd3.myworkdayjobs.com/Privileged/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto_R260021769) |
 | Quantbot Technologies | — | Software Engineer Summer Internship - 2027 - New York | New York City, NY | — | 2026-08-08 | SpeedyApply 2027 SWE | [Apply](https://www.quantbot.com/careers/?gh_jid=4299458009) |
 | TikTok | — | Machine Learning MLOps Intern - Global SRE - 2027 Summer | San Jose, CA | — | 2026-08-06 | SpeedyApply 2027 AI | [Apply](https://lifeattiktok.com/search/7670875283026053381) |
 | TikTok | — | Site Reliability Engineer Intern - Global SRE - 2027 Summer | San Jose, CA | — | 2026-08-06 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7670874691332212997) |
