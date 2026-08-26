@@ -1,0 +1,154 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-26T16:34:00Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260826T163120Z.md",
+  "portals_attempted": ["indeed", "duckduckgo_ats", "google_ats", "websearch_ats", "ashby_api"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://www.google.com/search?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" Software intern",
+    "websearch:site:job-boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "websearch:site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:\"Spring 2027\" \"Software Engineering Intern\" greenhouse ashby workday apply",
+    "ashby_api:zip,cohere,voleon,notion,NationGraph"
+  ],
+  "meta": {
+    "run_ts": "2026-08-26T16:34:00Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200 but no extractable ATS links in HTML (consistent). Google ATS: HTTP 200 but no extractable ATS links via curl. WebSearch + Ashby API used for official URL verification. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 14 roles (BMO W27 Toronto, Zip W27, GE Appliances Fall 2027, Verkada x3, Zipline embedded Spring 2027, Prophet Security, Garda CP AI tools, RAI Lever, Brunswick, Maximor AI, talentpluto). Layer 2 discovered Kodiak W27 Motion Planning + Controls intern roles via websearch_ats greenhouse (not in DB)."
+  },
+  "jobs": [
+    {
+      "company": "Kodiak Robotics",
+      "exact_role_title": "Winter 2027 Intern, Motion Planning",
+      "location": "Mountain View, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://job-boards.greenhouse.io/kodiak/jobs/4377721009",
+      "competitive": false,
+      "notes": "websearch_ats greenhouse; NEW — autonomous trucking motion planning, C++/Python"
+    },
+    {
+      "company": "Kodiak Robotics",
+      "exact_role_title": "Winter 2027 Intern, Controls",
+      "location": "Mountain View, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://job-boards.greenhouse.io/kodiak/jobs/4378402009",
+      "competitive": false,
+      "notes": "websearch_ats greenhouse; NEW — controls/robotics intern, C++"
+    },
+    {
+      "company": "Bank of Montreal",
+      "exact_role_title": "BMO Capital Markets Winter 2027 Full Stack Engineer Toronto Co-Op Internship",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://bmo.wd3.myworkdayjobs.com/External/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto--Co-Op--Internship-_R260021769",
+      "competitive": true,
+      "notes": "websearch_ats workday; L1 id=1606 new this midday"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": false,
+      "notes": "ashby_api; L1 id=1607 new this midday"
+    },
+    {
+      "company": "Verkada",
+      "exact_role_title": "Backend Software Engineering Intern 2027",
+      "location": "San Mateo, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://job-boards.greenhouse.io/verkada/jobs/5210813007",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; L1 id=1611 new this midday"
+    },
+    {
+      "company": "Verkada",
+      "exact_role_title": "Embedded Software Engineering Intern 2027",
+      "location": "San Mateo, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://job-boards.greenhouse.io/verkada/jobs/5211595007",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; L1 id=1612 new this midday"
+    },
+    {
+      "company": "Verkada",
+      "exact_role_title": "Frontend Software Engineering Intern 2027",
+      "location": "San Mateo, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://job-boards.greenhouse.io/verkada/jobs/5210942007",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; L1 id=1613 new this midday"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; United States",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "ashby_api; already in DB id=754"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "websearch_ats ashby; already in DB id=1331"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": true,
+      "notes": "websearch_ats rippling; already in DB id=503"
+    },
+    {
+      "company": "Figma",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://job-boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "websearch_ats greenhouse; already in DB id=1167"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-07",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "ashby_api; already in DB id=768"
+    }
+  ]
+}

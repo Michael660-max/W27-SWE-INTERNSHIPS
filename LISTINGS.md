@@ -1,14 +1,21 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-25 22:02 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-26 16:33 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-25 18:02 EDT (`ingest-findings`; +0 new / 215 updated).
-**Last Discord digest:** 2026-08-24 18:07 EDT.
+**Last live scout:** 2026-08-26 12:33 EDT (`ingest-findings`; +0 new / 225 updated).
+**Last Discord digest:** 2026-08-25 18:02 EDT.
 
-**386 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**395 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Verkada | ⭐ | Backend Software Engineering Intern 2027 | San Mateo, CA | Winter 2027 | 2026-08-26 | SpeedyApply 2027 SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5210813007) |
+| Verkada | ⭐ | Embedded Software Engineering Intern 2027 | San Mateo, CA | Winter 2027 | 2026-08-26 | SpeedyApply 2027 SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5211595007) |
+| Verkada | ⭐ | Frontend Software Engineering Intern 2027 | San Mateo, CA | Winter 2027 | 2026-08-26 | SpeedyApply 2027 SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5210942007) |
+| Zipline | — | Embedded Software Engineer Intern - Spring 2027 | South San Francisco, CA | Spring 2027 | 2026-08-26 | SpeedyApply 2027 SWE | [Apply](https://www.zipline.com/open-roles?gh_jid=7974897003) |
+| Zipline | — | Embedded Software Engineer Intern - Spring 2027 | South SF | Spring 2027 | 2026-08-26 | Simplify Off-Season | [Apply](https://simplify.jobs/p/a687b7a4-e59f-46fc-81d2-72d37d677ffb?utm_source=GHList) |
+| Bank of Montreal | ⭐ | Full Stack Engineer Intern Co-op - Data Cognition Team | Toronto, ON, Canada | Winter 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://bmo.wd3.myworkdayjobs.com/External/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto--Co-Op--Internship-_R260021769?utm_source=Simplify&ref=Simplify) |
+| Zip | — | Software Engineer Intern - Winter 2027 | Toronto, ON, Canada | Winter 2027 | 2026-08-26 | Simplify Off-Season +3 | [Apply](https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Advanced Space | — | 2027 Software Engineering Summer Internship | Westminster, CO | — | 2026-08-25 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/advancedspace/jobs/4324855009) |
 | Advanced Space | — | 2027 DevOps Summer Internship | Westminster, CO | — | 2026-08-25 | SpeedyApply 2027 SWE | [Apply](https://job-boards.greenhouse.io/advancedspace/jobs/4333179009) |
 | Mackenzie Investments | — | Data Engineering Intern | Toronto, ON, Canada | Winter 2027 | 2026-08-25 | Simplify Off-Season +1 | [Apply](https://careersen-mackenzieinvestments.icims.com/jobs/5983/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify) |
@@ -97,9 +104,11 @@ _Board exported `2026-08-25 22:02 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| GE Appliances | — | Software Engineer Co-op | Louisville, KY | Fall 2027 | 2026-08-25 | Simplify Off-Season +1 | [Apply](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Fall-2027_REQ-26592?utm_source=Simplify&ref=Simplify) |
 | [The Voleon Group](https://jobs.ashbyhq.com/voleon/57f1b666-2f4b-4bad-aac0-fa42a1c8fdf6/application?embed=true) | ⭐ | Software Engineer Intern | Berkeley, CA, NYC | Summer 2027, Fall 2027, Winter 2027 | 2026-08-25 | Internship Tracker SWE +1 | [Apply](https://jobs.ashbyhq.com/voleon/57f1b666-2f4b-4bad-aac0-fa42a1c8fdf6/application?embed=true) |
-| [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5213881007) | ⭐ | Security Software Engineer Intern | San Mateo, CA | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5213881007) |
-| [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5219131007) | ⭐ | Mobile Software Engineer Intern | San Mateo, CA | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE +1 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5219131007) |
+| [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5213881007) | ⭐ | Security Software Engineer Intern | San Mateo, CA | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE +2 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5213881007) |
+| [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5219131007) | ⭐ | Mobile Software Engineer Intern | San Mateo, CA | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE +2 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5219131007) |
+| [Brunswick](https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Fond-du-Lac-WI/Mercury-Marine---Systems-Software-Engineering-Co-op_JR-051212) | — | Systems Engineer Co-op - Software Engineering | Fond du Lac, WI | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE | [Apply](https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Fond-du-Lac-WI/Mercury-Marine---Systems-Software-Engineering-Co-op_JR-051212) |
 | Walt Disney | — | Glendale System Software Engineering Internship - Spring 2027 | Glendale, CA | Spring 2027 | 2026-08-24 | SpeedyApply 2027 SWE | [Apply](https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Glendale-CA-USA/Glendale-System-Software-Engineering-Internship--Spring-2027_10158137) |
 | Royal Bank of Canada | ⭐ | AI Engineer Co-op - 4 Months | Toronto, ON, Canada | Winter 2027 | 2026-08-24 | Simplify Off-Season | [Apply](https://simplify.jobs/c/Royal-Bank-Of-Canada?utm_source=GHList&utm_medium=company) |
 | NVIDIA | ⭐ | CUDA Full Stack & AI Test Dev Intern - 2027 | Shanghai, China | — | 2026-08-21 | SpeedyApply 2027 SWE Intl | [Apply](https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/China-Shanghai/CUDA-Full-Stack---AI-Test-Dev-Intern---2027_JR2023666-1) |
