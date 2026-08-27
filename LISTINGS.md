@@ -1,11 +1,11 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-26 22:05 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-27 16:34 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-26 18:05 EDT (`ingest-findings`; +0 new / 240 updated).
-**Last Discord digest:** 2026-08-25 18:02 EDT.
+**Last live scout:** 2026-08-27 12:34 EDT (`ingest-findings`; +0 new / 248 updated).
+**Last Discord digest:** 2026-08-26 18:05 EDT.
 
-**403 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**409 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
@@ -111,6 +111,12 @@ _Board exported `2026-08-26 22:05 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Johnson & Johnson | ⭐ | Software Engineer Co-op - MedTech | Cincinnati, OH | Spring 2027 | 2026-08-26 | Simplify Off-Season +2 | [Apply](https://jj.wd5.myworkdayjobs.com/JJ/job/Cincinnati-Ohio-United-States-of-America/Software-Engineering-Co-Op--Spring-2027_R-095741?utm_source=Simplify&ref=Simplify) |
+| [Mackenzie Investments](https://careersen-mackenzieinvestments.icims.com/jobs/5992/job?mobile=true&needsRedirect=false) | — | Platform Developer Intern - Platform Developer | Toronto, ON, Canada | Winter 2027 | 2026-08-26 | Internship Tracker SWE | [Apply](https://careersen-mackenzieinvestments.icims.com/jobs/5992/job?mobile=true&needsRedirect=false) |
+| [Tesla](https://www.tesla.com/careers/search/job/280604) | ⭐ | Fullstack C++ Engineer Intern - Vehicle User Interface | Palo Alto, CA | Spring 2027 | 2026-08-26 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/280604) |
+| [Tesla](https://www.tesla.com/careers/search/job/281099) | ⭐ | Fullstack Software Engineer Intern - Fleetnet - Fullstack Software Engineering | Palo Alto, CA | Spring 2027 | 2026-08-26 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/281099) |
+| [Tesla](https://www.tesla.com/careers/search/job/281271) | ⭐ | Software Engineer Intern - Maps & Navigation Validation | Palo Alto, CA | Spring 2027 | 2026-08-26 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/281271) |
+| [Tesla](https://www.tesla.com/careers/search/job/280605) | ⭐ | Android Engineer Intern - Mobile Software | Palo Alto, CA | Spring 2027 | 2026-08-26 | Internship Tracker SWE | [Apply](https://www.tesla.com/careers/search/job/280605) |
 | GE Appliances | — | Software Engineer Co-op | Louisville, KY | Fall 2027 | 2026-08-25 | Simplify Off-Season +1 | [Apply](https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Fall-2027_REQ-26592?utm_source=Simplify&ref=Simplify) |
 | [The Voleon Group](https://jobs.ashbyhq.com/voleon/57f1b666-2f4b-4bad-aac0-fa42a1c8fdf6/application?embed=true) | ⭐ | Software Engineer Intern | Berkeley, CA, NYC | Summer 2027, Fall 2027, Winter 2027 | 2026-08-25 | Internship Tracker SWE +1 | [Apply](https://jobs.ashbyhq.com/voleon/57f1b666-2f4b-4bad-aac0-fa42a1c8fdf6/application?embed=true) |
 | [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5213881007) | ⭐ | Security Software Engineer Intern | San Mateo, CA | Winter 2027, Summer 2027 | 2026-08-25 | Internship Tracker SWE +2 | [Apply](https://job-boards.greenhouse.io/verkada/jobs/5213881007) |
@@ -395,7 +401,7 @@ _Board exported `2026-08-26 22:05 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Netic | ⭐ | Software Engineer Intern, Agent Platform / Full Stack (2026-2027) | San Francisco, CA | Winter 2026, Spring 2026, Summer 2026, Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7) |
 | Western Digital | — | Software Engineering Co-op (Winter 2027) | Milpitas, CA | Winter 2027 | 2026-07-16 | sndsh404 Summer2027 +3 | [Apply](https://jobs.smartrecruiters.com/WesternDigital/744000138184309) |
 | Cohere | ⭐ | Software Engineer Intern (Fall / Winter 2026) | Canada | Winter 2027 | 2026-05-03 | Company ATS:Cohere +2 | [Apply](https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254) |
-| ASM | — | Software Engineering Intern (Spring 2027) | — | Spring 2027 | 2026-04-23 | sndsh404 Summer2027 +3 | [Apply](https://www.asm.com/open-vacancies/software-engineering-intern-spring-2027-4830113101?gh_jid=4830113101) |
+| ASM | — | Software Engineering Intern (Spring 2027) | — | Spring 2027 | 2026-04-23 | sndsh404 Summer2027 +3 | [Apply](https://job-boards.greenhouse.io/asm/jobs/4830113101) |
 | Salesforce | ⭐ | Software Engineer Intern (Futureforce) | San Francisco, CA | — | n/a | sndsh404 Summer2027 | [Apply](https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Software-Engineer_JR340771-1) |
 | IMC | — | 2027 - Software Engineering Intern - BITS Pilani | Mumbai, India | — | n/a | Company ATS:IMC | [Apply](https://job-boards.eu.greenhouse.io/imc/jobs/4917549101) |
 | IMC | — | 2027 - Software Engineering Intern - IIT Bombay | Mumbai, India | — | n/a | Company ATS:IMC | [Apply](https://job-boards.eu.greenhouse.io/imc/jobs/4860319101) |

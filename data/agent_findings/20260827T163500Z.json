@@ -1,0 +1,123 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-27T16:35:00Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260827T163119Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats", "ashby_api"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://www.google.com/search?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:site:job-boards.greenhouse.io \"Spring 2027\" \"Software Intern\"",
+    "websearch:site:myworkdayjobs.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "ashby_api:cohere,nationgraph,notion,melius"
+  ],
+  "meta": {
+    "run_ts": "2026-08-27T16:35:00Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200 but no extractable ATS links in HTML. Google ATS: HTTP 200 but no extractable ATS links. WebSearch + Ashby API used for role discovery. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 7 roles (4 Tesla S27, 1 Netflix W27, 1 J&J S27 Workday, 1 Mackenzie W27 iCIMS, 1 Kognitos Ashby). Layer 2 verified official ATS URLs for L1 inserts + open W27/S27 postings; Nuclear Company AI Applied Research/Data Science and Cohere ML intern fail not_software filter."
+  },
+  "jobs": [
+    {
+      "company": "Johnson & Johnson",
+      "exact_role_title": "Software Engineering Co-Op - Spring 2027",
+      "location": "Cincinnati, OH",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Cincinnati-Ohio-United-States-of-America/Software-Engineering-Co-Op--Spring-2027_R-095741",
+      "competitive": true,
+      "notes": "L1 id=1628; Workday official URL verified"
+    },
+    {
+      "company": "Mackenzie Investments",
+      "exact_role_title": "Platform Developer Intern - Platform Developer",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://careersen-mackenzieinvestments.icims.com/jobs/5992/job",
+      "competitive": false,
+      "notes": "L1 id=1629; iCIMS official URL verified (Jan-Apr 2027)"
+    },
+    {
+      "company": "Kognitos",
+      "exact_role_title": "Software Engineer Intern - AI-Native",
+      "location": "San Jose, CA",
+      "term": "Summer 2026",
+      "posting_date": "2026-04-16",
+      "official_url": "https://jobs.ashbyhq.com/Kognitos/a3c5bd4c-f6fb-4eb0-b943-e0e1a1d878c5/application",
+      "competitive": false,
+      "notes": "L1 id=1634; Ashby official URL verified"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "Ashby API + websearch; deadline Oct 26 2026"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "Ashby API verified open"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "Ashby API verified; Jan 25-Apr 16 2027 onsite"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": true,
+      "notes": "Rippling ATS verified via websearch + page fetch"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-16",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "competitive": true,
+      "notes": "Rippling ATS; websearch confirmed W27 full-stack intern"
+    },
+    {
+      "company": "ASM",
+      "exact_role_title": "Software Engineering Intern (Spring 2027)",
+      "location": "Phoenix, AZ",
+      "term": "Spring 2027",
+      "posting_date": "2026-04-23",
+      "official_url": "https://job-boards.greenhouse.io/asm/jobs/4830113101",
+      "competitive": false,
+      "notes": "Greenhouse official URL; updates asm.com homepage link id=381"
+    }
+  ]
+}
