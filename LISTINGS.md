@@ -1,14 +1,19 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-27 22:14 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-28 16:48 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-27 18:14 EDT (`ingest-findings`; +0 new / 260 updated).
-**Last Discord digest:** 2026-08-26 18:05 EDT.
+**Last live scout:** 2026-08-28 12:48 EDT (`ingest-findings`; +1 new / 275 updated).
+**Last Discord digest:** 2026-08-27 18:14 EDT.
 
-**413 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**421 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Fab2 | — | Embedded Software Engineer Intern - Winter | SF Austin, TX | Winter 2027 | 2026-08-28 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/fab2/3c7fd0f1-b25f-413c-8e62-6ef00a9d47da/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Tesla | ⭐ | Backend Engineer Intern - Infrastructure Engineering | Fremont, CA | Winter 2027, Spring 2027 | 2026-08-28 | Simplify Off-Season | [Apply](https://simplify.jobs/p/8b74bc73-21bb-499c-a67a-d34845246a91?utm_source=GHList) |
+| Tesla | ⭐ | Software Engineer Intern - Information Security - Spring 2027 | Bellevue, WA | Winter 2027, Fall 2027 | 2026-08-28 | Simplify Off-Season | [Apply](https://simplify.jobs/p/615b2214-ffde-44ff-b1af-d08cea6fe865?utm_source=GHList) |
+| Tesla | ⭐ | Automated Diagnostics Intern - Software Engineer | Palo Alto, CA | Winter 2027 | 2026-08-28 | Simplify Off-Season | [Apply](https://simplify.jobs/p/aac19326-02f3-415a-991f-d6a81d6a7ef9?utm_source=GHList) |
+| Fab2 | — | Automation Software Engineer Intern - Winter | SF Austin, TX | Winter 2027 | 2026-08-28 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/fab2/f38b33e7-149e-45b2-b03f-fb8c1b437765/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Tesla | ⭐ | Embedded Software Engineer Intern - Firmware Platforms | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/cb4c69f2-62ef-46ff-b70a-352ab1e61af2?utm_source=GHList) |
 | Tesla | ⭐ | Software Engineer Intern - Maps & Navigation - Robotaxi | Palo Alto, CA | Spring 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://simplify.jobs/p/6f67b1f9-a488-41fb-81ab-1c90fbd557d4?utm_source=GHList) |
 | Netflix | ⭐ | Machine Learning/AI Infrastructure Engineering Intern - AI Platform | Los Gatos, CA | Winter 2027 | 2026-08-26 | Simplify Off-Season +1 | [Apply](https://explore.jobs.netflix.net/careers/job/790317917022?utm_source=Simplify&ref=Simplify) |
@@ -38,9 +43,9 @@ _Board exported `2026-08-27 22:14 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Databricks | ⭐ | Software Engineering Intern - 2027 Start - Winter | Mountain View, CA +2 | Winter 2027 | 2026-08-21 | SpeedyApply 2027 SWE +2 | [Apply](https://job-boards.greenhouse.io/databricks/jobs/8732364002) |
 | Zipline | ⭐ | Software Engineer Intern - Spring 2027 | South San Francisco, CA | Spring 2027 | 2026-08-21 | SpeedyApply 2027 SWE +2 | [Apply](https://www.zipline.com/open-roles?gh_jid=7907191003) |
 | Databricks | ⭐ | Software Engineer Intern | SF Bellevue, WA Mountain View, CA | Winter 2027 | 2026-08-21 | Simplify Off-Season +1 | [Apply](https://job-boards.greenhouse.io/embed/job_app?for=databricks&ref=Simplify&token=8732364002&utm_source=Simplify) |
-| Tesla | ⭐ | Internship - Fullstack Engineer - Applications Engineering - Winter/Spring 2027 | Fremont, CA | Winter 2027, Spring 2027 | 2026-08-21 | Simplify Off-Season | [Apply](https://simplify.jobs/p/7e502eb4-3d9c-4f91-8e83-a471504d8a4b?utm_source=GHList) |
 | ByteDance | — | Software Engineer Intern - CIS Knowledge Bank | San Jose, CA | Fall 2027 | 2026-08-21 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7675345626188335365/detail?utm_source=Simplify&ref=Simplify) |
 | Phoebe | — | Software Engineer Intern | NYC | Fall 2026, Winter 2027 | 2026-08-21 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/phoebe-work/1ffe3e63-2163-447e-a8b0-1fff8b87e0ca/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Tesla | ⭐ | Internship - Fullstack Engineer - Applications Engineering - Winter/Spring 2027 | Fremont, CA | Winter 2027, Spring 2027 | 2026-08-21 | Simplify Off-Season | [Apply](https://simplify.jobs/p/7e502eb4-3d9c-4f91-8e83-a471504d8a4b?utm_source=GHList) |
 | Zipline | — | Software Engineer Intern - Spring 2027 | South SF | Spring 2027 | 2026-08-21 | Simplify Off-Season | [Apply](https://simplify.jobs/p/d8608143-b6cd-4a6e-9563-519ce1b5d368?utm_source=GHList) |
 | [AMD](https://careers.amd.com/jobs/90891?icims=1) | ⭐ | Software Engineer Intern/Co-op | San Jose, CA, Santa Clara, CA | Winter 2027, Summer 2027, Fall 2027 | 2026-08-21 | Internship Tracker SWE | [Apply](https://careers.amd.com/careers-home/jobs/90891?icims=1) |
 | [AMD](https://careers.amd.com/jobs/91176?icims=1) | ⭐ | Software Engineer Intern/Co-op - Masters | San Jose, CA, Santa Clara, CA | Spring 2027, Summer 2027, Fall 2027 | 2026-08-21 | Internship Tracker SWE | [Apply](https://careers.amd.com/careers-home/jobs/91176?icims=1) |
@@ -111,7 +116,10 @@ _Board exported `2026-08-27 22:14 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Fab2 | — | Infrastructure Software Engineering Intern - Winter | Austin, TX | Winter 2027 | 2026-08-28 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/fab2/4e4f8c44-2f9b-4cb4-9e44-01d24b367b2f) |
+| Leidos | — | Software Developer Co-op | Bethesda, MD | Winter 2027 | 2026-08-27 | Simplify Off-Season +2 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/Bethesda-MD/Software-Developer-Co-op_R-00190766?utm_source=Simplify&ref=Simplify) |
 | [RTX](https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-AL-HUNTSVILLE-401--401-Jan-Davis-Dr-NW--JAN-DAVIS-401/Software-Engineering-Intern--Summer-2027-_01870007) | — | Software Engineer Intern - Summer 2027 | Huntsville, AL | Summer 2027 | 2026-08-27 | Internship Tracker SWE | [Apply](https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-AL-HUNTSVILLE-401--401-Jan-Davis-Dr-NW--JAN-DAVIS-401/Software-Engineering-Intern--Summer-2027-_01870007) |
+| [Tesla](https://www.tesla.com/careers/search/job/281473) | ⭐ | Software Engineer Intern - Information Security - Spring 2027 | Bellevue, WA | Winter 2027, Fall 2027 | 2026-08-27 | Internship Tracker SWE +1 | [Apply](https://www.tesla.com/careers/search/job/281473) |
 | Bank of Montreal | ⭐ | BMO Capital Markets Winter 2027 - Full Stack Engineer - Toronto - Co-Op/ Internship | Toronto, Canada | Winter 2027 | 2026-08-26 | SpeedyApply 2027 SWE Intl +1 | [Apply](https://bmo.wd3.myworkdayjobs.com/en-US/external/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto--Co-Op--Internship-_R260021769) |
 | Netflix | ⭐ | Machine Learning/AI Infrastructure Engineering Intern - AI Platform PhD - Winter 2027 | Los Gatos, CA | Winter 2027 | 2026-08-26 | SpeedyApply 2027 AI +1 | [Apply](https://netflix.wd108.myworkdayjobs.com/en-US/netflix/job/Los-Gatos/Machine-Learning-AI-Infrastructure-Engineering-Intern--AI-Platform--PhD--Winter-2027_JR42220) |
 | Johnson & Johnson | ⭐ | Software Engineer Co-op - MedTech | Cincinnati, OH | Spring 2027 | 2026-08-26 | Simplify Off-Season +2 | [Apply](https://jj.wd5.myworkdayjobs.com/JJ/job/Cincinnati-Ohio-United-States-of-America/Software-Engineering-Co-Op--Spring-2027_R-095741?utm_source=Simplify&ref=Simplify) |

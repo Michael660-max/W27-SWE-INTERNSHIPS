@@ -1,0 +1,193 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-28T16:48:10Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260828T164652Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats", "ashby_api"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:boards.greenhouse.io \"Spring 2027\" \"Software Intern\"",
+    "websearch:site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:site:indeed.com \"Spring 2027\" \"Software Engineering Intern\"",
+    "ashby_api:fab2,zip,notion,cohere,nationgraph"
+  ],
+  "meta": {
+    "run_ts": "2026-08-28T16:48:10Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200, no parseable ATS links. Google ATS: HTTP 200, no parseable links. WebSearch + Ashby API used for discovery. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 9 roles (Fab2 x4, Leidos co-op, Tesla x3 Simplify). Layer 2 verified official ATS URLs for L1 inserts + open W27/S27 postings; Fab2 Infrastructure SWE Winter is new via Ashby API."
+  },
+  "jobs": [
+    {
+      "company": "Fab2",
+      "exact_role_title": "Fab Software Engineering Intern - Winter",
+      "location": "Austin, TX",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://jobs.ashbyhq.com/fab2/0c4dc4f4-01c9-4138-a666-e7234cda7e95",
+      "competitive": false,
+      "notes": "L1 id=1646; Ashby API verified open"
+    },
+    {
+      "company": "Fab2",
+      "exact_role_title": "Automation Software Engineering Intern - Winter",
+      "location": "Austin, TX",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://jobs.ashbyhq.com/fab2/f38b33e7-149e-45b2-b03f-fb8c1b437765",
+      "competitive": false,
+      "notes": "L1 id=1648; Ashby API verified open"
+    },
+    {
+      "company": "Fab2",
+      "exact_role_title": "Rust Software Engineering Intern, Chip Design Tools - Winter",
+      "location": "Austin, TX",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://jobs.ashbyhq.com/fab2/4e3958f5-4e0d-4acc-9072-e40822ddf904",
+      "competitive": false,
+      "notes": "L1 id=1652; Ashby API verified open"
+    },
+    {
+      "company": "Fab2",
+      "exact_role_title": "Embedded Software Engineering Intern - Winter",
+      "location": "Austin, TX",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://jobs.ashbyhq.com/fab2/3c7fd0f1-b25f-413c-8e62-6ef00a9d47da",
+      "competitive": false,
+      "notes": "L1 id=1653; Ashby API verified open"
+    },
+    {
+      "company": "Fab2",
+      "exact_role_title": "Infrastructure Software Engineering Intern - Winter",
+      "location": "Austin, TX",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://jobs.ashbyhq.com/fab2/4e4f8c44-2f9b-4cb4-9e44-01d24b367b2f",
+      "competitive": false,
+      "notes": "Ashby API new discovery; not in L1 Simplify scrape"
+    },
+    {
+      "company": "Leidos",
+      "exact_role_title": "Software Developer Co-op",
+      "location": "Bethesda, MD",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://leidos.wd5.myworkdayjobs.com/External/job/Bethesda-MD/Software-Developer-Co-op_R-00190766",
+      "competitive": false,
+      "notes": "L1 id=1651; Workday official URL verified"
+    },
+    {
+      "company": "Tesla",
+      "exact_role_title": "Software Engineer Intern - Information Security - Spring 2027",
+      "location": "Bellevue, WA",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://www.tesla.com/careers/search/job/281473",
+      "competitive": true,
+      "notes": "L1 id=1649; Tesla careers official URL (HEAD 403 but canonical apply link)"
+    },
+    {
+      "company": "ASM",
+      "exact_role_title": "Software Engineering Intern (Spring 2027)",
+      "location": "Phoenix, AZ",
+      "term": "Spring 2027",
+      "posting_date": "2026-04-23",
+      "official_url": "https://job-boards.greenhouse.io/asm/jobs/4830113101",
+      "competitive": false,
+      "notes": "Indeed websearch + Greenhouse verified open; Jan-May 2027"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "Ashby websearch verified open; Jan 25-Apr 16 2027"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; United States",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "Ashby API verified open"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-11",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "Ashby API verified open"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "Ashby API verified open; deadline Oct 26 2026"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "competitive": true,
+      "notes": "Rippling ATS websearch verified open"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-16",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "competitive": true,
+      "notes": "Rippling ATS websearch verified open"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": true,
+      "notes": "Rippling ATS verified open via direct fetch"
+    },
+    {
+      "company": "Databricks",
+      "exact_role_title": "Software Engineering Intern (2027 Start) - Winter",
+      "location": "Bellevue, WA; Mountain View, CA; San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://job-boards.greenhouse.io/databricks/jobs/8732364002",
+      "competitive": true,
+      "notes": "Greenhouse websearch verified open; Jan-Apr 2027 only"
+    }
+  ]
+}

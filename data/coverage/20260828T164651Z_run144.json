@@ -1,0 +1,598 @@
+{
+  "generated_at": "2026-08-28T16:46:51.448731+00:00",
+  "sources": [
+    {
+      "name": "Simplify Off-Season",
+      "status": "ok",
+      "fetched": 3643,
+      "kept": 370,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Simplify Off-Season",
+      "status": "skipped",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "handled by simplify"
+    },
+    {
+      "name": "Vansh Summer2027",
+      "status": "ok",
+      "fetched": 263,
+      "kept": 162,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "SpeedyApply 2027 SWE",
+      "status": "ok",
+      "fetched": 266,
+      "kept": 173,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "SpeedyApply 2027 SWE Intl",
+      "status": "ok",
+      "fetched": 303,
+      "kept": 193,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "SpeedyApply 2027 AI",
+      "status": "ok",
+      "fetched": 259,
+      "kept": 60,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "sndsh404 Summer2027",
+      "status": "ok",
+      "fetched": 153,
+      "kept": 27,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Dreamwork Tech Internships 2027",
+      "status": "ok",
+      "fetched": 733,
+      "kept": 218,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Internship Tracker SWE",
+      "status": "ok",
+      "fetched": 618,
+      "kept": 165,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:OpenAI [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Anthropic [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Google DeepMind",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Scale AI",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Perplexity",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Cohere",
+      "status": "ok",
+      "fetched": 2,
+      "kept": 1,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Cursor",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Stripe [watchlist]",
+      "status": "ok",
+      "fetched": 2,
+      "kept": 2,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Cloudflare [watchlist]",
+      "status": "zero",
+      "fetched": 9,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Datadog",
+      "status": "ok",
+      "fetched": 2,
+      "kept": 1,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Databricks [watchlist]",
+      "status": "ok",
+      "fetched": 3,
+      "kept": 1,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:MongoDB",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Elastic",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Okta",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Twilio",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Vercel",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Supabase",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Sentry",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Box",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Dropbox",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Airbnb",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:LinkedIn",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Pinterest",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Reddit",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Discord",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Twitch",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Spotify",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Roblox [watchlist]",
+      "status": "zero",
+      "fetched": 1,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Epic Games",
+      "status": "zero",
+      "fetched": 9,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Duolingo",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Coursera",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Khan Academy",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Lyft",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:DoorDash [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Instacart",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Figma [watchlist]",
+      "status": "ok",
+      "fetched": 1,
+      "kept": 1,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Notion [watchlist]",
+      "status": "ok",
+      "fetched": 3,
+      "kept": 1,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Asana",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Airtable",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Linear",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Coinbase [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Robinhood",
+      "status": "zero",
+      "fetched": 1,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Affirm",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Brex",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Ramp [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Plaid",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Chime",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Block",
+      "status": "zero",
+      "fetched": 2,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Wealthsimple [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Jane Street [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Jump Trading",
+      "status": "ok",
+      "fetched": 33,
+      "kept": 9,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Optiver",
+      "status": "zero",
+      "fetched": 9,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:IMC",
+      "status": "ok",
+      "fetched": 17,
+      "kept": 2,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:DRW",
+      "status": "ok",
+      "fetched": 22,
+      "kept": 7,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Akuna Capital",
+      "status": "zero",
+      "fetched": 8,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Palantir [watchlist]",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": "watchlist"
+    },
+    {
+      "name": "Company ATS:Anduril",
+      "status": "ok",
+      "fetched": 5,
+      "kept": 1,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:SpaceX",
+      "status": "ok",
+      "fetched": 10,
+      "kept": 1,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Waymo",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Aurora",
+      "status": "error",
+      "fetched": 0,
+      "kept": 0,
+      "error": "Failed to fetch https://boards-api.greenhouse.io/v1/boards/aurorainnovation/jobs: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/aurorainnovation/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Nuro",
+      "status": "ok",
+      "fetched": 1,
+      "kept": 1,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Shopify [watchlist]",
+      "status": "error",
+      "fetched": 0,
+      "kept": 0,
+      "error": "Failed to fetch https://boards-api.greenhouse.io/v1/boards/shopify/jobs: Client error '404 Not Found' for url 'https://boards-api.greenhouse.io/v1/boards/shopify/jobs'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:1Password",
+      "status": "zero",
+      "fetched": 0,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Company ATS:Hootsuite",
+      "status": "zero",
+      "fetched": 2,
+      "kept": 0,
+      "error": "",
+      "detail": ""
+    },
+    {
+      "name": "Agent findings",
+      "status": "ok",
+      "fetched": 260,
+      "kept": 260,
+      "error": "",
+      "detail": ""
+    }
+  ],
+  "problem_count": 52
+}
