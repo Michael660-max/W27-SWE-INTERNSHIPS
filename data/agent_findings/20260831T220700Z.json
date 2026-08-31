@@ -1,0 +1,172 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-31T22:07:00Z",
+  "discovery": "layer2_evening indeed+ats",
+  "search_pack": "_search_pack_20260831T220453Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:boards.greenhouse.io \"Spring 2027\" \"Software Intern\"",
+    "websearch:site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:indeed.com \"Winter 2027\" \"Software Engineer Intern\" greenhouse workday apply"
+  ],
+  "meta": {
+    "run_ts": "2026-08-31T22:07:00Z",
+    "layer": 2,
+    "notes": "Evening L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200, no parseable ATS links from HTML. WebSearch used for ATS discovery. LinkedIn/Handshake skipped per Cloud policy. L1 this evening inserted 18 roles (Manulife x4, CIBC, GM, Penn Mutual, GE Aerospace, Stryker x2, etc.). Layer 2 verified official ATS URLs; no new ingestible roles beyond L1."
+  },
+  "jobs": [
+    {
+      "company": "Manulife Financial",
+      "exact_role_title": "Software Engineering Co-op",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Winter-Co-op-2027---Software-Engineering_JR26081663",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Manulife Financial",
+      "exact_role_title": "Software Engineering Co-op",
+      "location": "Waterloo, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Waterloo-Ontario/Winter-Co-op-2027---Software-Engineering_JR26081661",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Manulife Financial",
+      "exact_role_title": "Software Engineer Intern - Software Engineering",
+      "location": "Toronto, ON, Canada",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Summer-Intern-2027---Software-Engineering--8-Months-_JR26081685",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "CIBC",
+      "exact_role_title": "Software Engineer Co-op",
+      "location": "Chicago, IL",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://cibc.wd3.myworkdayjobs.com/search/job/Chicago-IL/XMLNAME-2027-Spring-Term-Software-Engineer-Co-op---Chicago--Northeastern-University-_2617782-1",
+      "competitive": true,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "General Motors",
+      "exact_role_title": "Data Engineering Software Developer Co-op",
+      "location": "Markham, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Markham-Ontario-Canada/XMLNAME-2027-Winter-Co-op-Data-Engineering-Software-Developer_JR-202618353",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Penn Mutual",
+      "exact_role_title": "Software Engineer Co-op",
+      "location": "Remote - United States",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-29",
+      "official_url": "https://pennmutual.wd1.myworkdayjobs.com/en-US/_penn-careers/job/Remote---United-States/Software-Engineer-Co-op_R-100662",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "GE Aerospace",
+      "exact_role_title": "Applied AI Engineer Co-op - Spring 2027 - January Start",
+      "location": "Evendale, OH",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://geaerospace.wd5.myworkdayjobs.com/en-US/ge_externalsite/job/Evendale/Applied-AI-Engineer-Co-op---Spring-2027--January-Start-_R5039041-1",
+      "competitive": true,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "Ashby websearch verified open; Jan 25-Apr 16 2027"
+    },
+    {
+      "company": "Figma",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "Greenhouse websearch verified open; Jan 4 2027 start"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; United States",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "Ashby websearch verified open"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "Ashby websearch verified open; deadline Oct 26 2026"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-16",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "competitive": true,
+      "notes": "Rippling ATS websearch verified open"
+    },
+    {
+      "company": "Databricks",
+      "exact_role_title": "Software Engineering Intern (2027 Start) - Winter",
+      "location": "Bellevue, WA; Mountain View, CA; San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-01",
+      "official_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8732364002",
+      "competitive": true,
+      "notes": "Greenhouse/Databricks careers websearch verified open"
+    },
+    {
+      "company": "Datadog",
+      "exact_role_title": "Software Engineering Intern (Winter)",
+      "location": "Boston, MA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-15",
+      "official_url": "https://careers.datadoghq.com/detail/8052095/",
+      "competitive": true,
+      "notes": "Datadog careers websearch verified open; Jan 4-Apr 23 2027"
+    }
+  ]
+}
