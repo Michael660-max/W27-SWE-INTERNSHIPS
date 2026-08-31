@@ -1,14 +1,28 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-08-28 22:17 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-08-31 16:34 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-08-28 18:17 EDT (`ingest-findings`; +0 new / 290 updated).
-**Last Discord digest:** 2026-08-27 18:14 EDT.
+**Last live scout:** 2026-08-31 12:34 EDT (`ingest-findings`; +0 new / 302 updated).
+**Last Discord digest:** 2026-08-28 18:17 EDT.
 
-**432 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**446 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| GE Aerospace | ⭐ | Applied AI Engineer Co-op | Evendale, OH Atlanta, GA | Spring 2027 | 2026-08-31 | Simplify Off-Season +1 | [Apply](https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Evendale/Applied-AI-Engineer-Co-op---Spring-2027--January-Start-_R5039041-1?utm_source=Simplify&ref=Simplify) |
+| Persona AI | — | Robotics Software Internship - Manipulation | Houston, TX | Fall 2026, Spring 2027, Summer 2027 | 2026-08-30 | SpeedyApply 2027 SWE +2 | [Apply](https://jobs.ashbyhq.com/persona.ai/1e8d195c-e28e-423d-a06a-9eeb401ed4fc) |
+| northwoodspace | — | Software Engineering Intern - 2027 Summer Internship | Los Angeles, CA | — | 2026-08-30 | SpeedyApply 2027 SWE | [Apply](https://jobs.ashbyhq.com/northwoodspace/ce3d4b73-461e-4128-a6f1-f933897e8119) |
+| northwoodspace | — | Embedded Software Engineering Intern - 2027 Summer Internship | Los Angeles, CA | — | 2026-08-30 | SpeedyApply 2027 SWE | [Apply](https://jobs.ashbyhq.com/northwoodspace/d0cca9dd-ea90-4c3b-94b4-17761932d11c) |
+| Charles Schwab | — | Technology 2027 Intern - Data Engineering | Austin, TX +2 | — | 2026-08-29 | SpeedyApply 2027 AI | [Apply](https://career-schwab.icims.com/jobs/126227/technology-2027-intern---data-engineering/job) |
+| Penn Mutual | — | Software Engineer Co-op | Remote - USA | Spring 2027 | 2026-08-29 | SpeedyApply 2027 SWE +1 | [Apply](https://pennmutual.wd1.myworkdayjobs.com/en-US/_penn-careers/job/Remote---United-States/Software-Engineer-Co-op_R-100664) |
+| Booz Allen | — | University - 2027 Summer Games Software Developer Intern | Rome, NY | — | 2026-08-29 | SpeedyApply 2027 SWE | [Apply](https://bah.wd1.myworkdayjobs.com/en-US/bah_jobs/job/Rome-NY/University--2027-Summer-Games-Software-Developer-Intern_R0248141) |
+| Charles Schwab | — | Technology 2027 Intern - Software Engineering | Austin, TX +5 | — | 2026-08-29 | SpeedyApply 2027 SWE | [Apply](https://career-schwab.icims.com/jobs/126228/technology-2027-intern---software-engineering/job) |
+| Hewlett Packard Enterprise | ⭐ | Software Engineer Intern | Spring, TX +9 | Spring 2027 | 2026-08-29 | SpeedyApply 2027 SWE +1 | [Apply](https://hpe.wd5.myworkdayjobs.com/en-US/jobsathpe/job/Spring-Texas-United-States-of-America/Software-Engineer-Intern_1213625) |
+| Motorola Solutions | — | Mission Critical Networks Software Engineer - 2027 Co-op | Schaumburg, IL +1 | Spring 2027 | 2026-08-29 | SpeedyApply 2027 SWE +1 | [Apply](https://motorolasolutions.wd5.myworkdayjobs.com/en-US/careers/job/Schaumburg-IL/Mission-Critical-Networks-Software-Engineer---2027-Co-op_R67782) |
+| Booz Allen | — | University - 2027 Summer Games Software Developer Intern | Colorado Springs, CO | — | 2026-08-29 | SpeedyApply 2027 SWE | [Apply](https://bah.wd1.myworkdayjobs.com/en-US/bah_jobs/job/Colorado-Springs-CO/University--2027-Summer-Games-Software-Developer-Intern_R0248130) |
+| Booz Allen | — | University - 2027 Summer Games Software Developer Intern | Charleston, SC | — | 2026-08-29 | SpeedyApply 2027 SWE | [Apply](https://bah.wd1.myworkdayjobs.com/en-US/bah_jobs/job/Charleston-SC/University---2027-Summer-Games-Software-Developer-Intern_R0248134) |
+| Booz Allen | — | University - 2027 Summer Games Software Developer Intern - Atlanta - GA | Atlanta, GA | — | 2026-08-29 | SpeedyApply 2027 SWE | [Apply](https://bah.wd1.myworkdayjobs.com/en-US/bah_jobs/job/Atlanta-GA/University---2027-Summer-Games-Software-Developer-Intern---Atlanta--GA_R0248138) |
+| Walt Disney | ⭐ | Software Engineering Intern - Spring 2027 | Orlando, FL | Spring 2027 | 2026-08-29 | SpeedyApply 2027 SWE +1 | [Apply](https://disney.wd5.myworkdayjobs.com/en-US/disneycareerdc/job/Orlando-FL-USA/Software-Engineering-Intern--Spring-2027_10158599-1) |
 | The Walt Disney Company | ⭐ | Software Engineer Intern | Orlando, FL | Spring 2027 | 2026-08-28 | Simplify Off-Season +1 | [Apply](https://disney.wd5.myworkdayjobs.com/disneycareerdc/job/Orlando-FL-USA/Software-Engineering-Intern--Spring-2027_10158599-1?utm_source=Simplify&ref=Simplify) |
 | Fab2 | — | Embedded Software Engineer Intern - Winter | SF Austin, TX | Winter 2027 | 2026-08-28 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/fab2/3c7fd0f1-b25f-413c-8e62-6ef00a9d47da/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Tesla | ⭐ | Backend Engineer Intern - Infrastructure Engineering | Fremont, CA | Winter 2027, Spring 2027 | 2026-08-28 | Simplify Off-Season | [Apply](https://simplify.jobs/p/8b74bc73-21bb-499c-a67a-d34845246a91?utm_source=GHList) |
@@ -119,11 +133,11 @@ _Board exported `2026-08-28 22:17 UTC`. Loose filter: **Winter / Spring / Jan / 
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Fab2 | — | Infrastructure Software Engineering Intern - Winter | Austin, TX | Winter 2027 | 2026-08-28 | Cursor Agent Monitor | [Apply](https://jobs.ashbyhq.com/fab2/4e4f8c44-2f9b-4cb4-9e44-01d24b367b2f) |
 | [Tesla](https://www.tesla.com/careers/search/job/281467) | ⭐ | Backend Engineer Intern - Infrastructure Engineering | Fremont, CA | Winter 2027, Spring 2027 | 2026-08-28 | Internship Tracker SWE +1 | [Apply](https://www.tesla.com/careers/search/job/281467) |
-| Manulife | — | Summer Intern 2027 - Data Engineering | Boston, MA | — | 2026-08-27 | SpeedyApply 2027 AI | [Apply](https://manulife.wd3.myworkdayjobs.com/en-US/mfcjh_jobs/job/Boston-Massachusetts/Summer-Intern-2027---Data-Engineering_JR26081679) |
 | Booz Allen | — | University - 2027 Summer Games Software Developer Intern | San Diego, CA | — | 2026-08-27 | SpeedyApply 2027 SWE | [Apply](https://bah.wd1.myworkdayjobs.com/en-US/bah_jobs/job/San-Diego-CA/University---2027-Summer-Games-Software-Developer-Intern---San-Diego--CA_R0248038) |
 | Booz Allen | — | University - 2027 Summer Games Software Developer Intern | El Segundo, CA | — | 2026-08-27 | SpeedyApply 2027 SWE | [Apply](https://bah.wd1.myworkdayjobs.com/en-US/bah_jobs/job/El-Segundo-CA/University---2027-Summer-Games-Software-Developer-Intern---El-Segundo--CA_R0248046) |
-| Manulife | — | Summer Intern 2027 - Software Engineering | Boston, MA | — | 2026-08-27 | SpeedyApply 2027 SWE | [Apply](https://manulife.wd3.myworkdayjobs.com/en-US/mfcjh_jobs/job/Boston-Massachusetts/Summer-Intern-2027---Software-Engineering_JR26081680) |
+| Manulife | — | Summer Intern 2027 - Data Engineering | Boston, MA | — | 2026-08-27 | SpeedyApply 2027 AI | [Apply](https://manulife.wd3.myworkdayjobs.com/en-US/mfcjh_jobs/job/Boston-Massachusetts/Summer-Intern-2027---Data-Engineering_JR26081679) |
 | Booz Allen | — | University - 2027 Summer Games Software Developer Intern | McLean, VA | — | 2026-08-27 | SpeedyApply 2027 SWE | [Apply](https://bah.wd1.myworkdayjobs.com/en-US/bah_jobs/job/McLean-VA/University--2027-Summer-Games-Software-Developer-Intern_R0248029) |
+| Manulife | — | Summer Intern 2027 - Software Engineering | Boston, MA | — | 2026-08-27 | SpeedyApply 2027 SWE | [Apply](https://manulife.wd3.myworkdayjobs.com/en-US/mfcjh_jobs/job/Boston-Massachusetts/Summer-Intern-2027---Software-Engineering_JR26081680) |
 | Leidos | — | Software Developer Co-op | Bethesda, MD | Winter 2027 | 2026-08-27 | SpeedyApply 2027 SWE +1 | [Apply](https://leidos.wd5.myworkdayjobs.com/en-US/external/job/Bethesda-MD/Software-Developer-Co-op_R-00190766) |
 | Leidos | — | Software Developer Co-op | Bethesda, MD | Winter 2027 | 2026-08-27 | Simplify Off-Season +2 | [Apply](https://leidos.wd5.myworkdayjobs.com/External/job/Bethesda-MD/Software-Developer-Co-op_R-00190766?utm_source=Simplify&ref=Simplify) |
 | [RTX](https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-AL-HUNTSVILLE-401--401-Jan-Davis-Dr-NW--JAN-DAVIS-401/Software-Engineering-Intern--Summer-2027-_01870007) | — | Software Engineer Intern - Summer 2027 | Huntsville, AL | Summer 2027 | 2026-08-27 | Internship Tracker SWE | [Apply](https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-AL-HUNTSVILLE-401--401-Jan-Davis-Dr-NW--JAN-DAVIS-401/Software-Engineering-Intern--Summer-2027-_01870007) |

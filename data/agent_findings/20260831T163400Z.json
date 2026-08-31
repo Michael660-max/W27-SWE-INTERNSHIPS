@@ -1,0 +1,162 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-08-31T16:34:00Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260831T163206Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats", "ashby_api"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:site:boards.greenhouse.io \"Spring 2027\" \"Software Intern\"",
+    "websearch:site:myworkdayjobs.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\""
+  ],
+  "meta": {
+    "run_ts": "2026-08-31T16:34:00Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200, no parseable ATS links from HTML. Google ATS: HTTP 200, no parseable ATS links from HTML. WebSearch + Ashby API used for ATS discovery. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 22 roles (GE Aerospace S27, Persona AI, Northwood S27, Booz Allen x5, Disney S27, HPE x3, Motorola, Penn Mutual, etc.). Layer 2 verified official ATS URLs for W27/S27 board roles; no new ingestible roles beyond L1."
+  },
+  "jobs": [
+    {
+      "company": "GE Aerospace",
+      "exact_role_title": "Applied AI Engineer Co-op - Spring 2027 (January Start)",
+      "location": "Evendale, OH",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://geaerospace.wd5.myworkdayjobs.com/ge_externalsite/job/Evendale/Applied-AI-Engineer-Co-op---Spring-2027--January-Start-_R5039041-1",
+      "competitive": true,
+      "notes": "L1 id=1683; Workday official URL verified HTTP 200"
+    },
+    {
+      "company": "Persona AI",
+      "exact_role_title": "Robotics Software Internship - Manipulation",
+      "location": "Houston, TX",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-30",
+      "official_url": "https://jobs.ashbyhq.com/persona.ai/1e8d195c-e28e-423d-a06a-9eeb401ed4fc",
+      "competitive": false,
+      "notes": "L1 id=1687; Ashby official URL verified HTTP 200; Fall 2026/Spring 2027/Summer 2027"
+    },
+    {
+      "company": "The Walt Disney Company",
+      "exact_role_title": "Software Engineering Intern - Spring 2027",
+      "location": "Orlando, FL",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-29",
+      "official_url": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareerdc/job/Orlando-FL-USA/Software-Engineering-Intern--Spring-2027_10158599-1",
+      "competitive": true,
+      "notes": "L1 id=1700; Workday official URL verified HTTP 200"
+    },
+    {
+      "company": "Motorola Solutions",
+      "exact_role_title": "Mission Critical Networks Software Engineer - 2027 Co-op",
+      "location": "Schaumburg, IL",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-29",
+      "official_url": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/careers/job/Schaumburg-IL/Mission-Critical-Networks-Software-Engineer---2027-Co-op_R67782",
+      "competitive": false,
+      "notes": "L1 id=1698; Workday official URL verified HTTP 200"
+    },
+    {
+      "company": "Penn Mutual",
+      "exact_role_title": "Software Engineer Co-op",
+      "location": "Remote - United States",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-29",
+      "official_url": "https://pennmutual.wd1.myworkdayjobs.com/en-US/_penn-careers/job/Remote---United-States/Software-Engineer-Co-op_R-100664",
+      "competitive": false,
+      "notes": "L1 id=1699; Workday official URL verified HTTP 200"
+    },
+    {
+      "company": "Hewlett Packard Enterprise",
+      "exact_role_title": "Software Engineer Intern",
+      "location": "Spring, TX",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-29",
+      "official_url": "https://hpe.wd5.myworkdayjobs.com/en-US/jobsathpe/job/Spring-Texas-United-States-of-America/Software-Engineer-Intern_1213625",
+      "competitive": true,
+      "notes": "L1 id=1695; Workday official URL verified HTTP 200"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "Ashby API + websearch verified open; Jan 25-Apr 16 2027"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; United States",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "Ashby API + websearch verified open"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-11",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "Ashby websearch verified open HTTP 200; Toronto Jan 2027 co-op"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "Ashby API verified open; deadline Oct 26 2026"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-16",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": true,
+      "notes": "Rippling ATS websearch verified open HTTP 200; Jan-Apr 2027"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-16",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "competitive": true,
+      "notes": "Rippling ATS websearch verified open"
+    },
+    {
+      "company": "SpaceX",
+      "exact_role_title": "Spring 2027 Engineering Internship/Co-op",
+      "location": "Multiple US locations",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-01",
+      "official_url": "https://boards.greenhouse.io/spacex/jobs/8616338002",
+      "competitive": true,
+      "notes": "Greenhouse websearch verified open; 12-week onsite Jan/Mar 2027; engineering/physics/math"
+    }
+  ]
+}
