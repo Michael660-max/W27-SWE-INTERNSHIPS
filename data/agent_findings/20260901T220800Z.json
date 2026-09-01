@@ -1,0 +1,191 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-01T22:08:00Z",
+  "discovery": "layer2_evening indeed+ats",
+  "search_pack": "_search_pack_20260901T220241Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:boards.greenhouse.io \"Winter 2027\" \"Software Intern\"",
+    "websearch:site:ats.rippling.com \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:indeed.com \"Spring 2027\" \"Software Engineering Intern\" ASM apply"
+  ],
+  "meta": {
+    "run_ts": "2026-09-01T22:08:00Z",
+    "layer": 2,
+    "notes": "Evening L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200, no parseable ATS links from HTML. WebSearch used for ATS + Indeed discovery. LinkedIn/Handshake skipped per Cloud policy. L1 this evening inserted 59 roles (Stripe x5, AMD x3, Tesla x2, CACI x4, Southwest, Philips x3, Fifth Third, Intelcom, etc.). Layer 2 verified official ATS URLs; Wealthsimple Winter 2027 SWE intern newly discovered via Ashby."
+  },
+  "jobs": [
+    {
+      "company": "Stripe",
+      "exact_role_title": "Software Engineer - Intern - Summer or Winter",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://stripe.com/careers/listing/software-engineer-intern-summer-or-winter/8130805?gh_jid=8130805",
+      "competitive": true,
+      "notes": "L1 new; Greenhouse/Stripe careers verified"
+    },
+    {
+      "company": "Stripe",
+      "exact_role_title": "Software Engineer - Intern - Summer or Winter",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://stripe.com/careers/listing/software-engineer-intern-summer-or-winter/8128745?gh_jid=8128745",
+      "competitive": true,
+      "notes": "L1 new; Greenhouse/Stripe careers verified"
+    },
+    {
+      "company": "AMD",
+      "exact_role_title": "Software Engineer Intern/Co-op",
+      "location": "Markham, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://careers.amd.com/careers-home/jobs/91368?icims=1",
+      "competitive": true,
+      "notes": "L1 new; iCIMS official URL verified"
+    },
+    {
+      "company": "AMD",
+      "exact_role_title": "Software Engineer Intern/Co-op",
+      "location": "Vancouver, BC, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://careers.amd.com/careers-home/jobs/91367?icims=1",
+      "competitive": true,
+      "notes": "L1 new; iCIMS official URL verified"
+    },
+    {
+      "company": "AMD",
+      "exact_role_title": "Software Engineer Intern/Co-op",
+      "location": "Calgary, AB, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://careers.amd.com/careers-home/jobs/91366?icims=1",
+      "competitive": true,
+      "notes": "L1 new; iCIMS official URL verified"
+    },
+    {
+      "company": "Southwest Airlines",
+      "exact_role_title": "Spring 2027 Software Engineering Internships",
+      "location": "Dallas, TX",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://swa.wd1.myworkdayjobs.com/en-US/external/job/TX-Dallas/Spring-2027-Software-Engineering-Internships_R-2026-71386",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "CACI",
+      "exact_role_title": "Embedded Software Engineer Co-op",
+      "location": "Danbury, CT",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://caci.wd1.myworkdayjobs.com/external/job/Danbury-CT-US/Embedded-Software-Engineering-Co-op---Spring-2027_331368",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Fifth Third Bank",
+      "exact_role_title": "Software Engineer Co-op - Enterprise Finance Applications - Spring 2027",
+      "location": "Cincinnati, OH",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://fifththird.wd5.myworkdayjobs.com/en-US/53careers/job/Cincinnati-OH/Software-Engineer-Co-Op---Enterprise-Finance-Applications---Spring-2027_R71587",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Intelcom",
+      "exact_role_title": "Software Development Intern - Address Intelligence Platform",
+      "location": "Montreal, QC, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://intelcomgroup.wd3.myworkdayjobs.com/Intelcom/job/Canada-Quebec-Montreal/Software-Development-Intern---Address-Intelligence-Platform_JR111611",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Philips",
+      "exact_role_title": "Software Engineering Co-op - APM",
+      "location": "Cambridge, MA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Cambridge-US-Massachusetts-United-States/Co-op---Software-Engineering--APM----Cambridge--MA---Jan---Aug-2027_590097",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Wealthsimple",
+      "exact_role_title": "Software Engineer Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://jobs.ashbyhq.com/wealthsimple/de09418a-8a12-46aa-a371-34bafaf5be26",
+      "competitive": true,
+      "notes": "L2 new via Ashby websearch; deadline Sep 18 2026"
+    },
+    {
+      "company": "ASM International",
+      "exact_role_title": "Software Engineering Intern (Spring 2027)",
+      "location": "Phoenix, AZ",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://www.asm.com/open-vacancies/software-engineering-intern-spring-2027-4830113101?gh_jid=4830113101",
+      "competitive": false,
+      "notes": "Indeed websearch → ASM careers portal verified open"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "Ashby websearch verified open"
+    },
+    {
+      "company": "Figma",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "Greenhouse websearch verified open"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "Ashby websearch verified open"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "Seattle, WA; San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-16",
+      "official_url": "https://ats.rippling.com/rippling/jobs/35b3ba25-ff2e-4b68-a2d7-61be26f2b24a",
+      "competitive": true,
+      "notes": "Rippling ATS websearch verified open"
+    }
+  ]
+}
