@@ -1,0 +1,180 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-02T16:36:00Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260902T163327Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:boards.greenhouse.io \"Spring 2027\" Engineering Internship"
+  ],
+  "meta": {
+    "run_ts": "2026-09-02T16:36:00Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200, extracted Ashby/Workday/Rippling redirect links. Google ATS: attempted via websearch fallback. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 53 roles. Layer 2 verified official ATS URLs; Composio FDE intern and SpaceX Spring 2027 Engineering Internship newly discovered via Ashby/Greenhouse search."
+  },
+  "jobs": [
+    {
+      "company": "Composio",
+      "exact_role_title": "Forward Deployed Engineering Internship (Fall 2026 & Winter 2027)",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://jobs.ashbyhq.com/composio/6b742321-a1e6-46d7-88d1-103bae44df23",
+      "competitive": false,
+      "notes": "L2 new via Ashby API + duckduckgo_ats; listed open"
+    },
+    {
+      "company": "SpaceX",
+      "exact_role_title": "Spring 2027 Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://job-boards.greenhouse.io/spacex/jobs/8616338002",
+      "competitive": true,
+      "notes": "L2 new via google_ats/websearch; Greenhouse verified open (engineering track incl. software)"
+    },
+    {
+      "company": "Nokia",
+      "exact_role_title": "Tools and Automation Software Developer Co-op/Intern",
+      "location": "Ottawa, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39341",
+      "competitive": true,
+      "notes": "L2 verified Oracle official URL (upgrades Simplify link from L1)"
+    },
+    {
+      "company": "Manulife",
+      "exact_role_title": "Winter Co-op 2027 - Software Engineering - 8 Months",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://manulife.wd3.myworkdayjobs.com/en-US/mfcjh_jobs/job/Toronto-Ontario/Winter-Co-op-2027---Software-Engineering--8-Months-_JR26081664",
+      "competitive": true,
+      "notes": "L1 new; Workday official URL verified via duckduckgo_ats"
+    },
+    {
+      "company": "Microsoft",
+      "exact_role_title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Boston - Massachusetts",
+      "location": "Boston, MA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://apply.careers.microsoft.com/careers/job/1970393556972698",
+      "competitive": true,
+      "notes": "L1 new; Microsoft careers portal verified open"
+    },
+    {
+      "company": "Microsoft",
+      "exact_role_title": "Software Engineer: Intern Opportunities for University Students - CoreAI - Mountain View - CA",
+      "location": "Mountain View, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://apply.careers.microsoft.com/careers/job/1970393556972687",
+      "competitive": true,
+      "notes": "L1 new; Microsoft careers portal verified open"
+    },
+    {
+      "company": "Remarcable",
+      "exact_role_title": "Full Stack Developer Co-op",
+      "location": "Vancouver, BC, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://jobs.ashbyhq.com/remarcable-inc/a4f3aaaa-9469-42e8-a610-450d25eb5da7",
+      "competitive": false,
+      "notes": "L1 new; Ashby official URL verified via duckduckgo_ats"
+    },
+    {
+      "company": "Philips",
+      "exact_role_title": "Co-op - Software Engineering - APM - Cambridge - MA - Jan - Aug 2027",
+      "location": "Cambridge, MA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Cambridge-US-Massachusetts-United-States/Co-op---Software-Engineering--APM----Cambridge--MA---Jan---Aug-2027_590097",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "Philips",
+      "exact_role_title": "Co-op - Software Engineer - R&D - Cambridge - MA - January - August 2027",
+      "location": "Cambridge, MA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Cambridge-US-Massachusetts-United-States/Co-op---Software-Engineer--R-D----Cambridge--MA---January---August-2027_588891",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "CACI",
+      "exact_role_title": "Embedded Software Engineering Co-op - Spring 2027",
+      "location": "Danbury, CT",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://caci.wd1.myworkdayjobs.com/en-US/external/job/Danbury-CT-US/Embedded-Software-Engineering-Co-op---Spring-2027_331368",
+      "competitive": false,
+      "notes": "L1 new; Workday official URL verified"
+    },
+    {
+      "company": "General Dynamics UK",
+      "exact_role_title": "Software Developer Co-op - 16-Months",
+      "location": "Calgary, AB, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://jobs.smartrecruiters.com/GDMSI/744000146985399",
+      "competitive": false,
+      "notes": "L1 new; SmartRecruiters official apply URL verified"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "Ashby duckduckgo_ats + websearch verified open"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "Ashby websearch verified open"
+    },
+    {
+      "company": "Figma",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://job-boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "Greenhouse websearch verified open"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "Ashby duckduckgo_ats verified open"
+    }
+  ]
+}
