@@ -1,11 +1,11 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-09-02 16:36 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-09-02 22:03 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-09-02 12:36 EDT (`ingest-findings`; +0 new / 344 updated).
+**Last live scout:** 2026-09-02 18:03 EDT (`ingest-findings`; +0 new / 355 updated).
 **Last Discord digest:** 2026-09-01 18:09 EDT.
 
-**522 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**524 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
@@ -15,9 +15,9 @@ _Board exported `2026-09-02 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Tesla | ⭐ | Machine Learning Engineer Intern - Charging Data Modeling | Palo Alto, CA | Winter 2027, Spring 2027 | 2026-09-02 | Simplify Off-Season | [Apply](https://simplify.jobs/p/84d2832d-f2be-4040-a7c8-6624a43f50fc?utm_source=GHList) |
 | Berkshire Grey | — | Software Co-op | Bedford, MA | Spring 2027 | 2026-09-02 | Simplify Off-Season | [Apply](https://simplify.jobs/p/328e0c60-a7b7-4d0e-b8d1-c2ce66574592?utm_source=GHList) |
 | Remarcable | — | Full Stack Developer Co-op | Vancouver, BC, Canada | Winter 2027 | 2026-09-02 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/remarcable-inc/a4f3aaaa-9469-42e8-a610-450d25eb5da7/application?embed=true&utm_source=Simplify&ref=Simplify) |
-| General Dynamics UK | — | Software Developer Co-op - 16-Months | Calgary, AB, Canada | Winter 2027 | 2026-09-02 | Simplify Off-Season +1 | [Apply](https://jobs.smartrecruiters.com/GDMSI/744000146985399?utm_source=Simplify&ref=Simplify) |
-| Nokia | — | Software Developer Co-op Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-02 | Simplify Off-Season | [Apply](https://simplify.jobs/p/0d05245d-d165-4d42-a9fa-9d27e9fcaaed?utm_source=GHList) |
+| General Dynamics UK | — | Software Developer Co-op - 16-Months | Calgary, AB, Canada | Winter 2027 | 2026-09-02 | Simplify Off-Season +2 | [Apply](https://jobs.smartrecruiters.com/GDMSI/744000146985399?utm_source=Simplify&ref=Simplify) |
 | Nokia | — | Software Developer Co-op Intern - Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-02 | Simplify Off-Season | [Apply](https://simplify.jobs/p/51e725b4-c103-46c1-8eea-0d03dbc29f66?utm_source=GHList) |
+| Nokia | — | Software Developer Co-op Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-02 | Simplify Off-Season | [Apply](https://simplify.jobs/p/0d05245d-d165-4d42-a9fa-9d27e9fcaaed?utm_source=GHList) |
 | Nokia | — | Tools and Automation Software Developer Co-op/Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-02 | Simplify Off-Season | [Apply](https://simplify.jobs/p/b9a67e9c-0015-4a4a-9f99-25b266976b64?utm_source=GHList) |
 | Tesla | ⭐ | Vehicle Software Engineer Intern - Diagnostic User Interface | Palo Alto, CA | Winter 2027 | 2026-09-02 | Simplify Off-Season | [Apply](https://simplify.jobs/p/cbbf5921-5565-4f8b-9599-adde9125fde0?utm_source=GHList) |
 | [Nokia](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39341) | ⭐ | Tools and Automation Software Developer Co-op/Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-02 | Internship Tracker SWE +1 | [Apply](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39341) |
@@ -112,7 +112,7 @@ _Board exported `2026-09-02 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Zipline | ⭐ | Software Engineer Intern - Spring 2027 | South San Francisco, CA | Spring 2027 | 2026-08-21 | SpeedyApply 2027 SWE +2 | [Apply](https://www.zipline.com/open-roles?gh_jid=7907191003) |
 | Databricks | ⭐ | Software Engineer Intern | SF Bellevue, WA Mountain View, CA | Winter 2027 | 2026-08-21 | Simplify Off-Season +1 | [Apply](https://job-boards.greenhouse.io/embed/job_app?for=databricks&ref=Simplify&token=8732364002&utm_source=Simplify) |
 | ByteDance | — | Software Engineer Intern - CIS Knowledge Bank | San Jose, CA | Fall 2027 | 2026-08-21 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7675345626188335365/detail?utm_source=Simplify&ref=Simplify) |
-| Phoebe | — | Software Engineer Intern | NYC | Fall 2026, Winter 2027 | 2026-08-21 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/phoebe-work/1ffe3e63-2163-447e-a8b0-1fff8b87e0ca/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Phoebe | — | Software Engineer Intern | NYC | Fall 2026, Winter 2027 | 2026-08-21 | Simplify Off-Season +3 | [Apply](https://jobs.ashbyhq.com/phoebe-work/1ffe3e63-2163-447e-a8b0-1fff8b87e0ca/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Tesla | ⭐ | Internship - Fullstack Engineer - Applications Engineering - Winter/Spring 2027 | Fremont, CA | Winter 2027, Spring 2027 | 2026-08-21 | Simplify Off-Season | [Apply](https://simplify.jobs/p/7e502eb4-3d9c-4f91-8e83-a471504d8a4b?utm_source=GHList) |
 | Zipline | — | Software Engineer Intern - Spring 2027 | South SF | Spring 2027 | 2026-08-21 | Simplify Off-Season | [Apply](https://simplify.jobs/p/d8608143-b6cd-4a6e-9563-519ce1b5d368?utm_source=GHList) |
 | [AMD](https://careers.amd.com/jobs/90891?icims=1) | ⭐ | Software Engineer Intern/Co-op | San Jose, CA, Santa Clara, CA | Winter 2027, Summer 2027, Fall 2027 | 2026-08-21 | Internship Tracker SWE | [Apply](https://careers.amd.com/careers-home/jobs/90891?icims=1) |
@@ -144,7 +144,7 @@ _Board exported `2026-09-02 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | TikTok | — | Mobile Software Engineer Intern - Global E-Commerce - 2027 Summer | San Jose, CA | — | 2026-08-14 | SpeedyApply 2027 SWE | [Apply](https://lifeattiktok.com/search/7673663349758675205) |
 | Airwallex | — | Software Engineer Intern - Jan to Jun 2027 | Singapore, Singapore | — | 2026-08-14 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/airwallex/39651124-122a-4033-91a2-af2687b83441) |
 | MSA Safety | — | Software Engineer Co-op - Product Development | Cranberry Township, PA | Spring 2027 | 2026-08-14 | Simplify Off-Season | [Apply](https://careers.msasafety.com/jobs/9992?icims=1&utm_source=Simplify&ref=Simplify) |
-| Composio | — | Fullstack Engineer Intern - Product Team | SF | Fall 2026, Winter 2027 | 2026-08-14 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/composio/eea3c0be-8589-4e3d-a684-de29a9eada0d/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Composio | — | Fullstack Engineer Intern - Product Team | SF | Fall 2026, Winter 2027 | 2026-08-14 | Simplify Off-Season +3 | [Apply](https://jobs.ashbyhq.com/composio/eea3c0be-8589-4e3d-a684-de29a9eada0d/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | Tesla | ⭐ | Firmware Engineer Intern - New Programs Engineering | Fremont, CA | Spring 2027 | 2026-08-13 | Simplify Off-Season | [Apply](https://simplify.jobs/p/f76334f0-b144-4ec8-9a36-f7bab853e4e7?utm_source=GHList) |
 | Specter Aerospace | — | Embedded Software Co-op | Boston, MA | Spring 2027 | 2026-08-13 | Simplify Off-Season | [Apply](https://simplify.jobs/p/0904ea85-ce34-417f-8493-06a6299f4673?utm_source=GHList) |
 | Specter Aerospace | — | Front-End Software Developer Co-op | Boston, MA Peabody, MA | Spring 2027 | 2026-08-13 | Simplify Off-Season | [Apply](https://simplify.jobs/p/5cbd2b0f-806d-42d0-91fe-637455fe40c0?utm_source=GHList) |
@@ -184,6 +184,8 @@ _Board exported `2026-09-02 16:36 UTC`. Loose filter: **Winter / Spring / Jan / 
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| [Nokia](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39395) | — | Software Developer Co-op Intern - Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-02 | Internship Tracker SWE +1 | [Apply](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39395) |
+| [Nokia](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39435) | — | Software Developer Co-op Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-02 | Internship Tracker SWE +1 | [Apply](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39435) |
 | Microsoft | ⭐ | Software Engineer: Intern Opportunities for University Students - CoreAI - Mountain View - CA | California, MD | Winter 2027 | 2026-09-01 | SpeedyApply 2027 SWE +1 | [Apply](https://apply.careers.microsoft.com/careers/job/1970393556972687) |
 | Microsoft | ⭐ | Software Engineer: Intern Opportunities for University Students - CoreAI - Boston - Massachusetts | Boston, MA | Winter 2027 | 2026-09-01 | SpeedyApply 2027 SWE +1 | [Apply](https://apply.careers.microsoft.com/careers/job/1970393556972698) |
 | Newrez | — | 2027 Summer Internship - Software Developer | Coppell, TX | — | 2026-09-01 | SpeedyApply 2027 SWE | [Apply](https://newrez.wd1.myworkdayjobs.com/en-US/nrz/job/TX-Coppell/XMLNAME-2027-Summer-Internship---Software-Developer_R10390) |
