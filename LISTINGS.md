@@ -1,18 +1,19 @@
 # Winter / Spring 2027 Software Internships
 
-_Board exported `2026-09-07 16:33 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
+_Board exported `2026-09-07 22:05 UTC`. Loose filter: **Winter / Spring / Jan / off-cycle 2027** (Spring = Jan-start winter term). Excludes summer-only and fall-2026-only._
 
-**Last live scout:** 2026-09-07 12:33 EDT (`ingest-findings`; +2 new / 401 updated; started 2026-09-07 12:33 EDT).
+**Last live scout:** 2026-09-07 18:05 EDT (`ingest-findings`; +0 new / 413 updated; started 2026-09-07 18:05 EDT).
 **Last Discord digest:** 2026-09-04 18:06 EDT.
 
-**615 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
+**616 roles** matching Winter/Spring 2027. Sorted by freshness → posting date → priority.
 
 | Company | Competitive | Role | Location | Term | Posted | Source | Apply |
 |---|---|---|---|---|---|---|---|
+| Entrust | — | Software Developer Intern | Ottawa, ON, Canada | Winter 2027 | 2026-09-07 | Simplify Off-Season +2 | [Apply](https://entrust.wd1.myworkdayjobs.com/entrustcareers/job/Canada---Ottawa/Intern---Software-Developer---8-months-Hybrid-in-Ottawa_R004358?utm_source=Simplify&ref=Simplify) |
+| Rivian | — | Software Engineering Intern - Applications - Infotainment & Mobile - January - August 2027 | Vancouver, Canada +1 | — | 2026-09-06 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/rivianvw.tech/bc8e38eb-b68c-4234-a06a-99875df7d600) |
 | General Dynamics Mission Systems | — | Co-op Winter 2027 - Software Engineering - 8 Months | Ottawa, Canada | Winter 2027 | 2026-09-06 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.smartrecruiters.com/oneclick-ui/company/GDMSI/publication/037ba893-c1c2-4981-bf1f-514a87b7cb0e?dcr_ci=GDMSI) |
 | General Dynamics Mission Systems | — | Copy of Co-op Winter 2027 - Software Engineering - 4-8 months | Cole Harbour, Canada | Winter 2027 | 2026-09-06 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.smartrecruiters.com/oneclick-ui/company/GDMSI/publication/56ef647b-3b87-4b69-a7fb-3eae4151093d?dcr_ci=GDMSI) |
 | General Dynamics Mission Systems | — | Co-op Winter 2027 - Software Engineering - TacCIS Solutions -12 Months | Calgary, Canada | Winter 2027 | 2026-09-06 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.smartrecruiters.com/oneclick-ui/company/GDMSI/publication/196b86f0-4316-4fdc-a3aa-f3c04232fe3a?dcr_ci=GDMSI) |
-| Rivian | — | Software Engineering Intern - Applications - Infotainment & Mobile - January - August 2027 | Vancouver, Canada +1 | — | 2026-09-06 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/rivianvw.tech/bc8e38eb-b68c-4234-a06a-99875df7d600) |
 | General Dynamics Mission Systems | — | Co-op Winter 2027 DevOps Engineering - 8-16 Months | Ottawa, Canada | Winter 2027 | 2026-09-06 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.smartrecruiters.com/oneclick-ui/company/GDMSI/publication/25827f9d-ff2d-49a2-b186-7f15e1916988?dcr_ci=GDMSI) |
 | Apex Technology | — | Simulation Software Engineering Internship - Spring or Summer 2027 | Los Angeles, CA | — | 2026-09-06 | SpeedyApply 2027 SWE | [Apply](https://jobs.ashbyhq.com/apex-technology-inc/d3e21f84-3637-4521-833d-fd07b3ca5f2e) |
 | Rivian | — | Software Engineering Intern - Connected Systems - January - August 2027 | Irvine, CA +1 | — | 2026-09-06 | SpeedyApply 2027 SWE | [Apply](https://jobs.ashbyhq.com/rivianvw.tech/13eeb795-a5dd-4b5a-9b98-808e5ec357c2) |
@@ -231,7 +232,7 @@ _Board exported `2026-09-07 16:33 UTC`. Loose filter: **Winter / Spring / Jan / 
 | Microsoft | ⭐ | Software Engineer Intern | Vancouver, BC, Canada | Winter 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://apply.careers.microsoft.com/careers/job/1970393556951951?utm_source=Simplify&ref=Simplify) |
 | ByteDance | — | Network Security Software Engineer Intern - Security Engineering | San Jose, CA | Fall 2027 | 2026-08-03 | Simplify Off-Season +1 | [Apply](https://jobs.bytedance.com/en/position/7667876489597257989/detail?utm_source=Simplify&ref=Simplify) |
 | Airwallex | — | Software Engineer - Intern 2027 | Singapore, Singapore | — | 2026-08-01 | SpeedyApply 2027 SWE Intl | [Apply](https://jobs.ashbyhq.com/airwallex/6cdb0f39-234a-4234-b1f1-cb48a1fa2795) |
-| Heliux | — | Software Engineer Intern | SF | Spring 2027 | 2026-07-31 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/heliux/c71c0650-b6f7-491f-b291-6b280f58ee9c/application?embed=true&utm_source=Simplify&ref=Simplify) |
+| Heliux | — | Software Engineer Intern | SF | Spring 2027 | 2026-07-31 | Simplify Off-Season +2 | [Apply](https://jobs.ashbyhq.com/heliux/c71c0650-b6f7-491f-b291-6b280f58ee9c/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | [CloudFit Software](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) | — | CloudFit Software Internship - Company name withheld | Lynchburg, VA | N/A | 2026-07-23 | Internship Tracker SWE | [Apply](https://cloudfitsoftware.applytojob.com/apply/oaG5GcybAo/Future-Intern-2027) |
 | Georgian Partners Growth | — | AI/ML Engineer Intern | Toronto, ON, Canada | Fall 2027 | 2026-07-21 | Simplify Off-Season | [Apply](https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true&utm_source=Simplify&ref=Simplify) |
 | NationGraph | ⭐ | Software Engineer Intern | Toronto, ON, Canada | Winter 2027 | 2026-07-21 | Simplify Off-Season +1 | [Apply](https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68/application?embed=true&utm_source=Simplify&ref=Simplify) |
