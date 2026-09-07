@@ -1,0 +1,116 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-07T16:35:00Z",
+  "discovery": "layer2_midday indeed+ats",
+  "search_pack": "_search_pack_20260907T163201Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:boards.greenhouse.io \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:ats.rippling.com \"Winter 2027\" Software Engineer Intern",
+    "websearch:site:jobs.lever.co \"Winter 2027\" Software Engineer Intern"
+  ],
+  "meta": {
+    "run_ts": "2026-09-07T16:35:00Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs returned HTTP 403 (Cloudflare). DuckDuckGo ATS: HTTP 200 with extractable Ashby/Lever/Greenhouse links (some queries returned 202). Google ATS: HTTP 200 but no extractable links. WebSearch fallback used for role verification. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 50 roles. Layer 2 found 2 new official ATS URLs (Mirego Gen AI, Kodiak AI/ML)."
+  },
+  "jobs": [
+    {
+      "company": "Mirego",
+      "exact_role_title": "Software Developer Intern - Generative AI Team (Winter 2027)",
+      "location": "Quebec City, QC, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-02",
+      "official_url": "https://jobs.lever.co/mirego/0c8b2116-e325-4a26-b87e-a80b4b37dda7",
+      "competitive": false,
+      "notes": "Lever duckduckgo_ats verified open; French required; Python/React/GenAI team; janvier 2027 start"
+    },
+    {
+      "company": "Kodiak",
+      "exact_role_title": "Software Engineer Intern - Artificial Intelligence/Machine Learning (Winter 2027)",
+      "location": "Mountain View, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-07",
+      "official_url": "https://job-boards.greenhouse.io/kodiak/jobs/4377407009",
+      "competitive": false,
+      "notes": "Greenhouse duckduckgo_ats verified HEAD 200; January 2027 start; applied AI/Python"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "Ashby duckduckgo_ats + websearch verified open"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "Ashby duckduckgo_ats verified open"
+    },
+    {
+      "company": "Figma",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "Greenhouse websearch_ats verified HEAD 200"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "Ashby duckduckgo_ats verified open; distinct W27 listing"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-07",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": true,
+      "notes": "Rippling websearch_ats verified open"
+    },
+    {
+      "company": "AltaML",
+      "exact_role_title": "Associate Software Engineer (Winter 2027)",
+      "location": "Edmonton, AB; Calgary, AB; Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-03",
+      "official_url": "https://jobs.lever.co/altaml/bd8167f5-e84c-48b1-9cad-2831bf71dea1",
+      "competitive": false,
+      "notes": "Lever websearch_ats verified open; 4-8 month Mitacs-funded"
+    }
+  ]
+}
