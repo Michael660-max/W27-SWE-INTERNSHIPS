@@ -1,0 +1,141 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-14T22:07:00Z",
+  "discovery": "layer2_evening indeed+ats",
+  "search_pack": "_search_pack_20260914T220503Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "websearch:site:jobs.ashbyhq.com OR site:boards.greenhouse.io \"Winter 2027\" \"Software Engineer Intern\"",
+    "websearch:site:jobs.lever.co OR site:ats.rippling.com \"Spring 2027\" \"Software Engineering Intern\"",
+    "websearch:indeed \"Winter 2027\" \"Software Engineer Intern\" apply company site",
+    "websearch:site:ats.rippling.com \"Winter 2027\" software engineer intern"
+  ],
+  "meta": {
+    "run_ts": "2026-09-14T22:07:00Z",
+    "layer": 2,
+    "notes": "Evening L2 run. Indeed: 3 exact-query URLs returned HTTP 403 via curl; WebSearch used as substitute. DuckDuckGo ATS: Ashby HTTP 200 (3 links), Greenhouse HTTP 200 (0 links), Workday HTTP 200 (3 links). Google ATS: HTTP 200, no extractable links via curl. WebSearch + HEAD verification used for official URLs. LinkedIn/Handshake skipped per Cloud policy. L1 this evening inserted 25 roles (Tesla, Sun Life, TD Bank x2, Red Hat x5, etc.). All verified W27/S27 ATS postings already in DB; 0 new ingestible L2 roles."
+  },
+  "jobs": [
+    {
+      "company": "Figma",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-10",
+      "official_url": "https://boards.greenhouse.io/figma/jobs/6131089004",
+      "competitive": true,
+      "notes": "websearch_ats verified HEAD 200; Jan 4 2027 start; already tracked id=1167"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "duckduckgo_ats + websearch verified HEAD 200; Jan 25-Apr 16 2027; already tracked id=1331"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "websearch_ats verified HEAD 200; Canada remote-friendly; already tracked id=754"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "duckduckgo_ats verified HEAD 200; deadline Oct 26 2026; already tracked id=768"
+    },
+    {
+      "company": "Databricks",
+      "exact_role_title": "Software Engineering Intern (2027 Start) - Winter",
+      "location": "Bellevue, WA; Mountain View, CA; San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-20",
+      "official_url": "https://job-boards.greenhouse.io/databricks/jobs/8732364002",
+      "competitive": true,
+      "notes": "websearch_ats verified HEAD 200; Jan-Apr 2027 only; already tracked id=1484"
+    },
+    {
+      "company": "Datadog",
+      "exact_role_title": "Software Engineer Intern - Observability and Security Platform",
+      "location": "Boston, MA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-17",
+      "official_url": "https://job-boards.greenhouse.io/datadog/jobs/8052095",
+      "competitive": true,
+      "notes": "websearch_ats verified; Jan 4-Apr 23 2027; already tracked id=1332"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-01",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8b6-2978f109a484",
+      "competitive": true,
+      "notes": "websearch_ats verified HEAD 200; mid-Jan-Apr 2027; already tracked id=6"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-07-01",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": true,
+      "notes": "websearch_ats verified HEAD 200; M.Sc./Ph.D. preferred; already tracked id=503"
+    },
+    {
+      "company": "Atoms",
+      "exact_role_title": "Software Engineer Intern - Winter 2027",
+      "location": "New York, NY; Seattle, WA; Los Angeles, CA; Mountain View, CA; San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-07",
+      "official_url": "https://job-boards.greenhouse.io/cssmerge/jobs/8687915002",
+      "competitive": false,
+      "notes": "websearch_ats verified HEAD 200; Jan-Apr 2027; already tracked id=1171"
+    },
+    {
+      "company": "Royal Bank of Canada",
+      "exact_role_title": "Software Developer Co-op - Technology & Operations",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-17",
+      "official_url": "https://rbc.wd3.myworkdayjobs.com/RBCEARLYTALENT1/job/TORONTO-Ontario-Canada/XMLNAME-2027-Winter-Student-Opportunities-Technology---Operations---Software-Developer--8-Months_R-0184557-2",
+      "competitive": false,
+      "notes": "duckduckgo_ats + websearch verified HEAD 200; 8-month co-op; already tracked id=1441"
+    },
+    {
+      "company": "Sierra",
+      "exact_role_title": "Software Engineer Intern - Agent Development (Winter 2027)",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://jobs.ashbyhq.com/sierra/02e1c456-8489-4a74-9fe7-af8845b040e4",
+      "competitive": true,
+      "notes": "websearch_ats verified HEAD 200; graduating Dec 2027-Jun 2028; already tracked id=2132"
+    }
+  ]
+}
