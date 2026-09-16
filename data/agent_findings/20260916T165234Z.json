@@ -1,0 +1,130 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-16T16:52:34Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20260916T163821Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats", "ashby_api"],
+  "portals_blocked": ["indeed_signin", "duckduckgo_ats_rate_limit", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" software engineer intern",
+    "websearch:site:boards.greenhouse.io \"Spring 2027\" software intern"
+  ],
+  "meta": {
+    "run_ts": "2026-09-16T16:52:34Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs opened via browser (Cloudflare OK; Winter 2027 query 0 results; Spring 2027 showed Nuclear Company + Feeding Children Everywhere + Amtrak but sign-in wall blocked direct ATS extraction; January 2027 showed Tesla Optimus). DuckDuckGo ATS: HTTP disconnect/rate-limit on curl (no extractable links). Google ATS + websearch + Ashby API used to verify official URLs. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 68 roles (Robinhood, Microsoft, BMO, Wells Fargo, Northrop, Waymo, etc.). Layer 2 ingest +2 NEW (Amtrak Spring 2027 SWE, Tesla Optimus embedded W/S27)."
+  },
+  "jobs": [
+    {
+      "company": "Amtrak",
+      "exact_role_title": "Spring 2027 - Software Engineering Intern - 90413037 - Washington",
+      "location": "Washington, DC, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://careers.amtrak.com/job/Washington-Spring-2027-Software-Engineering-Intern-90413037-Washington-DC-20001/1425042000/",
+      "competitive": false,
+      "notes": "indeed_search + websearch verified HEAD 200; AWS Java full-stack; $18-35/hr; NEW"
+    },
+    {
+      "company": "Tesla",
+      "exact_role_title": "Internship, Embedded Software Engineer, Optimus (Winter/Spring 2027)",
+      "location": "Palo Alto, CA",
+      "term": "Winter 2027, Spring 2027",
+      "posting_date": "2026-09-16",
+      "official_url": "https://www.tesla.com/careers/search/job/internship-embedded-software-engineer-optimus-winter-spring-2027-282340",
+      "competitive": true,
+      "notes": "indeed_search + websearch; official Tesla careers URL job 282340; HEAD 403 bot-block; NEW"
+    },
+    {
+      "company": "The Nuclear Company",
+      "exact_role_title": "Spring 2027 Software Engineering Intern",
+      "location": "Washington, DC",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-07",
+      "official_url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383171008",
+      "competitive": false,
+      "requires_export_control": true,
+      "notes": "indeed_search + websearch_ats verified HEAD 200; already tracked id=1170"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "websearch_ats + ashby_api verified HEAD 200; already tracked"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "websearch_ats + ashby_api verified; already tracked id=754"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-11",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "websearch_ats + ashby_api verified; already tracked"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/nationgraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "websearch_ats verified; already tracked id=768"
+    },
+    {
+      "company": "Sierra",
+      "exact_role_title": "Software Engineer Intern - Agent Development (Winter 2027)",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://jobs.ashbyhq.com/sierra/02e1c456-8489-4a74-9fe7-af8845b040e4",
+      "competitive": true,
+      "notes": "websearch_ats + ashby_api verified HEAD 200; already tracked id=2132"
+    },
+    {
+      "company": "Trexo Robotics",
+      "exact_role_title": "Software Engineer Intern - Forward Deployed Engineering (Winter 2027)",
+      "location": "Mississauga, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-11",
+      "official_url": "https://jobs.ashbyhq.com/Trexo%20Robotics/9504015b-bd4b-415c-8cf4-70015b84f873",
+      "competitive": false,
+      "notes": "websearch_ats + ashby_api verified; already tracked id=2340"
+    },
+    {
+      "company": "SpaceX",
+      "exact_role_title": "Spring 2027 Software Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "term": "Spring 2027",
+      "posting_date": "2026-07-01",
+      "official_url": "https://job-boards.greenhouse.io/spacex/jobs/8621756002?gh_jid=8621756002",
+      "competitive": true,
+      "requires_us_citizenship": true,
+      "notes": "websearch_ats verified; already tracked id=1028"
+    }
+  ]
+}
