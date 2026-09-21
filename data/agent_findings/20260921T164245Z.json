@@ -1,0 +1,142 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-21T16:42:45Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20260921T163315Z.md",
+  "portals_attempted": ["indeed", "duckduckgo_ats", "google_ats", "websearch_ats"],
+  "portals_blocked": ["indeed_signin", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" software engineer intern",
+    "websearch:site:boards.greenhouse.io \"Spring 2027\" software intern",
+    "websearch:site:myworkdayjobs.com \"Winter 2027\" software intern"
+  ],
+  "meta": {
+    "run_ts": "2026-09-21T16:42:45Z",
+    "layer": 2,
+    "notes": "Midday L2 run. Indeed: 3 exact-query URLs opened via browser (curl 403; browser Cloudflare OK; Winter 2027 query 0 results; Spring 2027 showed Leonardo DRS + Nuclear Company + Feeding Children Everywhere but sign-in wall blocked direct ATS extraction; January 2027 0 exact matches). DuckDuckGo ATS: browser OK (curl 202); Ashby/Greenhouse/Workday results browsed. Google ATS + websearch used to verify official URLs. LinkedIn/Handshake skipped per Cloud policy. L1 this midday inserted 67 roles (Mercury, Waymo, Bosch, Sun Life, Autodesk, etc.). Layer 2 ingest +1 NEW (Feeding Children Everywhere Spring 2027 Backend SWE Paylocity)."
+  },
+  "jobs": [
+    {
+      "company": "Feeding Children Everywhere",
+      "exact_role_title": "Spring 2027 Backend Software Engineering Intern",
+      "location": "Longwood, FL, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-15",
+      "official_url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4483508",
+      "competitive": false,
+      "notes": "indeed_search + websearch verified via Paylocity ATS; C#/Python backend; NEW"
+    },
+    {
+      "company": "Leonardo DRS",
+      "exact_role_title": "Spring 2027 Software Engineering Intern",
+      "location": "Beavercreek, OH, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-18",
+      "official_url": "https://careers.leonardodrs.com/job/Beavercreek-Spring-2027-Software-Engineering-Intern-OH-45431/1429573000/",
+      "competitive": false,
+      "requires_us_citizenship": true,
+      "notes": "indeed_search verified HEAD 200; already tracked id=2845"
+    },
+    {
+      "company": "Amtrak",
+      "exact_role_title": "Spring 2027 - Software Engineering Intern - 90413037 - Washington",
+      "location": "Washington, DC, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://careers.amtrak.com/job/Washington-Spring-2027-Software-Engineering-Intern-90413037-Washington-DC-20001/1425042000/",
+      "competitive": false,
+      "notes": "indeed_search verified HEAD 200; already tracked id=2410"
+    },
+    {
+      "company": "The Nuclear Company",
+      "exact_role_title": "Spring 2027 Software Engineering Intern",
+      "location": "Washington, DC",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-07",
+      "official_url": "https://job-boards.greenhouse.io/thenuclearcompany/jobs/5383171008",
+      "competitive": false,
+      "requires_export_control": true,
+      "notes": "indeed_search + websearch_ats verified; already tracked id=1170"
+    },
+    {
+      "company": "NationGraph",
+      "exact_role_title": "Winter 2027 Software Engineering Intern",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-03-21",
+      "official_url": "https://jobs.ashbyhq.com/NationGraph/a1bcdd3e-d863-42b6-8469-ec587190ad68",
+      "competitive": false,
+      "notes": "duckduckgo_ats + websearch verified HEAD 200; already tracked id=768"
+    },
+    {
+      "company": "Wealthsimple",
+      "exact_role_title": "Software Engineer Intern - Software Development (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-31",
+      "official_url": "https://jobs.ashbyhq.com/wealthsimple/de09418a-8a12-46aa-a371-34bafaf5be26",
+      "competitive": true,
+      "notes": "duckduckgo_ats + websearch verified HEAD 200; already tracked id=1782"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "duckduckgo_ats + websearch verified HEAD 200; already tracked"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-01",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "duckduckgo_ats + websearch verified HEAD 200; already tracked id=754"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-11",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "duckduckgo_ats + websearch verified HEAD 200; already tracked"
+    },
+    {
+      "company": "SpaceX",
+      "exact_role_title": "Spring 2027 Software Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site",
+      "term": "Spring 2027",
+      "posting_date": "2026-07-01",
+      "official_url": "https://job-boards.greenhouse.io/spacex/jobs/8621756002?gh_jid=8621756002",
+      "competitive": true,
+      "requires_us_citizenship": true,
+      "notes": "websearch_ats verified HEAD 200; already tracked id=1028"
+    },
+    {
+      "company": "BMO",
+      "exact_role_title": "BMO Capital Markets Winter 2027, Full Stack Engineer, Toronto (Co-Op/ Internship)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://bmo.wd3.myworkdayjobs.com/en-US/Campus/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto--Co-Op--Internship-_R260021769-1",
+      "competitive": true,
+      "notes": "websearch_ats verified HEAD 200; already tracked via L1"
+    }
+  ]
+}
