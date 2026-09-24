@@ -1,0 +1,151 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-24T16:45:45Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20260924T163128Z.md",
+  "portals_attempted": ["indeed", "duckduckgo_ats", "google_ats", "websearch_ats"],
+  "portals_blocked": ["indeed_signin", "duckduckgo_timeout", "google_captcha", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "websearch:site:myworkdayjobs.com \"Winter 2027\" software intern",
+    "websearch:site:jobs.ashbyhq.com \"Winter 2027\" software engineer intern",
+    "websearch:site:ats.rippling.com \"Winter 2027\" software intern"
+  ],
+  "meta": {
+    "run_ts": "2026-09-24T16:45:45Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs opened via browser (Cloudflare OK; Winter 2027 showed Together AI; Spring 2027 showed Mercury, Leonardo DRS, Feeding Children Everywhere, Disney WDI, Tesla People Products, Rivian co-ops; January 2027 0 results; Apply-on-company-site gated by Indeed sign-in). DuckDuckGo ATS: curl/html timed out on cloud; browser also timed out. Google ATS: captcha in browser. websearch_ats used for Workday/Ashby/Greenhouse/Rippling verification. Mercury Greenhouse confirmed via direct careers browse. L1 this run inserted 51 roles. LinkedIn/Handshake skipped."
+  },
+  "jobs": [
+    {
+      "company": "Smarty",
+      "exact_role_title": "Software Engineer Intern",
+      "location": "Orem, UT, US",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://ats.rippling.com/smarty/jobs/76ceddee-de0a-4218-a9fb-976bd420558a",
+      "competitive": false,
+      "notes": "websearch_ats Rippling verified GET 200; Jan 2027–mid-Aug 2027 onsite; Go/Java/Python stack; NEW"
+    },
+    {
+      "company": "4AG Robotics",
+      "exact_role_title": "Software Engineer Intern - AI Co-op Student (Winter 2027)",
+      "location": "Salmon Arm, BC, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-10",
+      "official_url": "https://ats.rippling.com/4ag/jobs/921801f5-ae83-4a49-a234-221a87d94fe7",
+      "competitive": false,
+      "notes": "websearch_ats Rippling verified GET 200; computer vision/robotics software; title prefixed for ingest filter; NEW"
+    },
+    {
+      "company": "Together AI",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-19",
+      "official_url": "https://job-boards.greenhouse.io/togetherai/jobs/5238031007",
+      "competitive": true,
+      "notes": "indeed_search + websearch verified HEAD 200; already tracked id=2851"
+    },
+    {
+      "company": "Mercury",
+      "exact_role_title": "Software Engineering Intern - Spring 2027",
+      "location": "San Francisco, CA; New York, NY; Portland, OR; Remote US/Canada",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-21",
+      "official_url": "https://job-boards.greenhouse.io/mercury/jobs/6199367004",
+      "competitive": true,
+      "notes": "indeed_search + direct careers browse verified HEAD 200; already tracked id=2846"
+    },
+    {
+      "company": "Leonardo DRS",
+      "exact_role_title": "Spring 2027 Software Engineering Intern",
+      "location": "Beavercreek, OH, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-18",
+      "official_url": "https://careers.leonardodrs.com/job/Beavercreek-Spring-2027-Software-Engineering-Intern-OH-45431/1429573000/",
+      "competitive": false,
+      "requires_us_citizenship": true,
+      "notes": "indeed_search verified HEAD 200; already tracked id=2845"
+    },
+    {
+      "company": "Feeding Children Everywhere",
+      "exact_role_title": "Spring 2027 Backend Software Engineering Intern",
+      "location": "Longwood, FL, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-15",
+      "official_url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4483508",
+      "competitive": false,
+      "notes": "indeed_search verified; already tracked id=2913"
+    },
+    {
+      "company": "The Walt Disney Company",
+      "exact_role_title": "Software Engineering Intern, Spring 2027",
+      "location": "Orlando, FL, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-28",
+      "official_url": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareerdc/job/Orlando-FL-USA/Software-Engineering-Intern--Spring-2027_10158599-1",
+      "competitive": true,
+      "notes": "indeed_search + websearch_ats Workday verified HEAD 200; already tracked id=1700"
+    },
+    {
+      "company": "Bank of Montreal",
+      "exact_role_title": "BMO Capital Markets Winter 2027, Full Stack Engineer, Toronto (Co-Op/ Internship)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://bmo.wd3.myworkdayjobs.com/en-US/Campus/job/Toronto-ON-CAN/BMO-Capital-Markets-Winter-2027--Full-Stack-Engineer--Toronto--Co-Op--Internship-_R260021769-1",
+      "competitive": true,
+      "notes": "websearch_ats Workday verified HEAD 200; already tracked id=2137"
+    },
+    {
+      "company": "Capital One",
+      "exact_role_title": "Intern, Full Stack Software Engineer - Team Pickle - Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-17",
+      "official_url": "https://capitalone.wd12.myworkdayjobs.com/en-US/Capital_One/job/Toronto-ON/Intern--Full-Stack-Software-Engineer---Team-Pickle---Winter-2027_R249013",
+      "competitive": true,
+      "notes": "websearch_ats Workday verified HEAD 200; already tracked id=2203"
+    },
+    {
+      "company": "Databricks",
+      "exact_role_title": "Software Engineering Intern (2027 Start) - Winter",
+      "location": "Bellevue, WA; Mountain View, CA; San Francisco, CA",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-21",
+      "official_url": "https://job-boards.greenhouse.io/databricks/jobs/8732364002",
+      "competitive": true,
+      "notes": "websearch_ats Greenhouse verified HEAD 200; already tracked id=1506"
+    },
+    {
+      "company": "SpaceX",
+      "exact_role_title": "Spring 2027 Software Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-03",
+      "official_url": "https://job-boards.greenhouse.io/spacex/jobs/8621756002",
+      "competitive": true,
+      "requires_us_citizenship": true,
+      "notes": "websearch_ats Greenhouse verified HEAD 200; already tracked id=1028"
+    },
+    {
+      "company": "Rendezvous Robotics",
+      "exact_role_title": "Software Engineering Intern (Spring 2027)",
+      "location": "Golden, CO, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-07-22",
+      "official_url": "https://job-boards.greenhouse.io/rendezvousrobotics/jobs/4329122009",
+      "competitive": false,
+      "notes": "websearch_ats Greenhouse verified HEAD 200; already tracked id=895"
+    }
+  ]
+}
