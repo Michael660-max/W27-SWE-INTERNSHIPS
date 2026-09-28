@@ -1,0 +1,188 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-28T16:44:26Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20260928T163211Z.md",
+  "portals_attempted": ["indeed", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed_signin", "google_captcha", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aats.rippling.com+%22Winter+2027%22+%22Software+Engineer+Intern%22",
+    "websearch:site:mosaic.wd5.myworkdayjobs.com Spring 2027 artificial intelligence co-op intern"
+  ],
+  "meta": {
+    "run_ts": "2026-09-28T16:44:26Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs (Cloudflare OK; listings visible; Apply-on-company-site blocked by sign-in). DDG ATS: browser OK for Ashby/Rippling/Workday. websearch_ats for Mosaic + Philips Workday verification. L1 this run inserted 82 roles. LinkedIn/Handshake skipped."
+  },
+  "jobs": [
+    {
+      "company": "Mosaic",
+      "exact_role_title": "Software Engineer Intern - Artificial Intelligence Co-Op/Intern (Spring 2027)",
+      "location": "Lithia, FL, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-20",
+      "official_url": "https://mosaic.wd5.myworkdayjobs.com/en-US/mosaic/job/US---Tampa-FL-Lithia-area/Artificial-Intelligence-Co-Op-Intern---Spring-2027_64729",
+      "competitive": false,
+      "notes": "duckduckgo_ats Workday + websearch_ats; HEAD 200; Jan 11–Apr 23 2027; Python/ML GenAI; NEW"
+    },
+    {
+      "company": "Philips",
+      "exact_role_title": "Co-op - Software Development Engineer (Jan-Aug 2027)",
+      "location": "Cambridge, MA, US",
+      "term": "Winter 2027, Spring 2027",
+      "posting_date": "2026-09-01",
+      "official_url": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Cambridge-US-Massachusetts-United-States/Co-op---Software-Development-Engineer---Cambridge--MA---Jan-Aug-2027_590095",
+      "competitive": true,
+      "notes": "websearch_ats Workday Spring 2027 site search + HEAD 200; NEW"
+    },
+    {
+      "company": "Philips",
+      "exact_role_title": "Co-op - Software Test Automation Engineer (January 2027)",
+      "location": "Orange, OH, US",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-27",
+      "official_url": "https://philips.wd3.myworkdayjobs.com/en-US/jobs-and-careers/job/Orange-OH-Ohio-United-States/Co-op---Software-Test-Automation-Engineer---Orange--OH---January-2027_581888",
+      "competitive": true,
+      "notes": "websearch_ats Workday + HEAD 200; DevOps/test automation; NEW"
+    },
+    {
+      "company": "Together AI",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-19",
+      "official_url": "https://job-boards.greenhouse.io/togetherai/jobs/5238031007",
+      "competitive": true,
+      "notes": "indeed_search + HEAD 200; already tracked"
+    },
+    {
+      "company": "Mercury",
+      "exact_role_title": "Software Engineering Intern - Spring 2027",
+      "location": "San Francisco, CA; New York, NY; Portland, OR; Remote US/Canada",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-21",
+      "official_url": "https://job-boards.greenhouse.io/mercury/jobs/6199367004",
+      "competitive": true,
+      "notes": "indeed_search + HEAD 200; already tracked"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; Dubai; London; United States",
+      "term": "Winter 2027",
+      "posting_date": "2026-05-03",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c0353d4-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby browse + HEAD 200; already tracked"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-14",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c8658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby browse + HEAD 200; already tracked"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby browse + HEAD 200; already tracked"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Machine Learning Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/82c13e8f-ae96-4c60-a872-c0ddf9eb0781",
+      "competitive": true,
+      "notes": "duckduckgo_ats Rippling browse + HEAD 200; already tracked"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Software Engineer Intern - Backend Focused - Winter 2027",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/00cbc991-d2fb-452c-a8bd-2978f109a4d7",
+      "competitive": true,
+      "notes": "duckduckgo_ats Rippling browse + HEAD 200; already tracked"
+    },
+    {
+      "company": "Rippling",
+      "exact_role_title": "Full Stack Software Engineer Intern - Winter 2027",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "posting_date": "2026-06-18",
+      "official_url": "https://ats.rippling.com/rippling/jobs/33b3ba25-ff2e-4b69-a2d7-61be206f2b24a",
+      "competitive": true,
+      "notes": "duckduckgo_ats Rippling browse + HEAD 200; canonical ATS URL verified"
+    },
+    {
+      "company": "Johnson & Johnson",
+      "exact_role_title": "Software Engineering Co-Op, Spring 2027",
+      "location": "Cincinnati, OH, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-26",
+      "official_url": "https://jj.wd5.myworkdayjobs.com/en-US/jj/job/Cincinnati-Ohio-United-States-of-America/Software-Engineering-Co-Op--Spring-2027_R-095741",
+      "competitive": true,
+      "notes": "duckduckgo_ats Workday + HEAD 200; jj.wd5 canonical; already tracked"
+    },
+    {
+      "company": "The Walt Disney Company",
+      "exact_role_title": "Software Engineering Intern, Spring 2027",
+      "location": "Orlando, FL, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-08-02",
+      "official_url": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareerdc/job/Orlando-FL-USA/Software-Engineering-Intern--Spring-2027_10158599-1",
+      "competitive": true,
+      "notes": "websearch_ats Workday; already tracked"
+    },
+    {
+      "company": "GE Appliances",
+      "exact_role_title": "Software Engineering Co-op Spring 2027",
+      "location": "Louisville, KY, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-01-23",
+      "official_url": "https://haier.wd3.myworkdayjobs.com/ge_appliances/job/USA-Louisville-KY/Software-Engineering-Co-op-Spring-2027_REQ-24832",
+      "competitive": false,
+      "notes": "indeed_search + duckduckgo_ats Workday; already tracked"
+    },
+    {
+      "company": "Feeding Children Everywhere",
+      "exact_role_title": "Spring 2027 Backend Software Engineering Intern",
+      "location": "Longwood, FL, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-15",
+      "official_url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4483508",
+      "competitive": false,
+      "notes": "indeed_search; Paylocity HEAD 200; already tracked"
+    },
+    {
+      "company": "Leonardo DRS",
+      "exact_role_title": "Spring 2027 Software Engineering Intern",
+      "location": "Beavercreek, OH, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-18",
+      "official_url": "https://careers.leonardodrs.com/job/Beavercreek-Spring-2027-Software-Engineering-Intern-OH-45431/1429573000/",
+      "competitive": false,
+      "requires_us_citizenship": true,
+      "notes": "indeed_search; already tracked"
+    }
+  ]
+}
