@@ -1,0 +1,102 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-29T16:39:00Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20260929T163155Z.md",
+  "portals_attempted": ["indeed", "google_ats", "websearch_ats"],
+  "portals_blocked": ["indeed_signin", "duckduckgo_captcha", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Spring+2027%22+%22Software+Intern%22",
+    "websearch:site:recruiting.paylocity.com Spring 2027 software co-op",
+    "websearch:site:myworkdayjobs.com Baker Hughes Spring 2027 Engineering Technology"
+  ],
+  "meta": {
+    "run_ts": "2026-09-29T16:39:00Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs (listings visible; Apply-on-company-site blocked by sign-in). DDG html CAPTCHA; Google ATS browser OK. websearch_ats for Paylocity LineVision + Baker Hughes Workday. L1 this run inserted 20 roles. LinkedIn/Handshake skipped."
+  },
+  "jobs": [
+    {
+      "company": "LineVision",
+      "exact_role_title": "Full Stack Software Engineer (Onboarding Systems) Co-op (Spring 2027)",
+      "location": "Boston, MA, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-26",
+      "official_url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4482621",
+      "competitive": false,
+      "notes": "websearch_ats Paylocity + GET 200; Jan 19–Aug 27 2027 co-op; Python/TypeScript/React; NEW"
+    },
+    {
+      "company": "Baker Hughes",
+      "exact_role_title": "Software Engineer Intern - Engineering & Technology Co-op (Spring 2027)",
+      "location": "Minden, NV, US",
+      "term": "Spring 2027",
+      "posting_date": "2026-09-24",
+      "official_url": "https://bakerhughes.wd5.myworkdayjobs.com/en-US/BakerHughes/job/Intern-Co-op---Engineering---Technology---Spring-2027-Opportunities_R169396",
+      "competitive": true,
+      "notes": "google_ats/websearch Workday Spring 2027 + HEAD 200; Jan 2027 start 24 weeks; software dev tasks; NEW"
+    },
+    {
+      "company": "Robinhood",
+      "exact_role_title": "Software Developer Intern/Co-op, Backend (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://job-boards.greenhouse.io/robinhood/jobs/8194428",
+      "competitive": true,
+      "notes": "indeed_search + google_ats Greenhouse HEAD 200; already tracked"
+    },
+    {
+      "company": "Together AI",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "official_url": "https://job-boards.greenhouse.io/togetherai/jobs/5238031007",
+      "competitive": true,
+      "notes": "indeed_search listing visible; official GH URL HEAD 200; already tracked"
+    },
+    {
+      "company": "Amtrak",
+      "exact_role_title": "Spring 2027 - Software Engineering Intern - 90413037 - Washington",
+      "location": "Washington, DC, US",
+      "term": "Spring 2027",
+      "official_url": "https://careers.amtrak.com/job/Washington-Spring-2027-Software-Engineering-Intern-90413037-Washington-DC-20001/1425042000/",
+      "competitive": true,
+      "notes": "indeed_search + careers.amtrak.com GET 200; already tracked"
+    },
+    {
+      "company": "Feeding Children Everywhere",
+      "exact_role_title": "Spring 2027 Backend Software Engineering Intern",
+      "location": "Longwood, FL, US",
+      "term": "Spring 2027",
+      "official_url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4483508",
+      "competitive": false,
+      "notes": "indeed_search + Paylocity GET 200; already tracked"
+    },
+    {
+      "company": "Hermeus",
+      "exact_role_title": "Software Engineer Intern - GNC & Flight Software Intern - Spring/Summer 2027",
+      "location": "Atlanta, GA, US",
+      "term": "Spring 2027, Summer 2027",
+      "official_url": "https://jobs.lever.co/hermeus/555263f6-c5ec-4489-ab07-1aea546b70e7",
+      "competitive": false,
+      "notes": "google_ats Lever; canonical URL (browser had typo); already tracked"
+    },
+    {
+      "company": "Disney",
+      "exact_role_title": "Software Engineering Intern, Spring 2027",
+      "location": "Orlando, FL, US",
+      "term": "Spring 2027",
+      "official_url": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareerdc/job/Orlando-FL-USA/Software-Engineering-Intern--Spring-2027_10158599-1",
+      "competitive": true,
+      "notes": "google_ats Workday + websearch; HEAD 200; already tracked"
+    }
+  ]
+}
