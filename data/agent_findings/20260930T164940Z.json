@@ -1,0 +1,155 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-09-30T16:49:40Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20260930T163630Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed_signin", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Spring+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "websearch:site:myview.wd3.myworkdayjobs.com Winter 2027 software co-op Toronto"
+  ],
+  "meta": {
+    "run_ts": "2026-09-30T16:49:40Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs (listings visible; Apply-on-company-site blocked by sign-in/CAPTCHA). Google ATS browser OK (Ashby/Workday/Lever). DDG html OK without captcha this run. websearch_ats surfaced Loblaw/Myview Workday co-op. L1 this run inserted 54 roles. LinkedIn/Handshake skipped."
+  },
+  "jobs": [
+    {
+      "company": "Loblaw",
+      "exact_role_title": "Software Development - Co-op Student",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "posting_date": "2026-09-08",
+      "official_url": "https://myview.wd3.myworkdayjobs.com/en-US/paradox_careers/job/Software-Development---Co-op-Student_R2000699845",
+      "competitive": true,
+      "notes": "websearch_ats + google_ats Workday HEAD 200; Jan 6–Apr 16 2027; ML/generative-AI software co-op; NEW"
+    },
+    {
+      "company": "Genesys",
+      "exact_role_title": "Software Developer Full-Stack Intern - AI Scoring, Evaluations and Surveys",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://genesys.wd1.myworkdayjobs.com/en-US/genesys/job/Toronto-Flexible/Software-Developer-Full-Stack-Intern--AI-Scoring--Evaluations-and-Surveys_JR112168-1",
+      "competitive": true,
+      "notes": "google_ats Workday Spring/Winter search + HEAD 200; L1 inserted today; verified official URL"
+    },
+    {
+      "company": "Genesys",
+      "exact_role_title": "Software Developer Intern - Predictions Data and Decision Science",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://genesys.wd1.myworkdayjobs.com/en-US/genesys/job/Toronto-Flexible/Software-Developer-Intern--Predictions-Data---Decision-Science_JR112176-1",
+      "competitive": true,
+      "notes": "google_ats Workday + HEAD 200; L1 inserted today; verified"
+    },
+    {
+      "company": "General Motors",
+      "exact_role_title": "2027 Winter Co-op Infotainment Software Developer",
+      "location": "Markham, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://generalmotors.wd5.myworkdayjobs.com/en-US/careers_gm/job/Markham-Ontario-Canada/XMLNAME-2027-Winter-Co-op-Infotainment-Software-Developer_JR-202621159",
+      "competitive": true,
+      "notes": "google_ats/myworkdayjobs + HEAD 200; Canadian auto; L1 inserted today"
+    },
+    {
+      "company": "Foresters Financial",
+      "exact_role_title": "Software Engineer Co-op Student (4 months)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://foresters.wd3.myworkdayjobs.com/ForestersFinancialCareers/job/Toronto/Software-Engineer-Co-op-Student--4-months-contract-_R-2329",
+      "competitive": false,
+      "notes": "websearch_ats Workday Toronto co-op HEAD 200; L1 inserted today"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd704890e",
+      "competitive": true,
+      "notes": "google_ats Ashby + duckduckgo_ats; HEAD 200; already tracked"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72fdefaad254",
+      "competitive": true,
+      "notes": "google_ats Ashby; HEAD 200; already tracked"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c8658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "google_ats Ashby; already tracked"
+    },
+    {
+      "company": "Together AI",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA, US",
+      "term": "Winter 2027",
+      "official_url": "https://job-boards.greenhouse.io/togetherai/jobs/5238031007",
+      "competitive": true,
+      "notes": "indeed_search listing; official GH HEAD 200; already tracked"
+    },
+    {
+      "company": "Amtrak",
+      "exact_role_title": "Spring 2027 - Software Engineering Intern - 90413037 - Washington",
+      "location": "Washington, DC, US",
+      "term": "Spring 2027",
+      "official_url": "https://careers.amtrak.com/job/Washington-Spring-2027-Software-Engineering-Intern-90413037-Washington-DC-20001/1425042000/",
+      "competitive": true,
+      "notes": "indeed_search Spring 2027 query; already tracked"
+    },
+    {
+      "company": "Tesla",
+      "exact_role_title": "Internship, Software Engineering, People Products (Winter/Spring 2027)",
+      "location": "Palo Alto, CA, US",
+      "term": "Winter 2027",
+      "official_url": "https://www.tesla.com/careers/search/job/284003",
+      "competitive": true,
+      "notes": "indeed_search; Tesla careers job 284003 (403 from cloud HEAD; listing seen in browser); already tracked"
+    },
+    {
+      "company": "Rivian",
+      "exact_role_title": "Software Engineering Intern - Design Automation (Spring 2027 Co-Op)",
+      "location": "Palo Alto, CA, US",
+      "term": "Spring 2027",
+      "official_url": "https://careers.rivian.com/careers-home/jobs/33748?icims=1",
+      "competitive": true,
+      "notes": "indeed_search + google_ats; official icims careers URL HEAD 200; canonical refresh"
+    },
+    {
+      "company": "Ciena",
+      "exact_role_title": "WaveLogic Software Intern Spring 2027",
+      "location": "Atlanta, GA, US",
+      "term": "Spring 2027",
+      "official_url": "https://ciena.wd5.myworkdayjobs.com/en-US/careers/job/Atlanta/WaveLogic-Software-Intern-Spring-2027_R031692",
+      "competitive": true,
+      "notes": "google_ats Workday; HEAD 200; already tracked"
+    },
+    {
+      "company": "Hermeus",
+      "exact_role_title": "Flight Software Engineering Intern - Simulation/Hardware-In-The-Loop - Spring & Summer 2027",
+      "location": "Los Angeles, CA, US",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.lever.co/hermeus/78008094-ca81-4a0c-9a18-93b30f932acd",
+      "competitive": false,
+      "notes": "google_ats Lever Spring 2027; HEAD 200; L1 inserted today"
+    }
+  ]
+}
