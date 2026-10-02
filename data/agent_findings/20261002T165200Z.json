@@ -1,0 +1,117 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-10-02T16:52:00Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20261002T163800Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed_cloudflare", "duckduckgo_captcha_curl", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Ajob-boards.greenhouse.io+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Spring+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software"
+  ],
+  "meta": {
+    "run_ts": "2026-10-02T16:52:00Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs blocked by Cloudflare CAPTCHA (no apply-on-company-site). Google ATS browser OK (Ashby/Greenhouse/Workday). DDG html curl captcha; browser DDG Lever search OK. websearch_ats confirmed GIRO Montreal AI/software co-op NEW. L1 this run inserted 50 roles. LinkedIn/Handshake skipped."
+  },
+  "jobs": [
+    {
+      "company": "GIRO",
+      "exact_role_title": "Software Engineer Intern - Software Development and Artificial Intelligence (Winter 2027)",
+      "location": "Montreal, Rosemont, QC, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://giro.wd10.myworkdayjobs.com/en-US/GIRO/job/Winter-2027---Software-Development-and-Artificial-Intelligence-Intern_R-100000321",
+      "competitive": false,
+      "notes": "google_ats + websearch_ats Workday + HEAD 200; transit optimization software; French required; NEW"
+    },
+    {
+      "company": "Achievers",
+      "exact_role_title": "Software Engineering Co-op - Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/achievers/e0700fce-b33b-435a-ab90-84bbd677e181",
+      "competitive": false,
+      "notes": "duckduckgo_ats Lever + HEAD 200; hybrid Tue/Thu Liberty Village; already tracked"
+    },
+    {
+      "company": "Equitable Bank",
+      "exact_role_title": "Intern - Commercial Lending AI Engineer, Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/eqbank/54045eae-334a-4486-8e97-96e49e6a1487",
+      "competitive": true,
+      "notes": "duckduckgo_ats Lever + websearch_ats + HEAD 200; Jan–Apr 2027; already tracked"
+    },
+    {
+      "company": "Together AI",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA",
+      "term": "Winter 2027",
+      "official_url": "https://job-boards.greenhouse.io/togetherai/jobs/5238031007",
+      "competitive": true,
+      "notes": "google_ats Greenhouse + HEAD 200; already tracked"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c8658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "google_ats Ashby + HEAD 200; already tracked"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c0353d4-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "google_ats Ashby + HEAD 200; already tracked"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd704890e",
+      "competitive": true,
+      "notes": "google_ats Ashby + HEAD 200; already tracked"
+    },
+    {
+      "company": "TD Bank",
+      "exact_role_title": "Software Engineer Co-op / Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Software-Engineer-Co-op---Intern--Winter-2027-_R_1509790",
+      "competitive": true,
+      "notes": "websearch_ats Workday + HEAD 200; already tracked"
+    },
+    {
+      "company": "Walt Disney",
+      "exact_role_title": "WDI Show Control Software Intern - Spring 2027",
+      "location": "Lake Buena Vista, FL; Glendale, CA",
+      "term": "Spring 2027",
+      "official_url": "https://disney.wd5.myworkdayjobs.com/en-US/disneycareer/job/Lake-Buena-Vista-FL-USA/WDI-Show-Control-Software-Internship--Spring-2027_10160946",
+      "competitive": true,
+      "notes": "google_ats Workday Spring 2027 + HEAD 200; already tracked"
+    },
+    {
+      "company": "NVIDIA",
+      "exact_role_title": "Software Engineering Intern, Compiler Verification - Spring 2027",
+      "location": "United States",
+      "term": "Spring 2027",
+      "official_url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Software-Engineering-Intern--Compiler-Verification---Spring-2027_JR2026177",
+      "competitive": true,
+      "notes": "google_ats Workday Spring 2027 + HEAD 200; already tracked"
+    }
+  ]
+}
