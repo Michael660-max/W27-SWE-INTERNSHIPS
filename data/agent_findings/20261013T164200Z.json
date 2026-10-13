@@ -1,0 +1,133 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-10-13T16:42:00Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20261013T163116Z.md",
+  "portals_attempted": ["indeed", "google_ats"],
+  "portals_blocked": ["linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software"
+  ],
+  "meta": {
+    "run_ts": "2026-10-13T16:42:00Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs; Cloudflare pass; sparse W27 hits; Apply on company site sign-in walls. Google ATS: browser OK Ashby/Lever; Greenhouse Winter 2027 software intern search sparse. L1 this run inserted 18 roles. Verified open Ashby/Lever roles; no new official URLs beyond tracker. LinkedIn/Handshake skipped."
+  },
+  "jobs": [
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "google_ats Ashby + API verified; already tracked"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern, Mobile (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/notion/2b587e66-deac-421a-a824-9415ba78b5a7",
+      "competitive": true,
+      "notes": "google_ats Ashby + API verified; already tracked"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; Remote",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "google_ats Ashby + API verified; already tracked"
+    },
+    {
+      "company": "Replit",
+      "exact_role_title": "Software Engineering Intern – Winter 2027",
+      "location": "Foster City, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/replit/7c3c9d29-cec2-4367-8564-eadaed165aea",
+      "competitive": true,
+      "notes": "google_ats Ashby; already tracked"
+    },
+    {
+      "company": "Harvey",
+      "exact_role_title": "Software Engineering Intern (Winter 2027)",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/harvey/d40e15aa-2351-4be8-ac8f-1faf80bfcabf",
+      "competitive": false,
+      "notes": "google_ats Ashby; already tracked"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1da70480e",
+      "competitive": true,
+      "notes": "google_ats Ashby; already tracked"
+    },
+    {
+      "company": "Magnet Forensics",
+      "exact_role_title": "Software Developer Co-op (Winter 2027)",
+      "location": "Waterloo, ON; Ottawa, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/magnetforensics/6eba87dc-f110-47b2-8015-31311ca60f52",
+      "competitive": false,
+      "notes": "google_ats Lever + HEAD 200; already tracked"
+    },
+    {
+      "company": "Equitable Bank",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/eqbank/c924506b-22ad-4906-aea5-61d9b79163f3",
+      "competitive": false,
+      "notes": "google_ats Lever; already tracked"
+    },
+    {
+      "company": "Snowflake",
+      "exact_role_title": "Software Engineer Intern (Core, Infrastructure & Security) — Spring 2027",
+      "location": "Menlo Park, CA; Bellevue, WA",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/snowflake/5315b6f6-2c14-4cb9-a884-c2bae69f2c69",
+      "competitive": true,
+      "notes": "google_ats Ashby; already tracked"
+    },
+    {
+      "company": "Vital Lyfe",
+      "exact_role_title": "Software Engineering Internship - Spring 2027",
+      "location": "Torrance, CA",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/vital-lyfe/c39b72aa-9ad5-43e7-a3fd-8ef2e152ee4b",
+      "competitive": false,
+      "notes": "google_ats Ashby; already tracked"
+    },
+    {
+      "company": "Constellation Space",
+      "exact_role_title": "Software Engineering Intern (Winter/Spring)",
+      "location": "Seattle, WA",
+      "term": "Winter 2027, Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/constellationspace/b763d4ba-7b77-479b-89a0-f632d9d02f4a",
+      "competitive": false,
+      "notes": "google_ats Ashby; already tracked (added 2026-10-12)"
+    },
+    {
+      "company": "Fullscript",
+      "exact_role_title": "Software Developer (Co-op Opportunities)",
+      "location": "Ottawa, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/fullscript/f2682bc2-454c-4bcd-b71c-839236d09a8e",
+      "competitive": false,
+      "notes": "google_ats Lever; already tracked"
+    }
+  ]
+}
