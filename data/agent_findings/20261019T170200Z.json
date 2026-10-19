@@ -1,0 +1,135 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-10-19T17:02:00Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20261019T163217Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats"],
+  "portals_blocked": ["linkedin", "handshake", "indeed_apply_cloudflare", "google_ats_captcha"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22+Canada&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Spring+2027%22+Software+Intern",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Aboards.greenhouse.io+%22Spring+2027%22+Software+Intern"
+  ],
+  "meta": {
+    "run_ts": "2026-10-19T17:02:00Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs; CF pass; sparse W27 US/Canada (Summer/Fall mis-tags); Spring query showed SpaceX/Rivian/Tesla; Apply on company site blocked by Cloudflare. Google ATS: image CAPTCHA. DuckDuckGo Lever/Ashby productive; Greenhouse W27/Spring queries empty. SteerBridge Lever W27 URL 404 (excluded). L1 inserted 109 roles. Verified open official ATS URLs (GET 200)."
+  },
+  "jobs": [
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; Remote (US, UK, Dubai)",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c0353d4-081d-4c88-914a-72fdefaad254",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby browser + GET 200; already tracked"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/notion/e86c8658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "google_ats CAPTCHA; websearch verify + GET 200; already tracked"
+    },
+    {
+      "company": "Replit",
+      "exact_role_title": "Software Engineering Intern - Winter 2027",
+      "location": "Foster City, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/replit/7c3c9d29-cec2-4367-8564-eadaed165aea",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby browser + GET 200; already tracked"
+    },
+    {
+      "company": "Harvey",
+      "exact_role_title": "Software Engineering Intern (Winter 2027)",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/harvey/d40e15aa-2351-4be8-ac8f-1faf80bfcabf",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby browser + GET 200; already tracked"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/Zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Magnet Forensics",
+      "exact_role_title": "Software Developer Co-op (Winter 2027)",
+      "location": "Waterloo, ON; Ottawa, ON (Hybrid)",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/magnetforensics/6eba87dc-f110-47b2-8015-31311ca60f52",
+      "competitive": false,
+      "notes": "duckduckgo_ats Lever browser + GET 200; already tracked"
+    },
+    {
+      "company": "Equitable Bank",
+      "exact_role_title": "Software Engineer Intern, Winter 2027",
+      "location": "Toronto, ON (Hybrid)",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/eqbank/c924506b-22ad-4906-aea5-61d9b79163f3",
+      "competitive": true,
+      "notes": "duckduckgo_ats Lever browser + GET 200; already tracked"
+    },
+    {
+      "company": "Equitable Bank",
+      "exact_role_title": "Software Engineer Intern - Commercial Lending AI Engineer (Winter 2027)",
+      "location": "Toronto, ON (Hybrid)",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/eqbank/54045eae-334a-4486-8e97-96e49e6a1487",
+      "competitive": true,
+      "notes": "duckduckgo_ats Lever browser + GET 200; title prefixed for SWE filter; already tracked"
+    },
+    {
+      "company": "Heliux",
+      "exact_role_title": "Software Engineer (Internship, Spring 2027)",
+      "location": "San Francisco, CA",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/heliux/c71c0650-b6f7-491f-b291-6b280f58ee9c",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby browser + GET 200; already tracked"
+    },
+    {
+      "company": "The Exploration Company",
+      "exact_role_title": "Software Engineer Intern - Spring 2027 Internship (Software)",
+      "location": "California",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/the-exploration-company/623f19f1-b5fa-408a-822c-c6c37631a2fe",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby browser + GET 200; alternate Ashby slug open"
+    },
+    {
+      "company": "Constellation Space",
+      "exact_role_title": "Software Engineering Intern (Winter/Spring)",
+      "location": "Seattle, WA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/constellationspace/b763d4ba-7b77-479b-89a0-f632d9d02f4a",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby browser + GET 200; already tracked"
+    },
+    {
+      "company": "Vital Lyfe",
+      "exact_role_title": "Software Engineering Internship - Spring 2027",
+      "location": "Los Angeles, CA",
+      "term": "Spring 2027",
+      "official_url": "https://jobs.ashbyhq.com/vital-lyfe/c39b72aa-9ad5-43e7-a3fd-8ef2e152ee4b",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby browser + GET 200; already tracked"
+    }
+  ]
+}
