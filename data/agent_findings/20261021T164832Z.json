@@ -1,0 +1,125 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-10-21T16:48:32Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20261021T163234Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats"],
+  "portals_blocked": ["linkedin", "handshake", "indeed_apply_signin"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineering+Co-op%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Spring+2027%22+%22Software+Intern%22",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22"
+  ],
+  "meta": {
+    "run_ts": "2026-10-21T16:48:32Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs; CF pass; Winter exact sparse; Spring query surfaced SpaceX/Firefly/Rivian; Apply on company site blocked by sign-in. Google ATS Lever/Greenhouse: aggregators only. DuckDuckGo Ashby Winter 2027 productive. L1 inserted 111 roles. Verified open official ATS URLs (GET 200)."
+  },
+  "jobs": [
+    {
+      "company": "SpaceX",
+      "exact_role_title": "Spring 2027 Software Engineering Internship/Co-op",
+      "location": "Flexible - Any SpaceX Site; Palo Alto, CA",
+      "term": "Spring 2027",
+      "official_url": "https://job-boards.greenhouse.io/spacex/jobs/8621756002",
+      "competitive": true,
+      "notes": "indeed Spring 2027 query + Greenhouse GET 200; already tracked"
+    },
+    {
+      "company": "Firefly Aerospace",
+      "exact_role_title": "Internship - Software Engineering - Spring 2027",
+      "location": "Leander, TX",
+      "term": "Spring 2027",
+      "official_url": "https://fireflyspace.com/careers/?job=JR100188",
+      "competitive": false,
+      "notes": "indeed Spring 2027 query + careers page GET 200"
+    },
+    {
+      "company": "Rivian",
+      "exact_role_title": "Software Engineer Intern Co-op - Machine Learning Research - Perception",
+      "location": "Palo Alto, CA",
+      "term": "Spring 2027",
+      "official_url": "https://careers.rivian.com/jobs/33801",
+      "competitive": true,
+      "notes": "indeed Spring 2027 query; official Rivian careers; already tracked"
+    },
+    {
+      "company": "Replit",
+      "exact_role_title": "Software Engineering Intern - Winter 2027",
+      "location": "Foster City, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/replit/7c3c9d29-cec2-4367-8564-eadaed165aea",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada; Remote (US, UK, Dubai)",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c0353d4-081d-4c88-914a-72fdefaad254",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/notion/e86c8658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Harvey",
+      "exact_role_title": "Software Engineering Intern (Winter 2027)",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/harvey/d40e15aa-2351-4be8-ac8f-1faf80bfcabf",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/Zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Skydio",
+      "exact_role_title": "Manufacturing Software Engineer Intern - Winter 2027",
+      "location": "San Mateo, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/skydio/ffc665c1-2aa6-4c2f-b04b-93a6fb7b5feb",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Brain Co.",
+      "exact_role_title": "AI Security Engineer Co-Op Intern, Winter 2027",
+      "location": "San Francisco Bay Area",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/brainco/c93cdb4a-1ca8-40e0-b49c-205922772930",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    },
+    {
+      "company": "Brain Co.",
+      "exact_role_title": "AI Platform Engineer Co-Op Intern, Winter 2027",
+      "location": "San Francisco Bay Area",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/brainco/aadc490a-0d72-4be0-891b-4c362d491c3a",
+      "competitive": false,
+      "notes": "duckduckgo_ats Ashby + GET 200; already tracked"
+    }
+  ]
+}
