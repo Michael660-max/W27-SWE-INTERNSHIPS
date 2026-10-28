@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-28T16:32:08.517405+00:00",
+  "sources": [
+    {
+      "name": "Agent findings",
+      "status": "ok",
+      "fetched": 788,
+      "kept": 788,
+      "error": "",
+      "detail": ""
+    }
+  ],
+  "problem_count": 0
+}
