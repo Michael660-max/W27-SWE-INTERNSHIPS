@@ -1,0 +1,108 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-10-29T16:42:00Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20261029T163240Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["indeed_cloudflare", "indeed_curl_403", "duckduckgo_curl_timeout", "linkedin", "handshake"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Aboards.greenhouse.io+%22Winter+2027%22+%22Software+Intern%22",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software"
+  ],
+  "meta": {
+    "run_ts": "2026-10-29T16:42:00Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs (browser Cloudflare; sparse W27). Google ATS OK (Workday productive). DuckDuckGo curl empty/timeout; websearch_ats fallback for Ashby/Lever. Harvey W27 Ashby 404 closed. L1 inserted 59 roles."
+  },
+  "jobs": [
+    {
+      "company": "SteerBridge",
+      "exact_role_title": "Software Engineer Intern - Tech Internship Program (Winter 2027)",
+      "location": "Vienna, VA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/steerbridge/4eac2efd-ced5-4691-b00b-b5830447f2dc",
+      "competitive": false,
+      "notes": "websearch_ats Lever + HEAD 200; already tracked id=4717"
+    },
+    {
+      "company": "Croesus",
+      "exact_role_title": "Software Engineering Intern (Winter 2027)",
+      "location": "Laval, QC, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://croesus.wd10.myworkdayjobs.com/en-US/EXT/job/Laval/Software-Engineering-Intern--Winter-2027-_JR100015",
+      "competitive": false,
+      "notes": "google_ats Workday + already tracked id=4635"
+    },
+    {
+      "company": "GIRO",
+      "exact_role_title": "Software Engineer Intern - Software Development and Artificial Intelligence (Winter 2027)",
+      "location": "Montreal, Rosemont, QC, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://giro.wd10.myworkdayjobs.com/en-US/GIRO/job/Winter-2027---Software-Development-and-Artificial-Intelligence-Intern_R-100000321",
+      "competitive": false,
+      "notes": "google_ats Workday + HEAD 200; already tracked id=3520"
+    },
+    {
+      "company": "Firefly Aerospace",
+      "exact_role_title": "Internship - Software Engineering - Spring 2027",
+      "location": "Leander, TX",
+      "term": "Spring 2027",
+      "official_url": "https://fireflyspace.com/careers/?job=JR100188",
+      "competitive": false,
+      "notes": "indeed Spring 2027 query; careers page (CF on curl); already tracked id=4410"
+    },
+    {
+      "company": "TMX",
+      "exact_role_title": "Student Intern - DevOps - WinterTerm",
+      "location": "Montreal, QC, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://tmx.wd3.myworkdayjobs.com/en-US/tmx_careers/job/Montreal---1190-av-des-Canadiens-de-Montreal/Student-Intern--DevOps--WinterTerm-_R-6568",
+      "competitive": true,
+      "notes": "google_ats Workday; already tracked id=4679"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "websearch_ats Ashby API verified open; already tracked"
+    },
+    {
+      "company": "Notion",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "San Francisco, CA; New York, NY",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/notion/e66c6658-9e65-4c58-8db2-844628b6e8f8",
+      "competitive": true,
+      "notes": "websearch_ats Ashby + HEAD 200; already tracked"
+    },
+    {
+      "company": "Replit",
+      "exact_role_title": "Software Engineering Intern – Winter 2027",
+      "location": "Foster City, CA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/replit/7c3c9d29-cec2-4367-8564-eadaed165aea",
+      "competitive": true,
+      "notes": "websearch_ats Ashby + HEAD 200; already tracked"
+    },
+    {
+      "company": "Equitable Bank",
+      "exact_role_title": "Software Engineer Intern - Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/eqbank/c924506b-22ad-4906-aea5-61d9b79163f3",
+      "competitive": true,
+      "notes": "websearch_ats Lever; already tracked"
+    }
+  ]
+}
