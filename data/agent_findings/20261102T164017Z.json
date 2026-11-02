@@ -1,0 +1,161 @@
+{
+  "source": "Cursor Agent Monitor",
+  "generated_at": "2026-11-02T16:40:17Z",
+  "discovery": "layer2_midday",
+  "search_pack": "_search_pack_20261102T163443Z.md",
+  "portals_attempted": ["indeed", "google_ats", "duckduckgo_ats", "websearch_ats"],
+  "portals_blocked": ["linkedin", "handshake", "indeed_403", "google_captcha", "duckduckgo_timeout"],
+  "indeed_queries_opened": [
+    "https://www.indeed.com/jobs?q=%22Winter+2027%22+%22Software+Engineer+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22Spring+2027%22+%22Software+Engineering+Intern%22&fromage=14",
+    "https://www.indeed.com/jobs?q=%22January+2027%22+%22Software+Intern%22&fromage=14"
+  ],
+  "ats_queries_opened": [
+    "https://www.google.com/search?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software",
+    "https://www.google.com/search?q=site%3Amyworkdayjobs.com+%22Winter+2027%22+Intern",
+    "https://www.google.com/search?q=site%3Ajobs.lever.co+%22Winter+2027%22+Software",
+    "https://html.duckduckgo.com/html/?q=site%3Ajobs.ashbyhq.com+%22Winter+2027%22+Software"
+  ],
+  "meta": {
+    "run_ts": "2026-11-02T16:40:17Z",
+    "layer": 2,
+    "notes": "Midday L2. Indeed: 3 exact-query URLs via Playwright (HTTP 403, no listings). Google ATS: 3 site: searches (CAPTCHA/unusual traffic). DuckDuckGo Ashby query timed out. websearch_ats + direct ATS HEAD/API used to verify open W27 roles. Achievers Lever e0700fce 404 closed. L1 inserted 71 roles."
+  },
+  "jobs": [
+    {
+      "company": "Magnet Forensics",
+      "exact_role_title": "Software Developer Co-op (Winter 2027)",
+      "location": "Waterloo, ON, Canada; Ottawa, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/magnetforensics/6eba87dc-f110-47b2-8015-31311ca60f52",
+      "competitive": false,
+      "notes": "websearch_ats Lever HEAD 200; already tracked id=3815"
+    },
+    {
+      "company": "Equitable Bank",
+      "exact_role_title": "Software Engineer Intern - Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/eqbank/c924506b-22ad-4906-aea5-61d9b79163f3",
+      "competitive": true,
+      "notes": "websearch_ats Lever HEAD 200; Jan-Aug 2027; already tracked id=3778"
+    },
+    {
+      "company": "Equitable Bank",
+      "exact_role_title": "Software Engineer Intern - Commercial Lending AI Engineer, Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/eqbank/54045eae-334a-4486-8e97-96e49e6a1487/",
+      "competitive": true,
+      "notes": "websearch_ats Lever HEAD 200; already tracked id=2307"
+    },
+    {
+      "company": "Croesus",
+      "exact_role_title": "Software Engineering Intern (Winter 2027)",
+      "location": "Laval, QC, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://croesus.wd10.myworkdayjobs.com/en-US/EXT/job/Laval/Software-Engineering-Intern--Winter-2027-_JR100015",
+      "competitive": false,
+      "notes": "websearch_ats Workday HEAD 200; already tracked id=4635"
+    },
+    {
+      "company": "Ciena",
+      "exact_role_title": "Software Developer Intern - Winter 2027",
+      "location": "Ottawa, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://ciena.wd5.myworkdayjobs.com/en-US/Careers/job/Ottawa/Software-Developer-Intern---Winter-2027_R031953-1",
+      "competitive": false,
+      "notes": "websearch_ats Workday HEAD 200; already tracked id=4656"
+    },
+    {
+      "company": "Ciena",
+      "exact_role_title": "Software Engineer Intern - Embedded Software Engineer - Co-op Winter 2027",
+      "location": "Ottawa, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://ciena.wd5.myworkdayjobs.com/en-US/Careers/job/Ottawa/Embedded-Software-Engineer---Co-op-Winter-2027_R032005",
+      "competitive": false,
+      "notes": "websearch_ats Workday HEAD 200; already tracked id=4868"
+    },
+    {
+      "company": "SteerBridge",
+      "exact_role_title": "Software Engineer Intern - Tech Internship Program (Winter 2027)",
+      "location": "Vienna, VA",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/steerbridge/4eac2efd-ced5-4691-b00b-b5830447f2dc",
+      "competitive": false,
+      "notes": "websearch_ats Lever HEAD 200; already tracked id=4717"
+    },
+    {
+      "company": "Cohere",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+      "competitive": true,
+      "notes": "websearch_ats Ashby HEAD 200; already tracked"
+    },
+    {
+      "company": "Zip",
+      "exact_role_title": "Software Engineer Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.ashbyhq.com/zip/2bc7327b-1c06-418a-beeb-bec1dd70480e",
+      "competitive": true,
+      "notes": "websearch_ats Ashby HEAD 200; already tracked"
+    },
+    {
+      "company": "TD Bank",
+      "exact_role_title": "Software Engineer Co-op / Intern (Winter 2027)",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Software-Engineer-Co-op---Intern--Winter-2027-_R_1509790",
+      "competitive": true,
+      "notes": "websearch_ats Workday HEAD 200; already tracked id=3469"
+    },
+    {
+      "company": "Autodesk",
+      "exact_role_title": "Software Developer Intern - Interactive Graphics, Media & Entertainment (Winter 2027)",
+      "location": "Montreal, QC, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/Montreal-QC-CAN/Intern-Software-Developer--Stagiaire-en-Dveloppement-Logiciel_26WD100398-2",
+      "competitive": true,
+      "notes": "websearch_ats Workday HEAD 200; Jan-Apr 2027 hybrid; already tracked id=1286"
+    },
+    {
+      "company": "Capital One",
+      "exact_role_title": "Software Engineer Intern - Backend Software Engineer - Team Interstellar - Winter 2027",
+      "location": "Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://capitalone.wd12.myworkdayjobs.com/en-US/Capital_One/job/Intern--Backend-Software-Engineer---Team-Interstellar---Winter-2027_R249022",
+      "competitive": true,
+      "notes": "websearch_ats Workday HEAD 200; already tracked id=4907"
+    },
+    {
+      "company": "GIRO",
+      "exact_role_title": "Software Engineer Intern - Software Development and Artificial Intelligence (Winter 2027)",
+      "location": "Montreal, QC, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://giro.wd10.myworkdayjobs.com/en-US/GIRO/job/Winter-2027---Software-Development-and-Artificial-Intelligence-Intern_R-100000321",
+      "competitive": false,
+      "notes": "websearch_ats Workday; already tracked id=3520"
+    },
+    {
+      "company": "Fullscript",
+      "exact_role_title": "Software Developer Co-op (Winter 2027)",
+      "location": "Ottawa, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/fullscript/f2682bc2-454c-4bcd-b71c-639236d09a8e",
+      "competitive": false,
+      "notes": "websearch_ats Lever; canonical UUID; already tracked"
+    },
+    {
+      "company": "AltaML",
+      "exact_role_title": "Software Engineer Intern - Associate Software Engineer (Winter 2027)",
+      "location": "Edmonton, AB; Calgary, AB; Toronto, ON, Canada",
+      "term": "Winter 2027",
+      "official_url": "https://jobs.lever.co/altaml/bd8167f5-e84c-48b1-9cad-2831bf71dea1",
+      "competitive": false,
+      "notes": "websearch_ats Lever; already tracked id=1881"
+    }
+  ]
+}
